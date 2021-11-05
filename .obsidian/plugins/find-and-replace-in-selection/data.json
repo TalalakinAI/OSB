@@ -1,0 +1,6 @@
+{
+  "findText": "",
+  "findRegexp": "\\n",
+  "regexpFlags": "gmi",
+  "replace": "  \\n"
+}

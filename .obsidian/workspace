@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "194a5269745e7ba0",
+    "type": "split",
+    "children": [
+      {
+        "id": "959601d523ad5ba3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Mtb_B.md",
+            "mode": "source"
+          }
+        },
+        "group": "999941d44248f5eb"
+      },
+      {
+        "id": "f5f6ff87ecca2bef",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Mtb_B.md",
+            "mode": "preview"
+          }
+        },
+        "group": "999941d44248f5eb"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a0b7a85dadf567e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "7eee5e4c359b12aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ee71838283732eb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a98eeae152251382",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9b6b0a92c2f814ae",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "13303b4582ad5b1a",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 222
+  },
+  "right": {
+    "id": "73cb70abd271a42b",
+    "type": "split",
+    "children": [
+      {
+        "id": "393f53f718a64eee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c986eff244a565d6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Mtb_B.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e5da12b40603440c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Mtb_B.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "15f8c3a884353c84",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "486ae5bba059db4a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Mtb_B.md"
+              }
+            }
+          },
+          {
+            "id": "81dd85c6e0a9cdcf",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "22185af05620a3ee",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 144
+  },
+  "active": "959601d523ad5ba3",
+  "lastOpenFiles": [
+    "Mtb_B.md",
+    "Library.md",
+    "News.md",
+    "Lectio.md",
+    "000/000-title.md",
+    "!0SB.md",
+    "AI_Talalakin.md",
+    "Arbalet.md",
+    "e20211022.md",
+    "!0SB_Instructio.md"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "projects": {
+    "Longform": {
+      "path": "Longform",
+      "indexFile": "Index",
+      "draftsPath": "Drafts/"
+    }
+  },
+  "selectedProject": "Longform",
+  "selectedDraft": null
+}

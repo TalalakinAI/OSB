@@ -1,0 +1,107 @@
+{
+  "choices": [
+    {
+      "id": "dc597ef2-167d-43fb-9893-a8bd723c5c96",
+      "name": "NEWS",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "News.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": true,
+        "template": "000/000-date-w.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### ОСБ / \n#### [ОСБ / ]()\n![]()\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "### ОСБ. НОВОСТИ.  ",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "4eb05852-1c9b-4666-91f7-eddc8781a2ae",
+      "name": "e20211231",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "e{{DATE:YYYYMMDD}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "###### e{{DATE:yyyyMMDD}}   "
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "cbb49623-7ca5-43bf-b9e1-e938d80c5a38",
+      "name": "Вопрос-Ответ",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### Вопрос:\n>\n\n#### А. И. Талалакин:\n>\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    }
+  ],
+  "macros": []
+}
