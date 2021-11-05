@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "yyyy-mm-dd-analis-problemy.md",
+            "file": "faq.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "yyyy-mm-dd-analis-problemy.md",
+            "file": "faq.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "yyyy-mm-dd-analis-problemy.md",
+            "file": "faq.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "yyyy-mm-dd-analis-problemy.md"
+            "file": "faq.md"
           }
         }
       },
@@ -129,12 +129,12 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "yyyy-mm-dd-analis-problemy.md",
-    "!0SB_Instructio.md",
-    "README.md",
     "faq.md",
-    "!0SB.md",
     "News.md",
+    "!0SB.md",
+    "!0SB_Instructio.md",
+    "yyyy-mm-dd-analis-problemy.md",
+    "README.md",
     "Без названия.md",
     "e20211105.md",
     "tyr.md",
