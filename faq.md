@@ -72,7 +72,7 @@
 
 > ###### "Понижающий трансформатор" ДЦ МХ.
 <details markdown='1'><summary></summary>
-![ДЦ МХ](https://telegra.ph/file/5cf800b25af19c562486d.jpg)
 
+![ДЦ МХ](https://telegra.ph/file/5cf800b25af19c562486d.jpg)
 </details>
 
