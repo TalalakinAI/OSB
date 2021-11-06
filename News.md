@@ -7,7 +7,7 @@
 ***
 ###### 2021-11-06-13-39  
 #### ОСБ / Уровни организации МЭ по E. Revici
-![](https://telegra.ph/file/12c877dc51ed3e5feae26.jpg)
+> ![](https://telegra.ph/file/12c877dc51ed3e5feae26.jpg)
 
 ***
 ###### 2021-11-06-12-28
