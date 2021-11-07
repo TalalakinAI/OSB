@@ -14,6 +14,7 @@
 > ![](https://telegra.ph/file/12c877dc51ed3e5feae26.jpg)
 
 > ![](https://telegra.ph/file/6ec1c8c96006788d5f492.jpg)
+
 ***
 ###### 2021-11-06-12-28
 #### [ОСБ / Благодарность](https://t.me/c/1484776022/41636)  
