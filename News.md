@@ -249,10 +249,9 @@ p+(pe) | <span style='background-color:#b5ffb6;'>**p+e-**</span>   | e-
 - [Фрагмент эфира №4](https://t.me/osbmd/3091)  Про кисломолочку.
 - [Фрагмент эфира №5](https://t.me/osbmd/3098)  Про нагрузки.
 - [Фрагмент эфира №6](https://t.me/osbmd/3109)  Про клетчатки.
-- [Фрагмент эфира №7](https://t.me/osbmd/3110)  Про ПНЖК и Ш.
+- [Фрагмент эфира №7](https://t.me/osbmd/3110)  Про ПНЖК и Ш.  
 - [Фрагмент эфира №8](https://t.me/osbmd/3111)  Заключение.
-
-- [Гниение белков в ЖКТ](Mtb_B.md#mtb_b) 
+> - [Гниение белков в ЖКТ](Mtb_B.md#mtb_b) 
 
 <details markdown='1'><summary>подробнее:</summary>
 
