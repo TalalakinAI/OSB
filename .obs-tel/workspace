@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
+            "file": "Arbalet.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "Arbalet.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "Arbalet.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "Arbalet.md"
           }
         }
       },
@@ -129,10 +129,10 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "News.md",
-    "ABCDEFGoal.md",
     "Arbalet.md",
+    "ABCDEFGoal.md",
     "glos.md",
+    "News.md",
     "Без названия.md",
     "faq.md",
     "e20211028.md",
