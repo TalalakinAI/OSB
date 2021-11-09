@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Arbalet.md",
+            "file": "Lectio.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Arbalet.md",
+            "file": "Lectio.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Arbalet.md",
+            "file": "Lectio.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Arbalet.md"
+            "file": "Lectio.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "Lectio.md",
+    "e20211022.md",
+    "!0SB.md",
+    "News.md",
+    "otziv.md",
+    "e20211028.md",
     "Arbalet.md",
     "ABCDEFGoal.md",
     "glos.md",
-    "News.md",
-    "Без названия.md",
-    "faq.md",
-    "e20211028.md",
-    "000/000-news.md",
-    "!0SB.md",
-    "!0SB_Instructio.md"
+    "Без названия.md"
   ]
 }
