@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "yyyy-mm-dd-analis-problemy.md",
+            "file": "!0SB_Instructio.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "yyyy-mm-dd-analis-problemy.md",
+            "file": "!0SB_Instructio.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "yyyy-mm-dd-analis-problemy.md",
+            "file": "!0SB_Instructio.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "yyyy-mm-dd-analis-problemy.md"
+            "file": "!0SB_Instructio.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "yyyy-mm-dd-analis-problemy.md",
-    "otziv.md",
+    "!0SB_Instructio.md",
     "!0SB.md",
+    "otziv.md",
+    "yyyy-mm-dd-analis-problemy.md",
     "Lectio.md",
     "News.md",
     "e20211022.md",
     "e20211028.md",
     "Arbalet.md",
-    "ABCDEFGoal.md",
-    "glos.md"
+    "ABCDEFGoal.md"
   ]
 }
