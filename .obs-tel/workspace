@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
+            "file": "2021-11-10.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "2021-11-10.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "2021-11-10.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "2021-11-10.md"
           }
         }
       },
@@ -129,6 +129,8 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "2021-11-10.md",
+    "Herbanastoy.md",
     "News.md",
     "!0SB.md",
     "poet.md",
@@ -136,8 +138,6 @@
     "otziv.md",
     "yyyy-mm-dd-analis-problemy.md",
     "Lectio.md",
-    "e20211022.md",
-    "e20211028.md",
-    "Arbalet.md"
+    "e20211022.md"
   ]
 }
