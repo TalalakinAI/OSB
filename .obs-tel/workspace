@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2021-11-10.md",
+            "file": "Herba.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "2021-11-10.md",
+            "file": "Herba.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "2021-11-10.md",
+            "file": "Herba.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "2021-11-10.md"
+            "file": "Herba.md"
           }
         }
       },
@@ -129,6 +129,8 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "Herba.md",
+    "Library.md",
     "2021-11-10.md",
     "Herbanastoy.md",
     "News.md",
@@ -136,8 +138,6 @@
     "poet.md",
     "!0SB_Instructio.md",
     "otziv.md",
-    "yyyy-mm-dd-analis-problemy.md",
-    "Lectio.md",
-    "e20211022.md"
+    "yyyy-mm-dd-analis-problemy.md"
   ]
 }
