@@ -7,7 +7,7 @@
 ***
 ###### 2021-11-11-00-00 
 #### [Стихи](poet.md#poet)  
-![](https://telegra.ph/file/6f44aa4e31091e522c5e8.jpg) т
+![](https://telegra.ph/file/6f44aa4e31091e522c5e8.jpg) 
 
 ***  
 ###### 2021-11-08-22-20  
