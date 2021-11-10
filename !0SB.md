@@ -11,4 +11,5 @@
 ***  
 ##### [Лекции, эфиры, включения](Lectio.md#lectio)   
 ##### [Библиотека](Library.md#library)    
+##### [Стихи](poet.md#poet)  
 ##### [FAQ](faq.md#faq)
