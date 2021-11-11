@@ -1,6 +1,6 @@
 ##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 ###### 0SB_Instructio  
-### ОСБ. ИНСТРУКЦИИ.  
+### ОСБ. ИНСТРУКЦИИ.   
 
 ***  
 #### **<a href="mailto:talalakin@yandex.ru?subject=ФИО. Суть запроса? Кто направил?"><span style='background-color:#fffdf0;'>ОТПРАВИТЬ ПЕРСОНАЛЬНЫЙ ЗАПРОС →</span></a>**
@@ -8,7 +8,7 @@
 ![Arbalet](ArbaletEP.jpg)   
 
 ***
-_[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 09.11.2021 → [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  
+_[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 11.11.2021 → [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  
 Старые формы больше не принимаются!_  
 
 ***  
@@ -96,7 +96,7 @@ dd - день заполнения
 
 ***
 #### Ссылка на скачивание архива файлов:
-- [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  - обновление от 09.11.2021 г. 
+- [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  - обновление от 11.11.2021 г. 
 
 ***
 
