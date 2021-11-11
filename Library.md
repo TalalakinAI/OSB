@@ -1,5 +1,5 @@
 #### Library
-##### [← Дом](!0SB.md#osb) | [News](News.md)
+##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 
 *** 
 #### Для самостоятельного изучения:  
