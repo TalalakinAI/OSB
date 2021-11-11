@@ -2,7 +2,7 @@
 ###### 0SB_Instructio  
 ### ОСБ. ИНСТРУКЦИИ.   
 
-***  
+***   
 #### **<a href="mailto:talalakin@yandex.ru?subject=ФИО. Суть запроса? Кто направил?"><span style='background-color:#fffdf0;'>ОТПРАВИТЬ ПЕРСОНАЛЬНЫЙ ЗАПРОС →</span></a>**
 
 ![Arbalet](ArbaletEP.jpg)   
