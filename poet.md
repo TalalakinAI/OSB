@@ -1,5 +1,5 @@
 ###### poet   
-###### [← Домой](!0SB.md#osb)  
+##### [← Дом](!0SB.md#osb) | [News](News.md#news) 
 
 ***
 # СТИХИ 
