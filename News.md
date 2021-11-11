@@ -15,7 +15,7 @@
 ![](https://www.rt-pharma.kz/upload/iblock/404/4049cd023ed5990453950c085d961664.jpg)  
 
 ***
-###### 2021-11-11-22-11
+###### 2021-11-11-22-11 
 #### [ОСБ / Про уши](https://t.me/c/1484776022/43213) 
 ![](https://telegra.ph/file/fa67c656e5a902b81c095.jpg)   
 
