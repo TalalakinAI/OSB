@@ -1,6 +1,5 @@
-##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
-###### [← Library](Library.md#library)  
 ###### mtb_b   
+##### [← Дом](!0SB.md#osb)  | [News](News.md#news) | [Library](Library.md#library)  
 
 ***   
 ## МЕТАБОЛИЗМ БЕЛКОВ В ЖКТ. ГНИЕНИЕ БЕЛКОВ В КИШЕЧНИКЕ.   

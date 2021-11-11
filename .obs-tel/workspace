@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "otziv.md",
-            "mode": "preview"
+            "file": "!0SB_Instructio.md",
+            "mode": "source"
           }
         }
       }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "otziv.md",
+            "file": "!0SB_Instructio.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "otziv.md",
+            "file": "!0SB_Instructio.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "otziv.md"
+            "file": "!0SB_Instructio.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "otziv.md",
+    "!0SB_Instructio.md",
     "!0SB.md",
+    "faq.md",
+    "Mtb_B.md",
     "Library.md",
+    "otziv.md",
     "News.md",
     "glos.md",
-    "!0SB_Instructio.md",
     "README.md",
-    "Herba.md",
-    "2021-11-10.md",
-    "Herbanastoy.md"
+    "Herba.md"
   ]
 }
