@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Library.md",
-            "mode": "source"
+            "file": "otziv.md",
+            "mode": "preview"
           }
         }
       }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Library.md",
+            "file": "otziv.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Library.md",
+            "file": "otziv.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Library.md"
+            "file": "otziv.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "Library.md",
+    "otziv.md",
     "!0SB.md",
+    "Library.md",
     "News.md",
     "glos.md",
     "!0SB_Instructio.md",
     "README.md",
     "Herba.md",
     "2021-11-10.md",
-    "Herbanastoy.md",
-    "poet.md"
+    "Herbanastoy.md"
   ]
 }
