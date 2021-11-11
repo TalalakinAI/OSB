@@ -3,7 +3,7 @@
 
 *** 
 #### Для самостоятельного изучения:  
-
+###### [glossariy](glos.md#glos)
 ***  
 - [Метаболизм и гниение белков](Mtb_B.md#mtb_b)    
 - [Влияние холода на организм](lib-zolotarev-holod.md#lib-zolotarev-holod)  

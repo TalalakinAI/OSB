@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "!0SB_Instructio.md",
-            "mode": "source"
+            "file": "glos.md",
+            "mode": "preview"
           }
         }
       }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "glos.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "glos.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "!0SB_Instructio.md"
+            "file": "glos.md"
           }
         }
       },
@@ -129,14 +129,14 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "!0SB_Instructio.md",
+    "glos.md",
+    "Library.md",
     "!0SB.md",
+    "News.md",
+    "!0SB_Instructio.md",
     "faq.md",
     "Mtb_B.md",
-    "Library.md",
     "otziv.md",
-    "News.md",
-    "glos.md",
     "README.md",
     "Herba.md"
   ]
