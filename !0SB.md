@@ -1,6 +1,7 @@
 #### OSB  
 **Основы Системной Биорегуляции (ОСБ)**  
 [Анатолий Игоревич Талалакин](AI_Talalakin.md#ai_talalakin)  
+
 ![](!AIT.jpg)   
 [ИНСТРУКЦИИ](!0SB_Instructio.md#0sb_instructio)  
 [НОВОСТИ](News.md#news)  
