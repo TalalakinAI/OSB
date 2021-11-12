@@ -11,6 +11,9 @@
 Март
 ![](https://telegra.ph/file/376a2afeeba43e577671f.jpg)
 
+
+<details markdown='1'><summary>подробнее:</summary>
+
 ***
 Май
 ![](https://telegra.ph/file/a221a0a170542fc44de62.jpg)
@@ -30,6 +33,7 @@
 ***
 Ноябрь
 ![](https://telegra.ph/file/de9053b498e480269561d.jpg)
+</details>
 
 ***
 #### 2021-11-11  
