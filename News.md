@@ -13,7 +13,7 @@
 
 <details markdown='1'><summary>подробнее:</summary>
 
-
+***
 Май
 ![](https://telegra.ph/file/a221a0a170542fc44de62.jpg)
 
