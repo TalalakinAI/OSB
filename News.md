@@ -28,7 +28,7 @@
 ![](https://telegra.ph/file/003a83474620867360567.jpg)
 
 ***
-Ночбрь
+Ноябрь
 ![](https://telegra.ph/file/de9053b498e480269561d.jpg)
 
 ***
