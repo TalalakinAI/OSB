@@ -5,6 +5,33 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-11-12-12-53
+#### ОСБ / Динамика  
+
+Март
+![](https://telegra.ph/file/376a2afeeba43e577671f.jpg)
+
+***
+Май
+![](https://telegra.ph/file/a221a0a170542fc44de62.jpg)
+
+***
+Июнь
+![](https://telegra.ph/file/d72ead4776b5da66d9a5a.jpg)
+
+***
+Июль
+![](https://telegra.ph/file/866af429ba131ab7c7c96.jpg)
+
+***
+Сентябрь
+![](https://telegra.ph/file/003a83474620867360567.jpg)
+
+***
+Ночбрь
+![](https://telegra.ph/file/de9053b498e480269561d.jpg)
+
+***
 #### 2021-11-11  
 #### [Внимание! Отчётные формы обновлены!](!0SB_Instructio.md#0sb_instructio)  
 
