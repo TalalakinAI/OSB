@@ -25,6 +25,24 @@
 ![](https://telegra.ph/file/a221a0a170542fc44de62.jpg)
 
 ***
+Июнь
+![](https://telegra.ph/file/d72ead4776b5da66d9a5a.jpg)
+
+***
+Июль
+![](https://telegra.ph/file/866af429ba131ab7c7c96.jpg)
+
+***
+Сентябрь
+![](https://telegra.ph/file/003a83474620867360567.jpg)
+
+***
+Ноябрь
+![](https://telegra.ph/file/de9053b498e480269561d.jpg)
+</details>
+
+
+***
 ###### 2021-11-05-21-25  
 #### Эфир / 10 лет с ОСБ 
 #### [Отчёт о результатах](e20211028.md#e20211028)  
