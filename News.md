@@ -8,9 +8,9 @@
 #### 2021-11-11  
 #### [Внимание! Отчётные формы обновлены!](!0SB_Instructio.md#0sb_instructio)  
 
-~~<span style='background-color:#ffd780;'>
+<span style='background-color:#ffd780;'>
 Старые больше не принимаются! 
-</span>~~
+</span>
 
 ![Arbalet](ArbaletEP.jpg)  
 
