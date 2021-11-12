@@ -6,12 +6,13 @@
 
 ***
 ###### 2021-11-12-12-53
-#### ОСБ / Динамика  Март → Ноябрь
+#### ОСБ / Динамика:  Март → Ноябрь
 
 Март
 ![](https://telegra.ph/file/376a2afeeba43e577671f.jpg)
 
 <details markdown='1'><summary>подробнее:</summary>
+
 
 Май
 ![](https://telegra.ph/file/a221a0a170542fc44de62.jpg)
