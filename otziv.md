@@ -12,6 +12,19 @@
 ![Arbalet](ArbaletEP.jpg) 
 
 ***
+###### 2021-11-12-12-53
+#### ОСБ / Динамика:  Март → Ноябрь
+
+Март
+![](https://telegra.ph/file/376a2afeeba43e577671f.jpg)
+
+<details markdown='1'><summary>подробнее:</summary>
+
+***
+Май
+![](https://telegra.ph/file/a221a0a170542fc44de62.jpg)
+
+***
 ###### 2021-11-05-21-25  
 #### Эфир / 10 лет с ОСБ 
 #### [Отчёт о результатах](e20211028.md#e20211028)  
