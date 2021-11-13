@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
+            "file": "a20211107.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "a20211107.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "a20211107.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "a20211107.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "a20211107.md",
     "News.md",
+    "otziv.md",
     "!0SB.md",
     "faq.md",
     "yyyy-mm-dd-dinamika.md",
     "!0SB_Instructio.md",
     "().md",
     "yyyy-mm-dd-analis-problemy.md",
-    "glos.md",
-    "Library.md",
-    "Mtb_B.md"
+    "glos.md"
   ]
 }
