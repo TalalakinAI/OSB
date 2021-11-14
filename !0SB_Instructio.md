@@ -8,7 +8,7 @@
 ![Arbalet](ArbaletEP.jpg)   
 
 ***
-_[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 11.11.2021 → [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  
+_[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 14.11.2021 → [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  
 Старые формы больше не принимаются!_  
 
 ***  
@@ -96,7 +96,7 @@ dd - день заполнения
 
 ***
 #### Ссылка на скачивание архива файлов:
-- [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  - обновление от 11.11.2021 г. 
+- [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  - обновление от 14.11.2021 г. 
 
 ***
 
