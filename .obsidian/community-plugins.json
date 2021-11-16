@@ -1,5 +1,4 @@
 [
-  "calendar",
   "note-refactor-obsidian",
   "obsidian-minimal-settings",
   "obsidian-rollover-daily-todos",
@@ -19,5 +18,7 @@
   "obsidian-chartsview-plugin",
   "obsidian-reveal-active-file",
   "remember-cursor-position",
-  "dataview"
+  "dataview",
+  "table-editor-obsidian",
+  "cm-editor-syntax-highlight-obsidian"
 ]
