@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
+            "file": "glos.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "glos.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "glos.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "glos.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "glos.md",
     "News.md",
+    "Library.md",
+    "Herba.md",
+    "Herbanastoy.md",
+    "2021-11-10.md",
+    "!0SB.md",
     "!0SB_Instructio.md",
     "a20211107.md",
-    "otziv.md",
-    "!0SB.md",
-    "faq.md",
-    "yyyy-mm-dd-dinamika.md",
-    "().md",
-    "yyyy-mm-dd-analis-problemy.md",
-    "glos.md"
+    "otziv.md"
   ]
 }
