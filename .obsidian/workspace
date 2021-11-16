@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "a20211111.md",
+            "file": "e20211122.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "a20211111.md",
+            "file": "e20211122.md",
             "mode": "preview"
           }
         },
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "a20211111.md",
+                "file": "e20211122.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "a20211111.md",
+                "file": "e20211122.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "a20211111.md"
+                "file": "e20211122.md"
               }
             }
           },
@@ -160,15 +160,15 @@
   },
   "active": "959601d523ad5ba3",
   "lastOpenFiles": [
-    "a20211111.md",
+    "e20211122.md",
+    "otziv.md",
     "News.md",
-    "2021-11-10.md",
     "a20211107.md",
+    "2021-11-10.md",
     "Mtb_B.md",
     "Library.md",
     "Lectio.md",
     "000/000-title.md",
-    "!0SB.md",
-    "AI_Talalakin.md"
+    "!0SB.md"
   ]
 }
