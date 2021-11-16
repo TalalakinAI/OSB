@@ -1,11 +1,3 @@
----
-**Backlinks (dataview)**:
-```dataview
-list
-where contains(file.outlinks, this.file.link) AND file.name != this.file.name
-sort file.ctime desc
-```
-
 ###### glos 
 ##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 
