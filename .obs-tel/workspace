@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "!0SB_Instructio.md",
-            "mode": "source"
+            "file": "News.md",
+            "mode": "preview"
           }
         }
       }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "News.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "News.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "!0SB_Instructio.md"
+            "file": "News.md"
           }
         }
       },
@@ -129,12 +129,12 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "!0SB_Instructio.md",
-    "!0SB.md",
     "News.md",
-    "otziv.md",
-    "e20211117.md",
     "e20211122.md",
+    "!0SB.md",
+    "otziv.md",
+    "!0SB_Instructio.md",
+    "e20211117.md",
     "a20211111.md",
     "glos.md",
     "Library.md",
