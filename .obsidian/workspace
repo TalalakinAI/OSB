@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "e20211122.md",
+            "file": "News.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "e20211122.md",
+            "file": "News.md",
             "mode": "preview"
           }
         },
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "e20211122.md",
+                "file": "News.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "e20211122.md",
+                "file": "News.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "e20211122.md"
+                "file": "News.md"
               }
             }
           },
@@ -158,17 +158,17 @@
     "direction": "horizontal",
     "width": 178.5
   },
-  "active": "959601d523ad5ba3",
+  "active": "d797851a9971f671",
   "lastOpenFiles": [
-    "e20211122.md",
-    "otziv.md",
     "News.md",
+    "e20211122.md",
+    "faq.md",
+    "e20211028.md",
+    "otziv.md",
     "a20211107.md",
     "2021-11-10.md",
     "Mtb_B.md",
     "Library.md",
-    "Lectio.md",
-    "000/000-title.md",
-    "!0SB.md"
+    "Lectio.md"
   ]
 }
