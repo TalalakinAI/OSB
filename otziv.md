@@ -7,7 +7,7 @@
 
 ***
 #### 2021-11-11  
-#### [Внимание! Отчётные формы обновлены!](!0SB_Instructio.md#0sb_instructio)   
+#### [Внимание! Отчётные формы обновлены!](!0SB_Instructio.md#0sb_instructio)    
 
 <span style='background-color:#ffd780;'>
 Старые больше не принимаются! 
@@ -55,6 +55,7 @@
 ***
 Ноябрь
 ![](https://telegra.ph/file/de9053b498e480269561d.jpg)
+[e20211117](e20211117.md#e20211117)
 </details>
 
 
