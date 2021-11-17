@@ -11,7 +11,7 @@
 
 ![](https://telegra.ph/file/853215a874de9a53d165e.jpg)
 
-<details markdown='1'><summary>подробнее о типе перекоса:</summary>
+<details markdown='1'><summary>подробнее о типе фонового перекоса:</summary>
 
 ![Промеры](https://telegra.ph/file/a2732b2a3d90cadb03a01.jpg)  
 
