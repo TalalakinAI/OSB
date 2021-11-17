@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "e20211117.md",
-            "mode": "preview"
+            "file": "!0SB_Instructio.md",
+            "mode": "source"
           }
         }
       }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "e20211117.md",
+            "file": "!0SB_Instructio.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "e20211117.md",
+            "file": "!0SB_Instructio.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "e20211117.md"
+            "file": "!0SB_Instructio.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "e20211117.md",
-    "otziv.md",
+    "!0SB_Instructio.md",
     "!0SB.md",
     "News.md",
+    "otziv.md",
+    "e20211117.md",
     "e20211122.md",
     "a20211111.md",
     "glos.md",
     "Library.md",
-    "Herba.md",
-    "Herbanastoy.md"
+    "Herba.md"
   ]
 }
