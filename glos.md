@@ -5,16 +5,14 @@
 <figure class="video_container">
 <iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0" width="100%" height="auto" allowfullscreen="true"> </iframe>
 </figure>
-<!-- blank line -->   
+<!-- blank line -->    
 
 > <audio controls="controls">
-> <source type="audio/mp3" src="OSB-2021.m3u8"> 
-> <source type="audio/ogg" src="filename.ogg"></source>
+> <source type="audio/mp3" src="https://www.yapfiles.ru/files/155136/cc079778db7db2fd43c2e0c95966162e.mp3?token=MDAxNTUxMzYtMTYzNzI1MTA1MQ"> 
 > </source>  width="100%"
 > <p>Your browser does not support the audio element.</p>
 > </audio>   
 
-[OSB-2021](OSB-2021.m3u8) 
 
 ***
 
