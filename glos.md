@@ -15,13 +15,14 @@
 4.   
 ~~~
 </blockquote></details>
+
 <details><summary> Практика </summary><blockquote>
 
-Крылья Ангела:
+Крылья Ангела:  
 
-1. 
-2. 
-3. 
+1.  
+2.  
+3.  
 </blockquote></details>
 
 ~~~
