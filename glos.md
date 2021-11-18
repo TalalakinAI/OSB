@@ -8,7 +8,7 @@
 <!-- blank line -->    
 
 > <audio controls="controls">
-> <source type="audio/mp3" src="OSB-2021.m3u8"> 
+> <source type="audio/mp3" src="https://talalakinai.github.io/OSB/OSB-2021.m3u8"> 
 > </source>  width="100%"
 > <p>Your browser does not support the audio element.</p>
 > </audio>    
