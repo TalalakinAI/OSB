@@ -1,33 +1,27 @@
 ###### glos 
 ##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 
-***
-***
-***
-
 
 <details><summary> ОСБ </summary><blockquote>
 
-<details><summary> Направления </summary><blockquote>
+<details><summary> Направления </summary><blockquote>  
 
 <details><summary> Теория </summary><blockquote>
 
 ~~~
-1. 
-2. 
-3. 
-4. 
+1.   
+2.   
+3.   
+4.   
 ~~~
 </blockquote></details>
 <details><summary> Практика </summary><blockquote>
 
 Крылья Ангела:
 
-~~~
 1. 
 2. 
 3. 
-~~~
 </blockquote></details>
 
 ~~~
