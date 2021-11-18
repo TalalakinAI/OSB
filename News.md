@@ -9,9 +9,9 @@
 #### ОСБ / Аммиачная интоксикация  
 <!-- blank line -->
 <figure class="video_container">
-<iframe src="https://www.youtube.com/embed/xwOsi00kJkU" frameborder="0" width="100%" allowfullscreen="true"> </iframe>
+<iframe src="https://www.youtube.com/embed/xwOsi00kJkU" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
-<!-- blank line -->   
+<!-- blank line -->    
 
 ***
 ###### 2021-11-18-12-17  
