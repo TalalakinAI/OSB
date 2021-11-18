@@ -9,10 +9,10 @@
 <details><summary> Теория </summary><blockquote>
 
 ~~~
-1.   
-2.   
-3.   
-4.   
+1. ЭО
+2. Питание  
+3. Мтб 
+4. Арбалет  
 ~~~
 </blockquote></details>
 
