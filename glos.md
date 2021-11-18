@@ -18,8 +18,6 @@
 
 <details><summary> Практика </summary><blockquote>
 
-Крылья Ангела:  
-
 ~~~
 1.  
 2.  
