@@ -5,6 +5,15 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-11-18-16-06
+#### ОСБ / Аммиачная интоксикация  
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/xwOsi00kJkU" frameborder="0" width="100%" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->   
+
+***
 ###### 2021-11-18-12-17  
 ### Азот и его производные   
 
