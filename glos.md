@@ -1,6 +1,11 @@
 ###### glos 
 ##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
 
 <details><summary> ОСБ </summary><blockquote>
 
