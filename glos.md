@@ -3,9 +3,9 @@
 
 <!-- blank line -->
 <figure class="video_container">
-<iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0" allowfullscreen="true"> </iframe>
+<iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0" width="100%" height="100%" allowfullscreen="true"> </iframe>
 </figure>
-<!-- blank line -->   
+<!-- blank line -->    
 
 <audio controls="controls">
   <source type="audio/mp3" src="filename.mp3"></source>
