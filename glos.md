@@ -4,16 +4,15 @@
 
 <details><summary> ОСБ </summary><blockquote>
 
-<details><summary> Направления </summary><blockquote>  
+<details><summary> Направления </summary><blockquote>   
 
 <details><summary> Теория </summary><blockquote>
 
-~~~
 1. ЭО
 2. Питание  
 3. Мтб 
 4. Арбалет  
-~~~
+
 </blockquote></details>
 
 <details><summary> Практика </summary><blockquote>
@@ -87,7 +86,7 @@
 ## Глоссарий    
 
 |  Сокр. | Расшифровка  |
-| - | - |
+| --- | --- |
 3D | Ш-перекос
 5D | балансное состояние
 7D | Т-перекос
