@@ -8,10 +8,10 @@
 <!-- blank line -->    
 
 <audio controls="controls">
-  <source type="audio/mp3" src="filename.mp3"> width="100%" </source> 
-  <source type="audio/ogg" src="filename.ogg"></source>
+  <source type="audio/mp3" src="filename.mp3"> </source> 
+  <source type="audio/ogg" src="filename.ogg"></source> width="100%"
   <p>Your browser does not support the audio element.</p>
-</audio>
+</audio> 
 
 
 <details><summary> ОСБ </summary><blockquote>
