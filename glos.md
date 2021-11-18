@@ -8,10 +8,10 @@
 <!-- blank line -->    
 
 > <audio controls="controls">
-> <source type="audio/mp3" src="https://www.yapfiles.ru/files/155136/cc079778db7db2fd43c2e0c95966162e.mp3?token=MDAxNTUxMzYtMTYzNzI1MTA1MQ"> 
+> <source type="audio/mp3" src="OSB-2021.m3u8"> 
 > </source>  width="100%"
 > <p>Your browser does not support the audio element.</p>
-> </audio>   
+> </audio>    
 
 ***
 
