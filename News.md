@@ -7,8 +7,7 @@
 ***
 ###### 2021-11-18-23-13  
 #### ОСБ / Аксиомы
-
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B0%D0%BA%D1%81%D0%B8%D0%BE%D0%BC%D1%8B%2F" frameborder="0" ></iframe>
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B0%D0%BA%D1%81%D0%B8%D0%BE%D0%BC%D1%8B%2F" frameborder="0" ></iframe>  
 
 ***
 ###### 2021-11-18-23-03
