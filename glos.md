@@ -4,14 +4,17 @@
 
 <details><summary> ОСБ </summary><blockquote>
 
-<details><summary> Направления </summary><blockquote>   
+<details><summary> Направления </summary><blockquote>  
 
 <details><summary> Теория </summary><blockquote>
 
 1. ЭО
-2. Питание  
-3. Мтб 
-4. Арбалет  
+
+3. Питание  
+
+5. Мтб  
+
+7. Арбалет  
 
 </blockquote></details>
 
