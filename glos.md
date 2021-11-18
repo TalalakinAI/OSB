@@ -3,9 +3,9 @@
 
 <!-- blank line -->
 <figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
-<!-- blank line -->
+<!-- blank line -->  
 
 <details><summary> ОСБ </summary><blockquote>
 
