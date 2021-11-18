@@ -5,6 +5,11 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-11-18-23-03
+#### ОСБ / А в Москве выпал снег...  
+<iframe src="https://audiomack.com/embed/song/atalalakin/snow0" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+
+***
 ###### 2021-11-18-16-06
 #### ОСБ / Аммиачная интоксикация  
 <!-- blank line -->
