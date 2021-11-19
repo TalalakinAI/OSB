@@ -5,6 +5,11 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-11-19-06-01
+#### ОСБ / Шекспир. 8 Сонетов.
+<iframe src="https://audiomack.com/embed/song/atalalakin/8sonetov?color=ff0000" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+
+***
 ###### 2021-11-18-23-31
 #### ОСБ / ПУТЕВОДИТЕЛЬ
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%2F" frameborder="0" ></iframe>  
