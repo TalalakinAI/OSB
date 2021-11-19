@@ -6,7 +6,7 @@
 
 ***
 ###### 2021-11-19-08-48  
-#### ОСБ / Ш и Т-перекос. Основы субстратной коррекции!
+#### ОСБ / Основы субстратной коррекции Ш и Т-перекоса! 
 <figure class="video_container">
 <iframe src="https://www.youtube.com/embed/X6ElFHad7i0" frameborder="0" width="100%" height="100%" allowfullscreen="true"> </iframe>
 </figure>
