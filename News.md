@@ -5,6 +5,14 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-11-19-08-48  
+#### ОСБ / Ш и Т-перекос. Основы субстратной коррекции!
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/X6ElFHad7i0" frameborder="0" width="100%" height="100%" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->   
+
+***
 ###### 2021-11-19-07-49  
 #### ОСБ / Динамика вчерашней истории про криз и зыбкое пограничье.
 ![](https://telegra.ph/file/8163893a7d6707b86eda6.jpg)
