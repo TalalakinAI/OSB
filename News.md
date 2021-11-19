@@ -12,7 +12,7 @@
 </figure>
 <!-- blank line -->   
 
-<details markdown='1'>
+> <details markdown='1'>
 > <summary>Трофология острого и хр. стресса</summary>  
 > 
 > ![](https://telegra.ph/file/f02120b5f6e609744e37e.jpg)
