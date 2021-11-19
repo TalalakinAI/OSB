@@ -5,6 +5,13 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-11-19-07-49  
+#### ОСБ / Динамика вчерашней истории про криз и зыбкое пограничье.
+#### [ОСБ / Ваши мысли?]()
+![](https://telegra.ph/file/8163893a7d6707b86eda6.jpg)
+![](https://telegra.ph/file/d9de3c1cad2f4769bc91c.jpg)
+
+***
 ###### 2021-11-19-06-01
 #### ОСБ / Шекспир. 8 Сонетов.
 <iframe src="https://audiomack.com/embed/song/atalalakin/8sonetov?color=ff0000" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
