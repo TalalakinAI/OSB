@@ -16,7 +16,7 @@
 > <summary>Трофология острого и хрон. стресса ↓</summary>  
 > 
 > ![](https://telegra.ph/file/f02120b5f6e609744e37e.jpg)
-> </details>  
+> </details> 
 
 ***
 ###### 2021-11-19-07-49  
@@ -25,7 +25,7 @@
 ![](https://telegra.ph/file/8163893a7d6707b86eda6.jpg)
 
 > <details markdown='1'>
-> <summary></summary>  
+> <summary> Почасовой экспресс-отчет ↓ </summary>  
 > 
 > ![](https://telegra.ph/file/d9de3c1cad2f4769bc91c.jpg)
 > </details>
