@@ -13,7 +13,7 @@
 <!-- blank line -->   
 
 > <details markdown='1'>
-> <summary></summary>  
+> <summary>Трофология острого и хронического стресса</summary>  
 > 
 > ![](https://telegra.ph/file/f02120b5f6e609744e37e.jpg)
 > </details>  
