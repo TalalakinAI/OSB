@@ -15,7 +15,7 @@
       },
       "format": {
         "enabled": true,
-        "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### ОСБ / \n#### [ОСБ / ]()\n![]()\n"
+        "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### ОСБ / \n#### [ОСБ / ]()\n![]()\n![]()\n\n<details markdown='1'>\n<summary></summary>  \n\n![]()\n</details>  "
       },
       "insertAfter": {
         "enabled": true,
@@ -84,6 +84,40 @@
       "format": {
         "enabled": true,
         "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### Вопрос:\n>\n\n#### А. И. Талалакин:\n>\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "af958a78-4004-416a-92aa-2c7b96236175",
+      "name": "Видео",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "<!-- blank line -->\n<figure class=\"video_container\">\n<iframe src=\"https://www.youtube.com/embed/VnH_kyIjy3c\" frameborder=\"0\" allowfullscreen=\"true\"> </iframe>\n</figure>\n<!-- blank line -->   "
       },
       "insertAfter": {
         "enabled": false,

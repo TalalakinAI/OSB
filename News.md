@@ -10,12 +10,13 @@
 <figure class="video_container">
 <iframe src="https://www.youtube.com/embed/X6ElFHad7i0" frameborder="0" width="100%" height="100%" allowfullscreen="true"> </iframe>
 </figure>
-<!-- blank line -->    
-<details markdown='1'>
-<summary></summary>  
+<!-- blank line -->   
 
-![](https://telegra.ph/file/f02120b5f6e609744e37e.jpg)
-</details>  
+> <details markdown='1'>
+> <summary></summary>  
+> 
+> ![](https://telegra.ph/file/f02120b5f6e609744e37e.jpg)
+> </details>  
 
 ***
 ###### 2021-11-19-07-49  
