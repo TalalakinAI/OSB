@@ -77,12 +77,19 @@
 
 <details><summary> Библиотека </summary><blockquote>
 
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> 
+ОСБ / Об особенностях работы
+</figure>
+<!-- blank line -->    
 
-ОСБ / Энергия, движение, здоровье   
+
 
 <!-- blank line -->
 <figure class="video_container">
-<iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>
+<iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe> 
+ОСБ / Энергия, движение, здоровье   
 </figure>
 <!-- blank line -->   
 

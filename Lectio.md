@@ -14,7 +14,7 @@
 
 <!-- blank line -->
 <figure class="video_container">
-<iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe>
+<iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> ОСБ / Об особенностях работы
 </figure>
 <!-- blank line -->    
 
