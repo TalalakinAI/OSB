@@ -19,6 +19,26 @@
 
 <details><summary> ОСБ </summary><blockquote>
 
+<details><summary> Лекции </summary><blockquote>
+
+<!-- blank line -->
+<figure class="video_container">
+Об особенностях работы
+<iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> 
+</figure>
+<!-- blank line -->    
+
+
+<!-- blank line -->
+<figure class="video_container">
+Энергия, движение, здоровье
+<iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>    
+</figure>
+<!-- blank line -->   
+
+</blockquote></details>
+
+
 <details><summary> Направления </summary><blockquote>   
 
 <details><summary> Теория </summary><blockquote>  
@@ -75,30 +95,6 @@
 ~~~
 </blockquote></details>
 
-<details><summary> Библиотека </summary><blockquote>
-
-<!-- blank line -->
-<figure class="video_container">
-Об особенностях работы
-<iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> 
-</figure>
-<!-- blank line -->    
-
-
-
-<!-- blank line -->
-<figure class="video_container">
-<iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe> 
-Энергия, движение, здоровье   
-</figure>
-<!-- blank line -->   
-
-~~~
-1. 
-2. 
-3. 
-~~~
-</blockquote></details>
 
 <details><summary> FAQ </summary><blockquote>
 
