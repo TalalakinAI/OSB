@@ -12,6 +12,12 @@
 [![](https://i.ytimg.com/vi_webp/WGZL00VWwgg/maxresdefault.webp)](https://youtu.be/WGZL00VWwgg)   
 
 
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->    
+
 ***  
 ###### putevod 
 #### [ОСБ / Путеводитель](https://youtube.com/playlist?list=PLZfvuj_2FzFo3Ng8QJ78yQP2Vr1lOE5Eq)  

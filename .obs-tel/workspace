@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "glos.md",
+            "file": "Lectio.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "glos.md",
+            "file": "Lectio.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "glos.md",
+            "file": "Lectio.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "glos.md"
+            "file": "Lectio.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "Lectio.md",
+    "!0SB.md",
+    "Library.md",
     "glos.md",
     "News.md",
-    "Library.md",
-    "!0SB.md",
     "e20211122.md",
     "a20211107.md",
     "otziv.md",
     "!0SB_Instructio.md",
-    "e20211117.md",
-    "a20211111.md"
+    "e20211117.md"
   ]
 }
