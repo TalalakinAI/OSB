@@ -3,7 +3,7 @@
 
 ***  
 
-<details><summary> ОСБ </summary><blockquote>
+<details open><summary> ОСБ </summary><blockquote>
 
 <details><summary> Видео </summary><blockquote>
 
