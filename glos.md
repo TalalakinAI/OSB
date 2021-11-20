@@ -6,28 +6,29 @@
 
 <details><summary> Видео </summary><blockquote>
 
-<!-- blank line -->
 Об особенностях работы
+<!-- blank line -->
 <figure class="video_container">
 <iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> 
 </figure>
 <!-- blank line -->    
 
+Энергия, движение, здоровье
 <!-- blank line -->
-<figure class="video_container">
-Энергия, движение, здоровье  
+<figure class="video_container">  
 <iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>    
 </figure>
 <!-- blank line -->   
 
+Путеводитель ч. 1  
 <!-- blank line -->
 <figure class="video_container">
-Путеводитель ч. 1  
 <iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0"  allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->    
 
 </blockquote></details>
+
 
 <details><summary> Аудио </summary><blockquote>
 
