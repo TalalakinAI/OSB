@@ -7,21 +7,13 @@
 
 <details><summary> Видео </summary><blockquote>
 
-Об особенностях работы  
+Об особенностях работы   
 
 <!-- blank line -->
 <figure class="video_container">
 <iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> 
 </figure>
 <!-- blank line -->    
-
-Энергия, движение, здоровье  
-
-<!-- blank line -->
-<figure class="video_container">  
-<iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>    
-</figure>
-<!-- blank line -->   
 
 Путеводитель ч. 1  
 
@@ -30,6 +22,86 @@
 <iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0"  allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->    
+
+Путеводитель ч. 2  
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/s6FsxhP06GM" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->    
+
+Путеводитель ч. 3  
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/FMeccY1epsI" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
+Путеводитель ч. 4  
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/35fSdlJDTEc" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
+Путеводитель ч. 5  
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/FcOuHy2oL8E" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
+Путеводитель ч. 6  
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/ssBBC-uB5cI" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
+Путеводитель ч. 7  
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/p7acjlB1ip8" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->  
+
+Путеводитель ч. 8  
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/wm_Gv--WHeg" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->  
+
+Путеводитель ч. 9  
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/cwY-Vti1T20" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->  
+
+Путеводитель ч. 10  
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/ts0m8t3_HDg" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->  
+
+Энергия, движение, здоровье  
+
+<!-- blank line -->
+<figure class="video_container">  
+<iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>    
+</figure>
+<!-- blank line -->   
 
 </blockquote></details>
 
