@@ -1,19 +1,13 @@
 ###### glos 
 ##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 
-<!-- blank line -->
-<figure class="video_container">
-<iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0" width="100%" height="auto" allowfullscreen="true"> </iframe>
-</figure>
-<!-- blank line -->    
-
 <audio controls="controls">
   <source type="audio/mp3" src="filename.mp3"></source>
   <source type="audio/ogg" src="filename.ogg"></source>
   <p>Your browser does not support the audio element.</p>
 </audio>  
 
-- [OSB-2021](OSB-2021.m3u8) 
+- [OSB-2021](OSB-2021.m3u8)  
 
 ***
 
@@ -34,6 +28,13 @@
 <iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>    
 </figure>
 <!-- blank line -->   
+
+<!-- blank line -->
+<figure class="video_container">
+Путеводитель ч. 1
+<iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0"  allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->    
 
 </blockquote></details>
 
