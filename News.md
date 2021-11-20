@@ -9,6 +9,12 @@
 #### ОСБ / Зелёный коридор возможностей
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9%2F" frameborder="0" ></iframe>
 
+> <details markdown='1'>
+> <summary>Подробнее ↓</summary>  
+> 
+> Система активного восстановления здоровья ОСБ *(полная версия 3:17:53).*  
+> </details>   
+
 ***
 ###### 2021-11-20-05-19  
 #### ОСБ / Энергия, движение, здоровье  
