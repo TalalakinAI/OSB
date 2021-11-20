@@ -35,10 +35,17 @@
 </figure>
 <!-- blank line -->   
 
+</blockquote></details>
+
+<details><summary> Аудио </summary><blockquote>
+
 ОСБ / ПУТЕВОДИТЕЛЬ  
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%2F" frameborder="0" ></iframe>  
 
-</blockquote></details>
+ОСБ / Аксиомы
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B0%D0%BA%D1%81%D0%B8%D0%BE%D0%BC%D1%8B%2F" frameborder="0" ></iframe>  
+
+</blockquote></details>  
 
 
 <details><summary> Направления </summary><blockquote>   
@@ -69,15 +76,6 @@
 ~~~
 </blockquote></details>
 
-<details><summary> Ссылки </summary><blockquote>
-
-~~~
-1. 
-2. 
-3. 
-4. 
-~~~
-</blockquote></details>
 
 <details><summary> Отзывы </summary><blockquote>
 
