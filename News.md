@@ -5,6 +5,23 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-11-20-05-19
+#### ОСБ / Энергия, движение, здоровье
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
+<!-- blank line -->   
+> <details markdown='1'>
+> <summary>Подробнее ↓</summary>  
+> 
+> Ключевые аспекты системы активного восстановления здоровья на базе принципов ОСБ.
+> </details>  
+
+
+***
 ###### 2021-11-19-08-48  
 #### ОСБ / Основы субстратной коррекции Ш и Т
 <figure class="video_container">
