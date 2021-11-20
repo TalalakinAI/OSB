@@ -2,18 +2,21 @@
 ##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 
 ***  
+
 <details><summary> ОСБ </summary><blockquote>
 
 <details><summary> Видео </summary><blockquote>
 
-Об особенностях работы
+Об особенностях работы  
+
 <!-- blank line -->
 <figure class="video_container">
 <iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> 
 </figure>
 <!-- blank line -->    
 
-Энергия, движение, здоровье
+Энергия, движение, здоровье  
+
 <!-- blank line -->
 <figure class="video_container">  
 <iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>    
@@ -21,6 +24,7 @@
 <!-- blank line -->   
 
 Путеводитель ч. 1  
+
 <!-- blank line -->
 <figure class="video_container">
 <iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0"  allowfullscreen="true"> </iframe>
