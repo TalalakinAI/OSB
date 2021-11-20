@@ -8,21 +8,21 @@
 
 <!-- blank line -->
 <figure class="video_container">
-Об особенностях работы
+Об особенностях работы  
 <iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> 
 </figure>
 <!-- blank line -->    
 
 <!-- blank line -->
 <figure class="video_container">
-Энергия, движение, здоровье
+Энергия, движение, здоровье  
 <iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>    
 </figure>
 <!-- blank line -->   
 
 <!-- blank line -->
 <figure class="video_container">
-Путеводитель ч. 1
+Путеводитель ч. 1  
 <iframe src="https://www.youtube.com/embed/VnH_kyIjy3c" frameborder="0"  allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->    
