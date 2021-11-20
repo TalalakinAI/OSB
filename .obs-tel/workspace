@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "glos.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -130,9 +130,9 @@
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
     "glos.md",
+    "News.md",
     "Library.md",
     "!0SB.md",
-    "News.md",
     "e20211122.md",
     "a20211107.md",
     "otziv.md",
