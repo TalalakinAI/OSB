@@ -23,15 +23,6 @@
 
 <details><summary> Теория </summary><blockquote>  
 
-#### ОСБ / Энергия, движение, здоровье   
-
-<!-- blank line -->
-<figure class="video_container">
-<iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
-<!-- blank line -->   
-
 1. ЭО   
 2. Питание   
 3. Мтб   
@@ -85,6 +76,15 @@
 </blockquote></details>
 
 <details><summary> Библиотека </summary><blockquote>
+
+
+ОСБ / Энергия, движение, здоровье   
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->   
 
 ~~~
 1. 
