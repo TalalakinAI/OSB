@@ -79,8 +79,8 @@
 
 <!-- blank line -->
 <figure class="video_container">
+Об особенностях работы
 <iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> 
-ОСБ / Об особенностях работы
 </figure>
 <!-- blank line -->    
 
@@ -89,7 +89,7 @@
 <!-- blank line -->
 <figure class="video_container">
 <iframe src="https://www.youtube.com/embed/Y9kZ3HNXxWo" frameborder="0" allowfullscreen="true"> </iframe> 
-ОСБ / Энергия, движение, здоровье   
+Энергия, движение, здоровье   
 </figure>
 <!-- blank line -->   
 
