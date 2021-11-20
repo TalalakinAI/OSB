@@ -8,7 +8,9 @@
 
 <!-- blank line -->
 <figure class="video_container">
+
 Об особенностях работы  
+
 <iframe src="https://www.youtube.com/embed/WGZL00VWwgg" frameborder="0" allowfullscreen="true"> </iframe> 
 </figure>
 <!-- blank line -->    
