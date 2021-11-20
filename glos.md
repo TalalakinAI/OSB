@@ -51,61 +51,16 @@
 <details><summary> Направления </summary><blockquote>   
 
 <details><summary> Теория </summary><blockquote>  
-
-1. ЭО   
-2. Питание   
-3. Мтб   
-4. Арбалет  
-
+1. 
+1. 
 </blockquote></details>   
 
 <details><summary> Практика </summary><blockquote>
-
-~~~
-
-1.  
-2.  
-3.  
-~~~
-</blockquote></details>
-
-~~~
 1. 
-2. 
-3. 
-~~~
-</blockquote></details>
-
-
-<details><summary> Отзывы </summary><blockquote>
-
-~~~
 1. 
-2. 
-3. 
-~~~
 </blockquote></details>
-
-<details><summary>  Инструкции </summary><blockquote>
-
-~~~
-1. 
-2. 
-3. 
-~~~
 </blockquote></details>
-
-
-<details><summary> FAQ </summary><blockquote>
-
-~~~
-1. 
-2. 
-3. 
-~~~
-</blockquote></details>
-
-</blockquote></details>
+</blockquote></details>  
 
 
 ***
