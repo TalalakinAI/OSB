@@ -1,16 +1,7 @@
 ###### glos 
 ##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 
-<audio controls="controls">
-  <source type="audio/mp3" src="filename.mp3"></source>
-  <source type="audio/ogg" src="filename.ogg"></source>
-  <p>Your browser does not support the audio element.</p>
-</audio>  
-
-- [OSB-2021](OSB-2021.m3u8)  
-
-***
-
+***  
 <details><summary> ОСБ </summary><blockquote>
 
 <details><summary> Лекции </summary><blockquote>
@@ -71,6 +62,7 @@
 
 |  Сокр. | Расшифровка  |
 | --- | --- |
+[OSB-2021](OSB-2021.m3u8) | Радио
 3D | Ш-перекос
 5D | балансное состояние
 7D | Т-перекос
