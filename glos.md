@@ -4,7 +4,7 @@
 ***  
 <details><summary> ОСБ </summary><blockquote>
 
-<details><summary> Лекции </summary><blockquote>
+<details><summary> Видео </summary><blockquote>
 
 <!-- blank line -->
 <figure class="video_container">
@@ -39,19 +39,6 @@
 
 </blockquote></details>  
 
-
-<details><summary> Направления </summary><blockquote>   
-
-<details><summary> Теория </summary><blockquote>  
-1. 
-1. 
-</blockquote></details>   
-
-<details><summary> Практика </summary><blockquote>
-1. 
-1. 
-</blockquote></details>
-</blockquote></details>
 </blockquote></details>  
 
 
