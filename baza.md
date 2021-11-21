@@ -3,7 +3,32 @@
 
 ***
 
-<details><summary> ОСБ </summary><blockquote>
+<details open><summary> ОСБ </summary><blockquote>
+
+<details><summary> Аудио </summary><blockquote>
+
+ОСБ / ПУТЕВОДИТЕЛЬ   
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%2F" frameborder="0" ></iframe>  
+
+ОСБ / Аксиомы
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B0%D0%BA%D1%81%D0%B8%D0%BE%D0%BC%D1%8B%2F" frameborder="0" ></iframe>  
+
+ОСБ / Зелёный коридор возможностей
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9%2F" frameborder="0" ></iframe>
+
+ОСБ / По образу и подобию
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D0%BE-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83-%D0%B8-%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D1%8E-%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B0-%D0%B0%D1%83%D0%B4%D0%B8%D0%BE-%D0%B2%D1%81%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D0%B8%2F" frameborder="0" ></iframe>
+
+ОСБ / Тирозиновая коробка передач
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D1%81%D1%82%D1%80%D0%B5%D1%81%D1%81-%D1%82%D0%B8%D1%80%D0%BE%D0%B7%D0%B8%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F-%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%2F" frameborder="0" ></iframe>
+
+ОСБ / Гипотиреоз. АИТ.  
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B3%D0%B8%D0%BF%D0%BE%D1%82%D0%B8%D1%80%D0%B5%D0%BE%D0%B7-%D0%B0%D0%B8%D1%82%2F" frameborder="0" ></iframe>
+
+ОСБ / Все намного проще  
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BE%D1%81%D1%8B-%D0%BA%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2F" frameborder="0" ></iframe>
+
+</blockquote></details>  
 
 <details><summary> Видео </summary><blockquote>
 
@@ -105,31 +130,6 @@
 
 </blockquote></details>
 
-
-<details><summary> Аудио </summary><blockquote>
-
-ОСБ / ПУТЕВОДИТЕЛЬ  
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%2F" frameborder="0" ></iframe>  
-
-ОСБ / Аксиомы
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B0%D0%BA%D1%81%D0%B8%D0%BE%D0%BC%D1%8B%2F" frameborder="0" ></iframe>  
-
-ОСБ / Зелёный коридор возможностей
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9%2F" frameborder="0" ></iframe>
-
-ОСБ / По образу и подобию
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D0%BE-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83-%D0%B8-%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D1%8E-%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B0-%D0%B0%D1%83%D0%B4%D0%B8%D0%BE-%D0%B2%D1%81%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D0%B8%2F" frameborder="0" ></iframe>
-
-ОСБ / Тирозиновая коробка передач
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D1%81%D1%82%D1%80%D0%B5%D1%81%D1%81-%D1%82%D0%B8%D1%80%D0%BE%D0%B7%D0%B8%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F-%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%2F" frameborder="0" ></iframe>
-
-ОСБ / Гипотиреоз. АИТ.  
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B3%D0%B8%D0%BF%D0%BE%D1%82%D0%B8%D1%80%D0%B5%D0%BE%D0%B7-%D0%B0%D0%B8%D1%82%2F" frameborder="0" ></iframe>
-
-ОСБ / Все намного проще  
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BE%D1%81%D1%8B-%D0%BA%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2F" frameborder="0" ></iframe>
-
-</blockquote></details>  
 </blockquote></details>
 
 ***
