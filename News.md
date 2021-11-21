@@ -12,8 +12,7 @@
 > <details markdown='1'>
 > <summary>Подробнее ↓</summary>  
 > 
-> Стресс или реакция активации  
-> *(полная версия 2:12:45).*  
+> Стресс или реакция активации  *(2:12:45).*  
 > 
 > ![](https://telegra.ph/file/f064dcc06f67628df0170.jpg)
 > ![](https://telegra.ph/file/32d84d137fe5438f474c3.jpg)
