@@ -1,5 +1,5 @@
 ###### baza
-##### [← Дом](!0SB.md#osb)  | [News](News.md#news)  
+##### [← дом](!0SB.md#osb)  |  [news →](News.md#news)  
 
 ***
 
