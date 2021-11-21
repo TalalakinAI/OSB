@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "e20211122.md",
+            "file": "baza.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "e20211122.md",
+            "file": "baza.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "e20211122.md",
+            "file": "baza.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "e20211122.md"
+            "file": "baza.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "e20211122.md",
-    "News.md",
+    "baza.md",
     "glos.md",
+    "faq.md",
     "Lectio.md",
     "!0SB.md",
+    "e20211122.md",
+    "!AI_kon.gif",
+    "News.md",
     "Library.md",
-    "a20211107.md",
-    "otziv.md",
-    "!0SB_Instructio.md",
-    "e20211117.md"
+    "a20211107.md"
   ]
 }
