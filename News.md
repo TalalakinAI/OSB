@@ -5,6 +5,16 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-11-21-20-52
+#### ОСБ / Сказки у Камина
+![]()
+[OSB-2021](OSB-2021.m3u8) | Радио-вещание через AIMP
+
+> <details markdown='1'>
+> <summary>Подробнее ↓</summary>  
+>  тестовое включение
+> </details>  
+***
 ###### 2021-11-21-11-22  
 #### ОСБ / Здоровье. Уровень СБК.
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B7%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B5-%D1%83%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C-%D1%81%D0%B1%D0%BA%2F" frameborder="0" ></iframe>
