@@ -1,6 +1,8 @@
 ###### baza
 ##### [← Дом](!0SB.md#osb)  | [News](News.md#news)  
 
+![Архив](https://telegra.ph/file/ca4b6b6f05f5cef53a6cf.jpg)  
+
 ***
 
 <details open><summary> ОСБ </summary><blockquote>
