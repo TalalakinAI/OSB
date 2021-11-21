@@ -13,7 +13,7 @@
 Старые больше не принимаются! 
 </span>
 
-![Arbalet](ArbaletEP.jpg)  
+![Arbalet](ArbaletEP.jpg)   
 
 ***
 ###### 2021-11-16-19-18
