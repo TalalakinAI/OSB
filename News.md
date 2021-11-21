@@ -1,5 +1,5 @@
 ###### News   
-###### [← Дом](!0SB.md#osb) |  [glos →](glos.md#glos)
+###### [← дом](!0SB.md#osb) | [база](baza.md#baza) | [glos →](glos.md#glos)
 
 ***   
 ### ОСБ. НОВОСТИ.  
