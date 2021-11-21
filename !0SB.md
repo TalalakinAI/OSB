@@ -6,6 +6,7 @@
 [ИНСТРУКЦИИ](!0SB_Instructio.md#0sb_instructio)  
 [НОВОСТИ](News.md#news)  
 [ОТЗЫВЫ](otziv.md#otziv)   
+[БАЗА](baza.md#baza)  
 
 ***  
 [Лекции, эфиры, включения](Lectio.md#lectio)   

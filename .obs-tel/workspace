@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "baza.md",
+            "file": "!0SB.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "baza.md",
+            "file": "!0SB.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "baza.md",
+            "file": "!0SB.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "baza.md"
+            "file": "!0SB.md"
           }
         }
       },
@@ -129,11 +129,11 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "!0SB.md",
     "baza.md",
     "glos.md",
     "faq.md",
     "Lectio.md",
-    "!0SB.md",
     "e20211122.md",
     "!AI_kon.gif",
     "News.md",
