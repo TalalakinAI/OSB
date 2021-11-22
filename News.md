@@ -8,8 +8,8 @@
 ###### 2021-11-21-20-52
 #### ОСБ / Сказки у Камина  
 
-![](https://telegra.ph/file/5bd715d01d2fd55c5aeda.jpg)
-[OSB-2021](OSB-2021.m3u8) | Радио-вещание (AIMP)
+![](https://telegra.ph/file/7ee17e710efbd59e72101.jpg)
+[OSB-2021](OSB-2021.m3u8) | Радио-вещание (AIMP) 
 
 > <details markdown='1'>
 > <summary>Подробнее ↓</summary>  
