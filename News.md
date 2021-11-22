@@ -6,7 +6,7 @@
 
 ***  
 ###### 2021-11-22-04-52
-#### ОСБ / Сказки у Камина "На пороге".
+#### ОСБ / Сказки у Камина "На пороге"
 
 <iframe src="https://audiomack.com/embed/song/atalalakin/na-poroge" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
