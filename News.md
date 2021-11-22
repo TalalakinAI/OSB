@@ -14,6 +14,7 @@
 > 
 > *(полная версия 4:51:10).*   
 > ![](https://telegra.ph/file/591dc1e98963a1b24f844.jpg)
+> [Arbalet](Arbalet.md#osb_arbalet)  
 > </details>
 
 ***  
