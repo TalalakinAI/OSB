@@ -7,7 +7,7 @@
 
 <details><summary> Аудио </summary><blockquote>
 
-ОСБ / ПУТЕВОДИТЕЛЬ   
+ОСБ / ПУТЕВОДИТЕЛЬ  
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%2F" frameborder="0" ></iframe>  
 
 ОСБ / Аксиомы
@@ -33,6 +33,9 @@
 
 ОСБ / Невидимые причины болезней  
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BD%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D1%87%D0%B8%D0%BD%D1%8B-%D0%B1%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%B5%D0%B9%2F" frameborder="0" ></iframe>
+
+ОСБ / Метаболические Шустрики и Тормоза  
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BC%D0%B5%D1%82%D0%B0%D0%B1%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%88%D1%83%D1%81%D1%82%D1%80%D0%B8%D0%BA%D0%B8-%D0%B8-%D1%82%D0%BE%D1%80%D0%BC%D0%BE%D0%B7%D0%B0%2F" frameborder="0" ></iframe> 
 
 </blockquote></details>  
 
