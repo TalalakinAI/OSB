@@ -25,3 +25,5 @@
 </blockquote></details>
 
 ***
+
+![](https://telegra.ph/file/977758b621710766139ad.jpg)
