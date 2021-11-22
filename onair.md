@@ -2,7 +2,7 @@
 ##### [← дом](!0SB.md#osb)  |  [news →](News.md#news)    
 
 ***
-<details open><summary> ON AIR </summary><blockquote>
+<details><summary> ON AIR </summary><blockquote>
 
 <details><summary> Сказки у Камина </summary><blockquote>
 
