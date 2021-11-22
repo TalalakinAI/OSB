@@ -6,7 +6,7 @@
 
 ***  
 ###### 2021-11-22-04-52
-#### ОСБ / Сказки у Камина "На пороге"
+#### ОСБ / Сказки у Камина "На пороге" 
 
 <iframe src="https://audiomack.com/embed/song/atalalakin/na-poroge" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
@@ -20,7 +20,8 @@
 #### ОСБ / Сказки у Камина (эфир)  
 
 ![](https://telegra.ph/file/7ee17e710efbd59e72101.jpg)
-[OSB-2021](OSB-2021.m3u8) | Радио-вещание (AIMP) 
+[OSB-21](OSB-2021.m3u8) | Радио-вещание (AIMP)  
+[ON_AIR](onair.md#onair) | Записи из студии
 
 > <details markdown='1'>
 > <summary>Подробнее ↓</summary>  
