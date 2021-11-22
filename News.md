@@ -162,8 +162,8 @@
 
 ***
 ###### 2021-11-19-06-01
-#### ОСБ / Шекспир. 8 Сонетов.
-<iframe src="https://audiomack.com/embed/song/atalalakin/8sonetov?color=ff0000" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+#### ON AIR / Шекспир. 8 Сонетов.
+<iframe src="https://audiomack.com/embed/song/atalalakin/8sonetov" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
 ***
 ###### 2021-11-18-23-31
