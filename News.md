@@ -55,11 +55,11 @@
 > ![](https://telegra.ph/file/53f6b6f4df94581330d9c.jpg)
 > </details>
 
-***
-***
+***  
+***  
 
 <details markdown='1'>
-<summary></summary>  
+<summary>РАНЕЕ:</summary>  
 
 ###### 2021-11-22-14-34
 #### ОСБ / Метаболические Шустрики и Тормоза  
