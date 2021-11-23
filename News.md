@@ -57,7 +57,7 @@
 
 ***  
 
-<%+ tp.file.last_modified_date("YYYY-MM-DD") %>
+`<%+ tp.file.last_modified_date("YYYY-MM-DD") %>`
 
 <details markdown='1'>
 <summary>РАНЕЕ:</summary>  
