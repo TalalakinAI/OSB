@@ -21,7 +21,7 @@
 
 ***
 ###### 2021-11-23-04-34
-#### ОСБ / Самолечение против Жизни...  
+#### ОСБ / Самолечение против Жизни... 
 ![Промеры](https://telegra.ph/file/a2732b2a3d90cadb03a01.jpg)  
 > [Фрагмент эфира от 22.11.2021](https://t.me/c/1484776022/46104)
 
@@ -73,8 +73,10 @@
 <iframe src="https://audiomack.com/embed/song/atalalakin/belij-sneg" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
 <details markdown='1'>
-<summary>РАНЕЕ:</summary>  
-  
+<summary>РАНЕЕ:</summary>    
+
+
+
 ###### 2021-11-22-06-34
 #### ОСБ / Невидимые причины болезней  
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BD%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D1%87%D0%B8%D0%BD%D1%8B-%D0%B1%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%B5%D0%B9%2F" frameborder="0" ></iframe> 
@@ -222,6 +224,7 @@
 
 
 ###### 2021-11-19-07-49  
+
 #### ОСБ / Динамика вчерашней истории с кризом.
 
 ![](https://telegra.ph/file/8163893a7d6707b86eda6.jpg)
