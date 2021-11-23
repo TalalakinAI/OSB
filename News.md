@@ -14,9 +14,9 @@
 > <details markdown='1'>
 > <summary>Подробнее ↓</summary>  
 > 
-> 1. ? 
-> 1. ? 
-> 1. ?
+> 1. 
+> 1. 
+> 1. 
 > </details>  
 
 ***
