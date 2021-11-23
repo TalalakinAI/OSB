@@ -135,6 +135,40 @@
       },
       "openFile": false,
       "openFileInMode": "default"
+    },
+    {
+      "id": "232ff5b1-049b-4526-b504-f49ec462c3c2",
+      "name": "РАНЕЕ",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "<details markdown='1'>\n<summary>РАНЕЕ:</summary> \n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
     }
   ],
   "macros": []
