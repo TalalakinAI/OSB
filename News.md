@@ -7,7 +7,7 @@
 ***
 ###### 2021-11-23-15-16
 #### [ОСБ / Буферные растворы](https://t.me/osbmd/3176)
-> 1. Что такое буферные растворы?   
+> 1. Что такое буферные растворы?  
 > 1. Что такое лимонАТ?   
 > 1. Как работает?  
 
@@ -26,7 +26,7 @@
 > [Фрагмент эфира от 22.11.2021](https://t.me/c/1484776022/46104)
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > ***
 > ###### 2021-11-17-23-36  
@@ -61,7 +61,7 @@
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BC%D0%B5%D1%82%D0%B0%D0%B1%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%88%D1%83%D1%81%D1%82%D1%80%D0%B8%D0%BA%D0%B8-%D0%B8-%D1%82%D0%BE%D1%80%D0%BC%D0%BE%D0%B7%D0%B0%2F" frameborder="0" ></iframe> 
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > Биоэнергетика клетки, АТФ, 2 типа энергодефицита *(полная версия 1:04:22).*   
 > </details>
@@ -78,7 +78,7 @@
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BD%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D1%87%D0%B8%D0%BD%D1%8B-%D0%B1%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%B5%D0%B9%2F" frameborder="0" ></iframe> 
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > *(полная версия 4:51:10).*   
 > ![](https://telegra.ph/file/591dc1e98963a1b24f844.jpg)
@@ -92,7 +92,7 @@
 <iframe src="https://audiomack.com/embed/song/atalalakin/na-poroge" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > Аудио-зарисовка с Большой Воды.  
 > </details>   
 
@@ -105,7 +105,7 @@
 [ON_AIR](onair.md#onair) | Записи из студии
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 >  эфир завершен   
 > </details>   
 
@@ -115,7 +115,7 @@
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B7%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B5-%D1%83%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C-%D1%81%D0%B1%D0%BA%2F" frameborder="0" ></iframe>
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > Горизонталь соматических проявлений *(полная версия 2:56:57).*  
 > </details>
@@ -126,7 +126,7 @@
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BE%D1%81%D1%8B-%D0%BA%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2F" frameborder="0" ></iframe> 
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > Отдельный взгляд на природу болезней человека *(полная версия 3:35:13).*  
 > </details>
@@ -137,7 +137,7 @@
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B3%D0%B8%D0%BF%D0%BE%D1%82%D0%B8%D1%80%D0%B5%D0%BE%D0%B7-%D0%B0%D0%B8%D1%82%2F" frameborder="0" ></iframe>
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > Щитовидная железа и проявления системного перекоса *(4:21:09).*  
 > </details>
@@ -148,7 +148,7 @@
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D1%81%D1%82%D1%80%D0%B5%D1%81%D1%81-%D1%82%D0%B8%D1%80%D0%BE%D0%B7%D0%B8%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F-%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%2F" frameborder="0" ></iframe>
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > Стресс или реакция активации  *(2:12:45).*  
 > 
@@ -162,7 +162,7 @@
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%BF%D0%BE-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83-%D0%B8-%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D1%8E-%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B0-%D0%B0%D1%83%D0%B4%D0%B8%D0%BE-%D0%B2%D1%81%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D0%B8%2F" frameborder="0" ></iframe>
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > Сердце как эталон рабочего мышечного органа в режиме non stop *(полная версия 3:42:32).*  
 > </details>   
@@ -174,7 +174,7 @@
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FATalalakin%2F%D0%BE%D1%81%D0%B1-%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9%2F" frameborder="0" ></iframe>
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > Система активного восстановления здоровья ОСБ *(полная версия 3:17:53).*  
 > </details>   
@@ -190,7 +190,7 @@
 
 <!-- blank line -->   
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > Ключевые аспекты системы активного восстановления здоровья на базе принципов ОСБ *(полная версия 4:13:20).*  
 > </details>  
@@ -205,7 +205,7 @@
 <!-- blank line -->   
 
 > <details markdown='1'>
-> <summary>Трофология острого и хрон. стресса ↓</summary>  
+> <summary>Трофология острого и хрон. стресса ↓↑</summary>  
 > 
 > ![](https://telegra.ph/file/f02120b5f6e609744e37e.jpg)
 > </details> 
@@ -217,7 +217,7 @@
 ![](https://telegra.ph/file/8163893a7d6707b86eda6.jpg)
 
 > <details markdown='1'>
-> <summary> Почасовой экспресс-отчет ↓ </summary>  
+> <summary> Почасовой экспресс-отчет ↓↑ </summary>  
 > 
 > ![](https://telegra.ph/file/d9de3c1cad2f4769bc91c.jpg)
 > </details>
