@@ -72,7 +72,6 @@
 
 <iframe src="https://audiomack.com/embed/song/atalalakin/belij-sneg" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
-***
 
 <details markdown='1'>
 <summary>РАНЕЕ:</summary> 
