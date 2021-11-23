@@ -56,7 +56,6 @@
 > </details>
 
 ***  
-***  
 
 <details markdown='1'>
 <summary>РАНЕЕ:</summary>  
