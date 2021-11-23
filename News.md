@@ -212,7 +212,15 @@
 > ![](https://telegra.ph/file/f02120b5f6e609744e37e.jpg)
 > </details> 
 
-***
+
+
+
+<details markdown='1'>
+<summary>РАНЕЕ:</summary>  
+
+
+
+
 ###### 2021-11-19-07-49  
 #### ОСБ / Динамика вчерашней истории с кризом.
 
