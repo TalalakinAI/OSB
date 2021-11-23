@@ -59,6 +59,7 @@
 
 <details markdown='1'>
 <summary>РАНЕЕ:</summary>  
+'<%+ tp.file.last_modified_date("YYYY-MM-DD HH:mm") %>'   
 
 ###### 2021-11-22-14-34
 #### ОСБ / Метаболические Шустрики и Тормоза  
