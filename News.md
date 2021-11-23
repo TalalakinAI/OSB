@@ -12,7 +12,7 @@
 > 1. Как работает?  
 
 > <details markdown='1'>
-> <summary>Подробнее ↓</summary>  
+> <summary>Подробнее ↓↑</summary>  
 > 
 > 1. 
 > 1. 
