@@ -67,7 +67,7 @@
 	</head>
 
 	<body>
-		<form action="#" method="post">
+		<form action="/my-handling-form-page" method="post">
 			<ul>
 				<li>
 					<label for="name">Name:</label>
@@ -87,4 +87,5 @@
 			</ul>
 		</form>
 	</body>
-</html>
+</html> 
+
