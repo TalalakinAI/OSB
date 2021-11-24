@@ -12,12 +12,12 @@
 > 1. Как работает?  
 
 > <details markdown='1'>
-> <summary>Подробнее ↓↑</summary>  
+> <summary><button>Подробнее ↓↑</button></summary>  
 > 
 > 1. 
 > 1. 
 > 1. 
-> </details>   
+> </details>    
 
 ***
 ###### 2021-11-23-04-34
