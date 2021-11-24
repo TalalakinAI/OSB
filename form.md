@@ -67,7 +67,7 @@
 	</head>
 
 	<body>
-		<form action="https://talalakinai.github.io/OSB/form.html" method="post">
+		<form action="https://mductor.weebly.com/ajax/apps/formSubmitAjax.php" method="post">
 			<ul>
 				<li>
 					<label for="name">Name:</label>
