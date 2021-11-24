@@ -92,8 +92,8 @@
 <form enctype="multipart/form-data" action="https://mductor.weebly.com/ajax/apps/formSubmitAjax.php" method="POST" id="form-326867494739260084" accept-charset="UTF-8" target="form-326867494739260084-target-1637753094238">
     <div id="326867494739260084-form-parent" class="wsite-form-container" style="margin-top:10px;">
       <ul class="formlist" id="326867494739260084-form-list">
-        <label class="wsite-form-label wsite-form-fields-required-label"><span class="form-required">*</span> Означает обязательное поле</label><div><div class="wsite-form-field wsite-name-field" style="margin:5px 0px 5px 0px;">
-        <label class="wsite-form-label"> Имя Отчество Фамилия <span class="form-required">*</span><span class="wsite-instructions-help"></span></label>
+        <label class="wsite-form-label wsite-form-fields-required-label"><span class="form-required"></span></label><div><div class="wsite-form-field wsite-name-field" style="margin:5px 0px 5px 0px;">
+        <label class="wsite-form-label"><span class="form-required"></span><span class="wsite-instructions-help"></span></label>
         <div style="clear:both;"></div>
         <div class="wsite-form-input-container wsite-form-left wsite-form-input-first-name">
           <input aria-required="true" id="input-651828880640408381" class="wsite-form-input wsite-input" placeholder="Имя" type="text" name="_u651828880640408381[first]">
@@ -108,7 +108,7 @@
       <div style="clear:both;"></div></div>
 
 <div><div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
-        <label class="wsite-form-label" for="input-976678287136140335">Адрес электронной почты <span class="form-required">*</span></label>
+        <label class="wsite-form-label" for="input-976678287136140335">Адрес электронной почты <span class="form-required"></span></label>
         <div class="wsite-form-input-container">
           <input aria-required="true" id="input-976678287136140335" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="_u976678287136140335">
         </div>
@@ -116,7 +116,7 @@
       </div></div>
 
 <div><div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
-        <label class="wsite-form-label" for="input-725041284895155450">Суть запроса, кто направил? <span class="form-required">*</span></label>
+        <label class="wsite-form-label" for="input-725041284895155450">Суть запроса, кто направил? <span class="form-required"></span></label>
         <div class="wsite-form-input-container">
           <textarea aria-required="true" id="input-725041284895155450" class="wsite-form-input wsite-input wsite-input-width-370px" name="_u725041284895155450" style="height: 200px"></textarea>
         </div>
@@ -139,3 +139,9 @@
       </a>
     </div>
   </form>
+</form>
+  <div id="g-recaptcha-326867494739260084" class="recaptcha" data-size="invisible" data-recaptcha="0" data-sitekey="6Ldf5h8UAAAAAJFJhN6x2OfZqBvANPQcnPa8eb1C"></div>
+
+
+
+</div>
