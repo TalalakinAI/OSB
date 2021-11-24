@@ -19,7 +19,7 @@
 > 1. 
 > </details>    
 
-<button>ОСБ</button>  
+<button>[база](baza.md#baza)</button> 
 
 ***
 ###### 2021-11-23-04-34
