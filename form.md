@@ -135,13 +135,10 @@
       <input type="hidden" name="recaptcha_token">
       <input type="submit" role="button" aria-label="Отправить запрос" value="Отправить запрос">
       <a class="wsite-button">
-        <span class="wsite-button-inner">Отправить запрос</span>
+        <span class="wsite-button-inner"></span>
       </a>
     </div>
   </form>
 </form>
   <div id="g-recaptcha-326867494739260084" class="recaptcha" data-size="invisible" data-recaptcha="0" data-sitekey="6Ldf5h8UAAAAAJFJhN6x2OfZqBvANPQcnPa8eb1C"></div>
-
-
-
 </div>
