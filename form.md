@@ -108,7 +108,7 @@
       <div style="clear:both;"></div></div>
 
 <div><div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
-        <label class="wsite-form-label" for="input-976678287136140335">Адрес электронной почты <span class="form-required"></span></label>
+        <label class="wsite-form-label" for="input-976678287136140335">E-mail<span class="form-required"></span></label>
         <div class="wsite-form-input-container">
           <input aria-required="true" id="input-976678287136140335" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="_u976678287136140335">
         </div>
