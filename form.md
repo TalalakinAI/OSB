@@ -133,9 +133,12 @@
       <input type="hidden" name="wsite_approved" id="wsite-approved" value="approved">
       <input type="hidden" name="ucfid" value="326867494739260084">
       <input type="hidden" name="recaptcha_token">
+			<button type="submit">Send your message</button>
       <input type="submit" role="button" aria-label="Отправить запрос" value="Отправить запрос" style="position:absolute;top:0;left:-9999px;width:1px;height:1px">
       <a class="wsite-button">
         <span class="wsite-button-inner">Отправить запрос</span>
       </a>
     </div>
   </form>
+
+<button type="submit">Send your message</button>
