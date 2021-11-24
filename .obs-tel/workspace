@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "form.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -130,6 +130,7 @@
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
     "form.md",
+    "send.md",
     "News.md",
     "e20211122.md",
     "().md",
@@ -137,7 +138,6 @@
     "Library.md",
     "!0SB.md",
     "baza.md",
-    "faq.md",
-    "Arbalet.md"
+    "faq.md"
   ]
 }

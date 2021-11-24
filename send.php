@@ -10,10 +10,9 @@ if(!isset($_POST['fio']) and !isset($_POST['email'])){
 <input type="text" name="fio" placeholder="Укажите ФИО" required>
 <input type="text" name="email" placeholder="Укажите e-mail" required>
 <input type="submit" value="Отправить">
-</form> 
-
-<?php
-} else {показываем форму
+</form> <?php
+} else {
+показываем форму
  $fio = $_POST['fio'];
  $email = $_POST['email'];
  $fio = htmlspecialchars($fio);
@@ -22,7 +21,7 @@ if(!isset($_POST['fio']) and !isset($_POST['email'])){
  $email = urldecode($email);
  $fio = trim($fio);
  $email = trim($email);
- if (mail("example@mail.ru", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: example2@mail.ru \r\n")){
+ if (mail("talalakin@rambler.ru", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: example2@mail.ru \r\n")){
  echo "Сообщение успешно отправлено";
  } else {
  echo "При отправке сообщения возникли ошибки";
@@ -31,5 +30,3 @@ if(!isset($_POST['fio']) and !isset($_POST['email'])){
 ?>
 </body>
 </html>
-
-[send](send.php)
