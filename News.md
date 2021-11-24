@@ -17,9 +17,9 @@
 > 1. 
 > 1. 
 > 1. 
-> </details>    
+> </details>   
 
-###### <button>[база](baza.md#baza)</button>  
+<button>[база](baza.md#baza)</button>  
 
 ***
 ###### 2021-11-23-04-34
@@ -74,7 +74,7 @@
 
 <iframe src="https://audiomack.com/embed/song/atalalakin/belij-sneg" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
-<details markdown='1'>
+<button><details markdown='1'><\button>
 <summary>РАНЕЕ:</summary>    
 
 
