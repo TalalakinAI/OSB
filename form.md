@@ -125,6 +125,7 @@
       </ul>
       
     </div>
+
     <div style="display:none; visibility:hidden;">
       <input type="hidden" name="wsite_subject">
     </div>
@@ -138,7 +139,7 @@
         <span class="wsite-button-inner"></span>
       </a>
     </div>
+
   </form>
+
 </form>
-  <div id="g-recaptcha-326867494739260084" class="recaptcha" data-size="invisible" data-recaptcha="0" data-sitekey="6Ldf5h8UAAAAAJFJhN6x2OfZqBvANPQcnPa8eb1C"></div>
-</div>
