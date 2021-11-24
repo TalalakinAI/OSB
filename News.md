@@ -14,8 +14,8 @@
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
 > 
-> 1. [test](test.md)  
-> 1. [form](form.md) 
+> 1. 
+> 1.  
 > 1. 
 > </details>   
 
