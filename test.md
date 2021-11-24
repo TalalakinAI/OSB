@@ -25,6 +25,8 @@
 <input type="reset" value="Reset">  
 <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
 
+
+<br>
 <br>
 
 <input type="button" value="-" onClick="document.calculator.ans.value+='-'">
