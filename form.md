@@ -12,3 +12,6 @@ if(!isset($_POST['fio']) and !isset($_POST['email'])){
 <input type="text" name="email" placeholder="Укажите e-mail" required>
 <input type="submit" value="Отправить">
 </form>
+
+</body>
+</html>
