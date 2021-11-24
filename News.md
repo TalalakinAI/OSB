@@ -1,5 +1,5 @@
 ###### News   
-###### <button>[← дом](!0SB.md#osb)</button> | <button>[база](baza.md#baza)</button> | <button>[glos →](glos.md#glos)</button>  
+###### [← дом](!0SB.md#osb) | [база](baza.md#baza) | [glos →](glos.md#glos) 
 
 ***   
 ### ОСБ. НОВОСТИ.  
@@ -19,7 +19,7 @@
 > 1. 
 > </details>    
 
-<button>[база](baza.md#baza)</button> 
+###### <button>[база](baza.md#baza)</button>  
 
 ***
 ###### 2021-11-23-04-34
