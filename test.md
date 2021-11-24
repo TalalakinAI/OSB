@@ -24,10 +24,10 @@
 <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
 <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
 
-
+<br>
 
 <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
 <input type="textfield" name="ans" value="">
 </form>
 </body>
-</html>
+</html>  
