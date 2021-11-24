@@ -97,11 +97,11 @@
         <div style="clear:both;"></div>
         <div class="wsite-form-input-container wsite-form-left wsite-form-input-first-name">
           <input aria-required="true" id="input-651828880640408381" class="wsite-form-input wsite-input" placeholder="Имя" type="text" name="_u651828880640408381[first]">
-          <label class="wsite-form-sublabel" for="input-651828880640408381">Имя</label>
+          <label class="wsite-form-sublabel" for="input-651828880640408381"></label>
         </div>
         <div class="wsite-form-input-container wsite-form-right wsite-form-input-last-name">
           <input aria-required="true" id="input-651828880640408381-1" class="wsite-form-input wsite-input" placeholder="Фамилия" type="text" name="_u651828880640408381[last]">
-          <label class="wsite-form-sublabel" for="input-651828880640408381-1">Фамилия</label>
+          <label class="wsite-form-sublabel" for="input-651828880640408381-1"></label>
         </div>
         <div id="instructions-651828880640408381" class="wsite-form-instructions" style="display:none;">[object Object]</div>
       </div>
@@ -116,7 +116,7 @@
       </div></div>
 
 <div><div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
-        <label class="wsite-form-label" for="input-725041284895155450">Суть запроса, кто направил? <span class="form-required"></span></label>
+        <label class="wsite-form-label" for="input-725041284895155450">Суть запроса? <span class="form-required"></span></label>
         <div class="wsite-form-input-container">
           <textarea aria-required="true" id="input-725041284895155450" class="wsite-form-input wsite-input wsite-input-width-370px" name="_u725041284895155450" style="height: 200px"></textarea>
         </div>
