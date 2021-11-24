@@ -9,8 +9,8 @@
 <input type="textfield" name="ans" value="">
 
 
-<br>
-
+<br>  
+<br>  
 
 <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
 <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
