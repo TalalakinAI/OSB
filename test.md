@@ -8,7 +8,9 @@
 
 <input type="textfield" name="ans" value="">
 
+
 <br>
+
 
 <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
 <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
@@ -30,9 +32,7 @@
 <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
 <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
 
-<br>
-
 
 </form>
 </body>
-</html>  
+</html>   
