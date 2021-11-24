@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "News.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -130,14 +130,14 @@
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
     "News.md",
+    "faq.md",
+    "test.md",
     "baza.md",
     "e20211122.md",
     "Arbalet.md",
     "ArbaletEP.jpg",
     "onair.md",
     "glos.md",
-    "!0SB.md",
-    "faq.md",
-    "Lectio.md"
+    "!0SB.md"
   ]
 }
