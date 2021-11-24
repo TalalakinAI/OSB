@@ -67,7 +67,7 @@
 	</head>
 
 	<body>
-		<form action="https://mductor.weebly.com/ajax/apps/formSubmitAjax.php" method="post">
+		<form action="https://mductor.weebly.com/ajax/apps/formSubmitAjax.php" method="post" id="form-326867494739260084" accept-charset="UTF-8" target="form-326867494739260084-target-1637753094238">
 			<ul>
 				<li>
 					<label for="name">Name:</label>
