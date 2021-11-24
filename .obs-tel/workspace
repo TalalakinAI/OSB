@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
-            "mode": "preview"
+            "file": "form.md",
+            "mode": "source"
           }
         }
       }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "form.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "form.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "form.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "News.md",
-    "Library.md",
     "form.md",
     "test.md",
-    "faq.md",
+    "Library.md",
+    "!0SB.md",
     "baza.md",
+    "News.md",
+    "faq.md",
     "e20211122.md",
     "Arbalet.md",
-    "ArbaletEP.jpg",
-    "onair.md"
+    "ArbaletEP.jpg"
   ]
 }

@@ -67,7 +67,7 @@
 	</head>
 
 	<body>
-		<form action="/somewhere_else" method="post">
+		<form action="https://talalakinai.github.io/OSB/form.html" method="post">
 			<ul>
 				<li>
 					<label for="name">Name:</label>
