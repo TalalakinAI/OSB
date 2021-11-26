@@ -91,12 +91,6 @@
 > </details>  
 
 
-
-<details markdown='1'>
-<summary>РАНЕЕ:</summary>    
-
-
-
 ***
 ###### 2021-11-23-15-16  
 #### [ОСБ / Буферные растворы](https://t.me/osbmd/3176)
@@ -147,6 +141,12 @@
 > ![](https://telegra.ph/file/22a5ec91458ac686a2518.jpg)
 > ![](https://telegra.ph/file/53f6b6f4df94581330d9c.jpg)
 > </details>
+
+
+
+<details markdown='1'>
+<summary>РАНЕЕ:</summary>    
+
 
 ***  
 ###### 2021-11-22-14-34
