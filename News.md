@@ -90,6 +90,13 @@
 > 1. Что первостепенно необходимо исправить в данной ситуации, чтобы вернуть тушке функционал, а женщине возможность стать счастливой мамой?
 > </details>  
 
+
+
+<details markdown='1'>
+<summary>РАНЕЕ:</summary>    
+
+
+
 ***
 ###### 2021-11-23-15-16  
 #### [ОСБ / Буферные растворы](https://t.me/osbmd/3176)
@@ -157,10 +164,6 @@
 #### А. Талалакин / Белый снег  
 
 <iframe src="https://audiomack.com/embed/song/atalalakin/belij-sneg" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
-
-<details markdown='1'>
-<summary>РАНЕЕ:</summary>    
-
 
 
 ###### 2021-11-22-06-34
@@ -299,14 +302,6 @@
 > 
 > ![](https://telegra.ph/file/f02120b5f6e609744e37e.jpg)
 > </details> 
-
-
-
-
-<details markdown='1'>
-<summary>РАНЕЕ:</summary>  
-
-
 
 
 ###### 2021-11-19-07-49  
