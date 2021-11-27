@@ -7,7 +7,7 @@
 ***
 ###### 2021-11-27-11-40  
 #### [ОСБ / Дневник голодания]() 
-![](https://telegra.ph/file/646a666b7df7f498199d5.jpg)  
+![](https://telegra.ph/file/32a8011743e84cd2c65df.jpg)   
 > 1. [День 1. Эпизод 1.](https://t.me/osbmd/3182)    
 > 1. [День 1. Эпизод 2.](https://t.me/osbmd/3183)  
 > 1. [День 2. Эпизод 3.](https://t.me/osbmd/3184)  
