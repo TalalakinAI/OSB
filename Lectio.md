@@ -14,7 +14,7 @@
 ***  
 ###### putevod 
 #### [ОСБ / Путеводитель](https://youtube.com/playlist?list=PLZfvuj_2FzFo3Ng8QJ78yQP2Vr1lOE5Eq)  
-![](https://i.ytimg.com/vi_webp/p7acjlB1ip8/maxresdefault.webp)   
+![](https://i.ytimg.com/vi_webp/p7acjlB1ip8/maxresdefault.webp)    
 
 ***
 ###### 2021-11-27-11-40  
