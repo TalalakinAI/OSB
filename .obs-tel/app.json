@@ -59,7 +59,7 @@
   "foldIndent": true,
   "trashOption": "local",
   "communityPluginSortOrder": "download",
-  "fileSortOrder": "byModifiedTime",
+  "fileSortOrder": "alphabetical",
   "useMarkdownLinks": true,
   "mobilePullAction": "command-palette:open",
   "showFrontmatter": true,
