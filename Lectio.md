@@ -6,7 +6,7 @@
 
 *** 
 ###### lectio_osb 
-#### ОСБ / Встречи на Макаренко   
+#### ОСБ / Встречи на Макаренко  
 - ОСБ / Об особенностях работы.   
 
 [![](https://i.ytimg.com/vi_webp/WGZL00VWwgg/maxresdefault.webp)](https://youtu.be/WGZL00VWwgg)   
