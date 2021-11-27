@@ -17,7 +17,7 @@
 > 1. [День 4. Эпизод 8.](https://t.me/osbmd/3190) 
 > 1. [День 4. Эпизод 9.](https://t.me/osbmd/3191)  
 > 1. [День 4. Эпизод 10.](https://t.me/osbmd/3192)  
-> 1. [День 5. Эпизод 11.](https://t.me/osbmd/3193) 
+> 1. [День 5. Эпизод 11.](https://t.me/osbmd/3193)  
 
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
@@ -163,12 +163,6 @@
 > ![](https://telegra.ph/file/22a5ec91458ac686a2518.jpg)
 > ![](https://telegra.ph/file/53f6b6f4df94581330d9c.jpg)
 > </details>
-
-
-
-<details markdown='1'>
-<summary>РАНЕЕ:</summary>    
-
 
 ***  
 ###### 2021-11-22-14-34
