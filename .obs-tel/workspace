@@ -125,19 +125,20 @@
           "state": {}
         }
       }
-    ]
+    ],
+    "currentTab": 3
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
     "News.md",
+    "e20211203.md",
+    "!0SB_Instructio.md",
     "!0SB.md",
     "test.md",
     "e20211122.md",
     "e20211201.md",
     "Lectio.md",
     "baza.md",
-    "lib-zolotarev-holod.md",
-    "Library.md",
-    "!0SB_Instructio.md"
+    "lib-zolotarev-holod.md"
   ]
 }
