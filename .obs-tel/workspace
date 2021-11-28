@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Lectio.md",
+            "file": "e20211201.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Lectio.md",
+            "file": "e20211201.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Lectio.md",
+            "file": "e20211201.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Lectio.md"
+            "file": "e20211201.md"
           }
         }
       },
@@ -129,15 +129,15 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
-    "Lectio.md",
-    "!0SB.md",
+    "e20211201.md",
     "News.md",
     "e20211122.md",
+    "Lectio.md",
+    "!0SB.md",
     "baza.md",
     "lib-zolotarev-holod.md",
     "Library.md",
     "!0SB_Instructio.md",
-    "form.md",
-    "send.md"
+    "form.md"
   ]
 }
