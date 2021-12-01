@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "News.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -130,14 +130,14 @@
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
     "News.md",
+    "Lectio.md",
+    "Library.md",
+    "d2021-12-02.md",
+    "e20211022.md",
+    "e20211203.md",
     "otziv.md",
     "!0SB.md",
     "form.md",
-    "Mtb_B.md",
-    "Library.md",
-    "glos.md",
-    "baza.md",
-    "test.md",
-    "!0SB_Instructio.md"
+    "Mtb_B.md"
   ]
 }
