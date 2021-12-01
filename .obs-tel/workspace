@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "form.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -130,14 +130,14 @@
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
     "form.md",
+    "Mtb_B.md",
+    "Library.md",
     "glos.md",
     "News.md",
     "!0SB.md",
     "baza.md",
     "otziv.md",
-    "Library.md",
     "test.md",
-    "!0SB_Instructio.md",
-    "!AIT.jpg"
+    "!0SB_Instructio.md"
   ]
 }
