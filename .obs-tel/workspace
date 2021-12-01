@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "form.md",
-            "mode": "source"
+            "file": "!0SB_Instructio.md",
+            "mode": "preview"
           }
         }
       }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "form.md",
+            "file": "!0SB_Instructio.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "form.md",
+            "file": "!0SB_Instructio.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "form.md"
+            "file": "!0SB_Instructio.md"
           }
         }
       },
@@ -129,14 +129,14 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "!0SB_Instructio.md",
     "form.md",
-    "test.md",
+    "!0SB.md",
     "News.md",
+    "test.md",
     "e20211203.md",
     "e20211122.md",
     "otziv.md",
-    "!0SB.md",
-    "!0SB_Instructio.md",
     "e20211201.md",
     "Lectio.md"
   ]
