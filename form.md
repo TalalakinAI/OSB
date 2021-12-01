@@ -8,7 +8,7 @@
 			form {
 				/* Just to center the form on the page */
 				margin: 0 auto;
-				width: 380px;
+				width: 300px;
 				/* To see the outline of the form */
 				padding: 1em;
 				border: 1px solid #ccc;
