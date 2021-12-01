@@ -1,5 +1,5 @@
 
-<form method="post" action="https://formspree.io/f/mnqwalae/talalakin@yandex.ru">
+<form method="post"   action="https://formspree.io/f/mnqwalae">
     <input type="hidden" name="_next" value="/thanks.html" />
     <input type="hidden" name="_subject" value="Сообщение с моего сайта" />
     <input type="text" name="_gotcha" style="display:none" />        
@@ -9,3 +9,5 @@
     <input type="submit" value="Отправить" />
 </form>
 
+
+  
