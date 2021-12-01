@@ -53,7 +53,7 @@
 				/* To properly align multiline text fields with their labels */
 				vertical-align: top;
 				/* To give enough room to type some text */
-				height: 20em;
+				height: 18em;
 			}
 
 			.button {
