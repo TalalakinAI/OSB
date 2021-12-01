@@ -1,5 +1,5 @@
 ###### osb-zapros
-###### [← дом](!0SB.md#osb) | [база](baza.md#baza) |  [news →](News.md#news)  
+
 
 <html>
 	<head>
@@ -79,6 +79,6 @@
     <input type="submit" value="Отправить" />
 </form>
 
-
+###### [← дом](!0SB.md#osb) | [база](baza.md#baza) |  [news →](News.md#news)  
 
   
