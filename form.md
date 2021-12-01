@@ -68,9 +68,6 @@
 		</style>
 	</head>
 
-
-
-***
 <form method="post"   action="https://formspree.io/f/mnqwalae">
     <input type="hidden" name="_next" value="/thanks.html" />
     <input type="hidden" name="_subject" value="ОСБ / Запрос" />
