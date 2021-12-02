@@ -15,6 +15,9 @@
 - [ДМСО и ПН](https://t.me/osbmd/2689)  
 
 ***
+- [Ксимедон](lib-ksimedon.md#lib-ksimedon)  
+
+***
 #### Упражнения:  
 - [Крылья Ангела](U__Krylia_Angela.md#krylia_angela)  
 
