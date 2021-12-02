@@ -5,6 +5,21 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-12-03-01-25
+#### [Ребята с нашего двора ]() 
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/LLc2swKbLe4" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->   
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> ![]()
+> </details>  
+***
 ###### 2021-12-03-00-31
 #### [ОСБ / Про зябкость](https://t.me/osbmd/3203)
 ![](https://telegra.ph/file/5d3ced4ebe4506e8e54c0.jpg)
