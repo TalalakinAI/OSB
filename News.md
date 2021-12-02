@@ -13,7 +13,7 @@
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
 > 
-> 
+> Ваши ответы в комментариях по ссылке.
 > </details>  
 
 ***
