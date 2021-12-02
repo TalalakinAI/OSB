@@ -6,7 +6,7 @@
 
 ***
 ###### 2021-12-03-01-25
-#### [Ребята с нашего двора ]() 
+#### [Ребята с нашего двора ]()  
 
 <!-- blank line -->
 <figure class="video_container">
@@ -14,11 +14,15 @@
 </figure>
 <!-- blank line -->   
 
-> <details markdown='1'>
-> <summary>Подробнее ↓↑</summary>  
-> 
-> ![]()
-> </details>  
+<details markdown='1'>
+<summary>Когда шпана была моложе ↓↑</summary>  
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/ZpseP2t2ccU" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->   
+</details>  
+
 ***
 ###### 2021-12-03-00-31
 #### [ОСБ / Про зябкость](https://t.me/osbmd/3203)
