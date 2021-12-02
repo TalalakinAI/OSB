@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "News.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -130,9 +130,9 @@
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
     "News.md",
+    "d2021-12-02.md",
     "Lectio.md",
     "Library.md",
-    "d2021-12-02.md",
     "e20211022.md",
     "e20211203.md",
     "otziv.md",
