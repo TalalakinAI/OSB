@@ -26,7 +26,7 @@
 > ![](https://telegra.ph/file/f65ccd22aaf895cbdd472.jpg)  
 > 
 > ***
-> ###### ["Про Титаник" месяцем ранее (фрагменты разбора).](Lectio.md#lectio_titanik)
+> ###### [Месяцем ранее (фрагменты разбора).](Lectio.md#lectio_titanik)
 > </details>
 
 ***
