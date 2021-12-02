@@ -262,13 +262,10 @@ T-активин и метилурацил и отличается от лева
 
 ___
 
-[Главная](http://www.medicum.nnov.ru/) |   
-[Врачам](http://www.medicum.nnov.ru/doctor/) |   
-[Пациентам](http://www.medicum.nnov.ru/patient/) |  
-[Студентам](http://www.medicum.nnov.ru/student/) |   
-[Мед.учреждения](http://www.medicum.nnov.ru/medorg/) |   
-[Мед.анекдоты](http://www.medicum.nnov.ru/anekdot/) |   
-[Полезные ссылки](http://www.medicum.nnov.ru/links/)  
+[Главная](http://www.medicum.nnov.ru/)    
+[Врачам](http://www.medicum.nnov.ru/doctor/)    
+[Пациентам](http://www.medicum.nnov.ru/patient/)   
+[Студентам](http://www.medicum.nnov.ru/student/)    
 
 ___
 
