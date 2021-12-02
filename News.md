@@ -13,7 +13,7 @@
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
 > 
-> Ваши ответы в комментариях по [ссылке](https://t.me/osbmd/3203). 
+> Ваши ответы в комментариях по [ссылке](https://t.me/osbmd/3203?comment=70).  
 > </details>  
 
 ***
