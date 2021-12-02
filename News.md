@@ -18,7 +18,7 @@
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
 > 
-> ##### ["Про Титаник" месяцем ранее (фрагменты разбора).](Lectio.md#lectio_titanik)
+> ###### ["Про Титаник" месяцем ранее (фрагменты разбора).](Lectio.md#lectio_titanik)
 > </details>
 
 ***
