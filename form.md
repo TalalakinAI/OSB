@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Your first HTML form, styled</title>
+		<title>HTML form, styled</title>
 		<style>
 			form {
 				/* Just to center the form on the page */
