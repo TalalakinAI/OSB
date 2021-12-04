@@ -15,7 +15,7 @@
       },
       "format": {
         "enabled": true,
-        "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### ОСБ / \n#### [ОСБ / ]()\n![]()\n![]()\n\n> <details markdown='1'>\n> <summary>Подробнее ↓↑</summary>  \n> \n> ![]()\n> </details>  "
+        "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### ОСБ / \n#### [ОСБ / ]()\n![]()\n![]()\n\n> <details markdown='1'>\n> <summary>Подробнее ↓↑</summary>  \n> \n> ![]()\n> </details>  \n"
       },
       "insertAfter": {
         "enabled": true,
