@@ -12,9 +12,9 @@
 
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
-> ДНК 2021-12-04
+> ДНК 2021-12-04 
 > 
-> ![](https://telegra.ph/file/eda2d9e4ad0e20e9b3ac6.jpg)  
+> ![](https://telegra.ph/file/d36947f2a2be51bee2b02.jpg)  
 > </details>    
 
 ***
