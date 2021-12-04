@@ -5,6 +5,25 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-12-04-03-54
+#### [ОСБ / Колесо - спортзал, который всегда под тобой, а тренер - сама местность.]()
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/IOFhYf7pa7s" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->   
+
+<details markdown='1'>
+<summary>Подробнее ↓↑</summary>  
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/BZKPMPQAexc" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->   
+</details>  
+
+***
 ###### 2021-12-03-10-42
 #### [ОСБ / "Ничто на земле не проходит бесследно."](https://t.me/c/1484776022/49323)
 ![](https://www.eg.ru/wp-content/uploads/2021/09/aleksandr-gradskiy2035354.jpg)
