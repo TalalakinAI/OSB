@@ -7,14 +7,15 @@
 ***
 ###### 2021-12-04-08-24
 #### [ОСБ / О Взаимодействии]()
-![](https://telegra.ph/file/eda2d9e4ad0e20e9b3ac6.jpg)
+![](https://telegra.ph/file/d87f3d9d6a7609169bfc2.jpg)
 
 
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
 > ДНК 2021-12-04
-> ![]()
-> </details>   
+> 
+> ![](https://telegra.ph/file/eda2d9e4ad0e20e9b3ac6.jpg)  
+> </details>    
 
 ***
 ###### 2021-12-04-04-05
