@@ -5,6 +5,23 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-12-04-04-05
+#### [ОСБ / Мощь и немощь. Акулова гора.]()
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/E_I-2R4Klz8" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->  
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> Когда есть и теория, и практика, и все это в одном месте. Акулова гора. 2014 г.   
+> Архив ОСБ.
+> </details>  
+
+***
 ###### 2021-12-04-03-54
 #### [ОСБ / Колесо - спортзал, который всегда под тобой, а тренер - сама местность.]()
 
