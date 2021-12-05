@@ -5,6 +5,17 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-12-05-05-34
+#### [ОСБ / Про самоорганизацию, обиду и силу.](https://t.me/osbmd/3216)
+![](https://telegra.ph/file/5e83ee47ae089ee1e43fd.jpg)
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> ДНК-2021-12-05  
+> </details>  
+
+***
 ###### 2021-12-04-08-24
 #### [ОСБ / О Взаимодействии](https://t.me/osbmd/3212)  
 ![](https://telegra.ph/file/d87f3d9d6a7609169bfc2.jpg)
