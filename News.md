@@ -5,6 +5,17 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-12-05-21-37
+#### [ОСБ / Два в одном](https://t.me/osbmd/3224?single)
+![](https://telegra.ph/file/3c2e5dfe860a2d4be533f.jpg)
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> ![](https://telegra.ph/file/026da278135d8c2700d17.jpg)
+> </details>  
+
+***
 ###### 2021-12-05-05-34
 #### [ОСБ / Про самоорганизацию, обиду и силу.](https://t.me/osbmd/3216)
 ![](https://telegra.ph/file/5e83ee47ae089ee1e43fd.jpg)
