@@ -5,6 +5,17 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-12-06-08-38
+#### [ОСБ / Carpe diem! -7С.](https://t.me/osbmd/3230)
+![](https://telegra.ph/file/30ec0f88f799e368065aa.jpg)
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> ДНК 2021-12-06
+> </details>  
+
+***
 ###### 2021-12-05-21-37
 #### [ОСБ / Два в одном](https://t.me/osbmd/3224?single)
 ![](https://telegra.ph/file/3c2e5dfe860a2d4be533f.jpg)
