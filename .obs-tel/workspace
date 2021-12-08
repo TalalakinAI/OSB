@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
+            "file": "!0SB_Instructio.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "!0SB_Instructio.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "!0SB_Instructio.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "!0SB_Instructio.md"
           }
         }
       },
@@ -129,6 +129,7 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "!0SB_Instructio.md",
     "News.md",
     "e20211203.md",
     "!0SB.md",
@@ -137,7 +138,6 @@
     "000/000-news.md",
     "lib-ksimedon.md",
     "Library.md",
-    "otziv.md",
-    "d2021-12-02.md"
+    "otziv.md"
   ]
 }
