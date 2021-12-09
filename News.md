@@ -6,7 +6,7 @@
 
 ***
 ##### 2021-12-09-09-43
-#### [ОСБ / ДНК-2021 Декабрь]()
+#### [ОСБ / ДНК-2021 Декабрь](https://t.me/osbmd/3257)
 ![](https://telegra.ph/file/549adfac419682de07ffe.jpg)
 
 > <details markdown='1'>
