@@ -5,6 +5,25 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+##### 2021-12-09-09-43
+#### [ОСБ / ДНК-2021]()
+![](https://telegra.ph/file/549adfac419682de07ffe.jpg)
+- [ДНК 2021-12-03 (1)](https://t.me/osbmd/3208)  
+- [ДНК 2021-12-03 (2)](https://t.me/osbmd/3209)  
+- [ДНК 2021-12-04](https://t.me/osbmd/3212)  
+- [ДНК 2021-12-05](https://t.me/osbmd/3216)  
+- [ДНК 2021-12-06](https://t.me/osbmd/3230)  
+- [ДНК 2021-12-07](https://t.me/osbmd/3233)  
+- [ДНК 2021-12-08](https://t.me/osbmd/3248)  
+- [ДНК 2021-12-09](https://t.me/osbmd/3257)  
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> ДНК - Дом на Колесах
+> </details>  
+
+***
 ###### 2021-12-06-10-34
 #### [ОСБ / Вот почему не холодно зимой](https://t.me/osbmd/3231)
 ![](https://telegra.ph/file/d5af808e08e0a0bb5875f.jpg)
