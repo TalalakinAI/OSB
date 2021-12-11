@@ -6,7 +6,7 @@
 
 ***
 ###### 2021-12-11-05-52
-#### [ОСБ / Спустя неделю](https://t.me/osbmd/3296)
+#### [ОСБ / Всего одна неделя Декабря 2021 г.](https://t.me/osbmd/3296)
 ![](https://telegra.ph/file/87aef9d9cfb766e0148b4.jpg)
 ![](https://telegra.ph/file/80d8421a46fca70c1c154.jpg)  
 ![](https://telegra.ph/file/6dac2b15a112258d2afd6.jpg)
