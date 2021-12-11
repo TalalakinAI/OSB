@@ -5,6 +5,19 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-12-11-05-52
+#### [ОСБ / Спустя неделю](https://t.me/osbmd/3296)
+![](https://telegra.ph/file/87aef9d9cfb766e0148b4.jpg)
+![](https://telegra.ph/file/80d8421a46fca70c1c154.jpg)  
+![](https://telegra.ph/file/6dac2b15a112258d2afd6.jpg)
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> За неделю в пик холода Декабря-2021 г.
+> </details>  
+
+***
 ##### 2021-12-09-09-43
 #### [ОСБ / ДНК-2021. Одна неделя Декабря → -18С](https://t.me/osbmd/3257)
 ![](https://telegra.ph/file/549adfac419682de07ffe.jpg)
