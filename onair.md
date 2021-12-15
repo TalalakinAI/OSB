@@ -20,11 +20,17 @@
 А. Талалакин / Вторая Жизнь  
 <iframe src="https://audiomack.com/embed/song/atalalakin/2live" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
+А. Талалакин / Синхронных Душ  
+<iframe src="https://audiomack.com/embed/song/atalalakin/sinhron" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+
 А. Талалакин / А в Москве выпал снег...   
 <iframe src="https://audiomack.com/embed/song/atalalakin/snow0" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
 А. Талалакин / Белый снег  
 <iframe src="https://audiomack.com/embed/song/atalalakin/belij-sneg" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+
+А. Талалакин / Ветер     
+<iframe src="https://audiomack.com/embed/song/atalalakin/veter" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
 А. Талалакин / Я расскажу тебе ночь   
 <iframe src="https://audiomack.com/embed/song/atalalakin/no4" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
