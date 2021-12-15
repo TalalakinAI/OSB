@@ -82,7 +82,7 @@
 
 ***
 ###### 2021-12-05-21-37
-#### [ОСБ / Два в одном](https://t.me/osbmd/3224?single)
+#### [ОСБ / Два в одном](e2021-12-15.md#a2021-12-05)
 ![](https://telegra.ph/file/3c2e5dfe860a2d4be533f.jpg)
 
 > <details markdown='1'>
