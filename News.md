@@ -6,7 +6,7 @@
 
 ***
 ###### 2021-12-15-14-59
-#### А. Талалакин / Вторая Жизнь
+#### А. Талалакин / Вторая Жизнь [(onair)](onair.md#onair) 
 <iframe src="https://audiomack.com/embed/song/atalalakin/2live" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
 ***
