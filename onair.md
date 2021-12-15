@@ -26,6 +26,9 @@
 А. Талалакин / Белый снег  
 <iframe src="https://audiomack.com/embed/song/atalalakin/belij-sneg" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
+А. Талалакин / Чёрно-белое кино  
+<iframe src="https://audiomack.com/embed/song/atalalakin/kino" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+
 </blockquote></details>
 </blockquote></details>
 
