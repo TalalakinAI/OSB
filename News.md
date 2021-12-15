@@ -5,6 +5,11 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2021-12-15-14-59
+#### А. Талалакин / Вторая Жизнь
+<iframe src="https://audiomack.com/embed/song/atalalakin/2live" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+
+***
 ###### 2021-12-14-14-46 
 #### [ОСБ / Динамика IX - XII](e2021-12-20.md#e2021-12-20)
 ![Промеры](https://telegra.ph/file/381757966b30139819862.jpg) 

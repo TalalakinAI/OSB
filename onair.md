@@ -17,6 +17,9 @@
 
 <details><summary> Песни </summary><blockquote>
 
+А. Талалакин / Вторая Жизнь  
+<iframe src="https://audiomack.com/embed/song/atalalakin/2live" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+
 А. Талалакин / А в Москве выпал снег...   
 <iframe src="https://audiomack.com/embed/song/atalalakin/snow0" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
