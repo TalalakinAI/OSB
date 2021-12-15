@@ -20,6 +20,9 @@
 А. Талалакин / Вторая Жизнь  
 <iframe src="https://audiomack.com/embed/song/atalalakin/2live" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
+А. Талалакин / Сестра 
+<iframe src="https://audiomack.com/embed/song/atalalakin/sestra" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+
 А. Талалакин / Синхронных Душ  
 <iframe src="https://audiomack.com/embed/song/atalalakin/sinhron" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
