@@ -54,6 +54,8 @@
 > <summary>Подробнее ↓↑</summary>  
 > 
 > ![](https://telegra.ph/file/026da278135d8c2700d17.jpg)
+> 
+> - [Радистка Кэт на тонущем Эсминце-1](https://t.me/osbmd/3361) 
 > </details>    
 
 ***
