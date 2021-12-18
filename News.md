@@ -28,6 +28,7 @@
 #### [ОСБ / Хитрый тип перекоса "Газ через тормоз."](e2021-12-17.md#a20211115)
 ![Промеры](https://telegra.ph/file/c444a1c21967702a80799.jpg)  
 ![Моча](https://telegra.ph/file/1c28ea59ef949299e7280.jpg)  
+- [Газ через тормоз 1 ч.](https://t.me/osbmd/3376)   
 
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
