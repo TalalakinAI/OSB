@@ -6,7 +6,7 @@
 
 <details><summary> Сказки у Камина </summary><blockquote>
 
-А. Талалакин / Жил-был Лес  
+А. Талалакин / Жил-был Лес 
 <iframe src="https://audiomack.com/embed/song/atalalakin/les" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
 
 А. Талалакин / На пороге.   
