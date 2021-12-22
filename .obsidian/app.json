@@ -52,7 +52,7 @@
   "newFileLocation": "current",
   "newFileFolderPath": "_Inbox",
   "attachmentFolderPath": "Files",
-  "spellcheck": false,
+  "spellcheck": true,
   "showLineNumber": true,
   "foldHeading": true,
   "foldIndent": true,
@@ -68,5 +68,6 @@
   "newLinkFormat": "relative",
   "showUnsupportedFiles": true,
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "vimMode": false
 }
