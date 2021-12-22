@@ -31,6 +31,9 @@
 - [Газ через тормоз 1 ч.](https://t.me/osbmd/3376)   
 - [Газ через тормоз 2 ч.](https://t.me/osbmd/3381)   
 - [Газ через тормоз 3 ч.](https://t.me/osbmd/3383)   
+- [Газ через тормоз 4 ч.](https://t.me/osbmd/3399)
+- [Газ через тормоз 5 ч.](https://t.me/osbmd/3400)
+- [Газ через тормоз 6 ч.](https://t.me/osbmd/3422)
 
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  

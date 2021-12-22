@@ -66,5 +66,7 @@
   "tabSize": 6,
   "useTab": false,
   "newLinkFormat": "relative",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "legacyEditor": false,
+  "livePreview": true
 }

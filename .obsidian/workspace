@@ -6,28 +6,30 @@
       {
         "id": "959601d523ad5ba3",
         "type": "leaf",
-        "dimension": 55.21292217327459,
+        "dimension": 54.0268456375839,
         "state": {
           "type": "markdown",
           "state": {
             "file": "News.md",
-            "mode": "source"
+            "mode": "source",
+            "source": false
           }
         },
-        "group": "ffdcc0ae7c960427"
+        "group": "39c38439d925213d"
       },
       {
-        "id": "d797851a9971f671",
+        "id": "bc6d337b3d369e9c",
         "type": "leaf",
-        "dimension": 44.7870778267254,
+        "dimension": 45.97315436241611,
         "state": {
           "type": "markdown",
           "state": {
             "file": "News.md",
-            "mode": "preview"
+            "mode": "preview",
+            "source": false
           }
         },
-        "group": "ffdcc0ae7c960427"
+        "group": "39c38439d925213d"
       }
     ],
     "direction": "vertical"
@@ -158,7 +160,7 @@
     "direction": "horizontal",
     "width": 178.5
   },
-  "active": "959601d523ad5ba3",
+  "active": "bc6d337b3d369e9c",
   "lastOpenFiles": [
     "News.md",
     "e20211122.md",
