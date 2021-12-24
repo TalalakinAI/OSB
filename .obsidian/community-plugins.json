@@ -1,24 +1,16 @@
 [
-  "note-refactor-obsidian",
   "obsidian-minimal-settings",
-  "obsidian-rollover-daily-todos",
   "media-extended",
-  "oz-clear-unused-images",
   "templater-obsidian",
   "file-explorer-note-count",
-  "longform",
   "obsidian-sort-and-permute-lines",
-  "consistent-attachments-and-links",
   "obsidian-collapse-all-plugin",
-  "taskbone-ocr-plugin",
   "obsidian-icon-folder",
-  "obsidian-markdown-formatting-assistant-plugin",
   "find-and-replace-in-selection",
-  "daily-activity",
-  "obsidian-chartsview-plugin",
   "obsidian-reveal-active-file",
   "remember-cursor-position",
   "dataview",
   "table-editor-obsidian",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "obsidian-markdown-formatting-assistant-plugin"
 ]

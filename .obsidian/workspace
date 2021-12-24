@@ -56,14 +56,6 @@
               "type": "starred",
               "state": {}
             }
-          },
-          {
-            "id": "13303b4582ad5b1a",
-            "type": "leaf",
-            "state": {
-              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
-              "state": {}
-            }
           }
         ]
       }
@@ -142,19 +134,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 178.5
+    "width": 298.5
   },
   "active": "959601d523ad5ba3",
   "lastOpenFiles": [
     "News.md",
+    "baza.md",
+    "e2021-12-13.md",
     "Herbanastoy.md",
     "Lectio.md",
     "lib-ksimedon.md",
     "lib-zolotarev-holod.md",
     "Library.md",
     "Mtb_B.md",
-    "onair.md",
-    "otziv.md",
-    "poet.md"
+    "onair.md"
   ]
 }
