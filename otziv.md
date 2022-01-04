@@ -12,7 +12,7 @@
 ![Промеры](https://telegra.ph/file/4295cd2423195bc92fda2.jpg)  
 Стало:  
 ![Промеры 2022-01-03](https://telegra.ph/file/18d97a407bb9eb1556301.jpg)  
-Было:  
+Было:   
 ![Моча](https://telegra.ph/file/39db9f1feb61320d9e823.jpg)  
 ![Моча](https://telegra.ph/file/8223ae7453643038f521d.jpg)  
 Стало:  
