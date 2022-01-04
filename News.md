@@ -7,7 +7,7 @@
 ***
 ###### 2022-01-04-12-50
 #### [ОСБ / До и после НГ]()
-Было:  
+Было:   
 ![Промеры](https://telegra.ph/file/5970052872f6d4b335490.jpg)  
 ![Промеры](https://telegra.ph/file/4295cd2423195bc92fda2.jpg)  
 Стало:  
@@ -16,7 +16,8 @@
 ![Моча](https://telegra.ph/file/39db9f1feb61320d9e823.jpg)  
 ![Моча](https://telegra.ph/file/8223ae7453643038f521d.jpg)  
 Стало:  
-![Моча 2022-01-03](https://telegra.ph/file/d9886c2fa711701d9d133.jpg)  
+![Моча 2022-01-03](https://telegra.ph/file/5cfcb9ee2487535619316.jpg)  
+![Моча 2022-01-03](https://telegra.ph/file/7f8a3756c530accb7f92b.jpg)  
 
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
