@@ -53,7 +53,7 @@
   "newFileLocation": "current",
   "newFileFolderPath": "_Inbox",
   "attachmentFolderPath": "/",
-  "spellcheck": false,
+  "spellcheck": true,
   "showLineNumber": true,
   "foldHeading": true,
   "foldIndent": true,

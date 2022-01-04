@@ -5,6 +5,42 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-01-04-12-50
+#### [ОСБ / До и после НГ]()
+Было:  
+![Промеры](https://telegra.ph/file/5970052872f6d4b335490.jpg)  
+![Промеры](https://telegra.ph/file/4295cd2423195bc92fda2.jpg)  
+Стало:  
+![Промеры 2022-01-03](https://telegra.ph/file/18d97a407bb9eb1556301.jpg)  
+Было:  
+![Моча](https://telegra.ph/file/39db9f1feb61320d9e823.jpg)  
+![Моча](https://telegra.ph/file/8223ae7453643038f521d.jpg)  
+Стало:  
+![Моча 2022-01-03](https://telegra.ph/file/d9886c2fa711701d9d133.jpg)  
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> #### [Декабрь 2021 г.](e20211203.md#e20211203)
+> </details>  
+
+***
+###### 2022-01-04-12-48
+#### ОСБ / Без хитрожопицы
+
+<!-- blank line -->
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/acif2OUaQHg" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->   
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> ![]()
+> </details>  
+
+***
 ###### 2021-12-15-14-59
 #### А. Талалакин / Вторая Жизнь [(onair)](onair.md#onair) 
 <iframe src="https://audiomack.com/embed/song/atalalakin/2live" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
