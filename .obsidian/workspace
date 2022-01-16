@@ -9,9 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
-            "mode": "source",
-            "source": false
+            "file": "d2022-01-05.md",
+            "mode": "preview",
+            "source": true
           }
         }
       }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "News.md",
+                "file": "d2022-01-05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "News.md",
+                "file": "d2022-01-05.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "News.md"
+                "file": "d2022-01-05.md"
               }
             }
           },
@@ -138,6 +138,8 @@
   },
   "active": "959601d523ad5ba3",
   "lastOpenFiles": [
+    "d2022-01-05.md",
+    "otziv.md",
     "News.md",
     "onair.md",
     "!0SB.md",
@@ -145,8 +147,6 @@
     "e2021-12-13.md",
     "Herbanastoy.md",
     "Lectio.md",
-    "lib-ksimedon.md",
-    "lib-zolotarev-holod.md",
-    "Library.md"
+    "lib-ksimedon.md"
   ]
 }
