@@ -9,12 +9,12 @@
 #### ОСБ / ДИНАМИКА ДОСТИЖЕНИЙ:
 Оценивается ежемесячно!   
 
-Возраст: | 48 лет   
+Возраст: | 48 лет  
 Курс №: | 1   
 
 ***
-![Промеры 2021-11](https://telegra.ph/file/c4dd39a52166e8a45d52e.jpg)
-![Промеры 2022-01](https://telegra.ph/file/a7a83535fc547978d1a99.jpg)  
+![Промеры 2021-11](https://telegra.ph/file/c4dd39a52166e8a45d52e.jpg)  
+![Промеры 2022-01](https://telegra.ph/file/a7a83535fc547978d1a99.jpg)   
 
 <details markdown='1'>  
 
