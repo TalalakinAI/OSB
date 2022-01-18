@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "test.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -35,7 +35,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "mtb",
+            "query": "",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -130,14 +130,14 @@
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
     "test.md",
-    "Library.md",
-    "DMSO_NANO.md",
+    "baza.md",
+    "glos.md",
     "!0SB.md",
-    "otziv.md",
-    "d2022-01-05.md",
     "News.md",
-    "a20211107.md",
-    "README.md",
-    "baza.md"
+    "DMSO_NANO.md",
+    "U__Krylia_Angela.md",
+    "DMSO_APROTON.md",
+    "Library.md",
+    "otziv.md"
   ]
 }
