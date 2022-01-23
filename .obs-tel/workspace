@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "a2022-01-09.md",
-            "mode": "source"
+            "file": "a2022-01-12.md",
+            "mode": "preview"
           }
         }
       }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "a2022-01-09.md",
+            "file": "a2022-01-12.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "a2022-01-09.md",
+            "file": "a2022-01-12.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "a2022-01-09.md"
+            "file": "a2022-01-12.md"
           }
         }
       },
@@ -129,6 +129,7 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "a2022-01-12.md",
     "a2022-01-09.md",
     "Library.md",
     "otziv.md",
@@ -137,7 +138,6 @@
     "glos.md",
     "!0SB.md",
     "News.md",
-    "DMSO_NANO.md",
-    "U__Krylia_Angela.md"
+    "DMSO_NANO.md"
   ]
 }
