@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "d2022-01-17.md",
+            "file": "News.md",
             "mode": "preview"
           }
         }
@@ -76,7 +76,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "d2022-01-17.md",
+            "file": "News.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +93,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "d2022-01-17.md",
+            "file": "News.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,7 +105,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "d2022-01-17.md"
+            "file": "News.md"
           }
         }
       },
@@ -129,6 +129,7 @@
   },
   "active": "7632baaa5ca89992",
   "lastOpenFiles": [
+    "News.md",
     "d2022-01-17.md",
     "a2022-01-12.md",
     "otziv.md",
@@ -137,7 +138,6 @@
     "test.md",
     "baza.md",
     "glos.md",
-    "!0SB.md",
-    "News.md"
+    "!0SB.md"
   ]
 }
