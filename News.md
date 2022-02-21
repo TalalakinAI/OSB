@@ -6,14 +6,13 @@
 
 ***
 ###### 2022-02-21-14-15
-#### ОСБ / 
 #### [ОСБ / СУБПОРОГ](https://t.me/osbmd/3882)
 ![](https://telegra.ph/file/8eac4d42582f5177f3538.jpg)
 
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
 > 
-> ![]()
+> ![]()  
 > </details>  
 
 ***
