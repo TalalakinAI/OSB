@@ -12,8 +12,15 @@
 
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
+>
+> **Основы Системной Биорегуляции**  
+> А. И. Талалакин. 
 > 
-> ![]()
+> - [ОСБ-Сайт](https://talalakinai.github.io/OSB/!0SB.html#osb)  
+> - [ОСБ-Инструкции](https://talalakinai.github.io/OSB/!0SB_Instructio.html#0sb_instructio)  
+> - [ОСБ-ТГ-канал](https://t.me/osbmd)  
+> - [ОСБ-YouTube](https://www.youtube.com/c/АнатолийТалалакин)  
+> - [ОСБ-ВК](https://vk.com/osb_minimum)  
 > </details>  
 
 ***
