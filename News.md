@@ -5,6 +5,18 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-03-06-01-00
+#### [ОСБ / В переходный период](https://t.me/osbmd/3982)  
+![]()
+![](https://telegra.ph/file/8459b92903536881d4a45.jpg)
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> ![]()
+> </details>  
+
+***
 ###### 2022-02-21-14-15
 #### [ОСБ / СУБПОРОГ](https://t.me/osbmd/3882)
 ![](https://telegra.ph/file/8eac4d42582f5177f3538.jpg)
