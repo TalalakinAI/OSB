@@ -499,19 +499,19 @@ var require_tslib = __commonJS({
 // node_modules/ical.js/build/ical.js
 var require_ical = __commonJS({
   "node_modules/ical.js/build/ical.js"(exports, module2) {
-    var ICAL2;
+    var ICAL3;
     (function() {
       if (typeof module2 === "object") {
-        ICAL2 = module2.exports;
+        ICAL3 = module2.exports;
       } else if (typeof HTMLScriptElement !== "undefined" && "noModule" in HTMLScriptElement.prototype) {
-        window.ICAL = ICAL2 = {};
-      } else if (typeof ICAL2 !== "object") {
-        ICAL2 = {};
+        window.ICAL = ICAL3 = {};
+      } else if (typeof ICAL3 !== "object") {
+        ICAL3 = {};
       }
     })();
-    ICAL2.foldLength = 75;
-    ICAL2.newLineChar = "\r\n";
-    ICAL2.helpers = {
+    ICAL3.foldLength = 75;
+    ICAL3.newLineChar = "\r\n";
+    ICAL3.helpers = {
       updateTimezones: function(vcal) {
         var allsubs, properties, vtimezones, reqTzid, i3, tzid;
         if (!vcal || vcal.name !== "vcalendar") {
@@ -540,8 +540,8 @@ var require_ical = __commonJS({
           }
         }
         for (i3 in reqTzid) {
-          if (reqTzid.hasOwnProperty(i3) && !vtimezones[i3] && ICAL2.TimezoneService.has(i3)) {
-            vcal.addSubcomponent(ICAL2.TimezoneService.get(i3).component);
+          if (reqTzid.hasOwnProperty(i3) && !vtimezones[i3] && ICAL3.TimezoneService.has(i3)) {
+            vcal.addSubcomponent(ICAL3.TimezoneService.get(i3).component);
           }
         }
         return vcal;
@@ -551,7 +551,7 @@ var require_ical = __commonJS({
       },
       strictParseInt: function(string) {
         var result = parseInt(string, 10);
-        if (ICAL2.helpers.isStrictlyNaN(result)) {
+        if (ICAL3.helpers.isStrictlyNaN(result)) {
           throw new Error('Could not extract integer from "' + string + '"');
         }
         return result;
@@ -597,19 +597,19 @@ var require_ical = __commonJS({
           return mid;
       },
       dumpn: function() {
-        if (!ICAL2.debug) {
+        if (!ICAL3.debug) {
           return;
         }
         if (typeof console !== "undefined" && "log" in console) {
-          ICAL2.helpers.dumpn = function consoleDumpn(input) {
+          ICAL3.helpers.dumpn = function consoleDumpn(input) {
             console.log(input);
           };
         } else {
-          ICAL2.helpers.dumpn = function geckoDumpn(input) {
+          ICAL3.helpers.dumpn = function geckoDumpn(input) {
             dump(input + "\n");
           };
         }
-        ICAL2.helpers.dumpn(arguments[0]);
+        ICAL3.helpers.dumpn(arguments[0]);
       },
       clone: function(aSrc, aDeep) {
         if (!aSrc || typeof aSrc != "object") {
@@ -621,7 +621,7 @@ var require_ical = __commonJS({
         } else if (Array.isArray(aSrc)) {
           var arr = [];
           for (var i3 = 0; i3 < aSrc.length; i3++) {
-            arr.push(aDeep ? ICAL2.helpers.clone(aSrc[i3], true) : aSrc[i3]);
+            arr.push(aDeep ? ICAL3.helpers.clone(aSrc[i3], true) : aSrc[i3]);
           }
           return arr;
         } else {
@@ -629,7 +629,7 @@ var require_ical = __commonJS({
           for (var name in aSrc) {
             if (Object.prototype.hasOwnProperty.call(aSrc, name)) {
               if (aDeep) {
-                obj[name] = ICAL2.helpers.clone(aSrc[name], true);
+                obj[name] = ICAL3.helpers.clone(aSrc[name], true);
               } else {
                 obj[name] = aSrc[name];
               }
@@ -651,15 +651,15 @@ var require_ical = __commonJS({
             line_length += 3;
           else
             line_length += 4;
-          if (line_length < ICAL2.foldLength + 1)
+          if (line_length < ICAL3.foldLength + 1)
             pos += cp > 65535 ? 2 : 1;
           else {
-            result += ICAL2.newLineChar + " " + line.substring(0, pos);
+            result += ICAL3.newLineChar + " " + line.substring(0, pos);
             line = line.substring(pos);
             pos = line_length = 0;
           }
         }
-        return result.substr(ICAL2.newLineChar.length + 1);
+        return result.substr(ICAL3.newLineChar.length + 1);
       },
       pad2: function pad(data) {
         if (typeof data !== "string") {
@@ -687,7 +687,7 @@ var require_ical = __commonJS({
         F2.prototype = base.prototype;
         child.prototype = new F2();
         if (extra) {
-          ICAL2.helpers.extend(extra, child.prototype);
+          ICAL3.helpers.extend(extra, child.prototype);
         }
       },
       extend: function(source, target) {
@@ -700,7 +700,7 @@ var require_ical = __commonJS({
         return target;
       }
     };
-    ICAL2.design = function() {
+    ICAL3.design = function() {
       "use strict";
       var FROM_ICAL_NEWLINE = /\\\\|\\;|\\,|\\[Nn]/g;
       var TO_ICAL_NEWLINE = /\\|;|,|\n/g;
@@ -797,7 +797,7 @@ var require_ical = __commonJS({
           matches: /^[+-]?\d+\.\d+$/,
           fromICAL: function(aValue) {
             var parsed = parseFloat(aValue);
-            if (ICAL2.helpers.isStrictlyNaN(parsed)) {
+            if (ICAL3.helpers.isStrictlyNaN(parsed)) {
               return 0;
             }
             return parsed;
@@ -809,7 +809,7 @@ var require_ical = __commonJS({
         integer: {
           fromICAL: function(aValue) {
             var parsed = parseInt(aValue);
-            if (ICAL2.helpers.isStrictlyNaN(parsed)) {
+            if (ICAL3.helpers.isStrictlyNaN(parsed)) {
               return 0;
             }
             return parsed;
@@ -834,7 +834,7 @@ var require_ical = __commonJS({
             }
           },
           decorate: function(aValue) {
-            return ICAL2.UtcOffset.fromString(aValue);
+            return ICAL3.UtcOffset.fromString(aValue);
           },
           undecorate: function(aValue) {
             return aValue.toString();
@@ -934,12 +934,12 @@ var require_ical = __commonJS({
           allowIanaToken: true
         }
       };
-      var icalValues = ICAL2.helpers.extend(commonValues, {
+      var icalValues = ICAL3.helpers.extend(commonValues, {
         text: createTextType(FROM_ICAL_NEWLINE, TO_ICAL_NEWLINE),
         uri: {},
         "binary": {
           decorate: function(aString) {
-            return ICAL2.Binary.fromString(aString);
+            return ICAL3.Binary.fromString(aString);
           },
           undecorate: function(aBinary) {
             return aBinary.toString();
@@ -949,9 +949,9 @@ var require_ical = __commonJS({
         "date": {
           decorate: function(aValue, aProp) {
             if (design.strict) {
-              return ICAL2.Time.fromDateString(aValue, aProp);
+              return ICAL3.Time.fromDateString(aValue, aProp);
             } else {
-              return ICAL2.Time.fromString(aValue, aProp);
+              return ICAL3.Time.fromString(aValue, aProp);
             }
           },
           undecorate: function(aValue) {
@@ -1003,9 +1003,9 @@ var require_ical = __commonJS({
           },
           decorate: function(aValue, aProp) {
             if (design.strict) {
-              return ICAL2.Time.fromDateTimeString(aValue, aProp);
+              return ICAL3.Time.fromDateTimeString(aValue, aProp);
             } else {
-              return ICAL2.Time.fromString(aValue, aProp);
+              return ICAL3.Time.fromString(aValue, aProp);
             }
           },
           undecorate: function(aValue) {
@@ -1014,7 +1014,7 @@ var require_ical = __commonJS({
         },
         duration: {
           decorate: function(aValue) {
-            return ICAL2.Duration.fromString(aValue);
+            return ICAL3.Duration.fromString(aValue);
           },
           undecorate: function(aValue) {
             return aValue.toString();
@@ -1024,7 +1024,7 @@ var require_ical = __commonJS({
           fromICAL: function(string) {
             var parts = string.split("/");
             parts[0] = icalValues["date-time"].fromICAL(parts[0]);
-            if (!ICAL2.Duration.isValueString(parts[1])) {
+            if (!ICAL3.Duration.isValueString(parts[1])) {
               parts[1] = icalValues["date-time"].fromICAL(parts[1]);
             }
             return parts;
@@ -1035,7 +1035,7 @@ var require_ical = __commonJS({
             } else {
               parts[0] = icalValues["date-time"].toICAL(parts[0]);
             }
-            if (!ICAL2.Duration.isValueString(parts[1])) {
+            if (!ICAL3.Duration.isValueString(parts[1])) {
               if (!design.strict && parts[1].length == 10) {
                 parts[1] = icalValues.date.toICAL(parts[1]);
               } else {
@@ -1045,7 +1045,7 @@ var require_ical = __commonJS({
             return parts.join("/");
           },
           decorate: function(aValue, aProp) {
-            return ICAL2.Period.fromJSON(aValue, aProp, !design.strict);
+            return ICAL3.Period.fromJSON(aValue, aProp, !design.strict);
           },
           undecorate: function(aValue) {
             return aValue.toJSON();
@@ -1053,7 +1053,7 @@ var require_ical = __commonJS({
         },
         recur: {
           fromICAL: function(string) {
-            return ICAL2.Recur._stringToData(string, true);
+            return ICAL3.Recur._stringToData(string, true);
           },
           toICAL: function(data) {
             var str = "";
@@ -1070,7 +1070,7 @@ var require_ical = __commonJS({
                 }
               } else if (k2 == "wkst") {
                 if (typeof val === "number") {
-                  val = ICAL2.Recur.numericDayToIcalDay(val);
+                  val = ICAL3.Recur.numericDayToIcalDay(val);
                 }
               } else if (Array.isArray(val)) {
                 val = val.join(",");
@@ -1080,7 +1080,7 @@ var require_ical = __commonJS({
             return str.substr(0, str.length - 1);
           },
           decorate: function decorate(aValue) {
-            return ICAL2.Recur.fromData(aValue);
+            return ICAL3.Recur.fromData(aValue);
           },
           undecorate: function(aRecur) {
             return aRecur.toJSON();
@@ -1109,7 +1109,7 @@ var require_ical = __commonJS({
           }
         }
       });
-      var icalProperties = ICAL2.helpers.extend(commonProperties, {
+      var icalProperties = ICAL3.helpers.extend(commonProperties, {
         "action": DEFAULT_TYPE_TEXT,
         "attach": { defaultType: "uri" },
         "attendee": { defaultType: "cal-address" },
@@ -1168,12 +1168,12 @@ var require_ical = __commonJS({
         "tzid": DEFAULT_TYPE_TEXT,
         "tzname": DEFAULT_TYPE_TEXT
       });
-      var vcardValues = ICAL2.helpers.extend(commonValues, {
+      var vcardValues = ICAL3.helpers.extend(commonValues, {
         text: createTextType(FROM_VCARD_NEWLINE, TO_VCARD_NEWLINE),
         uri: createTextType(FROM_VCARD_NEWLINE, TO_VCARD_NEWLINE),
         date: {
           decorate: function(aValue) {
-            return ICAL2.VCardTime.fromDateAndOrTimeString(aValue, "date");
+            return ICAL3.VCardTime.fromDateAndOrTimeString(aValue, "date");
           },
           undecorate: function(aValue) {
             return aValue.toString();
@@ -1199,7 +1199,7 @@ var require_ical = __commonJS({
         },
         time: {
           decorate: function(aValue) {
-            return ICAL2.VCardTime.fromDateAndOrTimeString("T" + aValue, "time");
+            return ICAL3.VCardTime.fromDateAndOrTimeString("T" + aValue, "time");
           },
           undecorate: function(aValue) {
             return aValue.toString();
@@ -1254,7 +1254,7 @@ var require_ical = __commonJS({
         },
         "date-time": {
           decorate: function(aValue) {
-            return ICAL2.VCardTime.fromDateAndOrTimeString(aValue, "date-time");
+            return ICAL3.VCardTime.fromDateAndOrTimeString(aValue, "date-time");
           },
           undecorate: function(aValue) {
             return aValue.toString();
@@ -1268,7 +1268,7 @@ var require_ical = __commonJS({
         },
         "date-and-or-time": {
           decorate: function(aValue) {
-            return ICAL2.VCardTime.fromDateAndOrTimeString(aValue, "date-and-or-time");
+            return ICAL3.VCardTime.fromDateAndOrTimeString(aValue, "date-and-or-time");
           },
           undecorate: function(aValue) {
             return aValue.toString();
@@ -1311,7 +1311,7 @@ var require_ical = __commonJS({
           allowIanaToken: true
         }
       };
-      var vcardProperties = ICAL2.helpers.extend(commonProperties, {
+      var vcardProperties = ICAL3.helpers.extend(commonProperties, {
         "adr": { defaultType: "text", structuredValue: ";", multiValue: "," },
         "anniversary": DEFAULT_TYPE_DATE_ANDOR_TIME,
         "bday": DEFAULT_TYPE_DATE_ANDOR_TIME,
@@ -1344,7 +1344,7 @@ var require_ical = __commonJS({
         "tz": { defaultType: "text", allowedTypes: ["text", "utc-offset", "uri"] },
         "xml": DEFAULT_TYPE_TEXT
       });
-      var vcard3Values = ICAL2.helpers.extend(commonValues, {
+      var vcard3Values = ICAL3.helpers.extend(commonValues, {
         binary: icalValues.binary,
         date: vcardValues.date,
         "date-time": vcardValues["date-time"],
@@ -1361,7 +1361,7 @@ var require_ical = __commonJS({
             return aValue.substr(0, 7);
           },
           decorate: function(aValue) {
-            return ICAL2.UtcOffset.fromString(aValue);
+            return ICAL3.UtcOffset.fromString(aValue);
           },
           undecorate: function(aValue) {
             return aValue.toString();
@@ -1392,7 +1392,7 @@ var require_ical = __commonJS({
           allowIanaToken: true
         }
       };
-      var vcard3Properties = ICAL2.helpers.extend(commonProperties, {
+      var vcard3Properties = ICAL3.helpers.extend(commonProperties, {
         fn: DEFAULT_TYPE_TEXT,
         n: { defaultType: "text", structuredValue: ";", multiValue: "," },
         nickname: DEFAULT_TYPE_TEXT_MULTI,
@@ -1470,12 +1470,12 @@ var require_ical = __commonJS({
       };
       return design;
     }();
-    ICAL2.stringify = function() {
+    ICAL3.stringify = function() {
       "use strict";
       var LINE_ENDING = "\r\n";
       var DEFAULT_VALUE_TYPE = "unknown";
-      var design = ICAL2.design;
-      var helpers = ICAL2.helpers;
+      var design = ICAL3.design;
+      var helpers = ICAL3.helpers;
       function stringify(jCal) {
         if (typeof jCal[0] == "string") {
           jCal = [jCal];
@@ -1580,7 +1580,7 @@ var require_ical = __commonJS({
         } else {
           line += stringify.value(property[3], valueType, designSet, false);
         }
-        return noFold ? line : ICAL2.helpers.foldline(line);
+        return noFold ? line : ICAL3.helpers.foldline(line);
       };
       stringify.propertyValue = function(value) {
         if (helpers.unescapedIndexOf(value, ",") === -1 && helpers.unescapedIndexOf(value, ":") === -1 && helpers.unescapedIndexOf(value, ";") === -1) {
@@ -1618,7 +1618,7 @@ var require_ical = __commonJS({
       var RFC6868_REPLACE_MAP = { '"': "^'", "\n": "^n", "^": "^^" };
       return stringify;
     }();
-    ICAL2.parse = function() {
+    ICAL3.parse = function() {
       "use strict";
       var CHAR = /[^ \t]/;
       var MULTIVALUE_DELIMITER = ",";
@@ -1627,8 +1627,8 @@ var require_ical = __commonJS({
       var PARAM_NAME_DELIMITER = "=";
       var DEFAULT_VALUE_TYPE = "unknown";
       var DEFAULT_PARAM_TYPE = "text";
-      var design = ICAL2.design;
-      var helpers = ICAL2.helpers;
+      var design = ICAL3.design;
+      var helpers = ICAL3.helpers;
       function ParserError(message) {
         this.message = message;
         this.name = "ParserError";
@@ -1928,19 +1928,19 @@ var require_ical = __commonJS({
       };
       return parser;
     }();
-    ICAL2.Component = function() {
+    ICAL3.Component = function() {
       "use strict";
       var PROPERTY_INDEX = 1;
       var COMPONENT_INDEX = 2;
       var NAME_INDEX = 0;
-      function Component3(jCal, parent) {
+      function Component4(jCal, parent) {
         if (typeof jCal === "string") {
           jCal = [jCal, [], []];
         }
         this.jCal = jCal;
         this.parent = parent || null;
       }
-      Component3.prototype = {
+      Component4.prototype = {
         _hydratedPropertyCount: 0,
         _hydratedComponentCount: 0,
         get name() {
@@ -1948,7 +1948,7 @@ var require_ical = __commonJS({
         },
         get _designSet() {
           var parentDesign = this.parent && this.parent._designSet;
-          return parentDesign || ICAL2.design.getDesignSet(this.name);
+          return parentDesign || ICAL3.design.getDesignSet(this.name);
         },
         _hydrateComponent: function(index) {
           if (!this._components) {
@@ -1958,7 +1958,7 @@ var require_ical = __commonJS({
           if (this._components[index]) {
             return this._components[index];
           }
-          var comp = new Component3(this.jCal[COMPONENT_INDEX][index], this);
+          var comp = new Component4(this.jCal[COMPONENT_INDEX][index], this);
           this._hydratedComponentCount++;
           return this._components[index] = comp;
         },
@@ -1970,7 +1970,7 @@ var require_ical = __commonJS({
           if (this._properties[index]) {
             return this._properties[index];
           }
-          var prop = new ICAL2.Property(this.jCal[PROPERTY_INDEX][index], this);
+          var prop = new ICAL3.Property(this.jCal[PROPERTY_INDEX][index], this);
           this._hydratedPropertyCount++;
           return this._properties[index] = prop;
         },
@@ -2140,7 +2140,7 @@ var require_ical = __commonJS({
           return removed;
         },
         addProperty: function(property) {
-          if (!(property instanceof ICAL2.Property)) {
+          if (!(property instanceof ICAL3.Property)) {
             throw new TypeError("must instance of ICAL.Property");
           }
           if (!this._properties) {
@@ -2157,7 +2157,7 @@ var require_ical = __commonJS({
           return property;
         },
         addPropertyWithValue: function(name, value) {
-          var prop = new ICAL2.Property(name);
+          var prop = new ICAL3.Property(name);
           prop.setValue(value);
           this.addProperty(prop);
           return prop;
@@ -2187,21 +2187,21 @@ var require_ical = __commonJS({
           return this.jCal;
         },
         toString: function() {
-          return ICAL2.stringify.component(this.jCal, this._designSet);
+          return ICAL3.stringify.component(this.jCal, this._designSet);
         }
       };
-      Component3.fromString = function(str) {
-        return new Component3(ICAL2.parse.component(str));
+      Component4.fromString = function(str) {
+        return new Component4(ICAL3.parse.component(str));
       };
-      return Component3;
+      return Component4;
     }();
-    ICAL2.Property = function() {
+    ICAL3.Property = function() {
       "use strict";
       var NAME_INDEX = 0;
       var PROP_INDEX = 1;
       var TYPE_INDEX = 2;
       var VALUE_INDEX = 3;
-      var design = ICAL2.design;
+      var design = ICAL3.design;
       function Property(jCal, parent) {
         this._parent = parent || null;
         if (typeof jCal === "string") {
@@ -2379,15 +2379,15 @@ var require_ical = __commonJS({
           return this.jCal;
         },
         toICALString: function() {
-          return ICAL2.stringify.property(this.jCal, this._designSet, true);
+          return ICAL3.stringify.property(this.jCal, this._designSet, true);
         }
       };
       Property.fromString = function(str, designSet) {
-        return new Property(ICAL2.parse.property(str, designSet));
+        return new Property(ICAL3.parse.property(str, designSet));
       };
       return Property;
     }();
-    ICAL2.UtcOffset = function() {
+    ICAL3.UtcOffset = function() {
       function UtcOffset(aData) {
         this.fromData(aData);
       }
@@ -2397,7 +2397,7 @@ var require_ical = __commonJS({
         factor: 1,
         icaltype: "utc-offset",
         clone: function() {
-          return ICAL2.UtcOffset.fromSeconds(this.toSeconds());
+          return ICAL3.UtcOffset.fromSeconds(this.toSeconds());
         },
         fromData: function(aData) {
           if (aData) {
@@ -2412,9 +2412,9 @@ var require_ical = __commonJS({
         fromSeconds: function(aSeconds) {
           var secs = Math.abs(aSeconds);
           this.factor = aSeconds < 0 ? -1 : 1;
-          this.hours = ICAL2.helpers.trunc(secs / 3600);
+          this.hours = ICAL3.helpers.trunc(secs / 3600);
           secs -= this.hours * 3600;
-          this.minutes = ICAL2.helpers.trunc(secs / 60);
+          this.minutes = ICAL3.helpers.trunc(secs / 60);
           return this;
         },
         toSeconds: function() {
@@ -2440,18 +2440,18 @@ var require_ical = __commonJS({
           }
         },
         toICALString: function() {
-          return ICAL2.design.icalendar.value["utc-offset"].toICAL(this.toString());
+          return ICAL3.design.icalendar.value["utc-offset"].toICAL(this.toString());
         },
         toString: function toString() {
-          return (this.factor == 1 ? "+" : "-") + ICAL2.helpers.pad2(this.hours) + ":" + ICAL2.helpers.pad2(this.minutes);
+          return (this.factor == 1 ? "+" : "-") + ICAL3.helpers.pad2(this.hours) + ":" + ICAL3.helpers.pad2(this.minutes);
         }
       };
       UtcOffset.fromString = function(aString) {
         var options = {};
         options.factor = aString[0] === "+" ? 1 : -1;
-        options.hours = ICAL2.helpers.strictParseInt(aString.substr(1, 2));
-        options.minutes = ICAL2.helpers.strictParseInt(aString.substr(4, 2));
-        return new ICAL2.UtcOffset(options);
+        options.hours = ICAL3.helpers.strictParseInt(aString.substr(1, 2));
+        options.minutes = ICAL3.helpers.strictParseInt(aString.substr(4, 2));
+        return new ICAL3.UtcOffset(options);
       };
       UtcOffset.fromSeconds = function(aSeconds) {
         var instance = new UtcOffset();
@@ -2460,7 +2460,7 @@ var require_ical = __commonJS({
       };
       return UtcOffset;
     }();
-    ICAL2.Binary = function() {
+    ICAL3.Binary = function() {
       function Binary(aValue) {
         this.value = aValue;
       }
@@ -2530,10 +2530,10 @@ var require_ical = __commonJS({
       return Binary;
     }();
     (function() {
-      ICAL2.Period = function icalperiod(aData) {
+      ICAL3.Period = function icalperiod(aData) {
         this.wrappedJSObject = this;
         if (aData && "start" in aData) {
-          if (aData.start && !(aData.start instanceof ICAL2.Time)) {
+          if (aData.start && !(aData.start instanceof ICAL3.Time)) {
             throw new TypeError(".start must be an instance of ICAL.Time");
           }
           this.start = aData.start;
@@ -2542,26 +2542,26 @@ var require_ical = __commonJS({
           throw new Error("cannot accept both end and duration");
         }
         if (aData && "end" in aData) {
-          if (aData.end && !(aData.end instanceof ICAL2.Time)) {
+          if (aData.end && !(aData.end instanceof ICAL3.Time)) {
             throw new TypeError(".end must be an instance of ICAL.Time");
           }
           this.end = aData.end;
         }
         if (aData && "duration" in aData) {
-          if (aData.duration && !(aData.duration instanceof ICAL2.Duration)) {
+          if (aData.duration && !(aData.duration instanceof ICAL3.Duration)) {
             throw new TypeError(".duration must be an instance of ICAL.Duration");
           }
           this.duration = aData.duration;
         }
       };
-      ICAL2.Period.prototype = {
+      ICAL3.Period.prototype = {
         start: null,
         end: null,
         duration: null,
         icalclass: "icalperiod",
         icaltype: "period",
         clone: function() {
-          return ICAL2.Period.fromData({
+          return ICAL3.Period.fromData({
             start: this.start ? this.start.clone() : null,
             end: this.end ? this.end.clone() : null,
             duration: this.duration ? this.duration.clone() : null
@@ -2593,40 +2593,40 @@ var require_ical = __commonJS({
           return this.start.toICALString() + "/" + (this.end || this.duration).toICALString();
         }
       };
-      ICAL2.Period.fromString = function fromString(str, prop) {
+      ICAL3.Period.fromString = function fromString(str, prop) {
         var parts = str.split("/");
         if (parts.length !== 2) {
           throw new Error('Invalid string value: "' + str + '" must contain a "/" char.');
         }
         var options = {
-          start: ICAL2.Time.fromDateTimeString(parts[0], prop)
+          start: ICAL3.Time.fromDateTimeString(parts[0], prop)
         };
         var end = parts[1];
-        if (ICAL2.Duration.isValueString(end)) {
-          options.duration = ICAL2.Duration.fromString(end);
+        if (ICAL3.Duration.isValueString(end)) {
+          options.duration = ICAL3.Duration.fromString(end);
         } else {
-          options.end = ICAL2.Time.fromDateTimeString(end, prop);
+          options.end = ICAL3.Time.fromDateTimeString(end, prop);
         }
-        return new ICAL2.Period(options);
+        return new ICAL3.Period(options);
       };
-      ICAL2.Period.fromData = function fromData(aData) {
-        return new ICAL2.Period(aData);
+      ICAL3.Period.fromData = function fromData(aData) {
+        return new ICAL3.Period(aData);
       };
-      ICAL2.Period.fromJSON = function(aData, aProp, aLenient) {
+      ICAL3.Period.fromJSON = function(aData, aProp, aLenient) {
         function fromDateOrDateTimeString(aValue, aProp2) {
           if (aLenient) {
-            return ICAL2.Time.fromString(aValue, aProp2);
+            return ICAL3.Time.fromString(aValue, aProp2);
           } else {
-            return ICAL2.Time.fromDateTimeString(aValue, aProp2);
+            return ICAL3.Time.fromDateTimeString(aValue, aProp2);
           }
         }
-        if (ICAL2.Duration.isValueString(aData[1])) {
-          return ICAL2.Period.fromData({
+        if (ICAL3.Duration.isValueString(aData[1])) {
+          return ICAL3.Period.fromData({
             start: fromDateOrDateTimeString(aData[0], aProp),
-            duration: ICAL2.Duration.fromString(aData[1])
+            duration: ICAL3.Duration.fromString(aData[1])
           });
         } else {
-          return ICAL2.Period.fromData({
+          return ICAL3.Period.fromData({
             start: fromDateOrDateTimeString(aData[0], aProp),
             end: fromDateOrDateTimeString(aData[1], aProp)
           });
@@ -2635,11 +2635,11 @@ var require_ical = __commonJS({
     })();
     (function() {
       var DURATION_LETTERS = /([PDWHMTS]{1,1})/;
-      ICAL2.Duration = function icalduration(data) {
+      ICAL3.Duration = function icalduration(data) {
         this.wrappedJSObject = this;
         this.fromData(data);
       };
-      ICAL2.Duration.prototype = {
+      ICAL3.Duration.prototype = {
         weeks: 0,
         days: 0,
         hours: 0,
@@ -2649,7 +2649,7 @@ var require_ical = __commonJS({
         icalclass: "icalduration",
         icaltype: "duration",
         clone: function clone() {
-          return ICAL2.Duration.fromData(this);
+          return ICAL3.Duration.fromData(this);
         },
         toSeconds: function toSeconds() {
           var seconds = this.seconds + 60 * this.minutes + 3600 * this.hours + 86400 * this.days + 7 * 86400 * this.weeks;
@@ -2658,7 +2658,7 @@ var require_ical = __commonJS({
         fromSeconds: function fromSeconds(aSeconds) {
           var secs = Math.abs(aSeconds);
           this.isNegative = aSeconds < 0;
-          this.days = ICAL2.helpers.trunc(secs / 86400);
+          this.days = ICAL3.helpers.trunc(secs / 86400);
           if (this.days % 7 == 0) {
             this.weeks = this.days / 7;
             this.days = 0;
@@ -2666,9 +2666,9 @@ var require_ical = __commonJS({
             this.weeks = 0;
           }
           secs -= (this.days + 7 * this.weeks) * 86400;
-          this.hours = ICAL2.helpers.trunc(secs / 3600);
+          this.hours = ICAL3.helpers.trunc(secs / 3600);
           secs -= this.hours * 3600;
-          this.minutes = ICAL2.helpers.trunc(secs / 60);
+          this.minutes = ICAL3.helpers.trunc(secs / 60);
           secs -= this.minutes * 60;
           this.seconds = secs;
           return this;
@@ -2738,8 +2738,8 @@ var require_ical = __commonJS({
           return this.toString();
         }
       };
-      ICAL2.Duration.fromSeconds = function icalduration_from_seconds(aSeconds) {
-        return new ICAL2.Duration().fromSeconds(aSeconds);
+      ICAL3.Duration.fromSeconds = function icalduration_from_seconds(aSeconds) {
+        return new ICAL3.Duration().fromSeconds(aSeconds);
       };
       function parseDurationChunk(letter, number, object) {
         var type;
@@ -2774,17 +2774,17 @@ var require_ical = __commonJS({
             throw new Error('invalid duration value: Missing number before "' + letter + '"');
           }
           var num = parseInt(number, 10);
-          if (ICAL2.helpers.isStrictlyNaN(num)) {
+          if (ICAL3.helpers.isStrictlyNaN(num)) {
             throw new Error('invalid duration value: Invalid number "' + number + '" before "' + letter + '"');
           }
           object[type] = num;
         }
         return 1;
       }
-      ICAL2.Duration.isValueString = function(string) {
+      ICAL3.Duration.isValueString = function(string) {
         return string[0] === "P" || string[1] === "P";
       };
-      ICAL2.Duration.fromString = function icalduration_from_string(aStr) {
+      ICAL3.Duration.fromString = function icalduration_from_string(aStr) {
         var pos = 0;
         var dict = Object.create(null);
         var chunks = 0;
@@ -2797,10 +2797,10 @@ var require_ical = __commonJS({
         if (chunks < 2) {
           throw new Error('invalid duration value: Not enough duration components in "' + aStr + '"');
         }
-        return new ICAL2.Duration(dict);
+        return new ICAL3.Duration(dict);
       };
-      ICAL2.Duration.fromData = function icalduration_from_data(aData) {
-        return new ICAL2.Duration(aData);
+      ICAL3.Duration.fromData = function icalduration_from_data(aData) {
+        return new ICAL3.Duration(aData);
       };
     })();
     (function() {
@@ -2811,11 +2811,11 @@ var require_ical = __commonJS({
         "latitude",
         "longitude"
       ];
-      ICAL2.Timezone = function icaltimezone(data) {
+      ICAL3.Timezone = function icaltimezone(data) {
         this.wrappedJSObject = this;
         this.fromData(data);
       };
-      ICAL2.Timezone.prototype = {
+      ICAL3.Timezone.prototype = {
         tzid: "",
         location: "",
         tznames: "",
@@ -2827,14 +2827,14 @@ var require_ical = __commonJS({
         fromData: function fromData(aData) {
           this.expandedUntilYear = 0;
           this.changes = [];
-          if (aData instanceof ICAL2.Component) {
+          if (aData instanceof ICAL3.Component) {
             this.component = aData;
           } else {
             if (aData && "component" in aData) {
               if (typeof aData.component == "string") {
-                var jCal = ICAL2.parse(aData.component);
-                this.component = new ICAL2.Component(jCal);
-              } else if (aData.component instanceof ICAL2.Component) {
+                var jCal = ICAL3.parse(aData.component);
+                this.component = new ICAL3.Component(jCal);
+              } else if (aData.component instanceof ICAL3.Component) {
                 this.component = aData.component;
               } else {
                 this.component = null;
@@ -2849,13 +2849,13 @@ var require_ical = __commonJS({
               }
             }
           }
-          if (this.component instanceof ICAL2.Component && !this.tzid) {
+          if (this.component instanceof ICAL3.Component && !this.tzid) {
             this.tzid = this.component.getFirstPropertyValue("tzid");
           }
           return this;
         },
         utcOffset: function utcOffset(tt) {
-          if (this == ICAL2.Timezone.utcTimezone || this == ICAL2.Timezone.localTimezone) {
+          if (this == ICAL3.Timezone.utcTimezone || this == ICAL3.Timezone.localTimezone) {
             return 0;
           }
           this._ensureCoverage(tt.year);
@@ -2874,13 +2874,13 @@ var require_ical = __commonJS({
           var change_num_to_use = -1;
           var step = 1;
           for (; ; ) {
-            var change = ICAL2.helpers.clone(this.changes[change_num], true);
+            var change = ICAL3.helpers.clone(this.changes[change_num], true);
             if (change.utcOffset < change.prevUtcOffset) {
-              ICAL2.Timezone.adjust_change(change, 0, 0, 0, change.utcOffset);
+              ICAL3.Timezone.adjust_change(change, 0, 0, 0, change.utcOffset);
             } else {
-              ICAL2.Timezone.adjust_change(change, 0, 0, 0, change.prevUtcOffset);
+              ICAL3.Timezone.adjust_change(change, 0, 0, 0, change.prevUtcOffset);
             }
-            var cmp = ICAL2.Timezone._compare_change_fn(tt_change, change);
+            var cmp = ICAL3.Timezone._compare_change_fn(tt_change, change);
             if (cmp >= 0) {
               change_num_to_use = change_num;
             } else {
@@ -2900,9 +2900,9 @@ var require_ical = __commonJS({
           var zone_change = this.changes[change_num_to_use];
           var utcOffset_change = zone_change.utcOffset - zone_change.prevUtcOffset;
           if (utcOffset_change < 0 && change_num_to_use > 0) {
-            var tmp_change = ICAL2.helpers.clone(zone_change, true);
-            ICAL2.Timezone.adjust_change(tmp_change, 0, 0, 0, tmp_change.prevUtcOffset);
-            if (ICAL2.Timezone._compare_change_fn(tt_change, tmp_change) < 0) {
+            var tmp_change = ICAL3.helpers.clone(zone_change, true);
+            ICAL3.Timezone.adjust_change(tmp_change, 0, 0, 0, tmp_change.prevUtcOffset);
+            if (ICAL3.Timezone._compare_change_fn(tt_change, tmp_change) < 0) {
               var prev_zone_change = this.changes[change_num_to_use - 1];
               var want_daylight = false;
               if (zone_change.is_daylight != want_daylight && prev_zone_change.is_daylight == want_daylight) {
@@ -2913,24 +2913,24 @@ var require_ical = __commonJS({
           return zone_change.utcOffset;
         },
         _findNearbyChange: function icaltimezone_find_nearby_change(change) {
-          var idx = ICAL2.helpers.binsearchInsert(this.changes, change, ICAL2.Timezone._compare_change_fn);
+          var idx = ICAL3.helpers.binsearchInsert(this.changes, change, ICAL3.Timezone._compare_change_fn);
           if (idx >= this.changes.length) {
             return this.changes.length - 1;
           }
           return idx;
         },
         _ensureCoverage: function(aYear) {
-          if (ICAL2.Timezone._minimumExpansionYear == -1) {
-            var today = ICAL2.Time.now();
-            ICAL2.Timezone._minimumExpansionYear = today.year;
+          if (ICAL3.Timezone._minimumExpansionYear == -1) {
+            var today = ICAL3.Time.now();
+            ICAL3.Timezone._minimumExpansionYear = today.year;
           }
           var changesEndYear = aYear;
-          if (changesEndYear < ICAL2.Timezone._minimumExpansionYear) {
-            changesEndYear = ICAL2.Timezone._minimumExpansionYear;
+          if (changesEndYear < ICAL3.Timezone._minimumExpansionYear) {
+            changesEndYear = ICAL3.Timezone._minimumExpansionYear;
           }
-          changesEndYear += ICAL2.Timezone.EXTRA_COVERAGE;
-          if (changesEndYear > ICAL2.Timezone.MAX_YEAR) {
-            changesEndYear = ICAL2.Timezone.MAX_YEAR;
+          changesEndYear += ICAL3.Timezone.EXTRA_COVERAGE;
+          if (changesEndYear > ICAL3.Timezone.MAX_YEAR) {
+            changesEndYear = ICAL3.Timezone.MAX_YEAR;
           }
           if (!this.changes.length || this.expandedUntilYear < aYear) {
             var subcomps = this.component.getAllSubcomponents();
@@ -2939,7 +2939,7 @@ var require_ical = __commonJS({
             for (; compIdx < compLen; compIdx++) {
               this._expandComponent(subcomps[compIdx], changesEndYear, this.changes);
             }
-            this.changes.sort(ICAL2.Timezone._compare_change_fn);
+            this.changes.sort(ICAL3.Timezone._compare_change_fn);
             this.expandedUntilYear = changesEndYear;
           }
         },
@@ -2967,7 +2967,7 @@ var require_ical = __commonJS({
             change.hour = dtstart.hour;
             change.minute = dtstart.minute;
             change.second = dtstart.second;
-            ICAL2.Timezone.adjust_change(change, 0, 0, 0, -change.prevUtcOffset);
+            ICAL3.Timezone.adjust_change(change, 0, 0, 0, -change.prevUtcOffset);
             changes.push(change);
           } else {
             var props = aComponent.getAllProperties("rdate");
@@ -2985,15 +2985,15 @@ var require_ical = __commonJS({
                 change.hour = dtstart.hour;
                 change.minute = dtstart.minute;
                 change.second = dtstart.second;
-                if (dtstart.zone != ICAL2.Timezone.utcTimezone) {
-                  ICAL2.Timezone.adjust_change(change, 0, 0, 0, -change.prevUtcOffset);
+                if (dtstart.zone != ICAL3.Timezone.utcTimezone) {
+                  ICAL3.Timezone.adjust_change(change, 0, 0, 0, -change.prevUtcOffset);
                 }
               } else {
                 change.hour = time.hour;
                 change.minute = time.minute;
                 change.second = time.second;
-                if (time.zone != ICAL2.Timezone.utcTimezone) {
-                  ICAL2.Timezone.adjust_change(change, 0, 0, 0, -change.prevUtcOffset);
+                if (time.zone != ICAL3.Timezone.utcTimezone) {
+                  ICAL3.Timezone.adjust_change(change, 0, 0, 0, -change.prevUtcOffset);
                 }
               }
               changes.push(change);
@@ -3002,9 +3002,9 @@ var require_ical = __commonJS({
             if (rrule) {
               rrule = rrule.getFirstValue();
               change = init_changes();
-              if (rrule.until && rrule.until.zone == ICAL2.Timezone.utcTimezone) {
+              if (rrule.until && rrule.until.zone == ICAL3.Timezone.utcTimezone) {
                 rrule.until.adjust(0, 0, 0, change.prevUtcOffset);
-                rrule.until.zone = ICAL2.Timezone.localTimezone;
+                rrule.until.zone = ICAL3.Timezone.localTimezone;
               }
               var iterator = rrule.iterator(dtstart);
               var occ;
@@ -3020,7 +3020,7 @@ var require_ical = __commonJS({
                 change.minute = occ.minute;
                 change.second = occ.second;
                 change.isDate = occ.isDate;
-                ICAL2.Timezone.adjust_change(change, 0, 0, 0, -change.prevUtcOffset);
+                ICAL3.Timezone.adjust_change(change, 0, 0, 0, -change.prevUtcOffset);
                 changes.push(change);
               }
             }
@@ -3031,7 +3031,7 @@ var require_ical = __commonJS({
           return this.tznames ? this.tznames : this.tzid;
         }
       };
-      ICAL2.Timezone._compare_change_fn = function icaltimezone_compare_change_fn(a3, b3) {
+      ICAL3.Timezone._compare_change_fn = function icaltimezone_compare_change_fn(a3, b3) {
         if (a3.year < b3.year)
           return -1;
         else if (a3.year > b3.year)
@@ -3058,8 +3058,8 @@ var require_ical = __commonJS({
           return 1;
         return 0;
       };
-      ICAL2.Timezone.convert_time = function icaltimezone_convert_time(tt, from_zone, to_zone) {
-        if (tt.isDate || from_zone.tzid == to_zone.tzid || from_zone == ICAL2.Timezone.localTimezone || to_zone == ICAL2.Timezone.localTimezone) {
+      ICAL3.Timezone.convert_time = function icaltimezone_convert_time(tt, from_zone, to_zone) {
+        if (tt.isDate || from_zone.tzid == to_zone.tzid || from_zone == ICAL3.Timezone.localTimezone || to_zone == ICAL3.Timezone.localTimezone) {
           tt.zone = to_zone;
           return tt;
         }
@@ -3069,24 +3069,24 @@ var require_ical = __commonJS({
         tt.adjust(0, 0, 0, utcOffset);
         return null;
       };
-      ICAL2.Timezone.fromData = function icaltimezone_fromData(aData) {
-        var tt = new ICAL2.Timezone();
+      ICAL3.Timezone.fromData = function icaltimezone_fromData(aData) {
+        var tt = new ICAL3.Timezone();
         return tt.fromData(aData);
       };
-      ICAL2.Timezone.utcTimezone = ICAL2.Timezone.fromData({
+      ICAL3.Timezone.utcTimezone = ICAL3.Timezone.fromData({
         tzid: "UTC"
       });
-      ICAL2.Timezone.localTimezone = ICAL2.Timezone.fromData({
+      ICAL3.Timezone.localTimezone = ICAL3.Timezone.fromData({
         tzid: "floating"
       });
-      ICAL2.Timezone.adjust_change = function icaltimezone_adjust_change(change, days, hours, minutes, seconds) {
-        return ICAL2.Time.prototype.adjust.call(change, days, hours, minutes, seconds, change);
+      ICAL3.Timezone.adjust_change = function icaltimezone_adjust_change(change, days, hours, minutes, seconds) {
+        return ICAL3.Time.prototype.adjust.call(change, days, hours, minutes, seconds, change);
       };
-      ICAL2.Timezone._minimumExpansionYear = -1;
-      ICAL2.Timezone.MAX_YEAR = 2035;
-      ICAL2.Timezone.EXTRA_COVERAGE = 5;
+      ICAL3.Timezone._minimumExpansionYear = -1;
+      ICAL3.Timezone.MAX_YEAR = 2035;
+      ICAL3.Timezone.EXTRA_COVERAGE = 5;
     })();
-    ICAL2.TimezoneService = function() {
+    ICAL3.TimezoneService = function() {
       var zones;
       var TimezoneService = {
         get count() {
@@ -3094,7 +3094,7 @@ var require_ical = __commonJS({
         },
         reset: function() {
           zones = Object.create(null);
-          var utc = ICAL2.Timezone.utcTimezone;
+          var utc = ICAL3.Timezone.utcTimezone;
           zones.Z = utc;
           zones.UTC = utc;
           zones.GMT = utc;
@@ -3106,13 +3106,13 @@ var require_ical = __commonJS({
           return zones[tzid];
         },
         register: function(name, timezone) {
-          if (name instanceof ICAL2.Component) {
+          if (name instanceof ICAL3.Component) {
             if (name.name === "vtimezone") {
-              timezone = new ICAL2.Timezone(name);
+              timezone = new ICAL3.Timezone(name);
               name = timezone.tzid;
             }
           }
-          if (timezone instanceof ICAL2.Timezone) {
+          if (timezone instanceof ICAL3.Timezone) {
             zones[name] = timezone;
           } else {
             throw new TypeError("timezone must be ICAL.Timezone or ICAL.Component");
@@ -3126,7 +3126,7 @@ var require_ical = __commonJS({
       return TimezoneService;
     }();
     (function() {
-      ICAL2.Time = function icaltime(data, zone) {
+      ICAL3.Time = function icaltime(data, zone) {
         this.wrappedJSObject = this;
         var time = this._time = Object.create(null);
         time.year = 0;
@@ -3138,9 +3138,9 @@ var require_ical = __commonJS({
         time.isDate = false;
         this.fromData(data, zone);
       };
-      ICAL2.Time._dowCache = {};
-      ICAL2.Time._wnCache = {};
-      ICAL2.Time.prototype = {
+      ICAL3.Time._dowCache = {};
+      ICAL3.Time._wnCache = {};
+      ICAL3.Time.prototype = {
         icalclass: "icaltime",
         _cachedUnixTime: null,
         get icaltype() {
@@ -3149,11 +3149,11 @@ var require_ical = __commonJS({
         zone: null,
         _pendingNormalization: false,
         clone: function() {
-          return new ICAL2.Time(this._time, this.zone);
+          return new ICAL3.Time(this._time, this.zone);
         },
         reset: function icaltime_reset() {
-          this.fromData(ICAL2.Time.epochTime);
-          this.zone = ICAL2.Timezone.utcTimezone;
+          this.fromData(ICAL3.Time.epochTime);
+          this.zone = ICAL3.Timezone.utcTimezone;
         },
         resetTo: function icaltime_resetTo(year, month, day, hour, minute, second, timezone) {
           this.fromData({
@@ -3171,7 +3171,7 @@ var require_ical = __commonJS({
             this.reset();
           } else {
             if (useUTC) {
-              this.zone = ICAL2.Timezone.utcTimezone;
+              this.zone = ICAL3.Timezone.utcTimezone;
               this.year = aDate.getUTCFullYear();
               this.month = aDate.getUTCMonth() + 1;
               this.day = aDate.getUTCDate();
@@ -3179,7 +3179,7 @@ var require_ical = __commonJS({
               this.minute = aDate.getUTCMinutes();
               this.second = aDate.getUTCSeconds();
             } else {
-              this.zone = ICAL2.Timezone.localTimezone;
+              this.zone = ICAL3.Timezone.localTimezone;
               this.year = aDate.getFullYear();
               this.month = aDate.getMonth() + 1;
               this.day = aDate.getDate();
@@ -3210,44 +3210,44 @@ var require_ical = __commonJS({
             this.isDate = aData.isDate;
           }
           if (aData && "timezone" in aData) {
-            var zone = ICAL2.TimezoneService.get(aData.timezone);
-            this.zone = zone || ICAL2.Timezone.localTimezone;
+            var zone = ICAL3.TimezoneService.get(aData.timezone);
+            this.zone = zone || ICAL3.Timezone.localTimezone;
           }
           if (aData && "zone" in aData) {
             this.zone = aData.zone;
           }
           if (!this.zone) {
-            this.zone = ICAL2.Timezone.localTimezone;
+            this.zone = ICAL3.Timezone.localTimezone;
           }
           this._cachedUnixTime = null;
           return this;
         },
         dayOfWeek: function icaltime_dayOfWeek(aWeekStart) {
-          var firstDow = aWeekStart || ICAL2.Time.SUNDAY;
+          var firstDow = aWeekStart || ICAL3.Time.SUNDAY;
           var dowCacheKey = (this.year << 12) + (this.month << 8) + (this.day << 3) + firstDow;
-          if (dowCacheKey in ICAL2.Time._dowCache) {
-            return ICAL2.Time._dowCache[dowCacheKey];
+          if (dowCacheKey in ICAL3.Time._dowCache) {
+            return ICAL3.Time._dowCache[dowCacheKey];
           }
           var q3 = this.day;
           var m2 = this.month + (this.month < 3 ? 12 : 0);
           var Y2 = this.year - (this.month < 3 ? 1 : 0);
-          var h3 = q3 + Y2 + ICAL2.helpers.trunc((m2 + 1) * 26 / 10) + ICAL2.helpers.trunc(Y2 / 4);
+          var h3 = q3 + Y2 + ICAL3.helpers.trunc((m2 + 1) * 26 / 10) + ICAL3.helpers.trunc(Y2 / 4);
           if (true) {
-            h3 += ICAL2.helpers.trunc(Y2 / 100) * 6 + ICAL2.helpers.trunc(Y2 / 400);
+            h3 += ICAL3.helpers.trunc(Y2 / 100) * 6 + ICAL3.helpers.trunc(Y2 / 400);
           } else {
             h3 += 5;
           }
           h3 = (h3 + 7 - firstDow) % 7 + 1;
-          ICAL2.Time._dowCache[dowCacheKey] = h3;
+          ICAL3.Time._dowCache[dowCacheKey] = h3;
           return h3;
         },
         dayOfYear: function dayOfYear() {
-          var is_leap = ICAL2.Time.isLeapYear(this.year) ? 1 : 0;
-          var diypm = ICAL2.Time.daysInYearPassedMonth;
+          var is_leap = ICAL3.Time.isLeapYear(this.year) ? 1 : 0;
+          var diypm = ICAL3.Time.daysInYearPassedMonth;
           return diypm[is_leap][this.month - 1] + this.day;
         },
         startOfWeek: function startOfWeek(aWeekStart) {
-          var firstDow = aWeekStart || ICAL2.Time.SUNDAY;
+          var firstDow = aWeekStart || ICAL3.Time.SUNDAY;
           var result = this.clone();
           result.day -= (this.dayOfWeek() + 7 - firstDow) % 7;
           result.isDate = true;
@@ -3257,9 +3257,9 @@ var require_ical = __commonJS({
           return result;
         },
         endOfWeek: function endOfWeek(aWeekStart) {
-          var firstDow = aWeekStart || ICAL2.Time.SUNDAY;
+          var firstDow = aWeekStart || ICAL3.Time.SUNDAY;
           var result = this.clone();
-          result.day += (7 - this.dayOfWeek() + firstDow - ICAL2.Time.SUNDAY) % 7;
+          result.day += (7 - this.dayOfWeek() + firstDow - ICAL3.Time.SUNDAY) % 7;
           result.isDate = true;
           result.hour = 0;
           result.minute = 0;
@@ -3277,7 +3277,7 @@ var require_ical = __commonJS({
         },
         endOfMonth: function endOfMonth() {
           var result = this.clone();
-          result.day = ICAL2.Time.daysInMonth(result.month, result.year);
+          result.day = ICAL3.Time.daysInMonth(result.month, result.year);
           result.isDate = true;
           result.hour = 0;
           result.minute = 0;
@@ -3305,17 +3305,17 @@ var require_ical = __commonJS({
           return result;
         },
         startDoyWeek: function startDoyWeek(aFirstDayOfWeek) {
-          var firstDow = aFirstDayOfWeek || ICAL2.Time.SUNDAY;
+          var firstDow = aFirstDayOfWeek || ICAL3.Time.SUNDAY;
           var delta = this.dayOfWeek() - firstDow;
           if (delta < 0)
             delta += 7;
           return this.dayOfYear() - delta;
         },
         getDominicalLetter: function() {
-          return ICAL2.Time.getDominicalLetter(this.year);
+          return ICAL3.Time.getDominicalLetter(this.year);
         },
         nthWeekDay: function icaltime_nthWeekDay(aDayOfWeek, aPos) {
-          var daysInMonth = ICAL2.Time.daysInMonth(this.month, this.year);
+          var daysInMonth = ICAL3.Time.daysInMonth(this.month, this.year);
           var weekday;
           var pos = aPos;
           var start = 0;
@@ -3359,29 +3359,29 @@ var require_ical = __commonJS({
         },
         weekNumber: function weekNumber(aWeekStart) {
           var wnCacheKey = (this.year << 12) + (this.month << 8) + (this.day << 3) + aWeekStart;
-          if (wnCacheKey in ICAL2.Time._wnCache) {
-            return ICAL2.Time._wnCache[wnCacheKey];
+          if (wnCacheKey in ICAL3.Time._wnCache) {
+            return ICAL3.Time._wnCache[wnCacheKey];
           }
           var week1;
           var dt = this.clone();
           dt.isDate = true;
           var isoyear = this.year;
           if (dt.month == 12 && dt.day > 25) {
-            week1 = ICAL2.Time.weekOneStarts(isoyear + 1, aWeekStart);
+            week1 = ICAL3.Time.weekOneStarts(isoyear + 1, aWeekStart);
             if (dt.compare(week1) < 0) {
-              week1 = ICAL2.Time.weekOneStarts(isoyear, aWeekStart);
+              week1 = ICAL3.Time.weekOneStarts(isoyear, aWeekStart);
             } else {
               isoyear++;
             }
           } else {
-            week1 = ICAL2.Time.weekOneStarts(isoyear, aWeekStart);
+            week1 = ICAL3.Time.weekOneStarts(isoyear, aWeekStart);
             if (dt.compare(week1) < 0) {
-              week1 = ICAL2.Time.weekOneStarts(--isoyear, aWeekStart);
+              week1 = ICAL3.Time.weekOneStarts(--isoyear, aWeekStart);
             }
           }
           var daysBetween = dt.subtractDate(week1).toSeconds() / 86400;
-          var answer = ICAL2.helpers.trunc(daysBetween / 7) + 1;
-          ICAL2.Time._wnCache[wnCacheKey] = answer;
+          var answer = ICAL3.helpers.trunc(daysBetween / 7) + 1;
+          ICAL3.Time._wnCache[wnCacheKey] = answer;
           return answer;
         },
         addDuration: function icaltime_add(aDuration) {
@@ -3404,12 +3404,12 @@ var require_ical = __commonJS({
         subtractDate: function icaltime_subtract(aDate) {
           var unixTime = this.toUnixTime() + this.utcOffset();
           var other = aDate.toUnixTime() + aDate.utcOffset();
-          return ICAL2.Duration.fromSeconds(unixTime - other);
+          return ICAL3.Duration.fromSeconds(unixTime - other);
         },
         subtractDateTz: function icaltime_subtract_abs(aDate) {
           var unixTime = this.toUnixTime();
           var other = aDate.toUnixTime();
-          return ICAL2.Duration.fromSeconds(unixTime - other);
+          return ICAL3.Duration.fromSeconds(unixTime - other);
         },
         compare: function icaltime_compare(other) {
           var a3 = this.toUnixTime();
@@ -3422,7 +3422,7 @@ var require_ical = __commonJS({
         },
         compareDateOnlyTz: function icaltime_compareDateOnlyTz(other, tz) {
           function cmp(attr) {
-            return ICAL2.Time._cmp_attr(a3, b3, attr);
+            return ICAL3.Time._cmp_attr(a3, b3, attr);
           }
           var a3 = this.convertToZone(tz);
           var b3 = other.convertToZone(tz);
@@ -3439,13 +3439,13 @@ var require_ical = __commonJS({
           var copy = this.clone();
           var zone_equals = this.zone.tzid == zone.tzid;
           if (!this.isDate && !zone_equals) {
-            ICAL2.Timezone.convert_time(copy, this.zone, zone);
+            ICAL3.Timezone.convert_time(copy, this.zone, zone);
           }
           copy.zone = zone;
           return copy;
         },
         utcOffset: function utc_offset() {
-          if (this.zone == ICAL2.Timezone.localTimezone || this.zone == ICAL2.Timezone.utcTimezone) {
+          if (this.zone == ICAL3.Timezone.localTimezone || this.zone == ICAL3.Timezone.utcTimezone) {
             return 0;
           } else {
             return this.zone.utcOffset(this);
@@ -3454,23 +3454,23 @@ var require_ical = __commonJS({
         toICALString: function() {
           var string = this.toString();
           if (string.length > 10) {
-            return ICAL2.design.icalendar.value["date-time"].toICAL(string);
+            return ICAL3.design.icalendar.value["date-time"].toICAL(string);
           } else {
-            return ICAL2.design.icalendar.value.date.toICAL(string);
+            return ICAL3.design.icalendar.value.date.toICAL(string);
           }
         },
         toString: function toString() {
-          var result = this.year + "-" + ICAL2.helpers.pad2(this.month) + "-" + ICAL2.helpers.pad2(this.day);
+          var result = this.year + "-" + ICAL3.helpers.pad2(this.month) + "-" + ICAL3.helpers.pad2(this.day);
           if (!this.isDate) {
-            result += "T" + ICAL2.helpers.pad2(this.hour) + ":" + ICAL2.helpers.pad2(this.minute) + ":" + ICAL2.helpers.pad2(this.second);
-            if (this.zone === ICAL2.Timezone.utcTimezone) {
+            result += "T" + ICAL3.helpers.pad2(this.hour) + ":" + ICAL3.helpers.pad2(this.minute) + ":" + ICAL3.helpers.pad2(this.second);
+            if (this.zone === ICAL3.Timezone.utcTimezone) {
               result += "Z";
             }
           }
           return result;
         },
         toJSDate: function toJSDate() {
-          if (this.zone == ICAL2.Timezone.localTimezone) {
+          if (this.zone == ICAL3.Timezone.localTimezone) {
             if (this.isDate) {
               return new Date(this.year, this.month - 1, this.day);
             } else {
@@ -3498,37 +3498,37 @@ var require_ical = __commonJS({
           if (!time.isDate) {
             second = time.second + aExtraSeconds;
             time.second = second % 60;
-            minutesOverflow = ICAL2.helpers.trunc(second / 60);
+            minutesOverflow = ICAL3.helpers.trunc(second / 60);
             if (time.second < 0) {
               time.second += 60;
               minutesOverflow--;
             }
             minute = time.minute + aExtraMinutes + minutesOverflow;
             time.minute = minute % 60;
-            hoursOverflow = ICAL2.helpers.trunc(minute / 60);
+            hoursOverflow = ICAL3.helpers.trunc(minute / 60);
             if (time.minute < 0) {
               time.minute += 60;
               hoursOverflow--;
             }
             hour = time.hour + aExtraHours + hoursOverflow;
             time.hour = hour % 24;
-            daysOverflow = ICAL2.helpers.trunc(hour / 24);
+            daysOverflow = ICAL3.helpers.trunc(hour / 24);
             if (time.hour < 0) {
               time.hour += 24;
               daysOverflow--;
             }
           }
           if (time.month > 12) {
-            yearsOverflow = ICAL2.helpers.trunc((time.month - 1) / 12);
+            yearsOverflow = ICAL3.helpers.trunc((time.month - 1) / 12);
           } else if (time.month < 1) {
-            yearsOverflow = ICAL2.helpers.trunc(time.month / 12) - 1;
+            yearsOverflow = ICAL3.helpers.trunc(time.month / 12) - 1;
           }
           time.year += yearsOverflow;
           time.month -= 12 * yearsOverflow;
           day = time.day + aExtraDays + daysOverflow;
           if (day > 0) {
             for (; ; ) {
-              daysInMonth = ICAL2.Time.daysInMonth(time.month, time.year);
+              daysInMonth = ICAL3.Time.daysInMonth(time.month, time.year);
               if (day <= daysInMonth) {
                 break;
               }
@@ -3547,7 +3547,7 @@ var require_ical = __commonJS({
               } else {
                 time.month--;
               }
-              day += ICAL2.Time.daysInMonth(time.month, time.year);
+              day += ICAL3.Time.daysInMonth(time.month, time.year);
             }
           }
           time.day = day;
@@ -3555,8 +3555,8 @@ var require_ical = __commonJS({
           return this;
         },
         fromUnixTime: function fromUnixTime(seconds) {
-          this.zone = ICAL2.Timezone.utcTimezone;
-          var epoch = ICAL2.Time.epochTime.clone();
+          this.zone = ICAL3.Timezone.utcTimezone;
+          var epoch = ICAL3.Time.epochTime.clone();
           epoch.adjust(0, 0, 0, seconds);
           this.year = epoch.year;
           this.month = epoch.month;
@@ -3601,7 +3601,7 @@ var require_ical = __commonJS({
       };
       (function setupNormalizeAttributes() {
         function defineAttr(attr) {
-          Object.defineProperty(ICAL2.Time.prototype, attr, {
+          Object.defineProperty(ICAL3.Time.prototype, attr, {
             get: function getTimeAttr() {
               if (this._pendingNormalization) {
                 this._normalize();
@@ -3630,70 +3630,70 @@ var require_ical = __commonJS({
           defineAttr("isDate");
         }
       })();
-      ICAL2.Time.daysInMonth = function icaltime_daysInMonth(month, year) {
+      ICAL3.Time.daysInMonth = function icaltime_daysInMonth(month, year) {
         var _daysInMonth = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
         var days = 30;
         if (month < 1 || month > 12)
           return days;
         days = _daysInMonth[month];
         if (month == 2) {
-          days += ICAL2.Time.isLeapYear(year);
+          days += ICAL3.Time.isLeapYear(year);
         }
         return days;
       };
-      ICAL2.Time.isLeapYear = function isLeapYear(year) {
+      ICAL3.Time.isLeapYear = function isLeapYear(year) {
         if (year <= 1752) {
           return year % 4 == 0;
         } else {
           return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
         }
       };
-      ICAL2.Time.fromDayOfYear = function icaltime_fromDayOfYear(aDayOfYear, aYear) {
+      ICAL3.Time.fromDayOfYear = function icaltime_fromDayOfYear(aDayOfYear, aYear) {
         var year = aYear;
         var doy = aDayOfYear;
-        var tt = new ICAL2.Time();
+        var tt = new ICAL3.Time();
         tt.auto_normalize = false;
-        var is_leap = ICAL2.Time.isLeapYear(year) ? 1 : 0;
+        var is_leap = ICAL3.Time.isLeapYear(year) ? 1 : 0;
         if (doy < 1) {
           year--;
-          is_leap = ICAL2.Time.isLeapYear(year) ? 1 : 0;
-          doy += ICAL2.Time.daysInYearPassedMonth[is_leap][12];
-          return ICAL2.Time.fromDayOfYear(doy, year);
-        } else if (doy > ICAL2.Time.daysInYearPassedMonth[is_leap][12]) {
-          is_leap = ICAL2.Time.isLeapYear(year) ? 1 : 0;
-          doy -= ICAL2.Time.daysInYearPassedMonth[is_leap][12];
+          is_leap = ICAL3.Time.isLeapYear(year) ? 1 : 0;
+          doy += ICAL3.Time.daysInYearPassedMonth[is_leap][12];
+          return ICAL3.Time.fromDayOfYear(doy, year);
+        } else if (doy > ICAL3.Time.daysInYearPassedMonth[is_leap][12]) {
+          is_leap = ICAL3.Time.isLeapYear(year) ? 1 : 0;
+          doy -= ICAL3.Time.daysInYearPassedMonth[is_leap][12];
           year++;
-          return ICAL2.Time.fromDayOfYear(doy, year);
+          return ICAL3.Time.fromDayOfYear(doy, year);
         }
         tt.year = year;
         tt.isDate = true;
         for (var month = 11; month >= 0; month--) {
-          if (doy > ICAL2.Time.daysInYearPassedMonth[is_leap][month]) {
+          if (doy > ICAL3.Time.daysInYearPassedMonth[is_leap][month]) {
             tt.month = month + 1;
-            tt.day = doy - ICAL2.Time.daysInYearPassedMonth[is_leap][month];
+            tt.day = doy - ICAL3.Time.daysInYearPassedMonth[is_leap][month];
             break;
           }
         }
         tt.auto_normalize = true;
         return tt;
       };
-      ICAL2.Time.fromStringv2 = function fromString(str) {
-        return new ICAL2.Time({
+      ICAL3.Time.fromStringv2 = function fromString(str) {
+        return new ICAL3.Time({
           year: parseInt(str.substr(0, 4), 10),
           month: parseInt(str.substr(5, 2), 10),
           day: parseInt(str.substr(8, 2), 10),
           isDate: true
         });
       };
-      ICAL2.Time.fromDateString = function(aValue) {
-        return new ICAL2.Time({
-          year: ICAL2.helpers.strictParseInt(aValue.substr(0, 4)),
-          month: ICAL2.helpers.strictParseInt(aValue.substr(5, 2)),
-          day: ICAL2.helpers.strictParseInt(aValue.substr(8, 2)),
+      ICAL3.Time.fromDateString = function(aValue) {
+        return new ICAL3.Time({
+          year: ICAL3.helpers.strictParseInt(aValue.substr(0, 4)),
+          month: ICAL3.helpers.strictParseInt(aValue.substr(5, 2)),
+          day: ICAL3.helpers.strictParseInt(aValue.substr(8, 2)),
           isDate: true
         });
       };
-      ICAL2.Time.fromDateTimeString = function(aValue, prop) {
+      ICAL3.Time.fromDateTimeString = function(aValue, prop) {
         if (aValue.length < 19) {
           throw new Error('invalid date-time value: "' + aValue + '"');
         }
@@ -3703,64 +3703,64 @@ var require_ical = __commonJS({
         } else if (prop) {
           zone = prop.getParameter("tzid");
         }
-        var time = new ICAL2.Time({
-          year: ICAL2.helpers.strictParseInt(aValue.substr(0, 4)),
-          month: ICAL2.helpers.strictParseInt(aValue.substr(5, 2)),
-          day: ICAL2.helpers.strictParseInt(aValue.substr(8, 2)),
-          hour: ICAL2.helpers.strictParseInt(aValue.substr(11, 2)),
-          minute: ICAL2.helpers.strictParseInt(aValue.substr(14, 2)),
-          second: ICAL2.helpers.strictParseInt(aValue.substr(17, 2)),
+        var time = new ICAL3.Time({
+          year: ICAL3.helpers.strictParseInt(aValue.substr(0, 4)),
+          month: ICAL3.helpers.strictParseInt(aValue.substr(5, 2)),
+          day: ICAL3.helpers.strictParseInt(aValue.substr(8, 2)),
+          hour: ICAL3.helpers.strictParseInt(aValue.substr(11, 2)),
+          minute: ICAL3.helpers.strictParseInt(aValue.substr(14, 2)),
+          second: ICAL3.helpers.strictParseInt(aValue.substr(17, 2)),
           timezone: zone
         });
         return time;
       };
-      ICAL2.Time.fromString = function fromString(aValue, aProperty) {
+      ICAL3.Time.fromString = function fromString(aValue, aProperty) {
         if (aValue.length > 10) {
-          return ICAL2.Time.fromDateTimeString(aValue, aProperty);
+          return ICAL3.Time.fromDateTimeString(aValue, aProperty);
         } else {
-          return ICAL2.Time.fromDateString(aValue);
+          return ICAL3.Time.fromDateString(aValue);
         }
       };
-      ICAL2.Time.fromJSDate = function fromJSDate(aDate, useUTC) {
-        var tt = new ICAL2.Time();
+      ICAL3.Time.fromJSDate = function fromJSDate(aDate, useUTC) {
+        var tt = new ICAL3.Time();
         return tt.fromJSDate(aDate, useUTC);
       };
-      ICAL2.Time.fromData = function fromData(aData, aZone) {
-        var t3 = new ICAL2.Time();
+      ICAL3.Time.fromData = function fromData(aData, aZone) {
+        var t3 = new ICAL3.Time();
         return t3.fromData(aData, aZone);
       };
-      ICAL2.Time.now = function icaltime_now() {
-        return ICAL2.Time.fromJSDate(new Date(), false);
+      ICAL3.Time.now = function icaltime_now() {
+        return ICAL3.Time.fromJSDate(new Date(), false);
       };
-      ICAL2.Time.weekOneStarts = function weekOneStarts(aYear, aWeekStart) {
-        var t3 = ICAL2.Time.fromData({
+      ICAL3.Time.weekOneStarts = function weekOneStarts(aYear, aWeekStart) {
+        var t3 = ICAL3.Time.fromData({
           year: aYear,
           month: 1,
           day: 1,
           isDate: true
         });
         var dow = t3.dayOfWeek();
-        var wkst = aWeekStart || ICAL2.Time.DEFAULT_WEEK_START;
-        if (dow > ICAL2.Time.THURSDAY) {
+        var wkst = aWeekStart || ICAL3.Time.DEFAULT_WEEK_START;
+        if (dow > ICAL3.Time.THURSDAY) {
           t3.day += 7;
         }
-        if (wkst > ICAL2.Time.THURSDAY) {
+        if (wkst > ICAL3.Time.THURSDAY) {
           t3.day -= 7;
         }
         t3.day -= dow - wkst;
         return t3;
       };
-      ICAL2.Time.getDominicalLetter = function(yr) {
+      ICAL3.Time.getDominicalLetter = function(yr) {
         var LTRS = "GFEDCBA";
         var dom = (yr + (yr / 4 | 0) + (yr / 400 | 0) - (yr / 100 | 0) - 1) % 7;
-        var isLeap = ICAL2.Time.isLeapYear(yr);
+        var isLeap = ICAL3.Time.isLeapYear(yr);
         if (isLeap) {
           return LTRS[(dom + 6) % 7] + LTRS[dom];
         } else {
           return LTRS[dom];
         }
       };
-      ICAL2.Time.epochTime = ICAL2.Time.fromData({
+      ICAL3.Time.epochTime = ICAL3.Time.fromData({
         year: 1970,
         month: 1,
         day: 1,
@@ -3770,28 +3770,28 @@ var require_ical = __commonJS({
         isDate: false,
         timezone: "Z"
       });
-      ICAL2.Time._cmp_attr = function _cmp_attr(a3, b3, attr) {
+      ICAL3.Time._cmp_attr = function _cmp_attr(a3, b3, attr) {
         if (a3[attr] > b3[attr])
           return 1;
         if (a3[attr] < b3[attr])
           return -1;
         return 0;
       };
-      ICAL2.Time.daysInYearPassedMonth = [
+      ICAL3.Time.daysInYearPassedMonth = [
         [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365],
         [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366]
       ];
-      ICAL2.Time.SUNDAY = 1;
-      ICAL2.Time.MONDAY = 2;
-      ICAL2.Time.TUESDAY = 3;
-      ICAL2.Time.WEDNESDAY = 4;
-      ICAL2.Time.THURSDAY = 5;
-      ICAL2.Time.FRIDAY = 6;
-      ICAL2.Time.SATURDAY = 7;
-      ICAL2.Time.DEFAULT_WEEK_START = ICAL2.Time.MONDAY;
+      ICAL3.Time.SUNDAY = 1;
+      ICAL3.Time.MONDAY = 2;
+      ICAL3.Time.TUESDAY = 3;
+      ICAL3.Time.WEDNESDAY = 4;
+      ICAL3.Time.THURSDAY = 5;
+      ICAL3.Time.FRIDAY = 6;
+      ICAL3.Time.SATURDAY = 7;
+      ICAL3.Time.DEFAULT_WEEK_START = ICAL3.Time.MONDAY;
     })();
     (function() {
-      ICAL2.VCardTime = function(data, zone, icaltype) {
+      ICAL3.VCardTime = function(data, zone, icaltype) {
         this.wrappedJSObject = this;
         var time = this._time = Object.create(null);
         time.year = null;
@@ -3803,28 +3803,28 @@ var require_ical = __commonJS({
         this.icaltype = icaltype || "date-and-or-time";
         this.fromData(data, zone);
       };
-      ICAL2.helpers.inherits(ICAL2.Time, ICAL2.VCardTime, {
+      ICAL3.helpers.inherits(ICAL3.Time, ICAL3.VCardTime, {
         icalclass: "vcardtime",
         icaltype: "date-and-or-time",
         zone: null,
         clone: function() {
-          return new ICAL2.VCardTime(this._time, this.zone, this.icaltype);
+          return new ICAL3.VCardTime(this._time, this.zone, this.icaltype);
         },
         _normalize: function() {
           return this;
         },
         utcOffset: function() {
-          if (this.zone instanceof ICAL2.UtcOffset) {
+          if (this.zone instanceof ICAL3.UtcOffset) {
             return this.zone.toSeconds();
           } else {
-            return ICAL2.Time.prototype.utcOffset.apply(this, arguments);
+            return ICAL3.Time.prototype.utcOffset.apply(this, arguments);
           }
         },
         toICALString: function() {
-          return ICAL2.design.vcard.value[this.icaltype].toICAL(this.toString());
+          return ICAL3.design.vcard.value[this.icaltype].toICAL(this.toString());
         },
         toString: function toString() {
-          var p22 = ICAL2.helpers.pad2;
+          var p22 = ICAL3.helpers.pad2;
           var y3 = this.year, m2 = this.month, d3 = this.day;
           var h3 = this.hour, mm = this.minute, s3 = this.second;
           var hasYear = y3 !== null, hasMonth = m2 !== null, hasDay = d3 !== null;
@@ -3832,14 +3832,14 @@ var require_ical = __commonJS({
           var datepart = (hasYear ? p22(y3) + (hasMonth || hasDay ? "-" : "") : hasMonth || hasDay ? "--" : "") + (hasMonth ? p22(m2) : "") + (hasDay ? "-" + p22(d3) : "");
           var timepart = (hasHour ? p22(h3) : "-") + (hasHour && hasMinute ? ":" : "") + (hasMinute ? p22(mm) : "") + (!hasHour && !hasMinute ? "-" : "") + (hasMinute && hasSecond ? ":" : "") + (hasSecond ? p22(s3) : "");
           var zone;
-          if (this.zone === ICAL2.Timezone.utcTimezone) {
+          if (this.zone === ICAL3.Timezone.utcTimezone) {
             zone = "Z";
-          } else if (this.zone instanceof ICAL2.UtcOffset) {
+          } else if (this.zone instanceof ICAL3.UtcOffset) {
             zone = this.zone.toString();
-          } else if (this.zone === ICAL2.Timezone.localTimezone) {
+          } else if (this.zone === ICAL3.Timezone.localTimezone) {
             zone = "";
-          } else if (this.zone instanceof ICAL2.Timezone) {
-            var offset = ICAL2.UtcOffset.fromSeconds(this.zone.utcOffset(this));
+          } else if (this.zone instanceof ICAL3.Timezone) {
+            var offset = ICAL3.UtcOffset.fromSeconds(this.zone.utcOffset(this));
             zone = offset.toString();
           } else {
             zone = "";
@@ -3856,15 +3856,15 @@ var require_ical = __commonJS({
           return null;
         }
       });
-      ICAL2.VCardTime.fromDateAndOrTimeString = function(aValue, aIcalType) {
+      ICAL3.VCardTime.fromDateAndOrTimeString = function(aValue, aIcalType) {
         function part(v3, s3, e3) {
-          return v3 ? ICAL2.helpers.strictParseInt(v3.substr(s3, e3)) : null;
+          return v3 ? ICAL3.helpers.strictParseInt(v3.substr(s3, e3)) : null;
         }
         var parts = aValue.split("T");
         var dt = parts[0], tmz = parts[1];
-        var splitzone = tmz ? ICAL2.design.vcard.value.time._splitZone(tmz) : [];
+        var splitzone = tmz ? ICAL3.design.vcard.value.time._splitZone(tmz) : [];
         var zone = splitzone[0], tm = splitzone[1];
-        var stoi = ICAL2.helpers.strictParseInt;
+        var stoi = ICAL3.helpers.strictParseInt;
         var dtlen = dt ? dt.length : 0;
         var tmlen = tm ? tm.length : 0;
         var hasDashDate = dt && dt[0] == "-" && dt[1] == "-";
@@ -3878,24 +3878,24 @@ var require_ical = __commonJS({
           second: tmlen == 4 ? part(tm, 2, 2) : tmlen == 6 ? part(tm, 4, 2) : tmlen == 8 ? part(tm, 6, 2) : null
         };
         if (zone == "Z") {
-          zone = ICAL2.Timezone.utcTimezone;
+          zone = ICAL3.Timezone.utcTimezone;
         } else if (zone && zone[3] == ":") {
-          zone = ICAL2.UtcOffset.fromString(zone);
+          zone = ICAL3.UtcOffset.fromString(zone);
         } else {
           zone = null;
         }
-        return new ICAL2.VCardTime(o2, zone, aIcalType);
+        return new ICAL3.VCardTime(o2, zone, aIcalType);
       };
     })();
     (function() {
       var DOW_MAP = {
-        SU: ICAL2.Time.SUNDAY,
-        MO: ICAL2.Time.MONDAY,
-        TU: ICAL2.Time.TUESDAY,
-        WE: ICAL2.Time.WEDNESDAY,
-        TH: ICAL2.Time.THURSDAY,
-        FR: ICAL2.Time.FRIDAY,
-        SA: ICAL2.Time.SATURDAY
+        SU: ICAL3.Time.SUNDAY,
+        MO: ICAL3.Time.MONDAY,
+        TU: ICAL3.Time.TUESDAY,
+        WE: ICAL3.Time.WEDNESDAY,
+        TH: ICAL3.Time.THURSDAY,
+        FR: ICAL3.Time.FRIDAY,
+        SA: ICAL3.Time.SATURDAY
       };
       var REVERSE_DOW_MAP = {};
       for (var key in DOW_MAP) {
@@ -3914,30 +3914,30 @@ var require_ical = __commonJS({
         "BYMONTH",
         "BYSETPOS"
       ];
-      ICAL2.Recur = function icalrecur(data) {
+      ICAL3.Recur = function icalrecur(data) {
         this.wrappedJSObject = this;
         this.parts = {};
         if (data && typeof data === "object") {
           this.fromData(data);
         }
       };
-      ICAL2.Recur.prototype = {
+      ICAL3.Recur.prototype = {
         parts: null,
         interval: 1,
-        wkst: ICAL2.Time.MONDAY,
+        wkst: ICAL3.Time.MONDAY,
         until: null,
         count: null,
         freq: null,
         icalclass: "icalrecur",
         icaltype: "recur",
         iterator: function(aStart) {
-          return new ICAL2.RecurIterator({
+          return new ICAL3.RecurIterator({
             rule: this,
             dtstart: aStart
           });
         },
         clone: function clone() {
-          return new ICAL2.Recur(this.toJSON());
+          return new ICAL3.Recur(this.toJSON());
         },
         isFinite: function isfinite() {
           return !!(this.count || this.until);
@@ -3988,10 +3988,10 @@ var require_ical = __commonJS({
             optionDesign.INTERVAL(this.interval, this);
           }
           if (this.wkst && typeof this.wkst != "number") {
-            this.wkst = ICAL2.Recur.icalDayToNumericDay(this.wkst);
+            this.wkst = ICAL3.Recur.icalDayToNumericDay(this.wkst);
           }
-          if (this.until && !(this.until instanceof ICAL2.Time)) {
-            this.until = ICAL2.Time.fromString(this.until);
+          if (this.until && !(this.until instanceof ICAL3.Time)) {
+            this.until = ICAL3.Time.fromString(this.until);
           }
         },
         toJSON: function() {
@@ -4011,14 +4011,14 @@ var require_ical = __commonJS({
             if (Array.isArray(kparts) && kparts.length == 1) {
               res[k2.toLowerCase()] = kparts[0];
             } else {
-              res[k2.toLowerCase()] = ICAL2.helpers.clone(this.parts[k2]);
+              res[k2.toLowerCase()] = ICAL3.helpers.clone(this.parts[k2]);
             }
           }
           if (this.until) {
             res.until = this.until.toString();
           }
-          if ("wkst" in this && this.wkst !== ICAL2.Time.DEFAULT_WEEK_START) {
-            res.wkst = ICAL2.Recur.numericDayToIcalDay(this.wkst);
+          if ("wkst" in this && this.wkst !== ICAL3.Time.DEFAULT_WEEK_START) {
+            res.wkst = ICAL3.Recur.numericDayToIcalDay(this.wkst);
           }
           return res;
         },
@@ -4038,8 +4038,8 @@ var require_ical = __commonJS({
           if (this.until) {
             str += ";UNTIL=" + this.until.toICALString();
           }
-          if ("wkst" in this && this.wkst !== ICAL2.Time.DEFAULT_WEEK_START) {
-            str += ";WKST=" + ICAL2.Recur.numericDayToIcalDay(this.wkst);
+          if ("wkst" in this && this.wkst !== ICAL3.Time.DEFAULT_WEEK_START) {
+            str += ";WKST=" + ICAL3.Recur.numericDayToIcalDay(this.wkst);
           }
           return str;
         }
@@ -4049,7 +4049,7 @@ var require_ical = __commonJS({
         if (value[0] === "+") {
           result = value.substr(1);
         }
-        result = ICAL2.helpers.strictParseInt(result);
+        result = ICAL3.helpers.strictParseInt(result);
         if (min !== void 0 && value < min) {
           throw new Error(type + ': invalid value "' + value + '" must be > ' + min);
         }
@@ -4058,13 +4058,13 @@ var require_ical = __commonJS({
         }
         return result;
       }
-      ICAL2.Recur.icalDayToNumericDay = function toNumericDay(string, aWeekStart) {
-        var firstDow = aWeekStart || ICAL2.Time.SUNDAY;
+      ICAL3.Recur.icalDayToNumericDay = function toNumericDay(string, aWeekStart) {
+        var firstDow = aWeekStart || ICAL3.Time.SUNDAY;
         return (DOW_MAP[string] - firstDow + 7) % 7 + 1;
       };
-      ICAL2.Recur.numericDayToIcalDay = function toIcalDay(num, aWeekStart) {
-        var firstDow = aWeekStart || ICAL2.Time.SUNDAY;
-        var dow = num + firstDow - ICAL2.Time.SUNDAY;
+      ICAL3.Recur.numericDayToIcalDay = function toIcalDay(num, aWeekStart) {
+        var firstDow = aWeekStart || ICAL3.Time.SUNDAY;
+        var dow = num + firstDow - ICAL3.Time.SUNDAY;
         if (dow > 7) {
           dow -= 7;
         }
@@ -4090,27 +4090,27 @@ var require_ical = __commonJS({
           }
         },
         COUNT: function(value, dict, fmtIcal) {
-          dict.count = ICAL2.helpers.strictParseInt(value);
+          dict.count = ICAL3.helpers.strictParseInt(value);
         },
         INTERVAL: function(value, dict, fmtIcal) {
-          dict.interval = ICAL2.helpers.strictParseInt(value);
+          dict.interval = ICAL3.helpers.strictParseInt(value);
           if (dict.interval < 1) {
             dict.interval = 1;
           }
         },
         UNTIL: function(value, dict, fmtIcal) {
           if (value.length > 10) {
-            dict.until = ICAL2.design.icalendar.value["date-time"].fromICAL(value);
+            dict.until = ICAL3.design.icalendar.value["date-time"].fromICAL(value);
           } else {
-            dict.until = ICAL2.design.icalendar.value.date.fromICAL(value);
+            dict.until = ICAL3.design.icalendar.value.date.fromICAL(value);
           }
           if (!fmtIcal) {
-            dict.until = ICAL2.Time.fromString(dict.until);
+            dict.until = ICAL3.Time.fromString(dict.until);
           }
         },
         WKST: function(value, dict, fmtIcal) {
           if (VALID_DAY_NAMES.test(value)) {
-            dict.wkst = ICAL2.Recur.icalDayToNumericDay(value);
+            dict.wkst = ICAL3.Recur.icalDayToNumericDay(value);
           } else {
             throw new Error('invalid WKST value "' + value + '"');
           }
@@ -4133,14 +4133,14 @@ var require_ical = __commonJS({
         BYMONTH: parseNumericValue.bind(this, "BYMONTH", 1, 12),
         BYSETPOS: parseNumericValue.bind(this, "BYSETPOS", -366, 366)
       };
-      ICAL2.Recur.fromString = function(string) {
-        var data = ICAL2.Recur._stringToData(string, false);
-        return new ICAL2.Recur(data);
+      ICAL3.Recur.fromString = function(string) {
+        var data = ICAL3.Recur._stringToData(string, false);
+        return new ICAL3.Recur(data);
       };
-      ICAL2.Recur.fromData = function(aData) {
-        return new ICAL2.Recur(aData);
+      ICAL3.Recur.fromData = function(aData) {
+        return new ICAL3.Recur(aData);
       };
-      ICAL2.Recur._stringToData = function(string, fmtIcal) {
+      ICAL3.Recur._stringToData = function(string, fmtIcal) {
         var dict = Object.create(null);
         var values = string.split(";");
         var len = values.length;
@@ -4167,7 +4167,7 @@ var require_ical = __commonJS({
         return dict;
       };
     })();
-    ICAL2.RecurIterator = function() {
+    ICAL3.RecurIterator = function() {
       function icalrecur_iterator(options) {
         this.fromData(options);
       }
@@ -4183,24 +4183,24 @@ var require_ical = __commonJS({
         days: null,
         days_index: 0,
         fromData: function(options) {
-          this.rule = ICAL2.helpers.formatClassType(options.rule, ICAL2.Recur);
+          this.rule = ICAL3.helpers.formatClassType(options.rule, ICAL3.Recur);
           if (!this.rule) {
             throw new Error("iterator requires a (ICAL.Recur) rule");
           }
-          this.dtstart = ICAL2.helpers.formatClassType(options.dtstart, ICAL2.Time);
+          this.dtstart = ICAL3.helpers.formatClassType(options.dtstart, ICAL3.Time);
           if (!this.dtstart) {
             throw new Error("iterator requires a (ICAL.Time) dtstart");
           }
           if (options.by_data) {
             this.by_data = options.by_data;
           } else {
-            this.by_data = ICAL2.helpers.clone(this.rule.parts, true);
+            this.by_data = ICAL3.helpers.clone(this.rule.parts, true);
           }
           if (options.occurrence_number)
             this.occurrence_number = options.occurrence_number;
           this.days = options.days || [];
           if (options.last) {
-            this.last = ICAL2.helpers.formatClassType(options.last, ICAL2.Time);
+            this.last = ICAL3.helpers.formatClassType(options.last, ICAL3.Time);
           }
           this.by_indices = options.by_indices;
           if (!this.by_indices) {
@@ -4258,7 +4258,7 @@ var require_ical = __commonJS({
                 this.last.day += wkdy;
               }
             } else {
-              var dayName = ICAL2.Recur.numericDayToIcalDay(this.dtstart.dayOfWeek());
+              var dayName = ICAL3.Recur.numericDayToIcalDay(this.dtstart.dayOfWeek());
               parts.BYDAY = [dayName];
             }
           }
@@ -4275,7 +4275,7 @@ var require_ical = __commonJS({
           if (this.rule.freq == "MONTHLY" && this.has_by_data("BYDAY")) {
             var tempLast = null;
             var initLast = this.last.clone();
-            var daysInMonth = ICAL2.Time.daysInMonth(this.last.month, this.last.year);
+            var daysInMonth = ICAL3.Time.daysInMonth(this.last.month, this.last.year);
             for (var i3 in this.by_data.BYDAY) {
               if (!this.by_data.BYDAY.hasOwnProperty(i3)) {
                 continue;
@@ -4294,7 +4294,7 @@ var require_ical = __commonJS({
                 }
                 while (dayOfMonth > daysInMonth || dayOfMonth <= 0) {
                   this.increment_month();
-                  daysInMonth = ICAL2.Time.daysInMonth(this.last.month, this.last.year);
+                  daysInMonth = ICAL3.Time.daysInMonth(this.last.month, this.last.year);
                   dayOfMonth = this.last.nthWeekDay(dow, pos);
                 }
               }
@@ -4312,7 +4312,7 @@ var require_ical = __commonJS({
             }
           } else if (this.has_by_data("BYMONTHDAY")) {
             if (this.last.day < 0) {
-              var daysInMonth = ICAL2.Time.daysInMonth(this.last.month, this.last.year);
+              var daysInMonth = ICAL3.Time.daysInMonth(this.last.month, this.last.year);
               this.last.day = daysInMonth + this.last.day + 1;
             }
           }
@@ -4422,7 +4422,7 @@ var require_ical = __commonJS({
           return end_of_data;
         },
         normalizeByMonthDayRules: function(year, month, rules) {
-          var daysInMonth = ICAL2.Time.daysInMonth(month, year);
+          var daysInMonth = ICAL3.Time.daysInMonth(month, year);
           var newRules = [];
           var ruleIdx = 0;
           var len = rules.length;
@@ -4457,7 +4457,7 @@ var require_ical = __commonJS({
           var self2 = this;
           var lastDay = this.last.day;
           function initMonth() {
-            daysInMonth = ICAL2.Time.daysInMonth(self2.last.month, self2.last.year);
+            daysInMonth = ICAL3.Time.daysInMonth(self2.last.month, self2.last.year);
             byMonthDay = self2.normalizeByMonthDayRules(self2.last.year, self2.last.month, self2.by_data.BYMONTHDAY);
             dateLen = byMonthDay.length;
             while (byMonthDay[dateIdx] <= lastDay && !(isInit && byMonthDay[dateIdx] == lastDay) && dateIdx < dateLen - 1) {
@@ -4518,7 +4518,7 @@ var require_ical = __commonJS({
           if (this.has_by_data("BYDAY") && this.has_by_data("BYMONTHDAY")) {
             data_valid = this._byDayAndMonthDay();
           } else if (this.has_by_data("BYDAY")) {
-            var daysInMonth = ICAL2.Time.daysInMonth(this.last.month, this.last.year);
+            var daysInMonth = ICAL3.Time.daysInMonth(this.last.month, this.last.year);
             var setpos = 0;
             var setpos_total = 0;
             if (this.has_by_data("BYSETPOS")) {
@@ -4561,7 +4561,7 @@ var require_ical = __commonJS({
               this.by_indices.BYMONTHDAY = 0;
               this.increment_month();
             }
-            var daysInMonth = ICAL2.Time.daysInMonth(this.last.month, this.last.year);
+            var daysInMonth = ICAL3.Time.daysInMonth(this.last.month, this.last.year);
             var day = this.by_data.BYMONTHDAY[this.by_indices.BYMONTHDAY];
             if (day < 0) {
               day = daysInMonth + day + 1;
@@ -4574,7 +4574,7 @@ var require_ical = __commonJS({
             }
           } else {
             this.increment_month();
-            var daysInMonth = ICAL2.Time.daysInMonth(this.last.month, this.last.year);
+            var daysInMonth = ICAL3.Time.daysInMonth(this.last.month, this.last.year);
             if (this.by_data.BYMONTHDAY[0] > daysInMonth) {
               data_valid = 0;
             } else {
@@ -4592,7 +4592,7 @@ var require_ical = __commonJS({
             return 1;
           }
           for (; ; ) {
-            var tt = new ICAL2.Time();
+            var tt = new ICAL3.Time();
             this.by_indices.BYDAY++;
             if (this.by_indices.BYDAY == Object.keys(this.by_data.BYDAY).length) {
               this.by_indices.BYDAY = 0;
@@ -4614,7 +4614,7 @@ var require_ical = __commonJS({
                 continue;
               }
             }
-            var next = ICAL2.Time.fromDayOfYear(startOfWeek + dow, this.last.year);
+            var next = ICAL3.Time.fromDayOfYear(startOfWeek + dow, this.last.year);
             this.last.year = next.year;
             this.last.month = next.month;
             this.last.day = next.day;
@@ -4642,7 +4642,7 @@ var require_ical = __commonJS({
             doy += 1;
             year += 1;
           }
-          var next = ICAL2.Time.fromDayOfYear(doy, year);
+          var next = ICAL3.Time.fromDayOfYear(doy, year);
           this.last.day = next.day;
           this.last.month = next.month;
         },
@@ -4650,7 +4650,7 @@ var require_ical = __commonJS({
           var matches = dow.match(/([+-]?[0-9])?(MO|TU|WE|TH|FR|SA|SU)/);
           if (matches) {
             var pos = parseInt(matches[1] || 0, 10);
-            dow = ICAL2.Recur.icalDayToNumericDay(matches[2], aWeekStart);
+            dow = ICAL3.Recur.icalDayToNumericDay(matches[2], aWeekStart);
             return [pos, dow];
           } else {
             return [0, 0];
@@ -4682,7 +4682,7 @@ var require_ical = __commonJS({
         },
         increment_monthday: function increment_monthday(inc) {
           for (var i3 = 0; i3 < inc; i3++) {
-            var daysInMonth = ICAL2.Time.daysInMonth(this.last.month, this.last.year);
+            var daysInMonth = ICAL3.Time.daysInMonth(this.last.month, this.last.year);
             this.last.day++;
             if (this.last.day > daysInMonth) {
               this.last.day -= daysInMonth;
@@ -4706,7 +4706,7 @@ var require_ical = __commonJS({
               this.last.month++;
             }
             this.last.month--;
-            var years = ICAL2.helpers.trunc(this.last.month / 12);
+            var years = ICAL3.helpers.trunc(this.last.month / 12);
             this.last.month %= 12;
             this.last.month++;
             if (years != 0) {
@@ -4719,7 +4719,7 @@ var require_ical = __commonJS({
         },
         increment_generic: function increment_generic(inc, aDateAttr, aFactor, aNextIncrement) {
           this.last[aDateAttr] += inc;
-          var nextunit = ICAL2.helpers.trunc(this.last[aDateAttr] / aFactor);
+          var nextunit = ICAL3.helpers.trunc(this.last[aDateAttr] / aFactor);
           this.last[aDateAttr] %= aFactor;
           if (nextunit != 0) {
             this["increment_" + aNextIncrement](nextunit);
@@ -4729,7 +4729,7 @@ var require_ical = __commonJS({
           return aRuleType in this.rule.parts;
         },
         expand_year_days: function expand_year_days(aYear) {
-          var t3 = new ICAL2.Time();
+          var t3 = new ICAL3.Time();
           this.days = [];
           var parts = {};
           var rules = ["BYDAY", "BYWEEKNO", "BYMONTHDAY", "BYMONTH", "BYYEARDAY"];
@@ -4751,7 +4751,7 @@ var require_ical = __commonJS({
               t3.month = month;
               t3.day = 1;
               var first_week = t3.weekNumber(this.rule.wkst);
-              t3.day = ICAL2.Time.daysInMonth(month, aYear);
+              t3.day = ICAL3.Time.daysInMonth(month, aYear);
               var last_week = t3.weekNumber(this.rule.wkst);
               for (monthIdx = first_week; monthIdx < last_week; monthIdx++) {
                 validWeeks[monthIdx] = 1;
@@ -4795,7 +4795,7 @@ var require_ical = __commonJS({
               var t32 = this.dtstart.clone();
               var day_ = this.by_data.BYMONTHDAY[monthdaykey];
               if (day_ < 0) {
-                var daysInMonth = ICAL2.Time.daysInMonth(t32.month, aYear);
+                var daysInMonth = ICAL3.Time.daysInMonth(t32.month, aYear);
                 day_ = day_ + daysInMonth + 1;
               }
               t32.day = day_;
@@ -4809,7 +4809,7 @@ var require_ical = __commonJS({
                 continue;
               }
               var month_ = this.by_data.BYMONTH[monthkey];
-              var daysInMonth = ICAL2.Time.daysInMonth(month_, aYear);
+              var daysInMonth = ICAL3.Time.daysInMonth(month_, aYear);
               for (var monthdaykey in this.by_data.BYMONTHDAY) {
                 if (!this.by_data.BYMONTHDAY.hasOwnProperty(monthdaykey)) {
                   continue;
@@ -4835,7 +4835,7 @@ var require_ical = __commonJS({
                 continue;
               }
               var month = this.by_data.BYMONTH[monthkey];
-              var daysInMonth = ICAL2.Time.daysInMonth(month, aYear);
+              var daysInMonth = ICAL3.Time.daysInMonth(month, aYear);
               t3.year = aYear;
               t3.month = this.by_data.BYMONTH[monthkey];
               t3.day = 1;
@@ -4898,7 +4898,7 @@ var require_ical = __commonJS({
                 continue;
               }
               var day = expandedDays[daykey];
-              var tt = ICAL2.Time.fromDayOfYear(day, aYear);
+              var tt = ICAL3.Time.fromDayOfYear(day, aYear);
               if (this.by_data.BYMONTHDAY.indexOf(tt.day) >= 0) {
                 this.days.push(day);
               }
@@ -4910,7 +4910,7 @@ var require_ical = __commonJS({
                 continue;
               }
               var day = expandedDays[daykey];
-              var tt = ICAL2.Time.fromDayOfYear(day, aYear);
+              var tt = ICAL3.Time.fromDayOfYear(day, aYear);
               if (this.by_data.BYMONTH.indexOf(tt.month) >= 0 && this.by_data.BYMONTHDAY.indexOf(tt.day) >= 0) {
                 this.days.push(day);
               }
@@ -4922,7 +4922,7 @@ var require_ical = __commonJS({
                 continue;
               }
               var day = expandedDays[daykey];
-              var tt = ICAL2.Time.fromDayOfYear(day, aYear);
+              var tt = ICAL3.Time.fromDayOfYear(day, aYear);
               var weekno = tt.weekNumber(this.rule.wkst);
               if (this.by_data.BYWEEKNO.indexOf(weekno)) {
                 this.days.push(day);
@@ -5042,7 +5042,7 @@ var require_ical = __commonJS({
           var dow = this.last.dayOfWeek();
           var weekNo = this.last.weekNumber(this.rule.wkst);
           var doy = this.last.dayOfYear();
-          return this.check_contract_restriction("BYSECOND", this.last.second) && this.check_contract_restriction("BYMINUTE", this.last.minute) && this.check_contract_restriction("BYHOUR", this.last.hour) && this.check_contract_restriction("BYDAY", ICAL2.Recur.numericDayToIcalDay(dow)) && this.check_contract_restriction("BYWEEKNO", weekNo) && this.check_contract_restriction("BYMONTHDAY", this.last.day) && this.check_contract_restriction("BYMONTH", this.last.month) && this.check_contract_restriction("BYYEARDAY", doy);
+          return this.check_contract_restriction("BYSECOND", this.last.second) && this.check_contract_restriction("BYMINUTE", this.last.minute) && this.check_contract_restriction("BYHOUR", this.last.hour) && this.check_contract_restriction("BYDAY", ICAL3.Recur.numericDayToIcalDay(dow)) && this.check_contract_restriction("BYWEEKNO", weekNo) && this.check_contract_restriction("BYMONTHDAY", this.last.day) && this.check_contract_restriction("BYMONTH", this.last.month) && this.check_contract_restriction("BYYEARDAY", doy);
         },
         setup_defaults: function setup_defaults(aRuleType, req, deftime) {
           var indexMapValue = icalrecur_iterator._indexMap[aRuleType];
@@ -5096,9 +5096,9 @@ var require_ical = __commonJS({
       icalrecur_iterator.ILLEGAL = 3;
       return icalrecur_iterator;
     }();
-    ICAL2.RecurExpansion = function() {
+    ICAL3.RecurExpansion = function() {
       function formatTime(item) {
-        return ICAL2.helpers.formatClassType(item, ICAL2.Time);
+        return ICAL3.helpers.formatClassType(item, ICAL3.Time);
       }
       function compareTime(a3, b3) {
         return a3.compare(b3);
@@ -5123,7 +5123,7 @@ var require_ical = __commonJS({
         dtstart: null,
         last: null,
         fromData: function(options) {
-          var start = ICAL2.helpers.formatClassType(options.dtstart, ICAL2.Time);
+          var start = ICAL3.helpers.formatClassType(options.dtstart, ICAL3.Time);
           if (!start) {
             throw new Error(".dtstart (ICAL.Time) must be given");
           } else {
@@ -5137,7 +5137,7 @@ var require_ical = __commonJS({
               throw new Error(".ruleIterators or .component must be given");
             }
             this.ruleIterators = options.ruleIterators.map(function(item) {
-              return ICAL2.helpers.formatClassType(item, ICAL2.RecurIterator);
+              return ICAL3.helpers.formatClassType(item, ICAL3.RecurIterator);
             });
             this.ruleDateInc = options.ruleDateInc;
             this.exDateInc = options.exDateInc;
@@ -5213,7 +5213,7 @@ var require_ical = __commonJS({
         },
         _extractDates: function(component, propertyName) {
           function handleProp(prop2) {
-            idx = ICAL2.helpers.binsearchInsert(result, prop2, compareTime);
+            idx = ICAL3.helpers.binsearchInsert(result, prop2, compareTime);
             result.splice(idx, 0, prop2);
           }
           var result = [];
@@ -5241,7 +5241,7 @@ var require_ical = __commonJS({
               this.ruleDateInc = 0;
               this.last = this.ruleDates[0].clone();
             } else {
-              this.ruleDateInc = ICAL2.helpers.binsearchInsert(this.ruleDates, this.last, compareTime);
+              this.ruleDateInc = ICAL3.helpers.binsearchInsert(this.ruleDates, this.last, compareTime);
             }
             this.ruleDate = this.ruleDates[this.ruleDateInc];
           }
@@ -5260,7 +5260,7 @@ var require_ical = __commonJS({
           }
           if (component.hasProperty("exdate")) {
             this.exDates = this._extractDates(component, "exdate");
-            this.exDateInc = ICAL2.helpers.binsearchInsert(this.exDates, this.last, compareTime);
+            this.exDateInc = ICAL3.helpers.binsearchInsert(this.exDates, this.last, compareTime);
             this.exDate = this.exDates[this.exDateInc];
           }
         },
@@ -5300,16 +5300,16 @@ var require_ical = __commonJS({
       };
       return RecurExpansion;
     }();
-    ICAL2.Event = function() {
-      function Event2(component, options) {
-        if (!(component instanceof ICAL2.Component)) {
+    ICAL3.Event = function() {
+      function Event3(component, options) {
+        if (!(component instanceof ICAL3.Component)) {
           options = component;
           component = null;
         }
         if (component) {
           this.component = component;
         } else {
-          this.component = new ICAL2.Component("vevent");
+          this.component = new ICAL3.Component("vevent");
         }
         this._rangeExceptionCache = Object.create(null);
         this.exceptions = Object.create(null);
@@ -5327,7 +5327,7 @@ var require_ical = __commonJS({
           }, this);
         }
       }
-      Event2.prototype = {
+      Event3.prototype = {
         THISANDFUTURE: "THISANDFUTURE",
         exceptions: null,
         strictExceptions: false,
@@ -5335,8 +5335,8 @@ var require_ical = __commonJS({
           if (this.isRecurrenceException()) {
             throw new Error("cannot relate exception to exceptions");
           }
-          if (obj instanceof ICAL2.Component) {
-            obj = new ICAL2.Event(obj);
+          if (obj instanceof ICAL3.Component) {
+            obj = new ICAL3.Event(obj);
           }
           if (this.strictExceptions && obj.uid !== this.uid) {
             throw new Error("attempted to relate unrelated exception");
@@ -5348,7 +5348,7 @@ var require_ical = __commonJS({
               obj.recurrenceId.toUnixTime(),
               id
             ];
-            var idx = ICAL2.helpers.binsearchInsert(this.rangeExceptions, item, compareRangeException);
+            var idx = ICAL3.helpers.binsearchInsert(this.rangeExceptions, item, compareRangeException);
             this.rangeExceptions.splice(idx, 0, item);
           }
         },
@@ -5364,7 +5364,7 @@ var require_ical = __commonJS({
             return null;
           }
           var utc = time.toUnixTime();
-          var idx = ICAL2.helpers.binsearchInsert(this.rangeExceptions, [utc], compareRangeException);
+          var idx = ICAL3.helpers.binsearchInsert(this.rangeExceptions, [utc], compareRangeException);
           idx -= 1;
           if (idx < 0) {
             return null;
@@ -5377,7 +5377,7 @@ var require_ical = __commonJS({
         },
         getOccurrenceDetails: function(occurrence) {
           var id = occurrence.toString();
-          var utcId = occurrence.convertToZone(ICAL2.Timezone.utcTimezone).toString();
+          var utcId = occurrence.convertToZone(ICAL3.Timezone.utcTimezone).toString();
           var item;
           var result = {
             recurrenceId: occurrence
@@ -5424,7 +5424,7 @@ var require_ical = __commonJS({
           return result;
         },
         iterator: function(startTime) {
-          return new ICAL2.RecurExpansion({
+          return new ICAL3.RecurExpansion({
             component: this.component,
             dtstart: startTime || this.startDate
           });
@@ -5539,10 +5539,10 @@ var require_ical = __commonJS({
         _setTime: function(propName, time) {
           var prop = this.component.getFirstProperty(propName);
           if (!prop) {
-            prop = new ICAL2.Property(propName);
+            prop = new ICAL3.Property(propName);
             this.component.addProperty(prop);
           }
-          if (time.zone === ICAL2.Timezone.localTimezone || time.zone === ICAL2.Timezone.utcTimezone) {
+          if (time.zone === ICAL3.Timezone.localTimezone || time.zone === ICAL3.Timezone.utcTimezone) {
             prop.removeParameter("tzid");
           } else {
             prop.setParameter("tzid", time.zone.tzid);
@@ -5566,9 +5566,9 @@ var require_ical = __commonJS({
           return -1;
         return 0;
       }
-      return Event2;
+      return Event3;
     }();
-    ICAL2.ComponentParser = function() {
+    ICAL3.ComponentParser = function() {
       function ComponentParser(options) {
         if (typeof options === "undefined") {
           options = {};
@@ -5593,10 +5593,10 @@ var require_ical = __commonJS({
         },
         process: function(ical) {
           if (typeof ical === "string") {
-            ical = ICAL2.parse(ical);
+            ical = ICAL3.parse(ical);
           }
-          if (!(ical instanceof ICAL2.Component)) {
-            ical = new ICAL2.Component(ical);
+          if (!(ical instanceof ICAL3.Component)) {
+            ical = new ICAL3.Component(ical);
           }
           var components = ical.getAllSubcomponents();
           var i3 = 0;
@@ -5609,7 +5609,7 @@ var require_ical = __commonJS({
                 if (this.parseTimezone) {
                   var tzid = component.getFirstPropertyValue("tzid");
                   if (tzid) {
-                    this.ontimezone(new ICAL2.Timezone({
+                    this.ontimezone(new ICAL3.Timezone({
                       tzid,
                       component
                     }));
@@ -5618,7 +5618,7 @@ var require_ical = __commonJS({
                 break;
               case "vevent":
                 if (this.parseEvent) {
-                  this.onevent(new ICAL2.Event(component));
+                  this.onevent(new ICAL3.Event(component));
                 }
                 break;
               default:
@@ -5877,14 +5877,14 @@ var require_react_development = __commonJS({
         {
           Object.freeze(emptyObject);
         }
-        function Component3(props, context, updater) {
+        function Component4(props, context, updater) {
           this.props = props;
           this.context = context;
           this.refs = emptyObject;
           this.updater = updater || ReactNoopUpdateQueue;
         }
-        Component3.prototype.isReactComponent = {};
-        Component3.prototype.setState = function(partialState, callback) {
+        Component4.prototype.isReactComponent = {};
+        Component4.prototype.setState = function(partialState, callback) {
           if (!(typeof partialState === "object" || typeof partialState === "function" || partialState == null)) {
             {
               throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
@@ -5892,7 +5892,7 @@ var require_react_development = __commonJS({
           }
           this.updater.enqueueSetState(this, partialState, callback, "setState");
         };
-        Component3.prototype.forceUpdate = function(callback) {
+        Component4.prototype.forceUpdate = function(callback) {
           this.updater.enqueueForceUpdate(this, callback, "forceUpdate");
         };
         {
@@ -5901,7 +5901,7 @@ var require_react_development = __commonJS({
             replaceState: ["replaceState", "Refactor your code to use setState instead (see https://github.com/facebook/react/issues/3236)."]
           };
           var defineDeprecationWarning = function(methodName, info) {
-            Object.defineProperty(Component3.prototype, methodName, {
+            Object.defineProperty(Component4.prototype, methodName, {
               get: function() {
                 warn("%s(...) is deprecated in plain JavaScript React classes. %s", info[0], info[1]);
                 return void 0;
@@ -5916,7 +5916,7 @@ var require_react_development = __commonJS({
         }
         function ComponentDummy() {
         }
-        ComponentDummy.prototype = Component3.prototype;
+        ComponentDummy.prototype = Component4.prototype;
         function PureComponent2(props, context, updater) {
           this.props = props;
           this.context = context;
@@ -5925,7 +5925,7 @@ var require_react_development = __commonJS({
         }
         var pureComponentPrototype = PureComponent2.prototype = new ComponentDummy();
         pureComponentPrototype.constructor = PureComponent2;
-        _assign(pureComponentPrototype, Component3.prototype);
+        _assign(pureComponentPrototype, Component4.prototype);
         pureComponentPrototype.isPureReactComponent = true;
         function createRef2() {
           var refObject = {
@@ -6898,8 +6898,8 @@ var require_react_development = __commonJS({
             return describeNativeComponentFrame(fn, false);
           }
         }
-        function shouldConstruct(Component4) {
-          var prototype = Component4.prototype;
+        function shouldConstruct(Component5) {
+          var prototype = Component5.prototype;
           return !!(prototype && prototype.isReactComponent);
         }
         function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
@@ -7223,7 +7223,7 @@ var require_react_development = __commonJS({
           only: onlyChild
         };
         exports.Children = Children;
-        exports.Component = Component3;
+        exports.Component = Component4;
         exports.PureComponent = PureComponent2;
         exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals;
         exports.cloneElement = cloneElement$1;
@@ -8825,8 +8825,8 @@ var require_react_dom_development = __commonJS({
             return describeNativeComponentFrame(fn, false);
           }
         }
-        function shouldConstruct(Component3) {
-          var prototype = Component3.prototype;
+        function shouldConstruct(Component4) {
+          var prototype = Component4.prototype;
           return !!(prototype && prototype.isReactComponent);
         }
         function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
@@ -15416,9 +15416,9 @@ var require_react_dom_development = __commonJS({
         var contextStackCursor = createCursor(emptyContextObject);
         var didPerformWorkStackCursor = createCursor(false);
         var previousContext = emptyContextObject;
-        function getUnmaskedContext(workInProgress2, Component3, didPushOwnContextIfProvider) {
+        function getUnmaskedContext(workInProgress2, Component4, didPushOwnContextIfProvider) {
           {
-            if (didPushOwnContextIfProvider && isContextProvider(Component3)) {
+            if (didPushOwnContextIfProvider && isContextProvider(Component4)) {
               return previousContext;
             }
             return contextStackCursor.current;
@@ -15563,8 +15563,8 @@ var require_react_dom_development = __commonJS({
                 case HostRoot:
                   return node.stateNode.context;
                 case ClassComponent: {
-                  var Component3 = node.type;
-                  if (isContextProvider(Component3)) {
+                  var Component4 = node.type;
+                  if (isContextProvider(Component4)) {
                     return node.stateNode.__reactInternalMemoizedMergedChildContext;
                   }
                   break;
@@ -15976,10 +15976,10 @@ var require_react_dom_development = __commonJS({
             pendingLegacyContextWarning = new Map();
           };
         }
-        function resolveDefaultProps(Component3, baseProps) {
-          if (Component3 && Component3.defaultProps) {
+        function resolveDefaultProps(Component4, baseProps) {
+          if (Component4 && Component4.defaultProps) {
             var props = _assign({}, baseProps);
-            var defaultProps = Component3.defaultProps;
+            var defaultProps = Component4.defaultProps;
             for (var propName in defaultProps) {
               if (props[propName] === void 0) {
                 props[propName] = defaultProps[propName];
@@ -18295,7 +18295,7 @@ var require_react_dom_development = __commonJS({
           }
           return true;
         }
-        function renderWithHooks(current2, workInProgress2, Component3, props, secondArg, nextRenderLanes) {
+        function renderWithHooks(current2, workInProgress2, Component4, props, secondArg, nextRenderLanes) {
           renderLanes = nextRenderLanes;
           currentlyRenderingFiber$1 = workInProgress2;
           {
@@ -18315,7 +18315,7 @@ var require_react_dom_development = __commonJS({
               ReactCurrentDispatcher$1.current = HooksDispatcherOnMountInDEV;
             }
           }
-          var children = Component3(props, secondArg);
+          var children = Component4(props, secondArg);
           if (didScheduleRenderPhaseUpdateDuringThisPass) {
             var numberOfReRenders = 0;
             do {
@@ -18336,7 +18336,7 @@ var require_react_dom_development = __commonJS({
                 hookTypesUpdateIndexDev = -1;
               }
               ReactCurrentDispatcher$1.current = HooksDispatcherOnRerenderInDEV;
-              children = Component3(props, secondArg);
+              children = Component4(props, secondArg);
             } while (didScheduleRenderPhaseUpdateDuringThisPass);
           }
           ReactCurrentDispatcher$1.current = ContextOnlyDispatcher;
@@ -19923,16 +19923,16 @@ var require_react_dom_development = __commonJS({
           workInProgress2.child = reconcileChildFibers(workInProgress2, current2.child, null, renderLanes2);
           workInProgress2.child = reconcileChildFibers(workInProgress2, null, nextChildren, renderLanes2);
         }
-        function updateForwardRef(current2, workInProgress2, Component3, nextProps, renderLanes2) {
+        function updateForwardRef(current2, workInProgress2, Component4, nextProps, renderLanes2) {
           {
             if (workInProgress2.type !== workInProgress2.elementType) {
-              var innerPropTypes = Component3.propTypes;
+              var innerPropTypes = Component4.propTypes;
               if (innerPropTypes) {
-                checkPropTypes(innerPropTypes, nextProps, "prop", getComponentName(Component3));
+                checkPropTypes(innerPropTypes, nextProps, "prop", getComponentName(Component4));
               }
             }
           }
-          var render5 = Component3.render;
+          var render5 = Component4.render;
           var ref = workInProgress2.ref;
           var nextChildren;
           prepareToReadContext(workInProgress2, renderLanes2);
@@ -19958,10 +19958,10 @@ var require_react_dom_development = __commonJS({
           reconcileChildren(current2, workInProgress2, nextChildren, renderLanes2);
           return workInProgress2.child;
         }
-        function updateMemoComponent(current2, workInProgress2, Component3, nextProps, updateLanes, renderLanes2) {
+        function updateMemoComponent(current2, workInProgress2, Component4, nextProps, updateLanes, renderLanes2) {
           if (current2 === null) {
-            var type = Component3.type;
-            if (isSimpleFunctionComponent(type) && Component3.compare === null && Component3.defaultProps === void 0) {
+            var type = Component4.type;
+            if (isSimpleFunctionComponent(type) && Component4.compare === null && Component4.defaultProps === void 0) {
               var resolvedType = type;
               {
                 resolvedType = resolveFunctionForHotReloading(type);
@@ -19979,14 +19979,14 @@ var require_react_dom_development = __commonJS({
                 checkPropTypes(innerPropTypes, nextProps, "prop", getComponentName(type));
               }
             }
-            var child = createFiberFromTypeAndProps(Component3.type, null, nextProps, workInProgress2, workInProgress2.mode, renderLanes2);
+            var child = createFiberFromTypeAndProps(Component4.type, null, nextProps, workInProgress2, workInProgress2.mode, renderLanes2);
             child.ref = workInProgress2.ref;
             child.return = workInProgress2;
             workInProgress2.child = child;
             return child;
           }
           {
-            var _type = Component3.type;
+            var _type = Component4.type;
             var _innerPropTypes = _type.propTypes;
             if (_innerPropTypes) {
               checkPropTypes(_innerPropTypes, nextProps, "prop", getComponentName(_type));
@@ -19995,7 +19995,7 @@ var require_react_dom_development = __commonJS({
           var currentChild = current2.child;
           if (!includesSomeLane(updateLanes, renderLanes2)) {
             var prevProps = currentChild.memoizedProps;
-            var compare = Component3.compare;
+            var compare = Component4.compare;
             compare = compare !== null ? compare : shallowEqual;
             if (compare(prevProps, nextProps) && current2.ref === workInProgress2.ref) {
               return bailoutOnAlreadyFinishedWork(current2, workInProgress2, renderLanes2);
@@ -20008,7 +20008,7 @@ var require_react_dom_development = __commonJS({
           workInProgress2.child = newChild;
           return newChild;
         }
-        function updateSimpleMemoComponent(current2, workInProgress2, Component3, nextProps, updateLanes, renderLanes2) {
+        function updateSimpleMemoComponent(current2, workInProgress2, Component4, nextProps, updateLanes, renderLanes2) {
           {
             if (workInProgress2.type !== workInProgress2.elementType) {
               var outerMemoType = workInProgress2.elementType;
@@ -20040,7 +20040,7 @@ var require_react_dom_development = __commonJS({
               }
             }
           }
-          return updateFunctionComponent(current2, workInProgress2, Component3, nextProps, renderLanes2);
+          return updateFunctionComponent(current2, workInProgress2, Component4, nextProps, renderLanes2);
         }
         function updateOffscreenComponent(current2, workInProgress2, renderLanes2) {
           var nextProps = workInProgress2.pendingProps;
@@ -20121,18 +20121,18 @@ var require_react_dom_development = __commonJS({
             workInProgress2.flags |= Ref;
           }
         }
-        function updateFunctionComponent(current2, workInProgress2, Component3, nextProps, renderLanes2) {
+        function updateFunctionComponent(current2, workInProgress2, Component4, nextProps, renderLanes2) {
           {
             if (workInProgress2.type !== workInProgress2.elementType) {
-              var innerPropTypes = Component3.propTypes;
+              var innerPropTypes = Component4.propTypes;
               if (innerPropTypes) {
-                checkPropTypes(innerPropTypes, nextProps, "prop", getComponentName(Component3));
+                checkPropTypes(innerPropTypes, nextProps, "prop", getComponentName(Component4));
               }
             }
           }
           var context;
           {
-            var unmaskedContext = getUnmaskedContext(workInProgress2, Component3, true);
+            var unmaskedContext = getUnmaskedContext(workInProgress2, Component4, true);
             context = getMaskedContext(workInProgress2, unmaskedContext);
           }
           var nextChildren;
@@ -20140,11 +20140,11 @@ var require_react_dom_development = __commonJS({
           {
             ReactCurrentOwner$1.current = workInProgress2;
             setIsRendering(true);
-            nextChildren = renderWithHooks(current2, workInProgress2, Component3, nextProps, context, renderLanes2);
+            nextChildren = renderWithHooks(current2, workInProgress2, Component4, nextProps, context, renderLanes2);
             if (workInProgress2.mode & StrictMode) {
               disableLogs();
               try {
-                nextChildren = renderWithHooks(current2, workInProgress2, Component3, nextProps, context, renderLanes2);
+                nextChildren = renderWithHooks(current2, workInProgress2, Component4, nextProps, context, renderLanes2);
               } finally {
                 reenableLogs();
               }
@@ -20159,17 +20159,17 @@ var require_react_dom_development = __commonJS({
           reconcileChildren(current2, workInProgress2, nextChildren, renderLanes2);
           return workInProgress2.child;
         }
-        function updateClassComponent(current2, workInProgress2, Component3, nextProps, renderLanes2) {
+        function updateClassComponent(current2, workInProgress2, Component4, nextProps, renderLanes2) {
           {
             if (workInProgress2.type !== workInProgress2.elementType) {
-              var innerPropTypes = Component3.propTypes;
+              var innerPropTypes = Component4.propTypes;
               if (innerPropTypes) {
-                checkPropTypes(innerPropTypes, nextProps, "prop", getComponentName(Component3));
+                checkPropTypes(innerPropTypes, nextProps, "prop", getComponentName(Component4));
               }
             }
           }
           var hasContext;
-          if (isContextProvider(Component3)) {
+          if (isContextProvider(Component4)) {
             hasContext = true;
             pushContextProvider(workInProgress2);
           } else {
@@ -20184,15 +20184,15 @@ var require_react_dom_development = __commonJS({
               workInProgress2.alternate = null;
               workInProgress2.flags |= Placement;
             }
-            constructClassInstance(workInProgress2, Component3, nextProps);
-            mountClassInstance(workInProgress2, Component3, nextProps, renderLanes2);
+            constructClassInstance(workInProgress2, Component4, nextProps);
+            mountClassInstance(workInProgress2, Component4, nextProps, renderLanes2);
             shouldUpdate = true;
           } else if (current2 === null) {
-            shouldUpdate = resumeMountClassInstance(workInProgress2, Component3, nextProps, renderLanes2);
+            shouldUpdate = resumeMountClassInstance(workInProgress2, Component4, nextProps, renderLanes2);
           } else {
-            shouldUpdate = updateClassInstance(current2, workInProgress2, Component3, nextProps, renderLanes2);
+            shouldUpdate = updateClassInstance(current2, workInProgress2, Component4, nextProps, renderLanes2);
           }
-          var nextUnitOfWork = finishClassComponent(current2, workInProgress2, Component3, shouldUpdate, hasContext, renderLanes2);
+          var nextUnitOfWork = finishClassComponent(current2, workInProgress2, Component4, shouldUpdate, hasContext, renderLanes2);
           {
             var inst = workInProgress2.stateNode;
             if (shouldUpdate && inst.props !== nextProps) {
@@ -20204,19 +20204,19 @@ var require_react_dom_development = __commonJS({
           }
           return nextUnitOfWork;
         }
-        function finishClassComponent(current2, workInProgress2, Component3, shouldUpdate, hasContext, renderLanes2) {
+        function finishClassComponent(current2, workInProgress2, Component4, shouldUpdate, hasContext, renderLanes2) {
           markRef(current2, workInProgress2);
           var didCaptureError = (workInProgress2.flags & DidCapture) !== NoFlags;
           if (!shouldUpdate && !didCaptureError) {
             if (hasContext) {
-              invalidateContextProvider(workInProgress2, Component3, false);
+              invalidateContextProvider(workInProgress2, Component4, false);
             }
             return bailoutOnAlreadyFinishedWork(current2, workInProgress2, renderLanes2);
           }
           var instance = workInProgress2.stateNode;
           ReactCurrentOwner$1.current = workInProgress2;
           var nextChildren;
-          if (didCaptureError && typeof Component3.getDerivedStateFromError !== "function") {
+          if (didCaptureError && typeof Component4.getDerivedStateFromError !== "function") {
             nextChildren = null;
             {
               stopProfilerTimerIfRunning();
@@ -20244,7 +20244,7 @@ var require_react_dom_development = __commonJS({
           }
           workInProgress2.memoizedState = instance.state;
           if (hasContext) {
-            invalidateContextProvider(workInProgress2, Component3, true);
+            invalidateContextProvider(workInProgress2, Component4, true);
           }
           return workInProgress2.child;
         }
@@ -20336,60 +20336,60 @@ var require_react_dom_development = __commonJS({
           var lazyComponent = elementType;
           var payload = lazyComponent._payload;
           var init = lazyComponent._init;
-          var Component3 = init(payload);
-          workInProgress2.type = Component3;
-          var resolvedTag = workInProgress2.tag = resolveLazyComponentTag(Component3);
-          var resolvedProps = resolveDefaultProps(Component3, props);
+          var Component4 = init(payload);
+          workInProgress2.type = Component4;
+          var resolvedTag = workInProgress2.tag = resolveLazyComponentTag(Component4);
+          var resolvedProps = resolveDefaultProps(Component4, props);
           var child;
           switch (resolvedTag) {
             case FunctionComponent: {
               {
-                validateFunctionComponentInDev(workInProgress2, Component3);
-                workInProgress2.type = Component3 = resolveFunctionForHotReloading(Component3);
+                validateFunctionComponentInDev(workInProgress2, Component4);
+                workInProgress2.type = Component4 = resolveFunctionForHotReloading(Component4);
               }
-              child = updateFunctionComponent(null, workInProgress2, Component3, resolvedProps, renderLanes2);
+              child = updateFunctionComponent(null, workInProgress2, Component4, resolvedProps, renderLanes2);
               return child;
             }
             case ClassComponent: {
               {
-                workInProgress2.type = Component3 = resolveClassForHotReloading(Component3);
+                workInProgress2.type = Component4 = resolveClassForHotReloading(Component4);
               }
-              child = updateClassComponent(null, workInProgress2, Component3, resolvedProps, renderLanes2);
+              child = updateClassComponent(null, workInProgress2, Component4, resolvedProps, renderLanes2);
               return child;
             }
             case ForwardRef: {
               {
-                workInProgress2.type = Component3 = resolveForwardRefForHotReloading(Component3);
+                workInProgress2.type = Component4 = resolveForwardRefForHotReloading(Component4);
               }
-              child = updateForwardRef(null, workInProgress2, Component3, resolvedProps, renderLanes2);
+              child = updateForwardRef(null, workInProgress2, Component4, resolvedProps, renderLanes2);
               return child;
             }
             case MemoComponent: {
               {
                 if (workInProgress2.type !== workInProgress2.elementType) {
-                  var outerPropTypes = Component3.propTypes;
+                  var outerPropTypes = Component4.propTypes;
                   if (outerPropTypes) {
-                    checkPropTypes(outerPropTypes, resolvedProps, "prop", getComponentName(Component3));
+                    checkPropTypes(outerPropTypes, resolvedProps, "prop", getComponentName(Component4));
                   }
                 }
               }
-              child = updateMemoComponent(null, workInProgress2, Component3, resolveDefaultProps(Component3.type, resolvedProps), updateLanes, renderLanes2);
+              child = updateMemoComponent(null, workInProgress2, Component4, resolveDefaultProps(Component4.type, resolvedProps), updateLanes, renderLanes2);
               return child;
             }
           }
           var hint = "";
           {
-            if (Component3 !== null && typeof Component3 === "object" && Component3.$$typeof === REACT_LAZY_TYPE) {
+            if (Component4 !== null && typeof Component4 === "object" && Component4.$$typeof === REACT_LAZY_TYPE) {
               hint = " Did you wrap a component in React.lazy() more than once?";
             }
           }
           {
             {
-              throw Error("Element type is invalid. Received a promise that resolves to: " + Component3 + ". Lazy element type must resolve to a class or function." + hint);
+              throw Error("Element type is invalid. Received a promise that resolves to: " + Component4 + ". Lazy element type must resolve to a class or function." + hint);
             }
           }
         }
-        function mountIncompleteClassComponent(_current, workInProgress2, Component3, nextProps, renderLanes2) {
+        function mountIncompleteClassComponent(_current, workInProgress2, Component4, nextProps, renderLanes2) {
           if (_current !== null) {
             _current.alternate = null;
             workInProgress2.alternate = null;
@@ -20397,18 +20397,18 @@ var require_react_dom_development = __commonJS({
           }
           workInProgress2.tag = ClassComponent;
           var hasContext;
-          if (isContextProvider(Component3)) {
+          if (isContextProvider(Component4)) {
             hasContext = true;
             pushContextProvider(workInProgress2);
           } else {
             hasContext = false;
           }
           prepareToReadContext(workInProgress2, renderLanes2);
-          constructClassInstance(workInProgress2, Component3, nextProps);
-          mountClassInstance(workInProgress2, Component3, nextProps, renderLanes2);
-          return finishClassComponent(null, workInProgress2, Component3, true, hasContext, renderLanes2);
+          constructClassInstance(workInProgress2, Component4, nextProps);
+          mountClassInstance(workInProgress2, Component4, nextProps, renderLanes2);
+          return finishClassComponent(null, workInProgress2, Component4, true, hasContext, renderLanes2);
         }
-        function mountIndeterminateComponent(_current, workInProgress2, Component3, renderLanes2) {
+        function mountIndeterminateComponent(_current, workInProgress2, Component4, renderLanes2) {
           if (_current !== null) {
             _current.alternate = null;
             workInProgress2.alternate = null;
@@ -20417,14 +20417,14 @@ var require_react_dom_development = __commonJS({
           var props = workInProgress2.pendingProps;
           var context;
           {
-            var unmaskedContext = getUnmaskedContext(workInProgress2, Component3, false);
+            var unmaskedContext = getUnmaskedContext(workInProgress2, Component4, false);
             context = getMaskedContext(workInProgress2, unmaskedContext);
           }
           prepareToReadContext(workInProgress2, renderLanes2);
           var value;
           {
-            if (Component3.prototype && typeof Component3.prototype.render === "function") {
-              var componentName = getComponentName(Component3) || "Unknown";
+            if (Component4.prototype && typeof Component4.prototype.render === "function") {
+              var componentName = getComponentName(Component4) || "Unknown";
               if (!didWarnAboutBadClass[componentName]) {
                 error("The <%s /> component appears to have a render method, but doesn't extend React.Component. This is likely to cause errors. Change %s to extend React.Component instead.", componentName, componentName);
                 didWarnAboutBadClass[componentName] = true;
@@ -20435,13 +20435,13 @@ var require_react_dom_development = __commonJS({
             }
             setIsRendering(true);
             ReactCurrentOwner$1.current = workInProgress2;
-            value = renderWithHooks(null, workInProgress2, Component3, props, context, renderLanes2);
+            value = renderWithHooks(null, workInProgress2, Component4, props, context, renderLanes2);
             setIsRendering(false);
           }
           workInProgress2.flags |= PerformedWork;
           {
             if (typeof value === "object" && value !== null && typeof value.render === "function" && value.$$typeof === void 0) {
-              var _componentName = getComponentName(Component3) || "Unknown";
+              var _componentName = getComponentName(Component4) || "Unknown";
               if (!didWarnAboutModulePatternComponent[_componentName]) {
                 error("The <%s /> component appears to be a function component that returns a class instance. Change %s to a class that extends React.Component instead. If you can't use a class try assigning the prototype on the function as a workaround. `%s.prototype = React.Component.prototype`. Don't use an arrow function since it cannot be called with `new` by React.", _componentName, _componentName, _componentName);
                 didWarnAboutModulePatternComponent[_componentName] = true;
@@ -20450,7 +20450,7 @@ var require_react_dom_development = __commonJS({
           }
           if (typeof value === "object" && value !== null && typeof value.render === "function" && value.$$typeof === void 0) {
             {
-              var _componentName2 = getComponentName(Component3) || "Unknown";
+              var _componentName2 = getComponentName(Component4) || "Unknown";
               if (!didWarnAboutModulePatternComponent[_componentName2]) {
                 error("The <%s /> component appears to be a function component that returns a class instance. Change %s to a class that extends React.Component instead. If you can't use a class try assigning the prototype on the function as a workaround. `%s.prototype = React.Component.prototype`. Don't use an arrow function since it cannot be called with `new` by React.", _componentName2, _componentName2, _componentName2);
                 didWarnAboutModulePatternComponent[_componentName2] = true;
@@ -20460,7 +20460,7 @@ var require_react_dom_development = __commonJS({
             workInProgress2.memoizedState = null;
             workInProgress2.updateQueue = null;
             var hasContext = false;
-            if (isContextProvider(Component3)) {
+            if (isContextProvider(Component4)) {
               hasContext = true;
               pushContextProvider(workInProgress2);
             } else {
@@ -20468,20 +20468,20 @@ var require_react_dom_development = __commonJS({
             }
             workInProgress2.memoizedState = value.state !== null && value.state !== void 0 ? value.state : null;
             initializeUpdateQueue(workInProgress2);
-            var getDerivedStateFromProps = Component3.getDerivedStateFromProps;
+            var getDerivedStateFromProps = Component4.getDerivedStateFromProps;
             if (typeof getDerivedStateFromProps === "function") {
-              applyDerivedStateFromProps(workInProgress2, Component3, getDerivedStateFromProps, props);
+              applyDerivedStateFromProps(workInProgress2, Component4, getDerivedStateFromProps, props);
             }
             adoptClassInstance(workInProgress2, value);
-            mountClassInstance(workInProgress2, Component3, props, renderLanes2);
-            return finishClassComponent(null, workInProgress2, Component3, true, hasContext, renderLanes2);
+            mountClassInstance(workInProgress2, Component4, props, renderLanes2);
+            return finishClassComponent(null, workInProgress2, Component4, true, hasContext, renderLanes2);
           } else {
             workInProgress2.tag = FunctionComponent;
             {
               if (workInProgress2.mode & StrictMode) {
                 disableLogs();
                 try {
-                  value = renderWithHooks(null, workInProgress2, Component3, props, context, renderLanes2);
+                  value = renderWithHooks(null, workInProgress2, Component4, props, context, renderLanes2);
                 } finally {
                   reenableLogs();
                 }
@@ -20489,16 +20489,16 @@ var require_react_dom_development = __commonJS({
             }
             reconcileChildren(null, workInProgress2, value, renderLanes2);
             {
-              validateFunctionComponentInDev(workInProgress2, Component3);
+              validateFunctionComponentInDev(workInProgress2, Component4);
             }
             return workInProgress2.child;
           }
         }
-        function validateFunctionComponentInDev(workInProgress2, Component3) {
+        function validateFunctionComponentInDev(workInProgress2, Component4) {
           {
-            if (Component3) {
-              if (Component3.childContextTypes) {
-                error("%s(...): childContextTypes cannot be defined on a function component.", Component3.displayName || Component3.name || "Component");
+            if (Component4) {
+              if (Component4.childContextTypes) {
+                error("%s(...): childContextTypes cannot be defined on a function component.", Component4.displayName || Component4.name || "Component");
               }
             }
             if (workInProgress2.ref !== null) {
@@ -20517,15 +20517,15 @@ var require_react_dom_development = __commonJS({
                 error("Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s", info);
               }
             }
-            if (typeof Component3.getDerivedStateFromProps === "function") {
-              var _componentName3 = getComponentName(Component3) || "Unknown";
+            if (typeof Component4.getDerivedStateFromProps === "function") {
+              var _componentName3 = getComponentName(Component4) || "Unknown";
               if (!didWarnAboutGetDerivedStateOnFunctionComponent[_componentName3]) {
                 error("%s: Function components do not support getDerivedStateFromProps.", _componentName3);
                 didWarnAboutGetDerivedStateOnFunctionComponent[_componentName3] = true;
               }
             }
-            if (typeof Component3.contextType === "object" && Component3.contextType !== null) {
-              var _componentName4 = getComponentName(Component3) || "Unknown";
+            if (typeof Component4.contextType === "object" && Component4.contextType !== null) {
+              var _componentName4 = getComponentName(Component4) || "Unknown";
               if (!didWarnAboutContextTypeOnFunctionComponent[_componentName4]) {
                 error("%s: Function components do not support contextType.", _componentName4);
                 didWarnAboutContextTypeOnFunctionComponent[_componentName4] = true;
@@ -21134,8 +21134,8 @@ var require_react_dom_development = __commonJS({
                   pushHostContext(workInProgress2);
                   break;
                 case ClassComponent: {
-                  var Component3 = workInProgress2.type;
-                  if (isContextProvider(Component3)) {
+                  var Component4 = workInProgress2.type;
+                  if (isContextProvider(Component4)) {
                     pushContextProvider(workInProgress2);
                   }
                   break;
@@ -21430,8 +21430,8 @@ var require_react_dom_development = __commonJS({
             case MemoComponent:
               return null;
             case ClassComponent: {
-              var Component3 = workInProgress2.type;
-              if (isContextProvider(Component3)) {
+              var Component4 = workInProgress2.type;
+              if (isContextProvider(Component4)) {
                 popContext(workInProgress2);
               }
               return null;
@@ -21713,8 +21713,8 @@ var require_react_dom_development = __commonJS({
         function unwindWork(workInProgress2, renderLanes2) {
           switch (workInProgress2.tag) {
             case ClassComponent: {
-              var Component3 = workInProgress2.type;
-              if (isContextProvider(Component3)) {
+              var Component4 = workInProgress2.type;
+              if (isContextProvider(Component4)) {
                 popContext(workInProgress2);
               }
               var flags = workInProgress2.flags;
@@ -24880,18 +24880,18 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         var createFiber = function(tag, pendingProps, key, mode) {
           return new FiberNode(tag, pendingProps, key, mode);
         };
-        function shouldConstruct$1(Component3) {
-          var prototype = Component3.prototype;
+        function shouldConstruct$1(Component4) {
+          var prototype = Component4.prototype;
           return !!(prototype && prototype.isReactComponent);
         }
         function isSimpleFunctionComponent(type) {
           return typeof type === "function" && !shouldConstruct$1(type) && type.defaultProps === void 0;
         }
-        function resolveLazyComponentTag(Component3) {
-          if (typeof Component3 === "function") {
-            return shouldConstruct$1(Component3) ? ClassComponent : FunctionComponent;
-          } else if (Component3 !== void 0 && Component3 !== null) {
-            var $$typeof = Component3.$$typeof;
+        function resolveLazyComponentTag(Component4) {
+          if (typeof Component4 === "function") {
+            return shouldConstruct$1(Component4) ? ClassComponent : FunctionComponent;
+          } else if (Component4 !== void 0 && Component4 !== null) {
+            var $$typeof = Component4.$$typeof;
             if ($$typeof === REACT_FORWARD_REF_TYPE) {
               return ForwardRef;
             }
@@ -25330,9 +25330,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           var fiber = get(parentComponent);
           var parentContext = findCurrentUnmaskedContext(fiber);
           if (fiber.tag === ClassComponent) {
-            var Component3 = fiber.type;
-            if (isContextProvider(Component3)) {
-              return processChildContext(fiber, Component3, parentContext);
+            var Component4 = fiber.type;
+            if (isContextProvider(Component4)) {
+              return processChildContext(fiber, Component4, parentContext);
             }
           }
           return parentContext;
@@ -27948,7 +27948,7 @@ var require_luxon = __commonJS({
         }, [{}, null, 1]).slice(0, 2);
       };
     }
-    function parse3(s4) {
+    function parse4(s4) {
       if (s4 == null) {
         return [null, null];
       }
@@ -28103,27 +28103,27 @@ var require_luxon = __commonJS({
     var extractISOOrdinalDateAndTime = combineExtractors(extractISOOrdinalData, extractISOTime, extractISOOffset);
     var extractISOTimeAndOffset = combineExtractors(extractISOTime, extractISOOffset);
     function parseISODate(s4) {
-      return parse3(s4, [isoYmdWithTimeExtensionRegex, extractISOYmdTimeAndOffset], [isoWeekWithTimeExtensionRegex, extractISOWeekTimeAndOffset], [isoOrdinalWithTimeExtensionRegex, extractISOOrdinalDateAndTime], [isoTimeCombinedRegex, extractISOTimeAndOffset]);
+      return parse4(s4, [isoYmdWithTimeExtensionRegex, extractISOYmdTimeAndOffset], [isoWeekWithTimeExtensionRegex, extractISOWeekTimeAndOffset], [isoOrdinalWithTimeExtensionRegex, extractISOOrdinalDateAndTime], [isoTimeCombinedRegex, extractISOTimeAndOffset]);
     }
     function parseRFC2822Date(s4) {
-      return parse3(preprocessRFC2822(s4), [rfc2822, extractRFC2822]);
+      return parse4(preprocessRFC2822(s4), [rfc2822, extractRFC2822]);
     }
     function parseHTTPDate(s4) {
-      return parse3(s4, [rfc1123, extractRFC1123Or850], [rfc850, extractRFC1123Or850], [ascii, extractASCII]);
+      return parse4(s4, [rfc1123, extractRFC1123Or850], [rfc850, extractRFC1123Or850], [ascii, extractASCII]);
     }
     function parseISODuration(s4) {
-      return parse3(s4, [isoDuration, extractISODuration]);
+      return parse4(s4, [isoDuration, extractISODuration]);
     }
     var extractISOTimeOnly = combineExtractors(extractISOTime);
     function parseISOTimeOnly(s4) {
-      return parse3(s4, [isoTimeOnly, extractISOTimeOnly]);
+      return parse4(s4, [isoTimeOnly, extractISOTimeOnly]);
     }
     var sqlYmdWithTimeExtensionRegex = combineRegexes(sqlYmdRegex, sqlTimeExtensionRegex);
     var sqlTimeCombinedRegex = combineRegexes(sqlTimeRegex);
     var extractISOYmdTimeOffsetAndIANAZone = combineExtractors(extractISOYmd, extractISOTime, extractISOOffset, extractIANAZone);
     var extractISOTimeOffsetAndIANAZone = combineExtractors(extractISOTime, extractISOOffset, extractIANAZone);
     function parseSQL(s4) {
-      return parse3(s4, [sqlYmdWithTimeExtensionRegex, extractISOYmdTimeOffsetAndIANAZone], [sqlTimeCombinedRegex, extractISOTimeOffsetAndIANAZone]);
+      return parse4(s4, [sqlYmdWithTimeExtensionRegex, extractISOYmdTimeOffsetAndIANAZone], [sqlTimeCombinedRegex, extractISOTimeOffsetAndIANAZone]);
     }
     var INVALID$2 = "Invalid Duration";
     var lowOrderMatrix = {
@@ -30945,7 +30945,7 @@ __export(exports, {
 var import_obsidian6 = __toModule(require("obsidian"));
 
 // src/view.ts
-var import_obsidian4 = __toModule(require("obsidian"));
+var import_obsidian5 = __toModule(require("obsidian"));
 
 // node_modules/tslib/modules/index.js
 var import_tslib = __toModule(require_tslib());
@@ -36071,8 +36071,8 @@ var ScrollResponder = function() {
     this.emitter = emitter;
     this.scrollTime = scrollTime;
     this.scrollTimeReset = scrollTimeReset;
-    this.handleScrollRequest = function(request) {
-      _this.queuedRequest = __assign({}, _this.queuedRequest || {}, request);
+    this.handleScrollRequest = function(request2) {
+      _this.queuedRequest = __assign({}, _this.queuedRequest || {}, request2);
       _this.drain();
     };
     emitter.on("_scrollRequest", this.handleScrollRequest);
@@ -42152,12 +42152,12 @@ var TimeCols = function(_super) {
         _this.context.unregisterInteractiveComponent(_this);
       }
     };
-    _this.handleScrollRequest = function(request) {
+    _this.handleScrollRequest = function(request2) {
       var onScrollTopRequest = _this.props.onScrollTopRequest;
       var slatCoords = _this.state.slatCoords;
       if (onScrollTopRequest && slatCoords) {
-        if (request.time) {
-          var top_1 = slatCoords.computeTimeTop(request.time);
+        if (request2.time) {
+          var top_1 = slatCoords.computeTimeTop(request2.time);
           top_1 = Math.ceil(top_1);
           if (top_1) {
             top_1 += 1;
@@ -44660,7 +44660,7 @@ var main_default5 = main5;
 // node_modules/@fullcalendar/icalendar/main.js
 var ICAL = __toModule(require_ical());
 var IcalExpander = function() {
-  function IcalExpander2(opts) {
+  function IcalExpander3(opts) {
     this.maxIterations = opts.maxIterations != null ? opts.maxIterations : 1e3;
     this.skipInvalidDates = opts.skipInvalidDates != null ? opts.skipInvalidDates : false;
     this.jCalData = ICAL.parse(opts.ics);
@@ -44680,7 +44680,7 @@ var IcalExpander = function() {
       });
     }
   }
-  IcalExpander2.prototype.between = function(after, before) {
+  IcalExpander3.prototype.between = function(after, before) {
     var _this = this;
     function isEventWithinRange(startTime, endTime) {
       return (!after || endTime >= after.getTime()) && (!before || startTime <= before.getTime());
@@ -44748,16 +44748,16 @@ var IcalExpander = function() {
     });
     return ret;
   };
-  IcalExpander2.prototype.before = function(before) {
+  IcalExpander3.prototype.before = function(before) {
     return this.between(void 0, before);
   };
-  IcalExpander2.prototype.after = function(after) {
+  IcalExpander3.prototype.after = function(after) {
     return this.between(after);
   };
-  IcalExpander2.prototype.all = function() {
+  IcalExpander3.prototype.all = function() {
     return this.between();
   };
-  return IcalExpander2;
+  return IcalExpander3;
 }();
 var eventSourceDef3 = {
   parseMeta: function(refined) {
@@ -44892,6 +44892,7 @@ function renderCalendar(containerEl, eventSources, { eventClick, select, modifyE
     googleCalendarApiKey: "AIzaSyDIiklFwJXaLWuT_4y6I9ZRVVsPuf4xGrk",
     initialView: isMobile ? "timeGrid3Days" : "timeGridWeek",
     nowIndicator: true,
+    scrollTimeReset: false,
     headerToolbar: isMobile ? {
       right: "today,prev,next",
       left: "timeGrid3Days,timeGridDay,listWeek"
@@ -45468,6 +45469,8 @@ var EventModal = class extends import_obsidian3.Modal {
           this.event = frontmatter;
           this.eventId = event.id;
           this.open();
+        } else {
+          console.warn("Full Calendar: No frontmatter to edit for selected event.");
         }
       } else if (event instanceof import_obsidian3.TFile) {
         frontmatter = getFrontmatterFromFile(this.app.metadataCache, event);
@@ -45484,7 +45487,7 @@ var EventModal = class extends import_obsidian3.Modal {
       ReactDOM.render(React2.createElement(EditEvent, {
         initialEvent: this.event,
         submit: (event, calendarIndex) => __async(this, null, function* () {
-          const source = this.plugin.settings.calendarSources[calendarIndex];
+          const source = this.plugin.settings.calendarSources.filter((s3) => s3.type === "local")[calendarIndex];
           if (source.type !== "local") {
             new import_obsidian3.Notice("Sorry, remote sync is currently read-only.");
             this.close();
@@ -45528,9 +45531,333 @@ var EventModal = class extends import_obsidian3.Modal {
   }
 };
 
+// vendor/fullcalendar-ical/ical-expander/IcalExpander.js
+var ICAL2 = __toModule(require_ical());
+var IcalExpander2 = class {
+  constructor(opts) {
+    this.maxIterations = opts.maxIterations != null ? opts.maxIterations : 1e3;
+    this.skipInvalidDates = opts.skipInvalidDates != null ? opts.skipInvalidDates : false;
+    this.jCalData = ICAL2.parse(opts.ics);
+    this.component = new ICAL2.Component(this.jCalData);
+    this.events = this.component.getAllSubcomponents("vevent").map((vevent) => new ICAL2.Event(vevent));
+    if (this.skipInvalidDates) {
+      this.events = this.events.filter((evt) => {
+        try {
+          evt.startDate.toJSDate();
+          evt.endDate.toJSDate();
+          return true;
+        } catch (err) {
+          return false;
+        }
+      });
+    }
+  }
+  between(after, before) {
+    function isEventWithinRange(startTime, endTime) {
+      return (!after || endTime >= after.getTime()) && (!before || startTime <= before.getTime());
+    }
+    function getTimes(eventOrOccurrence) {
+      const startTime = eventOrOccurrence.startDate.toJSDate().getTime();
+      let endTime = eventOrOccurrence.endDate.toJSDate().getTime();
+      if (eventOrOccurrence.endDate.isDate && endTime > startTime) {
+        endTime -= 1;
+      }
+      return { startTime, endTime };
+    }
+    const exceptions = [];
+    this.events.forEach((event) => {
+      if (event.isRecurrenceException())
+        exceptions.push(event);
+    });
+    const ret = {
+      events: [],
+      occurrences: []
+    };
+    this.events.filter((e3) => !e3.isRecurrenceException()).forEach((event) => {
+      const exdates = [];
+      event.component.getAllProperties("exdate").forEach((exdateProp) => {
+        const exdate = exdateProp.getFirstValue();
+        exdates.push(exdate.toJSDate().getTime());
+      });
+      if (event.isRecurring()) {
+        const iterator = event.iterator();
+        let next;
+        let i3 = 0;
+        do {
+          i3 += 1;
+          next = iterator.next();
+          if (next) {
+            const occurrence = event.getOccurrenceDetails(next);
+            const { startTime: startTime2, endTime: endTime2 } = getTimes(occurrence);
+            const isOccurrenceExcluded = exdates.indexOf(startTime2) !== -1;
+            const exception = exceptions.find((ex) => ex.uid === event.uid && ex.recurrenceId.toJSDate().getTime() === occurrence.startDate.toJSDate().getTime());
+            if (before && startTime2 > before.getTime())
+              break;
+            if (isEventWithinRange(startTime2, endTime2)) {
+              if (exception) {
+                ret.events.push(exception);
+              } else if (!isOccurrenceExcluded) {
+                ret.occurrences.push(occurrence);
+              }
+            }
+          }
+        } while (next && (!this.maxIterations || i3 < this.maxIterations));
+        return;
+      }
+      const { startTime, endTime } = getTimes(event);
+      if (isEventWithinRange(startTime, endTime))
+        ret.events.push(event);
+    });
+    return ret;
+  }
+  before(before) {
+    return this.between(void 0, before);
+  }
+  after(after) {
+    return this.between(after);
+  }
+  all() {
+    return this.between();
+  }
+};
+
+// vendor/fullcalendar-ical/icalendar.ts
+function makeICalExpander(text) {
+  return new IcalExpander2({
+    ics: text,
+    skipInvalidDates: true
+  });
+}
+function expandICalEvents2(iCalExpander, range) {
+  let rangeStart = addDays(range.start, -1);
+  let rangeEnd = addDays(range.end, 1);
+  let iCalRes = iCalExpander.between(rangeStart, rangeEnd);
+  let expanded = [];
+  for (let iCalEvent of iCalRes.events) {
+    expanded.push(__spreadProps(__spreadValues({}, buildNonDateProps2(iCalEvent)), {
+      start: iCalEvent.startDate.toString(),
+      end: specifiesEnd2(iCalEvent) && iCalEvent.endDate ? iCalEvent.endDate.toString() : null
+    }));
+  }
+  for (let iCalOccurence of iCalRes.occurrences) {
+    let iCalEvent = iCalOccurence.item;
+    expanded.push(__spreadProps(__spreadValues({}, buildNonDateProps2(iCalEvent)), {
+      start: iCalOccurence.startDate.toString(),
+      end: specifiesEnd2(iCalEvent) && iCalOccurence.endDate ? iCalOccurence.endDate.toString() : null
+    }));
+  }
+  return expanded;
+}
+function buildNonDateProps2(iCalEvent) {
+  return {
+    title: iCalEvent.summary,
+    url: extractEventUrl2(iCalEvent),
+    extendedProps: {
+      location: iCalEvent.location,
+      organizer: iCalEvent.organizer,
+      description: iCalEvent.description
+    }
+  };
+}
+function extractEventUrl2(iCalEvent) {
+  let urlProp = iCalEvent.component.getFirstProperty("url");
+  return urlProp ? urlProp.getFirstValue() : "";
+}
+function specifiesEnd2(iCalEvent) {
+  return Boolean(iCalEvent.component.getFirstProperty("dtend")) || Boolean(iCalEvent.component.getFirstProperty("duration"));
+}
+
+// src/settings.ts
+var import_obsidian4 = __toModule(require("obsidian"));
+
+// src/components/CalendarSetting.tsx
+var React3 = __toModule(require_react());
+var import_react2 = __toModule(require_react());
+var CalendarSettingRow = ({
+  options,
+  setting,
+  defaultColor,
+  onColorChange,
+  onSourceChange,
+  onTypeChange,
+  deleteCalendar
+}) => {
+  const dirOptions = [...options];
+  if (setting.type === "local" && setting.directory) {
+    dirOptions.push(setting.directory);
+  }
+  dirOptions.sort();
+  return /* @__PURE__ */ React3.createElement("div", {
+    style: {
+      display: "flex",
+      width: "100%",
+      marginBottom: "0.5rem"
+    }
+  }, /* @__PURE__ */ React3.createElement("button", {
+    type: "button",
+    onClick: deleteCalendar,
+    style: { maxWidth: "15%" }
+  }, "\u2715"), setting.type === "local" && /* @__PURE__ */ React3.createElement("select", {
+    value: setting.directory || "",
+    onChange: (e3) => onSourceChange(e3.target.value),
+    style: { maxWidth: "30%" }
+  }, /* @__PURE__ */ React3.createElement("option", {
+    value: "",
+    disabled: true,
+    hidden: true
+  }, "Choose a directory"), dirOptions.map((o2, idx) => /* @__PURE__ */ React3.createElement("option", {
+    key: idx,
+    value: o2
+  }, o2))), (setting.type === "gcal" || setting.type === "ical") && /* @__PURE__ */ React3.createElement("textarea", {
+    style: {
+      maxWidth: "30%",
+      fontSize: "8pt",
+      lineHeight: 1,
+      padding: 0
+    },
+    placeholder: setting.type === "gcal" ? "Google Calendar ID (probably in the form LONG_ID@group.calendar.google.com)" : "URL for any .ics file",
+    value: setting.url || "",
+    onChange: (e3) => onSourceChange(e3.target.value)
+  }), /* @__PURE__ */ React3.createElement("select", {
+    style: { maxWidth: "30%" },
+    value: setting.type || "",
+    onChange: (e3) => onTypeChange(e3.target.value)
+  }, /* @__PURE__ */ React3.createElement("option", {
+    value: "",
+    disabled: true,
+    hidden: true
+  }, "Calendar source"), /* @__PURE__ */ React3.createElement("option", {
+    value: "local"
+  }, "Local calendar"), /* @__PURE__ */ React3.createElement("option", {
+    value: "ical"
+  }, "Remote Calendar (.ics format)"), /* @__PURE__ */ React3.createElement("option", {
+    value: "gcal"
+  }, "Google Calendar (Readonly)")), /* @__PURE__ */ React3.createElement("input", {
+    style: { maxWidth: "25%", minWidth: "3rem" },
+    type: "color",
+    value: setting.color || defaultColor,
+    onChange: (e3) => onColorChange(e3.target.value)
+  }));
+};
+var CalendarSettings = ({
+  directories,
+  initialSetting,
+  defaultColor,
+  submit
+}) => {
+  const [settings, setSettingState] = (0, import_react2.useState)(initialSetting);
+  const setSettings = (state) => {
+    setSettingState(state);
+    setDirty(true);
+  };
+  const [dirty, setDirty] = (0, import_react2.useState)(false);
+  const usedDirectories = settings.map((s3) => s3.type === "local" && s3.directory).filter((s3) => s3);
+  const options = directories.filter((dir) => usedDirectories.indexOf(dir) === -1);
+  return /* @__PURE__ */ React3.createElement("div", {
+    style: { width: "100%" }
+  }, /* @__PURE__ */ React3.createElement("button", {
+    className: "mod-cta",
+    style: {
+      marginBottom: "1rem"
+    },
+    onClick: () => {
+      setSettings((state) => [
+        ...state,
+        { type: "local", color: defaultColor }
+      ]);
+    }
+  }, "Add Calendar"), settings.map((s3, idx) => /* @__PURE__ */ React3.createElement(CalendarSettingRow, {
+    key: idx,
+    options,
+    setting: s3,
+    onTypeChange: (newType) => setSettings((state) => [
+      ...state.slice(0, idx),
+      __spreadProps(__spreadValues({}, state[idx]), {
+        type: newType
+      }),
+      ...state.slice(idx + 1)
+    ]),
+    onSourceChange: (src) => setSettings((state) => [
+      ...state.slice(0, idx),
+      __spreadValues(__spreadValues({}, state[idx]), state[idx].type === "local" ? { directory: src } : { url: src }),
+      ...state.slice(idx + 1)
+    ]),
+    onColorChange: (color) => setSettings((state) => [
+      ...state.slice(0, idx),
+      __spreadProps(__spreadValues({}, state[idx]), { color }),
+      ...state.slice(idx + 1)
+    ]),
+    defaultColor,
+    deleteCalendar: () => setSettings((state) => [
+      ...state.slice(0, idx),
+      ...state.slice(idx + 1)
+    ])
+  })), /* @__PURE__ */ React3.createElement("div", {
+    style: {
+      display: "flex",
+      paddingTop: "1em",
+      justifyContent: "space-between"
+    }
+  }, dirty && /* @__PURE__ */ React3.createElement("button", {
+    onClick: () => {
+      submit(settings.filter((elt) => elt.color !== void 0 && elt.type !== void 0 && (elt.type === "local" && elt.directory !== void 0 || elt.type === "gcal" && elt.url !== void 0 || elt.type === "ical" && elt.url !== void 0)).map((elt) => elt));
+      setDirty(false);
+    },
+    style: {
+      backgroundColor: dirty ? "var(--interactive-accent)" : void 0,
+      color: dirty ? "var(--text-on-accent)" : void 0
+    }
+  }, dirty ? "Save" : "Settings Saved")));
+};
+
+// src/settings.ts
+var ReactDOM2 = __toModule(require_react_dom());
+var import_react3 = __toModule(require_react());
+var DEFAULT_SETTINGS = {
+  calendarSources: [],
+  defaultCalendar: 0,
+  recursiveLocal: false
+};
+function renderSourceManager(vault, plugin, el, submitCallback) {
+  const directories = vault.getAllLoadedFiles().filter((f3) => f3 instanceof import_obsidian4.TFolder).map((f3) => f3.path);
+  ReactDOM2.render((0, import_react3.createElement)(CalendarSettings, {
+    directories,
+    initialSetting: plugin.settings.calendarSources,
+    defaultColor: getComputedStyle(document.body).getPropertyValue("--interactive-accent").trim(),
+    submit: (settings) => __async(this, null, function* () {
+      plugin.settings.calendarSources = settings;
+      yield plugin.saveSettings();
+      submitCallback && submitCallback(settings);
+    })
+  }), el);
+}
+var FullCalendarSettingTab = class extends import_obsidian4.PluginSettingTab {
+  constructor(app, plugin) {
+    super(app, plugin);
+    this.plugin = plugin;
+  }
+  display() {
+    return __async(this, null, function* () {
+      const { containerEl } = this;
+      containerEl.empty();
+      containerEl.createEl("h2", { text: "Events settings" });
+      new import_obsidian4.Setting(containerEl).setName("Recursive event folders").setDesc("Search through sub-folders for events").addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.recursiveLocal);
+        toggle.onChange((val) => __async(this, null, function* () {
+          this.plugin.settings.recursiveLocal = val;
+          yield this.plugin.saveSettings();
+        }));
+      });
+      const sourceSetting = new import_obsidian4.Setting(containerEl).setName("Calendars").setDesc("Configure your calendars here.");
+      sourceSetting.settingEl.style.display = "block";
+      renderSourceManager(this.app.vault, this.plugin, sourceSetting.settingEl);
+    });
+  }
+};
+
 // src/view.ts
 var FULL_CALENDAR_VIEW_TYPE = "full-calendar-view";
-var CalendarView = class extends import_obsidian4.ItemView {
+var CalendarView = class extends import_obsidian5.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
@@ -45570,15 +45897,30 @@ var CalendarView = class extends import_obsidian4.ItemView {
       const container = this.containerEl.children[1];
       container.empty();
       let calendarEl = container.createEl("div");
-      if (!sources) {
-        calendarEl.textContent = "Error: the events directory was not a directory. Please change your events directory in settings.";
+      if (!sources || sources.length === 0 && this.plugin.settings.calendarSources.filter((s3) => s3.type === "ical").length === 0) {
+        calendarEl.style.height = "100%";
+        const nocal = calendarEl.createDiv();
+        nocal.style.height = "100%";
+        nocal.style.display = "flex";
+        nocal.style.alignItems = "center";
+        nocal.style.justifyContent = "center";
+        const notice = nocal.createDiv();
+        notice.createEl("h1").textContent = "No calendar available";
+        notice.createEl("p").textContent = "Thanks for downloading Full Calendar! Create a calendar below to begin.";
+        const container2 = notice.createDiv();
+        container2.style.position = "fixed";
+        renderSourceManager(this.app.vault, this.plugin, container2, (settings) => __async(this, null, function* () {
+          if (settings.length > 0) {
+            yield this.plugin.activateView();
+          }
+        }));
         return;
       }
       this.calendar = renderCalendar(calendarEl, sources, {
         eventClick: (info) => __async(this, null, function* () {
           if (info.jsEvent.getModifierState("Control") || info.jsEvent.getModifierState("Meta")) {
             let file = this.app.vault.getAbstractFileByPath(info.event.id);
-            if (file instanceof import_obsidian4.TFile) {
+            if (file instanceof import_obsidian5.TFile) {
               let leaf = this.app.workspace.getMostRecentLeaf();
               yield leaf.openFile(file);
             }
@@ -45598,7 +45940,7 @@ var CalendarView = class extends import_obsidian4.ItemView {
           }
           const success = yield upsertLocalEvent(this.app.vault, getPathPrefix(event.id), eventApiToFrontmatter(event), event.id);
           if (!success) {
-            new import_obsidian4.Notice("Multiple events with the same name on the same date are not yet supported. Please rename your event before moving it.");
+            new import_obsidian5.Notice("Multiple events with the same name on the same date are not yet supported. Please rename your event before moving it.");
           }
           return success;
         }),
@@ -45614,10 +45956,58 @@ var CalendarView = class extends import_obsidian4.ItemView {
           });
         }
       });
+      this.plugin.settings.calendarSources.filter((s3) => s3.type === "ical").map((s3) => __async(this, null, function* () {
+        let url = s3.url;
+        if (url.startsWith("webcal")) {
+          url = "https" + url.slice("webcal".length);
+        }
+        let expander = null;
+        const getExpander = () => __async(this, null, function* () {
+          if (expander !== null) {
+            return expander;
+          }
+          try {
+            let text = yield (0, import_obsidian5.request)({
+              url,
+              method: "GET"
+            });
+            expander = makeICalExpander(text);
+            return expander;
+          } catch (e3) {
+            new import_obsidian5.Notice(`There was an error loading a calendar. Check the console for full details.`);
+            console.error(`Error loading calendar from ${url}`);
+            console.error(e3);
+            return null;
+          }
+        });
+        return {
+          events: function(_0) {
+            return __async(this, arguments, function* ({ start, end }) {
+              const ical = yield getExpander();
+              if (ical === null) {
+                throw new Error("Could not get calendar.");
+              }
+              const events = expandICalEvents2(ical, {
+                start,
+                end
+              });
+              return events;
+            });
+          },
+          editable: false,
+          textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent"),
+          color: s3.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent")
+        };
+      })).forEach((prom) => {
+        prom.then((source) => {
+          var _a;
+          return (_a = this.calendar) == null ? void 0 : _a.addEventSource(source);
+        });
+      });
       this.registerEvent(this.app.metadataCache.on("changed", this.cacheCallback));
       this.registerEvent(this.app.vault.on("delete", (file) => {
         var _a;
-        if (file instanceof import_obsidian4.TFile) {
+        if (file instanceof import_obsidian5.TFile) {
           let id = file.path;
           const event = (_a = this.calendar) == null ? void 0 : _a.getEventById(id);
           if (event) {
@@ -45631,14 +46021,16 @@ var CalendarView = class extends import_obsidian4.ItemView {
         if (oldEvent) {
           oldEvent.remove();
         }
-        if (file instanceof import_obsidian4.TFile) {
+        if (file instanceof import_obsidian5.TFile) {
           this.onCacheUpdate(file);
         }
       }));
     });
   }
   onResize() {
-    this.calendar && this.calendar.render();
+    if (this.calendar) {
+      this.calendar.render();
+    }
   }
   onClose() {
     return __async(this, null, function* () {
@@ -45646,177 +46038,6 @@ var CalendarView = class extends import_obsidian4.ItemView {
         this.calendar.destroy();
         this.calendar = null;
       }
-    });
-  }
-};
-
-// src/settings.ts
-var import_obsidian5 = __toModule(require("obsidian"));
-
-// src/components/CalendarSetting.tsx
-var React3 = __toModule(require_react());
-var import_react2 = __toModule(require_react());
-var CalendarSettingRow = ({
-  options,
-  setting,
-  defaultColor,
-  onColorChange,
-  onSourceChange,
-  onTypeChange,
-  deleteCalendar
-}) => {
-  const dirOptions = [...options];
-  if (setting.type === "local" && setting.directory) {
-    dirOptions.push(setting.directory);
-  }
-  dirOptions.sort();
-  return /* @__PURE__ */ React3.createElement("div", {
-    style: { display: "flex", width: "100%", marginBottom: "0.5rem" }
-  }, /* @__PURE__ */ React3.createElement("button", {
-    type: "button",
-    onClick: deleteCalendar
-  }, "\u2715"), setting.type === "local" && /* @__PURE__ */ React3.createElement("select", {
-    value: setting.directory || "",
-    onChange: (e3) => onSourceChange(e3.target.value)
-  }, /* @__PURE__ */ React3.createElement("option", {
-    value: "",
-    disabled: true,
-    hidden: true
-  }, "Choose a directory"), dirOptions.map((o2, idx) => /* @__PURE__ */ React3.createElement("option", {
-    key: idx,
-    value: o2
-  }, o2))), setting.type === "gcal" && /* @__PURE__ */ React3.createElement("input", {
-    type: "text",
-    placeholder: "URL for calendar feed",
-    value: setting.url || "",
-    onChange: (e3) => onSourceChange(e3.target.value)
-  }), /* @__PURE__ */ React3.createElement("select", {
-    value: setting.type || "",
-    onChange: (e3) => onTypeChange(e3.target.value)
-  }, /* @__PURE__ */ React3.createElement("option", {
-    value: "",
-    disabled: true,
-    hidden: true
-  }, "Calendar source"), /* @__PURE__ */ React3.createElement("option", {
-    value: "local"
-  }, "Local calendar"), /* @__PURE__ */ React3.createElement("option", {
-    value: "gcal"
-  }, "Google Calendar (Readonly)")), /* @__PURE__ */ React3.createElement("span", {
-    style: { flexGrow: 1 }
-  }), /* @__PURE__ */ React3.createElement("input", {
-    type: "color",
-    value: setting.color || defaultColor,
-    onChange: (e3) => onColorChange(e3.target.value)
-  }));
-};
-var CalendarSettings = ({
-  directories,
-  initialSetting,
-  defaultColor,
-  submit
-}) => {
-  const [settings, setSettingState] = (0, import_react2.useState)(initialSetting);
-  const setSettings = (state) => {
-    setSettingState(state);
-    setDirty(true);
-  };
-  const [dirty, setDirty] = (0, import_react2.useState)(false);
-  const usedDirectories = settings.map((s3) => s3.type === "local" && s3.directory).filter((s3) => s3);
-  const options = directories.filter((dir) => usedDirectories.indexOf(dir) === -1);
-  return /* @__PURE__ */ React3.createElement("div", {
-    style: { width: "100%" }
-  }, settings.map((s3, idx) => /* @__PURE__ */ React3.createElement(CalendarSettingRow, {
-    key: idx,
-    options,
-    setting: s3,
-    onTypeChange: (newType) => setSettings((state) => [
-      ...state.slice(0, idx),
-      __spreadProps(__spreadValues({}, state[idx]), {
-        type: newType
-      }),
-      ...state.slice(idx + 1)
-    ]),
-    onSourceChange: (src) => setSettings((state) => [
-      ...state.slice(0, idx),
-      __spreadValues(__spreadValues({}, state[idx]), state[idx].type === "local" ? { directory: src } : { url: src }),
-      ...state.slice(idx + 1)
-    ]),
-    onColorChange: (color) => setSettings((state) => [
-      ...state.slice(0, idx),
-      __spreadProps(__spreadValues({}, state[idx]), { color }),
-      ...state.slice(idx + 1)
-    ]),
-    defaultColor,
-    deleteCalendar: () => setSettings((state) => [
-      ...state.slice(0, idx),
-      ...state.slice(idx + 1)
-    ])
-  })), /* @__PURE__ */ React3.createElement("div", {
-    style: { display: "flex", paddingTop: "1em" }
-  }, /* @__PURE__ */ React3.createElement("button", {
-    onClick: () => {
-      submit(settings.filter((elt) => elt.color !== void 0 && elt.type !== void 0 && (elt.type === "local" && elt.directory !== void 0 || elt.type === "gcal" && elt.url !== void 0)).map((elt) => elt));
-      setDirty(false);
-    },
-    style: {
-      backgroundColor: dirty ? "var(--interactive-accent)" : void 0,
-      color: dirty ? "var(--text-on-accent)" : void 0
-    }
-  }, dirty ? "Save" : "Settings Saved"), /* @__PURE__ */ React3.createElement("span", {
-    style: { flexGrow: 1 }
-  }), /* @__PURE__ */ React3.createElement("button", {
-    onClick: () => {
-      setSettings((state) => [
-        ...state,
-        { type: "local", color: defaultColor }
-      ]);
-    }
-  }, "Add Calendar")));
-};
-
-// src/settings.ts
-var ReactDOM2 = __toModule(require_react_dom());
-var import_react3 = __toModule(require_react());
-var DEFAULT_SETTINGS = {
-  calendarSources: [
-    {
-      type: "local",
-      directory: "events",
-      color: null
-    }
-  ],
-  defaultCalendar: 0,
-  recursiveLocal: false
-};
-var FullCalendarSettingTab = class extends import_obsidian5.PluginSettingTab {
-  constructor(app, plugin) {
-    super(app, plugin);
-    this.plugin = plugin;
-  }
-  display() {
-    return __async(this, null, function* () {
-      const { containerEl } = this;
-      containerEl.empty();
-      containerEl.createEl("h2", { text: "Events settings" });
-      new import_obsidian5.Setting(containerEl).setName("Recursive event folders").setDesc("Search through sub-folders for events").addToggle((toggle) => {
-        toggle.setValue(this.plugin.settings.recursiveLocal);
-        toggle.onChange((val) => __async(this, null, function* () {
-          this.plugin.settings.recursiveLocal = val;
-          yield this.plugin.saveSettings();
-        }));
-      });
-      const sourceSetting = new import_obsidian5.Setting(containerEl).setName("Calendars").setDesc("Configure your calendars here.");
-      sourceSetting.settingEl.style.display = "block";
-      const directories = this.app.vault.getAllLoadedFiles().filter((f3) => f3 instanceof import_obsidian5.TFolder).map((f3) => f3.path);
-      ReactDOM2.render((0, import_react3.createElement)(CalendarSettings, {
-        directories,
-        initialSetting: this.plugin.settings.calendarSources,
-        defaultColor: getComputedStyle(document.body).getPropertyValue("--interactive-accent").trim(),
-        submit: (settings) => __async(this, null, function* () {
-          this.plugin.settings.calendarSources = settings;
-          yield this.plugin.saveSettings();
-        })
-      }), sourceSetting.settingEl);
     });
   }
 };

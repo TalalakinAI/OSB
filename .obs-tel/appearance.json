@@ -1,7 +1,7 @@
 {
   "baseFontSize": 14,
   "cssTheme": "Minimal",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "translucency": false,
   "enabledCssSnippets": [
     "Iterative Rainbow Folder Backgrounds"

@@ -7,14 +7,13 @@
 ***
 ###### 2022-03-06-01-00
 #### [ОСБ / В переходный период](https://t.me/osbmd/3982)  
-![]()
 ![](https://telegra.ph/file/8459b92903536881d4a45.jpg)
 
 > <details markdown='1'>
 > <summary>Подробнее ↓↑</summary>  
 >
 > **Основы Системной Биорегуляции**  
-> А. И. Талалакин. 
+> А. И. Талалакин  
 > 
 > - [ОСБ-Сайт](https://talalakinai.github.io/OSB/!0SB.html#osb)  
 > - [ОСБ-Инструкции](https://talalakinai.github.io/OSB/!0SB_Instructio.html#0sb_instructio)  

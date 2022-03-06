@@ -68,5 +68,5 @@
   "useTab": true,
   "newLinkFormat": "relative",
   "showUnsupportedFiles": true,
-  "livePreview": true
+  "livePreview": false
 }

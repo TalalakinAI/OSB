@@ -2,8 +2,8 @@
   "calendarSources": [
     {
       "type": "local",
-      "directory": "000",
-      "color": null
+      "color": "#328ac9",
+      "directory": "000"
     }
   ],
   "defaultCalendar": 0,
