@@ -1,21 +1,17 @@
 [
   "obsidian-minimal-settings",
   "obsidian-rollover-daily-todos",
-  "media-extended",
   "templater-obsidian",
   "file-explorer-note-count",
   "obsidian-sort-and-permute-lines",
   "consistent-attachments-and-links",
   "obsidian-collapse-all-plugin",
-  "obsidian-icon-folder",
   "obsidian-markdown-formatting-assistant-plugin",
-  "find-and-replace-in-selection",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-reveal-active-file",
   "remember-cursor-position",
   "table-editor-obsidian",
   "quickadd",
   "obsidian-contextual-typography",
-  "obsidian42-text-transporter",
   "obsidian-full-calendar"
 ]
