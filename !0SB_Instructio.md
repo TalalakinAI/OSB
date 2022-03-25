@@ -5,7 +5,7 @@
 ***   
 #### [ОТПРАВИТЬ ПЕРСОНАЛЬНЫЙ ЗАПРОС](form.md#osb-zapros)  
 
-![Arbalet](ArbaletEP.jpg)   
+![Arbalet](ArbaletEP.jpg)  
 
 ***
 _[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 14.11.2021 → [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  
@@ -90,7 +90,7 @@ dd - день заполнения
 #### Для работы с (.md) используйте:     
 - Андроид → Obsidian, Notepad++, Markor   
 - Windows → Obsidian, QuickEdit  
-- Или др. редакторы [формата Markdown](https://t.me/osbmd/3335) (.md), например, VSC (Visual Studio Code).  
+- Или др. редакторы [формата Markdown](https://t.me/osbmd/4126) (.md), например, VSC (Visual Studio Code).  
 
 ***
 #### Ссылка на скачивание архива файлов:
