@@ -5,7 +5,7 @@
 ***   
 #### [ОТПРАВИТЬ ПЕРСОНАЛЬНЫЙ ЗАПРОС](form.md#osb-zapros)  
 
-![Arbalet](ArbaletEP.jpg)    
+![Arbalet](ArbaletEP.jpg)   
 
 ***
 _[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 14.11.2021 → [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  
