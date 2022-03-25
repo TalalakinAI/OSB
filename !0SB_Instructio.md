@@ -90,7 +90,7 @@ dd - день заполнения
 #### Для работы с (.md) используйте:     
 - Андроид → Obsidian, Notepad++, Markor   
 - Windows → Obsidian, QuickEdit  
-- Или др. редакторы формата Markdown (.md), например, VSC (Visual Studio Code).
+- Или др. редакторы [формата Markdown](https://t.me/osbmd/3335) (.md), например, VSC (Visual Studio Code).  
 
 ***
 #### Ссылка на скачивание архива файлов:
