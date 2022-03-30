@@ -23,6 +23,22 @@
 > </details>  
 
 ***
+###### 2022-03-30-09-47
+#### [ОСБ / Прервать Пике](d2022-03-15.md#d2022-03-15)  
+
+![2022-03-15 Промеры](https://telegra.ph/file/ec7943f705cf494f3cb87.jpg)  
+![2022-03-25 Промеры](https://telegra.ph/file/05479500623ded4d7c05d.jpg)  
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> 1. [Перватьпике-1](https://t.me/osbmd/4137)  
+> 2. [Перватьпике-2](https://t.me/osbmd/4140)  
+> 3. [Перватьпике-3](https://t.me/osbmd/4152)  
+> 4. [Перватьпике-4](https://t.me/osbmd/4160)  
+> </details>  
+
+***
 ###### 2022-02-21-14-15
 #### [ОСБ / СУБПОРОГ](https://t.me/osbmd/3882)
 ![](https://telegra.ph/file/8eac4d42582f5177f3538.jpg)
