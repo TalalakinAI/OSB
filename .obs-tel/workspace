@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "!0SB_Instructio.md",
-            "mode": "preview",
+            "file": "yyyy-mm-dd-dinamika.md",
+            "mode": "source",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "yyyy-mm-dd-dinamika.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "yyyy-mm-dd-dinamika.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "!0SB_Instructio.md"
+            "file": "yyyy-mm-dd-dinamika.md"
           }
         }
       },
@@ -131,8 +131,8 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
-    "!0SB_Instructio.md",
     "yyyy-mm-dd-dinamika.md",
+    "!0SB_Instructio.md",
     "yyyy-mm-dd-analis-problemy.md",
     "test.md",
     "().md",
