@@ -1,1 +1,1 @@
-1.04.2022 gitlab X
+1.04.2022 gitjournal X
