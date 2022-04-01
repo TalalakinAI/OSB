@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "!0SB_Instructio.md",
-            "mode": "preview",
+            "file": "test.md",
+            "mode": "source",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "test.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "test.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "!0SB_Instructio.md"
+            "file": "test.md"
           }
         }
       },
@@ -131,6 +131,7 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "test.md",
     "!0SB_Instructio.md",
     "!0SB.md",
     "News.md",
@@ -139,7 +140,6 @@
     "a2022-02-23.md",
     "000/000-date.md",
     "d2022-03-16.md",
-    "d2022-03-06.md",
-    "d2022-01-05.md"
+    "d2022-03-06.md"
   ]
 }
