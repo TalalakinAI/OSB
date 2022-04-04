@@ -8,7 +8,7 @@
 ###### 2022-04-04-08-41
 #### [Revici E. Защита](revici-zashita.md#revici-zashita)
 
-![](https://telegra.ph/file/9752ada7b4725952af6ba.jpg)
+![](https://telegra.ph/file/2922854c2f4e420ab6fc9.jpg)
 
 ***
 ###### 2022-04-04-04-04
