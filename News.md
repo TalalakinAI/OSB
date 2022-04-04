@@ -6,7 +6,7 @@
 
 ***
 ###### 2022-04-04-08-41
-#### ОСБ /  [Revici E. Защита](revici-zashita.md#revici-zashita)
+#### [Revici E. Защита](revici-zashita.md#revici-zashita)
 
 ![](https://telegra.ph/file/9752ada7b4725952af6ba.jpg)
 
