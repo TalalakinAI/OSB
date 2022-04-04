@@ -5,6 +5,12 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-04-04-08-41
+#### ОСБ /  [Revici E. Защита](revici-zashita.md#revici-zashita)
+
+![](https://telegra.ph/file/9752ada7b4725952af6ba.jpg)
+
+***
 ###### 2022-04-04-04-04
 #### [Селуянов В.Н. Периодизация](https://youtu.be/EkbB6_iwV3Q)
 
