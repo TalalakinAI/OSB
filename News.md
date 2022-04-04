@@ -5,6 +5,12 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-04-04-04-04
+#### [Селуянов В.Н. Периодизация](https://youtu.be/EkbB6_iwV3Q)
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/EkbB6_iwV3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+***
 ###### 2022-03-06-01-00
 #### [ОСБ / В переходный период](https://t.me/osbmd/3982)  
 ![](https://telegra.ph/file/8459b92903536881d4a45.jpg)
