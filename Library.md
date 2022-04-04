@@ -4,6 +4,10 @@
 *** 
 #### Для самостоятельного изучения:  
 ###### [glossariy](glos.md#glos)
+
+***
+- [Revici E. Защита](revici-zashita.md#revici-zashita)
+
 ***  
 - [Метаболизм и гниение белков](Mtb_B.md#mtb_b)    
 - [Влияние холода на организм](lib-zolotarev-holod.md#lib-zolotarev-holod)  

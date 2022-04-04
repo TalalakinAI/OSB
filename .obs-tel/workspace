@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
+            "file": "revici-zashita.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "revici-zashita.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "revici-zashita.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "revici-zashita.md"
           }
         }
       },
@@ -131,6 +131,8 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "revici-zashita.md",
+    "Library.md",
     "News.md",
     "yyyy-mm-dd-dinamika.md",
     "yyyy-mm-dd-analis-problemy.md",
@@ -138,8 +140,6 @@
     "test.md",
     "().md",
     "!0SB.md",
-    "d2022-03-15.md",
-    "otziv.md",
-    "a2022-02-23.md"
+    "d2022-03-15.md"
   ]
 }
