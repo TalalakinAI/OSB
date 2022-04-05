@@ -4,16 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "b6b4a0b2892003c2",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "put.md",
-            "mode": "preview",
-            "source": true
+        "id": "88316e8242035058",
+        "type": "split",
+        "children": [
+          {
+            "id": "b6b4a0b2892003c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "put.md",
+                "mode": "preview",
+                "source": true
+              }
+            },
+            "group": "978cdfb6545ba687"
+          },
+          {
+            "id": "641fcfbe767db25c",
+            "type": "leaf",
+            "state": {
+              "type": "media-view",
+              "state": {
+                "info": {
+                  "host": 0,
+                  "id": "VnH_kyIjy3c",
+                  "iframe": "https://www.youtube.com/embed/VnH_kyIjy3c",
+                  "src": "https://youtu.be/VnH_kyIjy3c",
+                  "hash": ""
+                },
+                "currentTime": 219.170535
+              }
+            },
+            "group": "978cdfb6545ba687"
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
