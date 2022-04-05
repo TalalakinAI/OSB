@@ -30942,10 +30942,10 @@ var require_luxon = __commonJS({
 __export(exports, {
   default: () => FullCalendarPlugin
 });
-var import_obsidian6 = __toModule(require("obsidian"));
+var import_obsidian7 = __toModule(require("obsidian"));
 
 // src/view.ts
-var import_obsidian5 = __toModule(require("obsidian"));
+var import_obsidian6 = __toModule(require("obsidian"));
 
 // node_modules/tslib/modules/index.js
 var import_tslib = __toModule(require_tslib());
@@ -44872,10 +44872,15 @@ var main6 = createPlugin({
 var main_default6 = main6;
 
 // src/calendar.ts
-function renderCalendar(containerEl, eventSources, { eventClick, select, modifyEvent, eventMouseEnter }) {
+function renderCalendar(containerEl, eventSources, settings) {
   const isMobile = window.innerWidth < 500;
-  const modifyEventCallback = modifyEvent && ((_0) => __async(this, [_0], function* ({ event, revert }) {
-    const success = yield modifyEvent(event);
+  const { eventClick, select, modifyEvent, eventMouseEnter } = settings || {};
+  const modifyEventCallback = modifyEvent && ((_0) => __async(this, [_0], function* ({
+    event,
+    oldEvent,
+    revert
+  }) {
+    const success = yield modifyEvent(event, oldEvent);
     if (!success) {
       revert();
     }
@@ -44934,350 +44939,6 @@ function renderCalendar(containerEl, eventSources, { eventClick, select, modifyE
 var import_obsidian3 = __toModule(require("obsidian"));
 var React2 = __toModule(require_react());
 var ReactDOM = __toModule(require_react_dom());
-
-// src/crud.ts
-var import_obsidian2 = __toModule(require("obsidian"));
-
-// src/dateUtil.ts
-var import_luxon = __toModule(require_luxon());
-var parseTime = (time) => {
-  let parsed = import_luxon.DateTime.fromFormat(time, "h:mm a");
-  if (parsed.invalidReason) {
-    parsed = import_luxon.DateTime.fromFormat(time, "HH:mm");
-  }
-  return import_luxon.Duration.fromISOTime(parsed.toISOTime({
-    includeOffset: false,
-    includePrefix: false
-  }));
-};
-var normalizeTimeString = (time) => {
-  if (!time)
-    time = "";
-  return parseTime(time).toISOTime({
-    suppressMilliseconds: true,
-    includePrefix: false,
-    suppressSeconds: true
-  });
-};
-var add = (date, time) => {
-  let hours = time.hours;
-  let minutes = time.minutes;
-  return date.set({ hour: hours, minute: minutes });
-};
-var getTime2 = (date) => import_luxon.DateTime.fromJSDate(date).toISOTime({
-  suppressMilliseconds: true,
-  includeOffset: false,
-  suppressSeconds: true
-});
-var getDate = (date) => import_luxon.DateTime.fromJSDate(date).toISODate();
-
-// src/frontmatter.ts
-var import_luxon2 = __toModule(require_luxon());
-var import_obsidian = __toModule(require("obsidian"));
-var DAYS = "UMTWRFS";
-function parseFrontmatter(id, frontmatter) {
-  let event = {
-    id,
-    title: frontmatter.title,
-    allDay: frontmatter.allDay
-  };
-  if (frontmatter.type === "recurring") {
-    event = __spreadProps(__spreadValues({}, event), {
-      daysOfWeek: frontmatter.daysOfWeek.map((c3) => DAYS.indexOf(c3)),
-      startRecur: frontmatter.startRecur,
-      endRecur: frontmatter.endRecur
-    });
-    if (!frontmatter.allDay) {
-      event = __spreadProps(__spreadValues({}, event), {
-        startTime: normalizeTimeString(frontmatter.startTime || ""),
-        endTime: frontmatter.endTime ? normalizeTimeString(frontmatter.endTime) : void 0
-      });
-    }
-  } else {
-    if (!frontmatter.allDay) {
-      event = __spreadProps(__spreadValues({}, event), {
-        start: add(import_luxon2.DateTime.fromISO(frontmatter.date), parseTime(frontmatter.startTime || "")).toISO(),
-        end: frontmatter.endTime ? add(import_luxon2.DateTime.fromISO(frontmatter.endDate || frontmatter.date), parseTime(frontmatter.endTime)).toISO() : void 0
-      });
-    } else {
-      event = __spreadProps(__spreadValues({}, event), {
-        start: frontmatter.date,
-        end: frontmatter.endDate || void 0
-      });
-    }
-  }
-  return event;
-}
-function eventApiToFrontmatter(event) {
-  const isRecurring = event.extendedProps.daysOfWeek !== void 0;
-  const startDate = getDate(event.start);
-  const endDate = getDate(event.end);
-  return __spreadValues(__spreadValues({
-    title: event.title
-  }, event.allDay ? { allDay: true } : {
-    allDay: false,
-    startTime: getTime2(event.start),
-    endTime: getTime2(event.end)
-  }), isRecurring ? {
-    type: "recurring",
-    daysOfWeek: event.extendedProps.daysOfWeek.map((i3) => DAYS[i3]),
-    startRecur: event.extendedProps.startRecur && getDate(event.extendedProps.startRecur),
-    endRecur: event.extendedProps.endRecur && getDate(event.extendedProps.endRecur)
-  } : __spreadValues({
-    type: "single",
-    date: startDate
-  }, startDate !== endDate ? { endDate } : {}));
-}
-var FRONTMATTER_SEPARATOR = "---";
-function hasFrontmatter(page) {
-  return page.indexOf(FRONTMATTER_SEPARATOR) === 0 && page.slice(3).indexOf(FRONTMATTER_SEPARATOR) !== -1;
-}
-function extractFrontmatter(page) {
-  if (hasFrontmatter(page)) {
-    return page.split(FRONTMATTER_SEPARATOR)[1];
-  }
-  return null;
-}
-function extractPageContents(page) {
-  if (hasFrontmatter(page)) {
-    return page.split("---").slice(2).join("---");
-  } else {
-    return page;
-  }
-}
-function replaceFrontmatter(page, newFrontmatter) {
-  return `---
-${newFrontmatter}---${extractPageContents(page)}`;
-}
-function stringifyYamlAtom(v3) {
-  let result = "";
-  if (Array.isArray(v3)) {
-    result += "[";
-    result += v3.map(stringifyYamlAtom).join(",");
-    result += "]";
-  } else {
-    result += `${v3}`;
-  }
-  return result;
-}
-function stringifyYamlLine(k2, v3) {
-  return `${String(k2)}: ${stringifyYamlAtom(v3)}`;
-}
-function modifyFrontmatter(vault, file, modifications) {
-  return __async(this, null, function* () {
-    var _a;
-    const page = yield vault.read(file);
-    const frontmatter = (_a = extractFrontmatter(page)) == null ? void 0 : _a.split("\n");
-    let newFrontmatter = [];
-    if (!frontmatter) {
-      newFrontmatter = Object.entries(modifications).filter(([k2, v3]) => v3 !== void 0).map(([k2, v3]) => stringifyYamlLine(k2, v3));
-    } else {
-      const linesAdded = new Set();
-      for (let i3 = 0; i3 < frontmatter.length; i3++) {
-        const line = frontmatter[i3];
-        const obj = (0, import_obsidian.parseYaml)(line);
-        if (!obj) {
-          continue;
-        }
-        const keys = Object.keys(obj);
-        if (keys.length !== 1) {
-          throw new Error("One YAML line parsed to multiple keys.");
-        }
-        const key = keys[0];
-        linesAdded.add(key);
-        const newVal = modifications[key];
-        if (newVal !== void 0) {
-          newFrontmatter.push(stringifyYamlLine(key, newVal));
-        } else {
-          newFrontmatter.push(line);
-        }
-      }
-      newFrontmatter.push(...Object.keys(modifications).filter((k2) => !linesAdded.has(k2)).filter((k2) => modifications[k2] !== void 0).map((k2) => stringifyYamlLine(k2, modifications[k2])));
-    }
-    const newPage = replaceFrontmatter(page, newFrontmatter.join("\n") + "\n");
-    yield vault.modify(file, newPage);
-  });
-}
-
-// src/types.ts
-var PLUGIN_SLUG = "full-calendar-plugin";
-function validateFrontmatter(obj) {
-  if (obj === void 0) {
-    return null;
-  }
-  if (!obj.title) {
-    return null;
-  }
-  if (!obj.allDay && !obj.startTime) {
-    return null;
-  }
-  const timeInfo = obj.allDay ? { allDay: true } : {
-    allDay: false,
-    startTime: obj.startTime,
-    endTime: obj.endTime
-  };
-  if (obj.type === void 0 || obj.type === "single") {
-    if (!obj.date) {
-      return null;
-    }
-    return __spreadValues({
-      title: obj.title,
-      type: "single",
-      date: obj.date,
-      endDate: obj.endDate
-    }, timeInfo);
-  } else if (obj.type === "recurring") {
-    if (obj.daysOfWeek === void 0) {
-      return null;
-    }
-    return __spreadValues({
-      title: obj.title,
-      type: "recurring",
-      daysOfWeek: obj.daysOfWeek,
-      startRecur: obj.startRecur,
-      endRecur: obj.endRecur
-    }, timeInfo);
-  }
-  return null;
-}
-
-// src/crud.ts
-function getFileForEvent(vault, event) {
-  return __async(this, null, function* () {
-    let filename = event.id;
-    let file = vault.getAbstractFileByPath(filename);
-    if (file instanceof import_obsidian2.TFile) {
-      return file;
-    }
-    return null;
-  });
-}
-function getFrontmatterFromFile(cache, file) {
-  var _a;
-  return validateFrontmatter((_a = cache.getFileCache(file)) == null ? void 0 : _a.frontmatter);
-}
-function getFrontmatterFromEvent(vault, cache, event) {
-  return __async(this, null, function* () {
-    let file = yield getFileForEvent(vault, event);
-    if (!file) {
-      return null;
-    }
-    return getFrontmatterFromFile(cache, file);
-  });
-}
-function getEventInputFromFile(cache, file) {
-  let frontmatter = getFrontmatterFromFile(cache, file);
-  if (!frontmatter)
-    return null;
-  if (!frontmatter.title) {
-    frontmatter.title = file.basename;
-  }
-  return parseFrontmatter(file.path, frontmatter);
-}
-function createEvent(vault, event, filename) {
-  return __async(this, null, function* () {
-    if (vault.getAbstractFileByPath(filename)) {
-      return null;
-    }
-    const file = yield vault.create(filename, "");
-    yield modifyFrontmatter(vault, file, event);
-    return file;
-  });
-}
-function updateEvent(vault, event, filename) {
-  return __async(this, null, function* () {
-    let file = vault.getAbstractFileByPath(filename);
-    if (file instanceof import_obsidian2.TFile) {
-      yield modifyFrontmatter(vault, file, event);
-      return file;
-    }
-    return null;
-  });
-}
-function dateEndpointsToFrontmatter(start, end, allDay) {
-  const date = getDate(start);
-  const endDate = getDate(end);
-  return __spreadValues({
-    type: "single",
-    date,
-    endDate: date !== endDate ? endDate : void 0,
-    allDay
-  }, allDay ? {} : {
-    startTime: getTime2(start),
-    endTime: getTime2(end)
-  });
-}
-function getEventInputFromPath(vault, cache, path, recursive) {
-  return __async(this, null, function* () {
-    const eventFolder = vault.getAbstractFileByPath(path);
-    if (!(eventFolder instanceof import_obsidian2.TFolder)) {
-      return null;
-    }
-    let events = [];
-    for (let file of eventFolder.children) {
-      if (file instanceof import_obsidian2.TFile) {
-        let event = getEventInputFromFile(cache, file);
-        if (event) {
-          events.push(event);
-        }
-      } else if (recursive) {
-        const childEvents = yield getEventInputFromPath(vault, cache, file.path, recursive);
-        if (childEvents) {
-          events.push(...childEvents);
-        }
-      }
-    }
-    return events;
-  });
-}
-function getEventSourceFromLocalSource(vault, cache, calendarSource, recursive) {
-  return __async(this, null, function* () {
-    if (!calendarSource.directory) {
-      return null;
-    }
-    const events = yield getEventInputFromPath(vault, cache, calendarSource.directory, recursive);
-    if (!events) {
-      return null;
-    }
-    return {
-      events,
-      textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent"),
-      color: calendarSource.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent")
-    };
-  });
-}
-function basenameFromEvent(event) {
-  switch (event.type) {
-    case "single":
-    case void 0:
-      return `${event.date} ${event.title}`;
-    case "recurring":
-      return `(Every ${event.daysOfWeek.join(",")}) ${event.title})`;
-  }
-}
-var getPathPrefix = (path) => path.split("/").slice(0, -1).join("/");
-function upsertLocalEvent(vault, directory, event, existingFilename) {
-  return __async(this, null, function* () {
-    let newFilename = `${directory}/${basenameFromEvent(event)}.md`;
-    if (existingFilename) {
-      const existingPrefix = getPathPrefix(existingFilename);
-      if (existingPrefix.startsWith(directory)) {
-        newFilename = `${existingPrefix}/${basenameFromEvent(event)}.md`;
-      }
-      if (newFilename !== existingFilename && vault.getAbstractFileByPath(newFilename) !== null) {
-        return false;
-      }
-      const file = yield updateEvent(vault, event, existingFilename);
-      if (file && newFilename !== existingFilename) {
-        yield vault.rename(file, newFilename);
-      }
-      return true;
-    } else {
-      const file = yield createEvent(vault, event, newFilename);
-      return file !== null;
-    }
-  });
-}
 
 // src/components/EditEvent.tsx
 var React = __toModule(require_react());
@@ -45451,31 +45112,452 @@ var EditEvent = ({
   }, "Delete Event")))));
 };
 
+// src/frontmatter.ts
+var import_luxon2 = __toModule(require_luxon());
+var import_obsidian = __toModule(require("obsidian"));
+
+// src/dateUtil.ts
+var import_luxon = __toModule(require_luxon());
+var parseTime = (time) => {
+  let parsed = import_luxon.DateTime.fromFormat(time, "h:mm a");
+  if (parsed.invalidReason) {
+    parsed = import_luxon.DateTime.fromFormat(time, "HH:mm");
+  }
+  return import_luxon.Duration.fromISOTime(parsed.toISOTime({
+    includeOffset: false,
+    includePrefix: false
+  }));
+};
+var normalizeTimeString = (time) => {
+  if (!time)
+    time = "";
+  return parseTime(time).toISOTime({
+    suppressMilliseconds: true,
+    includePrefix: false,
+    suppressSeconds: true
+  });
+};
+var add = (date, time) => {
+  let hours = time.hours;
+  let minutes = time.minutes;
+  return date.set({ hour: hours, minute: minutes });
+};
+var getTime2 = (date) => import_luxon.DateTime.fromJSDate(date).toISOTime({
+  suppressMilliseconds: true,
+  includeOffset: false,
+  suppressSeconds: true
+});
+var getDate = (date) => import_luxon.DateTime.fromJSDate(date).toISODate();
+
+// src/frontmatter.ts
+var DAYS = "UMTWRFS";
+function dateEndpointsToFrontmatter(start, end, allDay) {
+  const date = getDate(start);
+  const endDate = getDate(end);
+  return __spreadValues({
+    type: "single",
+    date,
+    endDate: date !== endDate ? endDate : void 0,
+    allDay
+  }, allDay ? {} : {
+    startTime: getTime2(start),
+    endTime: getTime2(end)
+  });
+}
+function parseFrontmatter(id, frontmatter) {
+  let event = {
+    id,
+    title: frontmatter.title,
+    allDay: frontmatter.allDay
+  };
+  if (frontmatter.type === "recurring") {
+    event = __spreadProps(__spreadValues({}, event), {
+      daysOfWeek: frontmatter.daysOfWeek.map((c3) => DAYS.indexOf(c3)),
+      startRecur: frontmatter.startRecur,
+      endRecur: frontmatter.endRecur
+    });
+    if (!frontmatter.allDay) {
+      event = __spreadProps(__spreadValues({}, event), {
+        startTime: normalizeTimeString(frontmatter.startTime || ""),
+        endTime: frontmatter.endTime ? normalizeTimeString(frontmatter.endTime) : void 0
+      });
+    }
+  } else {
+    if (!frontmatter.allDay) {
+      event = __spreadProps(__spreadValues({}, event), {
+        start: add(import_luxon2.DateTime.fromISO(frontmatter.date), parseTime(frontmatter.startTime || "")).toISO(),
+        end: frontmatter.endTime ? add(import_luxon2.DateTime.fromISO(frontmatter.endDate || frontmatter.date), parseTime(frontmatter.endTime)).toISO() : void 0
+      });
+    } else {
+      event = __spreadProps(__spreadValues({}, event), {
+        start: frontmatter.date,
+        end: frontmatter.endDate || void 0
+      });
+    }
+  }
+  return event;
+}
+function eventApiToFrontmatter(event) {
+  const isRecurring = event.extendedProps.daysOfWeek !== void 0;
+  const startDate = getDate(event.start);
+  const endDate = getDate(event.end);
+  return __spreadValues(__spreadValues({
+    title: event.title
+  }, event.allDay ? { allDay: true } : {
+    allDay: false,
+    startTime: getTime2(event.start),
+    endTime: getTime2(event.end)
+  }), isRecurring ? {
+    type: "recurring",
+    daysOfWeek: event.extendedProps.daysOfWeek.map((i3) => DAYS[i3]),
+    startRecur: event.extendedProps.startRecur && getDate(event.extendedProps.startRecur),
+    endRecur: event.extendedProps.endRecur && getDate(event.extendedProps.endRecur)
+  } : __spreadValues({
+    type: "single",
+    date: startDate
+  }, startDate !== endDate ? { endDate } : {}));
+}
+var FRONTMATTER_SEPARATOR = "---";
+function hasFrontmatter(page) {
+  return page.indexOf(FRONTMATTER_SEPARATOR) === 0 && page.slice(3).indexOf(FRONTMATTER_SEPARATOR) !== -1;
+}
+function extractFrontmatter(page) {
+  if (hasFrontmatter(page)) {
+    return page.split(FRONTMATTER_SEPARATOR)[1];
+  }
+  return null;
+}
+function extractPageContents(page) {
+  if (hasFrontmatter(page)) {
+    return page.split("---").slice(2).join("---");
+  } else {
+    return page;
+  }
+}
+function replaceFrontmatter(page, newFrontmatter) {
+  return `---
+${newFrontmatter}---${extractPageContents(page)}`;
+}
+function stringifyYamlAtom(v3) {
+  let result = "";
+  if (Array.isArray(v3)) {
+    result += "[";
+    result += v3.map(stringifyYamlAtom).join(",");
+    result += "]";
+  } else {
+    result += `${v3}`;
+  }
+  return result;
+}
+function stringifyYamlLine(k2, v3) {
+  return `${String(k2)}: ${stringifyYamlAtom(v3)}`;
+}
+function modifyFrontmatter(vault, file, modifications) {
+  return __async(this, null, function* () {
+    var _a;
+    let page = yield vault.read(file);
+    const frontmatter = (_a = extractFrontmatter(page)) == null ? void 0 : _a.split("\n");
+    let newFrontmatter = [];
+    if (!frontmatter) {
+      newFrontmatter = Object.entries(modifications).filter(([k2, v3]) => v3 !== void 0).map(([k2, v3]) => stringifyYamlLine(k2, v3));
+      page = "\n" + page;
+    } else {
+      const linesAdded = new Set();
+      for (let i3 = 0; i3 < frontmatter.length; i3++) {
+        const line = frontmatter[i3];
+        const obj = (0, import_obsidian.parseYaml)(line);
+        if (!obj) {
+          continue;
+        }
+        const keys = Object.keys(obj);
+        if (keys.length !== 1) {
+          throw new Error("One YAML line parsed to multiple keys.");
+        }
+        const key = keys[0];
+        linesAdded.add(key);
+        const newVal = modifications[key];
+        if (newVal !== void 0) {
+          newFrontmatter.push(stringifyYamlLine(key, newVal));
+        } else {
+          newFrontmatter.push(line);
+        }
+      }
+      newFrontmatter.push(...Object.keys(modifications).filter((k2) => !linesAdded.has(k2)).filter((k2) => modifications[k2] !== void 0).map((k2) => stringifyYamlLine(k2, modifications[k2])));
+    }
+    const newPage = replaceFrontmatter(page, newFrontmatter.join("\n") + "\n");
+    yield vault.modify(file, newPage);
+  });
+}
+
+// src/models/Event.ts
+function basenameFromEvent(event) {
+  switch (event.type) {
+    case "single":
+    case void 0:
+      return `${event.date} ${event.title}`;
+    case "recurring":
+      return `(Every ${event.daysOfWeek.join(",")}) ${event.title})`;
+  }
+}
+var _CalendarEvent = class {
+  constructor(cache, vault, data) {
+    this.cache = cache;
+    this.vault = vault;
+    this._data = data;
+  }
+  get idForCalendar() {
+    return this.PREFIX + _CalendarEvent.ID_SEPARATOR + this.identifier;
+  }
+  toCalendarEvent() {
+    return parseFrontmatter(this.idForCalendar, this.data);
+  }
+  get data() {
+    return __spreadValues({}, this._data);
+  }
+  addTo(calendar, source) {
+    calendar.addEvent(__spreadValues({
+      color: source.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent"),
+      textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent")
+    }, this.toCalendarEvent()));
+  }
+};
+var CalendarEvent = _CalendarEvent;
+CalendarEvent.ID_SEPARATOR = "::";
+var EditableEvent = class extends CalendarEvent {
+  constructor(cache, vault, data) {
+    super(cache, vault, data);
+  }
+  get editable() {
+    return true;
+  }
+};
+var LocalEvent = class extends EditableEvent {
+};
+
+// src/models/NoteEvent.ts
+var import_obsidian2 = __toModule(require("obsidian"));
+
+// src/types.ts
+var PLUGIN_SLUG = "full-calendar-plugin";
+function validateFrontmatter(obj) {
+  if (obj === void 0) {
+    return null;
+  }
+  if (!obj.title) {
+    return null;
+  }
+  if (!obj.allDay && !obj.startTime) {
+    return null;
+  }
+  const timeInfo = obj.allDay ? { allDay: true } : {
+    allDay: false,
+    startTime: obj.startTime,
+    endTime: obj.endTime
+  };
+  if (obj.type === void 0 || obj.type === "single") {
+    if (!obj.date) {
+      return null;
+    }
+    return __spreadValues({
+      title: obj.title,
+      type: "single",
+      date: obj.date,
+      endDate: obj.endDate
+    }, timeInfo);
+  } else if (obj.type === "recurring") {
+    if (obj.daysOfWeek === void 0) {
+      return null;
+    }
+    return __spreadValues({
+      title: obj.title,
+      type: "recurring",
+      daysOfWeek: obj.daysOfWeek,
+      startRecur: obj.startRecur,
+      endRecur: obj.endRecur
+    }, timeInfo);
+  }
+  return null;
+}
+var FCError = class {
+  constructor(message) {
+    this.message = message;
+  }
+};
+
+// src/models/NoteEvent.ts
+var _NoteEvent = class extends LocalEvent {
+  get path() {
+    return `${this.directory}/${this.filename}`;
+  }
+  get identifier() {
+    return this.path;
+  }
+  get PREFIX() {
+    return _NoteEvent.ID_PREFIX;
+  }
+  constructor(cache, vault, data, { directory, filename }) {
+    super(cache, vault, data);
+    this.directory = directory;
+    this.filename = filename;
+  }
+  static create(cache, vault, directory, data) {
+    return __async(this, null, function* () {
+      const filename = `${directory}/${basenameFromEvent(data)}.md`;
+      if (vault.getAbstractFileByPath(filename)) {
+        throw new FCError(`File with name '${filename}' already exists`);
+      }
+      const file = yield vault.create(filename, "");
+      yield modifyFrontmatter(vault, file, data);
+      return new _NoteEvent(cache, vault, data, {
+        directory: file.parent.path,
+        filename: file.name
+      });
+    });
+  }
+  static upgrade(cache, vault, file, data) {
+    return __async(this, null, function* () {
+      yield modifyFrontmatter(vault, file, data);
+      return new _NoteEvent(cache, vault, data, {
+        directory: file.parent.path,
+        filename: file.name
+      });
+    });
+  }
+  static fromFile(cache, vault, file) {
+    var _a;
+    let data = validateFrontmatter((_a = cache.getFileCache(file)) == null ? void 0 : _a.frontmatter);
+    if (!data)
+      return null;
+    if (!data.title) {
+      data.title = file.basename;
+    }
+    return new _NoteEvent(cache, vault, data, {
+      directory: file.parent.path,
+      filename: file.name
+    });
+  }
+  static fromPath(cache, vault, path) {
+    const file = vault.getAbstractFileByPath(path);
+    if (!(file instanceof import_obsidian2.TFile)) {
+      throw new FCError(`File not found at path: ${path}`);
+    }
+    const event = this.fromFile(cache, vault, file);
+    if (!event) {
+      throw new FCError(`Could not construct event from file at path: ${path}`);
+    }
+    return event;
+  }
+  openIn(leaf) {
+    return __async(this, null, function* () {
+      yield leaf.openFile(this.file);
+    });
+  }
+  delete() {
+    return __async(this, null, function* () {
+      yield this.vault.delete(this.file);
+    });
+  }
+  get file() {
+    const file = this.vault.getAbstractFileByPath(this.path);
+    if (file instanceof import_obsidian2.TFile) {
+      return file;
+    } else {
+      throw new FCError(`Cannot find file for NoteEvent at path ${this.path}.`);
+    }
+  }
+  setDirectory(newDirectory) {
+    return __async(this, null, function* () {
+      if (this.directory.startsWith(newDirectory)) {
+        return;
+      }
+      let newPath = `${newDirectory}/${this.filename}`;
+      if (this.path === newPath) {
+        return;
+      }
+      if (this.vault.getAbstractFileByPath(newPath)) {
+        throw new FCError("Multiple events with the same name on the same date are not yet supported. Please rename your event before moving it.");
+      }
+      const file = this.file;
+      yield this.vault.rename(file, newPath);
+      this.directory = newDirectory;
+    });
+  }
+  setData(data) {
+    return __async(this, null, function* () {
+      let file = this.file;
+      let newFilename = `${basenameFromEvent(data)}.md`;
+      if (this.filename !== newFilename && this.vault.getAbstractFileByPath(`${file.parent.path}/${newFilename}`)) {
+        throw new FCError("Multiple events with the same name on the same date are not yet supported. Please rename your event before moving it.");
+      }
+      yield modifyFrontmatter(this.vault, file, data);
+      if (this.filename !== newFilename) {
+        this.filename = newFilename;
+        yield this.vault.rename(file, this.path);
+      }
+      this._data = data;
+    });
+  }
+};
+var NoteEvent = _NoteEvent;
+NoteEvent.ID_PREFIX = "note";
+
+// src/models/ICSEvent.ts
+var _ICSEvent = class extends CalendarEvent {
+  constructor(cache, vault, data, id) {
+    super(cache, vault, data);
+    this.id = id;
+  }
+  get PREFIX() {
+    return _ICSEvent.ID_PREFIX;
+  }
+  get identifier() {
+    return this.id;
+  }
+};
+var ICSEvent = _ICSEvent;
+ICSEvent.ID_PREFIX = "ics";
+
+// src/models/index.ts
+function eventFromCalendarId(cache, vault, id) {
+  return __async(this, null, function* () {
+    const [prefix, ...rest] = id.split("::");
+    const info = rest.join("::");
+    switch (prefix) {
+      case ICSEvent.ID_PREFIX:
+        throw new FCError("Cannot create instance of ICS event given its ID.");
+      case NoteEvent.ID_PREFIX:
+        return NoteEvent.fromPath(cache, vault, info);
+    }
+  });
+}
+
 // src/modal.ts
 var EventModal = class extends import_obsidian3.Modal {
-  constructor(app, plugin, calendar, event, eventId) {
+  constructor(app, plugin, calendar, event) {
     super(app);
     this.plugin = plugin;
-    this.event = event;
-    this.eventId = eventId;
+    this.data = event;
     this.calendar = calendar;
   }
-  editInModal(event) {
+  editInModal(input) {
     return __async(this, null, function* () {
       let frontmatter = null;
-      if (event instanceof EventApi) {
-        frontmatter = yield getFrontmatterFromEvent(this.app.vault, this.app.metadataCache, event);
-        if (frontmatter) {
-          this.event = frontmatter;
-          this.eventId = event.id;
+      if (input instanceof EventApi) {
+        const event = yield eventFromCalendarId(this.app.metadataCache, this.app.vault, input.id);
+        if (event) {
+          this.data = event.data;
+          this.event = event;
           this.open();
         } else {
+          new import_obsidian3.Notice("Full Calendar: No frontmatter to edit for selected event.");
           console.warn("Full Calendar: No frontmatter to edit for selected event.");
         }
-      } else if (event instanceof import_obsidian3.TFile) {
-        frontmatter = getFrontmatterFromFile(this.app.metadataCache, event);
-        this.event = frontmatter || { title: event.basename };
-        this.eventId = event.path;
+      } else if (input instanceof import_obsidian3.TFile) {
+        const e3 = NoteEvent.fromFile(this.app.metadataCache, this.app.vault, input);
+        frontmatter = e3 == null ? void 0 : e3.data;
+        this.file = input;
+        this.data = frontmatter || { title: input.basename };
+        this.event = e3 || void 0;
         this.open();
       }
     });
@@ -45485,8 +45567,9 @@ var EventModal = class extends import_obsidian3.Modal {
       const { contentEl } = this;
       yield this.plugin.loadSettings();
       ReactDOM.render(React2.createElement(EditEvent, {
-        initialEvent: this.event,
-        submit: (event, calendarIndex) => __async(this, null, function* () {
+        initialEvent: this.data,
+        submit: (data, calendarIndex) => __async(this, null, function* () {
+          console.log("submitting modal");
           const source = this.plugin.settings.calendarSources.filter((s3) => s3.type === "local")[calendarIndex];
           if (source.type !== "local") {
             new import_obsidian3.Notice("Sorry, remote sync is currently read-only.");
@@ -45494,32 +45577,40 @@ var EventModal = class extends import_obsidian3.Modal {
             return;
           }
           const directory = source.directory;
-          const success = yield upsertLocalEvent(this.app.vault, directory, event, this.eventId);
-          if (success) {
+          try {
+            if (this.file && !this.event) {
+              NoteEvent.upgrade(this.app.metadataCache, this.app.vault, this.file, data);
+            } else if (!this.event) {
+              NoteEvent.create(this.app.metadataCache, this.app.vault, directory, data);
+            } else {
+              if (this.event instanceof EditableEvent) {
+                console.log("editable event", this.event);
+                yield this.event.setData(data);
+                if (this.event instanceof NoteEvent) {
+                  console.log("note event", this.event);
+                  yield this.event.setDirectory(directory);
+                }
+              }
+            }
+          } catch (e3) {
+            new import_obsidian3.Notice(e3.message);
+          } finally {
             this.close();
-          } else {
-            new import_obsidian3.Notice("Multiple events with the same name on the same day are not yet supported.Please change the name of your event.");
           }
         }),
         defaultCalendarIndex: this.plugin.settings.defaultCalendar,
         calendars: this.plugin.settings.calendarSources,
-        open: this.eventId !== void 0 ? () => __async(this, null, function* () {
-          if (this.eventId) {
-            let file = this.app.vault.getAbstractFileByPath(this.eventId);
-            if (file instanceof import_obsidian3.TFile) {
-              let leaf = this.app.workspace.getMostRecentLeaf();
-              yield leaf.openFile(file);
-              this.close();
-            }
+        open: this.event instanceof LocalEvent ? () => __async(this, null, function* () {
+          if (this.event instanceof LocalEvent) {
+            let leaf = this.app.workspace.getMostRecentLeaf();
+            yield this.event.openIn(leaf);
+            this.close();
           }
         }) : void 0,
-        deleteEvent: this.eventId !== void 0 ? () => __async(this, null, function* () {
-          if (this.eventId) {
-            let file = this.app.vault.getAbstractFileByPath(this.eventId);
-            if (file instanceof import_obsidian3.TFile) {
-              yield this.app.vault.delete(file);
-              this.close();
-            }
+        deleteEvent: this.event instanceof LocalEvent ? () => __async(this, null, function* () {
+          if (this.event instanceof LocalEvent) {
+            yield this.event.delete();
+            this.close();
           }
         }) : void 0
       }), contentEl);
@@ -45530,6 +45621,9 @@ var EventModal = class extends import_obsidian3.Modal {
     ReactDOM.unmountComponentAtNode(contentEl);
   }
 };
+
+// src/models/EventSource.ts
+var import_obsidian4 = __toModule(require("obsidian"));
 
 // vendor/fullcalendar-ical/ical-expander/IcalExpander.js
 var ICAL2 = __toModule(require_ical());
@@ -45667,8 +45761,107 @@ function specifiesEnd2(iCalEvent) {
   return Boolean(iCalEvent.component.getFirstProperty("dtend")) || Boolean(iCalEvent.component.getFirstProperty("duration"));
 }
 
+// src/models/EventSource.ts
+var EventSource = class {
+};
+var NoteSource = class extends EventSource {
+  constructor(vault, cache, info) {
+    super();
+    this.vault = vault;
+    this.cache = cache;
+    this.info = info;
+  }
+  getEventInputsFromPath(recursive, path) {
+    return __async(this, null, function* () {
+      const eventFolder = this.vault.getAbstractFileByPath(path || this.info.directory);
+      if (!(eventFolder instanceof import_obsidian4.TFolder)) {
+        return new FCError("Directory");
+      }
+      let events = [];
+      for (let file of eventFolder.children) {
+        if (file instanceof import_obsidian4.TFile) {
+          let event = NoteEvent.fromFile(this.cache, this.vault, file);
+          if (event) {
+            events.push(event.toCalendarEvent());
+          }
+        } else if (recursive) {
+          const childEvents = yield this.getEventInputsFromPath(recursive, file.path);
+          if (childEvents instanceof FCError) {
+            return childEvents;
+          }
+          events.push(...childEvents);
+        }
+      }
+      return events;
+    });
+  }
+  toApi(recursive = false) {
+    return __async(this, null, function* () {
+      const events = yield this.getEventInputsFromPath(recursive);
+      if (events instanceof FCError) {
+        return events;
+      }
+      return {
+        events,
+        textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent"),
+        color: this.info.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent")
+      };
+    });
+  }
+};
+var IcsSource = class extends EventSource {
+  constructor(info) {
+    super();
+    this.info = info;
+  }
+  toApi() {
+    return __async(this, null, function* () {
+      let url = this.info.url;
+      if (url.startsWith("webcal")) {
+        url = "https" + url.slice("webcal".length);
+      }
+      let expander = null;
+      const getExpander = () => __async(this, null, function* () {
+        if (expander !== null) {
+          return expander;
+        }
+        try {
+          let text = yield (0, import_obsidian4.request)({
+            url,
+            method: "GET"
+          });
+          expander = makeICalExpander(text);
+          return expander;
+        } catch (e3) {
+          console.error(`Error loading calendar from ${url}`);
+          console.error(e3);
+          return new FCError(`There was an error loading a calendar. Check the console for full details.`);
+        }
+      });
+      return {
+        events: function(_0) {
+          return __async(this, arguments, function* ({ start, end }) {
+            const ical = yield getExpander();
+            if (ical instanceof FCError) {
+              throw new Error("Could not get calendar: " + ical.message);
+            }
+            const events = expandICalEvents2(ical, {
+              start,
+              end
+            });
+            return events;
+          });
+        },
+        editable: false,
+        textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent"),
+        color: this.info.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent")
+      };
+    });
+  }
+};
+
 // src/settings.ts
-var import_obsidian4 = __toModule(require("obsidian"));
+var import_obsidian5 = __toModule(require("obsidian"));
 
 // src/components/CalendarSetting.tsx
 var React3 = __toModule(require_react());
@@ -45819,7 +46012,7 @@ var DEFAULT_SETTINGS = {
   recursiveLocal: false
 };
 function renderSourceManager(vault, plugin, el, submitCallback) {
-  const directories = vault.getAllLoadedFiles().filter((f3) => f3 instanceof import_obsidian4.TFolder).map((f3) => f3.path);
+  const directories = vault.getAllLoadedFiles().filter((f3) => f3 instanceof import_obsidian5.TFolder).map((f3) => f3.path);
   ReactDOM2.render((0, import_react3.createElement)(CalendarSettings, {
     directories,
     initialSetting: plugin.settings.calendarSources,
@@ -45831,7 +46024,7 @@ function renderSourceManager(vault, plugin, el, submitCallback) {
     })
   }), el);
 }
-var FullCalendarSettingTab = class extends import_obsidian4.PluginSettingTab {
+var FullCalendarSettingTab = class extends import_obsidian5.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -45841,23 +46034,43 @@ var FullCalendarSettingTab = class extends import_obsidian4.PluginSettingTab {
       const { containerEl } = this;
       containerEl.empty();
       containerEl.createEl("h2", { text: "Events settings" });
-      new import_obsidian4.Setting(containerEl).setName("Recursive event folders").setDesc("Search through sub-folders for events").addToggle((toggle) => {
+      new import_obsidian5.Setting(containerEl).setName("Recursive event folders").setDesc("Search through sub-folders for events").addToggle((toggle) => {
         toggle.setValue(this.plugin.settings.recursiveLocal);
         toggle.onChange((val) => __async(this, null, function* () {
           this.plugin.settings.recursiveLocal = val;
           yield this.plugin.saveSettings();
         }));
       });
-      const sourceSetting = new import_obsidian4.Setting(containerEl).setName("Calendars").setDesc("Configure your calendars here.");
+      const sourceSetting = new import_obsidian5.Setting(containerEl).setName("Calendars").setDesc("Configure your calendars here.");
       sourceSetting.settingEl.style.display = "block";
       renderSourceManager(this.app.vault, this.plugin, sourceSetting.settingEl);
     });
   }
 };
 
+// src/onboard.ts
+function renderOnboarding(vault, plugin, el) {
+  el.style.height = "100%";
+  const nocal = el.createDiv();
+  nocal.style.height = "100%";
+  nocal.style.display = "flex";
+  nocal.style.alignItems = "center";
+  nocal.style.justifyContent = "center";
+  const notice = nocal.createDiv();
+  notice.createEl("h1").textContent = "No calendar available";
+  notice.createEl("p").textContent = "Thanks for downloading Full Calendar! Create a calendar below to begin.";
+  const container = notice.createDiv();
+  container.style.position = "fixed";
+  renderSourceManager(vault, plugin, container, (settings) => __async(this, null, function* () {
+    if (settings.length > 0) {
+      yield plugin.activateView();
+    }
+  }));
+}
+
 // src/view.ts
 var FULL_CALENDAR_VIEW_TYPE = "full-calendar-view";
-var CalendarView = class extends import_obsidian5.ItemView {
+var CalendarView = class extends import_obsidian6.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
@@ -45871,56 +46084,42 @@ var CalendarView = class extends import_obsidian5.ItemView {
     return "Calendar";
   }
   onCacheUpdate(file) {
-    var _a, _b;
-    const calendar = this.plugin.settings.calendarSources.find((c3) => c3.type === "local" && file.path.startsWith(c3.directory));
-    let calendarEvent = (_a = this.calendar) == null ? void 0 : _a.getEventById(file.path);
-    let newEventData = getEventInputFromFile(this.app.metadataCache, file);
-    if (calendar && newEventData !== null) {
+    var _a;
+    const source = this.plugin.settings.calendarSources.find((c3) => c3.type === "local" && file.path.startsWith(c3.directory));
+    const event = NoteEvent.fromFile(this.app.metadataCache, this.app.vault, file);
+    if (!event) {
+      return;
+    }
+    let calendarEvent = (_a = this.calendar) == null ? void 0 : _a.getEventById(event.idForCalendar);
+    if (this.calendar && source && event) {
       if (calendarEvent) {
         calendarEvent.remove();
       }
-      (_b = this.calendar) == null ? void 0 : _b.addEvent(__spreadValues({
-        color: calendar.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent"),
-        textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent")
-      }, newEventData));
+      event.addTo(this.calendar, source);
     }
   }
   onOpen() {
     return __async(this, null, function* () {
       yield this.plugin.loadSettings();
-      const sources = (yield Promise.all(this.plugin.settings.calendarSources.filter((s3) => s3.type === "local").map((source) => getEventSourceFromLocalSource(this.app.vault, this.app.metadataCache, source, this.plugin.settings.recursiveLocal)))).filter((s3) => s3 !== null).concat(this.plugin.settings.calendarSources.filter((s3) => s3.type === "gcal").map((gcalSource) => ({
-        editable: false,
-        googleCalendarId: gcalSource.url,
-        textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent"),
-        color: gcalSource.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent")
-      })));
+      const noteSourcePromises = this.plugin.settings.calendarSources.flatMap((s3) => s3.type === "local" ? [s3] : []).map((s3) => new NoteSource(this.app.vault, this.app.metadataCache, s3)).map((ns) => ns.toApi(this.plugin.settings.recursiveLocal));
       const container = this.containerEl.children[1];
       container.empty();
       let calendarEl = container.createEl("div");
-      if (!sources || sources.length === 0 && this.plugin.settings.calendarSources.filter((s3) => s3.type === "ical").length === 0) {
-        calendarEl.style.height = "100%";
-        const nocal = calendarEl.createDiv();
-        nocal.style.height = "100%";
-        nocal.style.display = "flex";
-        nocal.style.alignItems = "center";
-        nocal.style.justifyContent = "center";
-        const notice = nocal.createDiv();
-        notice.createEl("h1").textContent = "No calendar available";
-        notice.createEl("p").textContent = "Thanks for downloading Full Calendar! Create a calendar below to begin.";
-        const container2 = notice.createDiv();
-        container2.style.position = "fixed";
-        renderSourceManager(this.app.vault, this.plugin, container2, (settings) => __async(this, null, function* () {
-          if (settings.length > 0) {
-            yield this.plugin.activateView();
-          }
-        }));
+      const noteSourceResults = yield Promise.all(noteSourcePromises);
+      const sources = noteSourceResults.flatMap((s3) => s3 instanceof FCError ? [] : [s3]);
+      if (sources.length === 0 && this.plugin.settings.calendarSources.filter((s3) => s3.type === "ical").length === 0) {
+        renderOnboarding(this.app.vault, this.plugin, calendarEl);
         return;
+      }
+      let errs = noteSourceResults.flatMap((s3) => s3 instanceof FCError ? [s3] : []);
+      for (const err of errs) {
+        new import_obsidian6.Notice(err.message);
       }
       this.calendar = renderCalendar(calendarEl, sources, {
         eventClick: (info) => __async(this, null, function* () {
           if (info.jsEvent.getModifierState("Control") || info.jsEvent.getModifierState("Meta")) {
             let file = this.app.vault.getAbstractFileByPath(info.event.id);
-            if (file instanceof import_obsidian5.TFile) {
+            if (file instanceof import_obsidian6.TFile) {
               let leaf = this.app.workspace.getMostRecentLeaf();
               yield leaf.openFile(file);
             }
@@ -45933,82 +46132,47 @@ var CalendarView = class extends import_obsidian5.ItemView {
           let modal = new EventModal(this.app, this.plugin, this.calendar, partialEvent);
           modal.open();
         }),
-        modifyEvent: (event) => __async(this, null, function* () {
-          const file = yield getFileForEvent(this.app.vault, event);
-          if (!file) {
+        modifyEvent: (newEvent, oldEvent) => __async(this, null, function* () {
+          try {
+            const existingEvent = yield eventFromCalendarId(this.app.metadataCache, this.app.vault, oldEvent.id);
+            if (!existingEvent) {
+              return false;
+            }
+            const frontmatter = eventApiToFrontmatter(newEvent);
+            yield existingEvent.setData(frontmatter);
+          } catch (e3) {
+            new import_obsidian6.Notice(e3.message);
             return false;
           }
-          const success = yield upsertLocalEvent(this.app.vault, getPathPrefix(event.id), eventApiToFrontmatter(event), event.id);
-          if (!success) {
-            new import_obsidian5.Notice("Multiple events with the same name on the same date are not yet supported. Please rename your event before moving it.");
-          }
-          return success;
+          return true;
         }),
-        eventMouseEnter: (info) => {
-          const path = info.event.id;
-          this.app.workspace.trigger("hover-link", {
-            event: info.jsEvent,
-            source: PLUGIN_SLUG,
-            hoverParent: calendarEl,
-            targetEl: info.jsEvent.target,
-            linktext: path,
-            sourcePath: path
-          });
-        }
-      });
-      this.plugin.settings.calendarSources.filter((s3) => s3.type === "ical").map((s3) => __async(this, null, function* () {
-        let url = s3.url;
-        if (url.startsWith("webcal")) {
-          url = "https" + url.slice("webcal".length);
-        }
-        let expander = null;
-        const getExpander = () => __async(this, null, function* () {
-          if (expander !== null) {
-            return expander;
-          }
-          try {
-            let text = yield (0, import_obsidian5.request)({
-              url,
-              method: "GET"
+        eventMouseEnter: (info) => __async(this, null, function* () {
+          const event = yield eventFromCalendarId(this.app.metadataCache, this.app.vault, info.event.id);
+          if (event instanceof LocalEvent) {
+            this.app.workspace.trigger("hover-link", {
+              event: info.jsEvent,
+              source: PLUGIN_SLUG,
+              hoverParent: calendarEl,
+              targetEl: info.jsEvent.target,
+              linktext: event.path,
+              sourcePath: event.path
             });
-            expander = makeICalExpander(text);
-            return expander;
-          } catch (e3) {
-            new import_obsidian5.Notice(`There was an error loading a calendar. Check the console for full details.`);
-            console.error(`Error loading calendar from ${url}`);
-            console.error(e3);
-            return null;
           }
-        });
-        return {
-          events: function(_0) {
-            return __async(this, arguments, function* ({ start, end }) {
-              const ical = yield getExpander();
-              if (ical === null) {
-                throw new Error("Could not get calendar.");
-              }
-              const events = expandICalEvents2(ical, {
-                start,
-                end
-              });
-              return events;
-            });
-          },
-          editable: false,
-          textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent"),
-          color: s3.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent")
-        };
-      })).forEach((prom) => {
-        prom.then((source) => {
-          var _a;
-          return (_a = this.calendar) == null ? void 0 : _a.addEventSource(source);
-        });
+        })
       });
+      this.plugin.settings.calendarSources.flatMap((s3) => s3.type === "ical" ? [s3] : []).map((s3) => new IcsSource(s3)).map((s3) => s3.toApi()).forEach((resultPromise) => resultPromise.then((result) => {
+        var _a;
+        if (result instanceof FCError) {
+          new import_obsidian6.Notice(result.message);
+        } else {
+          (_a = this.calendar) == null ? void 0 : _a.addEventSource(result);
+        }
+      }));
       this.registerEvent(this.app.metadataCache.on("changed", this.cacheCallback));
       this.registerEvent(this.app.vault.on("delete", (file) => {
         var _a;
-        if (file instanceof import_obsidian5.TFile) {
-          let id = file.path;
+        if (file instanceof import_obsidian6.TFile) {
+          let id = NoteEvent.ID_PREFIX + CalendarEvent.ID_SEPARATOR + file.path;
           const event = (_a = this.calendar) == null ? void 0 : _a.getEventById(id);
           if (event) {
             event.remove();
@@ -46017,11 +46181,11 @@ var CalendarView = class extends import_obsidian5.ItemView {
       }));
       this.registerEvent(this.app.vault.on("rename", (file, oldPath) => {
         var _a;
-        const oldEvent = (_a = this.calendar) == null ? void 0 : _a.getEventById(oldPath);
+        const oldEvent = (_a = this.calendar) == null ? void 0 : _a.getEventById(NoteEvent.ID_PREFIX + CalendarEvent.ID_SEPARATOR + oldPath);
         if (oldEvent) {
           oldEvent.remove();
         }
-        if (file instanceof import_obsidian5.TFile) {
+        if (file instanceof import_obsidian6.TFile) {
           this.onCacheUpdate(file);
         }
       }));
@@ -46043,7 +46207,7 @@ var CalendarView = class extends import_obsidian5.ItemView {
 };
 
 // src/main.ts
-var FullCalendarPlugin = class extends import_obsidian6.Plugin {
+var FullCalendarPlugin = class extends import_obsidian7.Plugin {
   constructor() {
     super(...arguments);
     this.settings = DEFAULT_SETTINGS;
@@ -46086,7 +46250,7 @@ var FullCalendarPlugin = class extends import_obsidian6.Plugin {
         id: "full-calendar-upgrade-note",
         name: "Upgrade note to event",
         callback: () => {
-          const view = this.app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
+          const view = this.app.workspace.getActiveViewOfType(import_obsidian7.MarkdownView);
           if (view) {
             const file = view.file;
             new EventModal(this.app, this, null).editInModal(file);
