@@ -2,8 +2,8 @@
   "mediaFragmentsEmbed": true,
   "timestampLink": true,
   "extendedImageEmbedSyntax": true,
-  "thumbnailPlaceholder": false,
-  "useYoutubeControls": false,
+  "thumbnailPlaceholder": true,
+  "useYoutubeControls": true,
   "interalBiliPlayback": true,
   "hideYtbRecomm": true,
   "embedMaxHeight": "30vh",
@@ -24,7 +24,7 @@
     "fullscreen": true
   },
   "embedMaxHeightMobile": "20vh",
-  "embedMinWidthMobile": "200px",
+  "embedMinWidthMobile": "240px",
   "plyrControlsMobile": {
     "restart": false,
     "rewind": false,
@@ -41,5 +41,6 @@
     "fullscreen": true
   },
   "timestampTemplate": "\n{{TIMESTAMP}}\n",
+  "timestampOffset": 0,
   "hideEmbedControls": false
 }
