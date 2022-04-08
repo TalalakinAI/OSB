@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "revici-zashita.md",
+            "file": "d2022-03-06.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "revici-zashita.md",
+            "file": "d2022-03-06.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "revici-zashita.md",
+            "file": "d2022-03-06.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "revici-zashita.md"
+            "file": "d2022-03-06.md"
           }
         }
       },
@@ -131,6 +131,7 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "d2022-03-06.md",
     "revici-zashita.md",
     "News.md",
     "a2022-02-23.md",
@@ -139,7 +140,6 @@
     "poet.md",
     "Library.md",
     "yyyy-mm-dd-dinamika.md",
-    "yyyy-mm-dd-analis-problemy.md",
-    "!0SB_Instructio.md"
+    "yyyy-mm-dd-analis-problemy.md"
   ]
 }
