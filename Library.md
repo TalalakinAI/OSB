@@ -6,6 +6,10 @@
 ###### [glossariy](glos.md#glos)
 
 ***
+#### Стенограммы
+1. [БОЛЬ ПОСЛЕ НАГРУЗКИ: PH, ПРОТОНЫ, МОЛОЧКА, ОРТОФОСФОРКА, НАДРЫВЫ, КАЛИЙ?](stg_bol-nagruzka.md#stg_bol-nagruzka)
+
+***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
 
 ***  
