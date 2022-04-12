@@ -22,3 +22,11 @@
 ### [ПУТЕВОДИТЕЛЬ-06](https://youtu.be/ssBBC-uB5cI)
 
 <iframe width="100%" height="240" src="https://www.youtube.com/embed/ssBBC-uB5cI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### [ПУТЕВОДИТЕЛЬ-07](https://youtu.be/p7acjlB1ip8)
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/p7acjlB1ip8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### [ПУТЕВОДИТЕЛЬ-08](https://youtu.be/wm_Gv--WHeg)
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/wm_Gv--WHeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
