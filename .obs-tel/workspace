@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "d2022-04-10.md",
+            "file": "glos.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "d2022-04-10.md",
+            "file": "glos.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "d2022-04-10.md",
+            "file": "glos.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "d2022-04-10.md"
+            "file": "glos.md"
           }
         }
       },
@@ -131,9 +131,9 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "glos.md",
     "d2022-04-10.md",
     "otziv.md",
-    "glos.md",
     "put.md",
     "stg_bol-nagruzka.md",
     "Library.md",
