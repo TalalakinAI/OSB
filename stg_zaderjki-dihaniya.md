@@ -23,5 +23,5 @@
 
 А. И. Талалакин
 
-[Расшифровка и разметка](https://t.me/osbmd/4405)  
-@wiktorialavatera
+***
+###### [Расшифровка и разметка](https://t.me/osbmd/4405)  @wiktorialavatera
