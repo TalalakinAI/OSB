@@ -1,5 +1,5 @@
 ###### promery-instr 
-###### [Порядок работы](!0SB_Instructio.md#!0SB_Instructio)
+###### [Порядок работы](!0SB_Instructio.md#0SB_Instructio)
 
 ***
 ### ОСБ / ПРОМЕРЫ
