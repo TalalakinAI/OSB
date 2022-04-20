@@ -1,4 +1,5 @@
 ###### stg_promerу
+###### [Порядок работы](!0SB_Instructio.md#!0SB_Instructio)
 ### [ОСБ / ПРОМЕРЫ](https://t.me/osbmd/4431)
 
 ***
