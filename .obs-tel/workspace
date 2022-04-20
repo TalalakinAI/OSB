@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "promery-instr.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "promery-instr.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "promery-instr.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "!0SB_Instructio.md"
+            "file": "promery-instr.md"
           }
         }
       },
@@ -131,8 +131,8 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
-    "!0SB_Instructio.md",
     "promery-instr.md",
+    "!0SB_Instructio.md",
     "stg_promerу.md",
     "stg_dh-tnt-trp.md",
     "Library.md",
