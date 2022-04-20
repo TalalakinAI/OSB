@@ -9,6 +9,7 @@
 #### Стенограммы
 1. [БОЛЬ ПОСЛЕ НАГРУЗКИ: PH, ПРОТОНЫ, МОЛОЧКА, ОРТОФОСФОРКА, НАДРЫВЫ, КАЛИЙ?](stg_bol-nagruzka.md#stg_bol-nagruzka)
 2. [ЗАДЕРЖКИ ДЫХАНИЯ](stg_zaderjki-dihaniya.md#stg_zaderjki-dihaniya)
+3. [ДЫХАТЕЛЬНАЯ ТАНАТОТЕРАПИЯ](stg_dh-tnt-trp.md)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)

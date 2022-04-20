@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "d2022-04-10.md",
+            "file": "stg_dh-tnt-trp.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "d2022-04-10.md",
+            "file": "stg_dh-tnt-trp.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "d2022-04-10.md",
+            "file": "stg_dh-tnt-trp.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "d2022-04-10.md"
+            "file": "stg_dh-tnt-trp.md"
           }
         }
       },
@@ -131,15 +131,15 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
-    "d2022-04-10.md",
-    "stg_zaderjki-dihaniya.md",
+    "stg_dh-tnt-trp.md",
     "Library.md",
+    "Mtb_B.md",
+    "stg_zaderjki-dihaniya.md",
+    "d2022-04-10.md",
     "stg_bol-nagruzka.md",
     "put.md",
     "glos.md",
     "otziv.md",
-    "a2022-02-23.md",
-    "d2022-03-06.md",
-    "revici-zashita.md"
+    "a2022-02-23.md"
   ]
 }
