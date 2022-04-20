@@ -1,5 +1,5 @@
-##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 ###### 0SB_Instructio  
+##### [← Дом](!0SB.md#osb)  | [News](News.md#news) 
 ### ОСБ. ИНСТРУКЦИИ.   
 
 ***   
