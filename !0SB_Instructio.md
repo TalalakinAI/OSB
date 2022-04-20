@@ -104,7 +104,8 @@ dd - день заполнения
 #### ОСБ / Об особенностях работы.   
 [![](https://i.ytimg.com/vi_webp/WGZL00VWwgg/maxresdefault.webp)](https://youtu.be/WGZL00VWwgg)   
 
-[Как заполнить таблицу промеров?](https://t.me/osbmd/298)   
+[Как заполнить таблицу промеров?](https://t.me/osbmd/298)     
+[стенограмма](stg_promerу.md#stg_promerу)  
 
 [О промерах.](https://t.me/osbmd/1334)  
 
