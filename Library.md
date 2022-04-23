@@ -11,6 +11,7 @@
 2. [ЗАДЕРЖКИ ДЫХАНИЯ](stg_zaderjki-dihaniya.md#stg_zaderjki-dihaniya)
 3. [ДЫХАТЕЛЬНАЯ ТАНАТОТЕРАПИЯ](stg_dh-tnt-trp.md#stg_dh-tnt-trp)
 4. [ПРОМЕРЫ](stg_promerу.md)
+5. [ПУТЕВОДИТЕЛЬ](stg_put.md#stg_put)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
