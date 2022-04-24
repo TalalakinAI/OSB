@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Library.md",
-            "mode": "preview",
+            "file": "stg_pod-potrebnost.md",
+            "mode": "source",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Library.md",
+            "file": "stg_pod-potrebnost.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Library.md",
+            "file": "stg_pod-potrebnost.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Library.md"
+            "file": "stg_pod-potrebnost.md"
           }
         }
       },
@@ -131,6 +131,7 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "stg_pod-potrebnost.md",
     "Library.md",
     "stg_put.md",
     "a2022-04-04.md",
@@ -139,7 +140,6 @@
     "stg_promerу.md",
     "d2022-04-10.md",
     "!0SB_Instructio.md",
-    "promery-instr.md",
-    "yyyy-mm-dd-analis-problemy.md"
+    "promery-instr.md"
   ]
 }
