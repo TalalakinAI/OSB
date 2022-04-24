@@ -12,6 +12,7 @@
 3. [ДЫХАТЕЛЬНАЯ ТАНАТОТЕРАПИЯ](stg_dh-tnt-trp.md#stg_dh-tnt-trp)
 4. [ПРОМЕРЫ](stg_promerу.md)
 5. [ПУТЕВОДИТЕЛЬ](stg_put.md#stg_put)
+6. [ПОД ПОТРЕБНОСТЬ](stg_pod-potrebnost.md#stg_pod-potrebnost)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
