@@ -88,8 +88,8 @@ dd - день заполнения
 
 ***
 #### Для работы с (.md) используйте:     
-- Андроид → Obsidian, Markor, Notepad++   
-- Windows → Obsidian, QuickEdit  
+- Андроид → **Obsidian**, Markor, Notepad++   
+- Windows → **Obsidian**, QuickEdit  
 - Или др. редакторы [формата Markdown](https://t.me/osbmd/4126) (.md), например, VSC (Visual Studio Code).  
 - Сохранять с кодировкой UTF-8  
 
