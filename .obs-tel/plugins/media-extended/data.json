@@ -3,7 +3,7 @@
   "timestampLink": true,
   "extendedImageEmbedSyntax": true,
   "thumbnailPlaceholder": true,
-  "useYoutubeControls": false,
+  "useYoutubeControls": true,
   "interalBiliPlayback": true,
   "hideYtbRecomm": true,
   "embedMaxHeight": "30vh",
