@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "stg_d-vasya.md",
+            "file": "a2022-03-25.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "stg_d-vasya.md",
+            "file": "a2022-03-25.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "stg_d-vasya.md",
+            "file": "a2022-03-25.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "stg_d-vasya.md"
+            "file": "a2022-03-25.md"
           }
         }
       },
@@ -131,6 +131,8 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "a2022-03-25.md",
+    "otziv.md",
     "stg_d-vasya.md",
     "().md",
     "stg_pod-potrebnost.md",
@@ -138,8 +140,6 @@
     "a2022-02-23.md",
     "stg_put.md",
     "Library.md",
-    "Lectio.md",
-    "a2022-04-04.md",
-    "otziv.md"
+    "Lectio.md"
   ]
 }
