@@ -4,42 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fa8832155c571da6",
-        "type": "split",
-        "children": [
-          {
-            "id": "b6b4a0b2892003c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "stg_d-vasya.md",
-                "mode": "preview",
-                "source": true
-              }
-            },
-            "group": "375551bf4cc1977b"
-          },
-          {
-            "id": "203771e84d551331",
-            "type": "leaf",
-            "state": {
-              "type": "media-view",
-              "state": {
-                "info": {
-                  "host": 0,
-                  "id": "nYF0z3pbVH4",
-                  "iframe": "https://www.youtube.com/embed/nYF0z3pbVH4",
-                  "src": "https://www.youtube.com/watch?v=nYF0z3pbVH4",
-                  "hash": ""
-                },
-                "currentTime": 1483.124709
-              }
-            },
-            "group": "375551bf4cc1977b"
+        "id": "b6b4a0b2892003c2",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "stg_d-vasya.md",
+            "mode": "preview",
+            "source": true
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
