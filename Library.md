@@ -14,6 +14,7 @@
 5. [ПУТЕВОДИТЕЛЬ](stg_put.md#stg_put)
 6. [ПОД ПОТРЕБНОСТЬ](stg_pod-potrebnost.md#stg_pod-potrebnost)
 7. [КИСЛОТЫ? ЩЕЛОЧЬ? Д. ВАСЯ.](stg_d-vasya.md#stg_d-vasy)
+8. [Каллиграфия vs Лебедь, рак и щука](stg_calligraph.md#stg_calligraph)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
