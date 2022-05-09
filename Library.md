@@ -16,6 +16,7 @@
 7. [ПОД ПОТРЕБНОСТЬ](stg_pod-potrebnost.md#stg_pod-potrebnost)
 8. [КИСЛОТЫ? ЩЕЛОЧЬ? Д. ВАСЯ.](stg_d-vasya.md#stg_d-vasy)
 9. [Каллиграфия vs Лебедь, рак и щука](stg_calligraph.md#stg_calligraph)
+10. [ТИРОЗИНОВАЯ КОРОБКА ПЕРЕДАЧ](stg_tyr_k_per.md#stg_tyr_k_per)  
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
