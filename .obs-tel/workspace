@@ -11,7 +11,7 @@
           "state": {
             "file": "stg_dost_zel.md",
             "mode": "source",
-            "source": true
+            "source": false
           }
         }
       }

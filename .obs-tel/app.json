@@ -42,12 +42,9 @@
     "editor:unfold-all",
     "editor:toggle-comments",
     "note-composer:split-file",
-    "find-and-replace-in-selection:find-and-replace-in-selection",
     "editor:configure-toolbar",
-    "obsidian-chartsview-plugin:insert-chartsview-template",
-    "obsidian-carry-forward:carry-line-forward-link-only",
-    "obsidian-carry-forward:carry-line-forward-embed-link-only",
-    "note-composer:extract-heading"
+    "note-composer:extract-heading",
+    "editor:toggle-source"
   ],
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
