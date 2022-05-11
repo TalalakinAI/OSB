@@ -201,3 +201,4 @@
 3. [Нейро-гормональный](https://youtu.be/s6FsxhP06GM#t=01:17)  
 4. [Нейро-висцеральный](https://youtu.be/s6FsxhP06GM#t=01:27)  
 5. [Нейро-гуморальный](https://youtu.be/s6FsxhP06GM#t=01:30)  
+6. [Нейро-гуморальный 2](https://youtu.be/s6FsxhP06GM&t=1m30s)  
