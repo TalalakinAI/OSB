@@ -9,9 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "stg_dost_zel.md",
+            "file": "stg_put.md",
             "mode": "preview",
-            "source": false
+            "source": true
           }
         }
       }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "stg_dost_zel.md",
+            "file": "stg_put.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "stg_dost_zel.md",
+            "file": "stg_put.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "stg_dost_zel.md"
+            "file": "stg_put.md"
           }
         }
       },
@@ -131,6 +131,8 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "stg_put.md",
+    "put.md",
     "stg_dost_zel.md",
     "Library.md",
     "stg_tyr_k_per.md",
@@ -138,8 +140,6 @@
     "stg_calligraph.md",
     "stg_dh_kntr.md",
     "a20211025.md",
-    "stg_dh-tnt-trp.md",
-    "a2022-03-25.md",
-    "otziv.md"
+    "stg_dh-tnt-trp.md"
   ]
 }

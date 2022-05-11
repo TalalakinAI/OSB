@@ -188,3 +188,16 @@
 31:52  
 
 Но нейромышечный громоотвод – это уход от, как бы сказать, это такая помощь, чтобы не прогореть, чтобы не сломаться, когда сильно давит и надо экстренно разгрузиться, чтобы не разрушиться, включить мышцы и через мышцы сбросить ток, и теперь очень важно понять, что просиходит если системаот мозга до мышц не проводит ток на выполнение полезной работы, дальше происходит следующее…
+
+***  
+### [ПУТЕВОДИТЕЛЬ-02](https://youtu.be/s6FsxhP06GM)  
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/s6FsxhP06GM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+#### НЕЙРОНАЛЬНЫЕ КОНТУРЫ: 
+1. [Нейро-мышечный](https://youtu.be/s6FsxhP06GM#t=00:05)  
+2. [Нейро-вегетативный](https://youtu.be/s6FsxhP06GM#t=01:14)  
+3. [Нейро-гормональный](https://youtu.be/s6FsxhP06GM#t=01:17)  
+4. [Нейро-висцеральный](https://youtu.be/s6FsxhP06GM#t=01:27)  
+5. [Нейро-гуморальный](https://youtu.be/s6FsxhP06GM#t=01:30)  
