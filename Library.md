@@ -17,7 +17,8 @@
 8. [КИСЛОТЫ? ЩЕЛОЧЬ? Д. ВАСЯ.](stg_d-vasya.md#stg_d-vasy)
 9. [Каллиграфия vs Лебедь, рак и щука](stg_calligraph.md#stg_calligraph)
 10. [ТИРОЗИНОВАЯ КОРОБКА ПЕРЕДАЧ](stg_tyr_k_per.md#stg_tyr_k_per)  
-11. [ДОСТОЙНАЯ ЦЕЛЬ](stg_dost_zel.md#stg_dost_zel)
+11. [ДОСТОЙНАЯ ЦЕЛЬ](stg_dost_zel.md#stg_dost_zel)  
+12. [СИСТЕМА КВАДРАНТОВ](stg_kvadr.md#stg_kvadr)  
 
 
 ***
