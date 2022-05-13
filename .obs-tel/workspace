@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Library.md",
-            "mode": "source",
+            "mode": "preview",
             "source": true
           }
         }
@@ -132,6 +132,7 @@
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
     "Library.md",
+    "stg_kvadr.md",
     "stg_tyr_k_per.md",
     "stg_put.md",
     "put.md",
@@ -139,7 +140,6 @@
     "stg_pod-potrebnost.md",
     "stg_calligraph.md",
     "stg_dh_kntr.md",
-    "a20211025.md",
-    "stg_dh-tnt-trp.md"
+    "a20211025.md"
   ]
 }
