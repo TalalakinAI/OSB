@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "stg_klu4y_instrumenty.md",
+            "file": "Library.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "stg_klu4y_instrumenty.md",
+            "file": "Library.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "stg_klu4y_instrumenty.md",
+            "file": "Library.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "stg_klu4y_instrumenty.md"
+            "file": "Library.md"
           }
         }
       },
@@ -131,15 +131,15 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
-    "stg_klu4y_instrumenty.md",
     "Library.md",
+    "stg_rgl-zkt.md",
+    "stg_klu4y_instrumenty.md",
     "stg_kvadr.md",
     "stg_tyr_k_per.md",
     "stg_put.md",
     "put.md",
     "stg_dost_zel.md",
     "stg_pod-potrebnost.md",
-    "stg_calligraph.md",
-    "stg_dh_kntr.md"
+    "stg_calligraph.md"
   ]
 }
