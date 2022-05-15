@@ -20,7 +20,8 @@
 11. [ДОСТОЙНАЯ ЦЕЛЬ](stg_dost_zel.md#stg_dost_zel)  
 12. [СИСТЕМА КВАДРАНТОВ](stg_kvadr.md#stg_kvadr)  
 13. [КЛЮЧИ И ИНСТРУМЕНТЫ](stg_klu4y_instrumenty.md#stg_klu4y_instrumenty)  
-14. [РЕГУЛЯЦИЯ ПИЩЕВАРЕНИЯ](stg_rgl-zkt.md#stg_rgl-zkt)
+14. [РЕГУЛЯЦИЯ ПИЩЕВАРЕНИЯ](stg_rgl-zkt.md#stg_rgl-zkt)  
+15. [ОВП-pH](stg_redox-ph.md#stg_redox-ph)
 
 
 ***
