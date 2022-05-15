@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "stg_redox-ph.md",
-            "mode": "source",
+            "file": "AK.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "stg_redox-ph.md",
+            "file": "AK.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "stg_redox-ph.md",
+            "file": "AK.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "stg_redox-ph.md"
+            "file": "AK.md"
           }
         }
       },
@@ -130,15 +130,15 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
-    "stg_redox-ph.md",
+    "AK.md",
     "Library.md",
+    "stg_redox-ph.md",
     "stg_tyr_k_per.md",
     "revici-zashita.md",
     "stg_rgl-zkt.md",
     "stg_klu4y_instrumenty.md",
     "stg_kvadr.md",
     "stg_put.md",
-    "put.md",
-    "stg_dost_zel.md"
+    "put.md"
   ]
 }
