@@ -21,7 +21,8 @@
 12. [СИСТЕМА КВАДРАНТОВ](stg_kvadr.md#stg_kvadr)  
 13. [КЛЮЧИ И ИНСТРУМЕНТЫ](stg_klu4y_instrumenty.md#stg_klu4y_instrumenty)  
 14. [РЕГУЛЯЦИЯ ПИЩЕВАРЕНИЯ](stg_rgl-zkt.md#stg_rgl-zkt)  
-15. [ОВП-pH](stg_redox-ph.md#stg_redox-ph)
+15. [ОВП-pH](stg_redox-ph.md#stg_redox-ph)  
+16. [ПЕРЕКОСЫ. ВСД.](stg_perekosy_vsd.md#stg_perekosy_vsd)
 
 
 ***
