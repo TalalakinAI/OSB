@@ -5,6 +5,34 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-05-25-16-32  
+#### [ОСБ ЭО-03](https://www.youtube.com/watch?v=iWIe8CNmMdQ)  
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/iWIe8CNmMdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> [ОСБ / ЭНЕРГООБМЕН - 3/15](https://t.me/osbkart/41)  
+> А. И. Талалакин  
+> 
+> 00:00 Пища с минимальным СДД  
+> 02:55 Организм тормоза  
+> 03:37 Метаболические мясорубки  
+> 03:59 Разрешающая способность  
+> 05:28 Разгрузка через болезнь  
+> 05:52 Энергообмен у Т и Ш  
+> 07:16 Обмен веществ и ЦТК  
+> 07:35 Вертикальный вход в ЦТК  
+> 07:37 Горизонтальный вход в ЦТК  
+> 08:37 Обмен энергии  
+> 08:44 Обмен веществ  
+> 09:32 Клетчатка  
+> 10:12 Дисбактериоз  
+> 10:34 Резюме по ЭО  
+> </details>  
+
+***
 ###### 2022-05-25-16-13  
 #### [ОСБ ЭО-02](https://www.youtube.com/watch?v=6VwsO8xxaZQ)  
 
