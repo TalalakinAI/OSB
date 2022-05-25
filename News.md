@@ -5,6 +5,43 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-05-25-16-13  
+#### [ОСБ ЭО-02](https://www.youtube.com/watch?v=6VwsO8xxaZQ)  
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/6VwsO8xxaZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> [ОСБ / ЭНЕРГООБМЕН - 2/15](https://t.me/osbkart/40)  
+> А. И. Талалакин  
+> 
+> 00:00 Обмен веществ  
+> 00:20 Обмен веществ и энергии  
+> 00:47 ОО  
+> 01:16 СДД  
+> 02:00 Деструкция и созидание  
+> 02:27 Организация структуры  
+> 02:48 АТФ  
+> 03:14 Анаэробный гликолиз  
+> 03:58 Цикл Кребса  
+> 04:27 МХ/ЦП - 38/2 АТФ  
+> 06:31 Энергетическая валюта  
+> 07:08 СДД  
+> 08:18 СДД БЖУ  
+> 09:12 Шустрики  
+> 10:50 Тормоза  
+> 12:35 ЗК нормы  
+> 13:20 Здоровье  
+> 13:54 Физическая Активность  
+> 16:17 Дышащая протоплазма  
+> 16:39 Аура  
+> 19:13 ОО+СДД+ФА  
+> 20:04 СДД и ОО  
+> 21:20 Думать или верить?  
+> </details>  
+
+***
 ###### 2022-05-25-15-44  
 #### [ОСБ ЭО-01](https://www.youtube.com/watch?v=SvLBdTCfA0k)  
 
