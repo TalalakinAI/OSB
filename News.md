@@ -5,6 +5,34 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-05-25-15-44  
+#### [ОСБ ЭО-01](https://www.youtube.com/watch?v=SvLBdTCfA0k)  
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/SvLBdTCfA0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> [ОСБ / ЭНЕРГООБМЕН - 1/15](https://t.me/osbkart/39)  
+> А. И. Талалакин  
+> 
+> 00:06 Вступление  
+> 03:55 Болезнь как энергодефицит  
+> 04:34 Горячий энергодефицит  
+> 05:47 Холодный энергодефицит  
+> 07:09 Жизнь как ep-поток  
+> 08:29 Шустрики  
+> 09:03 Тормоза  
+> 09:37 ИК-поток  
+> 10:24 Энергообмен  
+> 11:11 Основной Обмен  
+> 12:48 Энергия ребенка  
+> 13:10 ОО и частота излучения  
+> 13:32 Поверхность, объем и ЭО  
+
+> </details>  
+
+***
 ###### 2022-04-04-08-41
 #### [Revici E. Защита](revici-zashita.md#revici-zashita)
 
