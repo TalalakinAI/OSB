@@ -5,6 +5,35 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-05-26-16-59  
+#### [ОСБ ЭО-05](https://www.youtube.com/watch?v=QhZTzaNTUhE)
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/QhZTzaNTUhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> [ОСБ / ЭНЕРГООБМЕН - 5/15](https://t.me/osbkart/43)  
+> А. И. Талалакин  
+> 
+> 00:00 Шустрики  
+> 00:32 Ox/P-разобщение  
+> 00:49 На холостом ходу  
+> 01:07 Тормоза-кретины  
+> 01:43 Обмен в-в у Т  
+> 02:41 Жара и Холод для Ш и Т  
+> 03:20 Ш и Жара  
+> 04:04 Ш и Холод  
+> 04:34 Т и Жара  
+> 04:57 Т и Холод  
+> 05:40 Большой и маленький  
+> 05:50 Компенсированный Т  
+> 06:16 Компенсированный Ш  
+> 06:30 Дышащая протоплазма  
+> 06:49 Регуляция обмена веществ  
+> </details>  
+
+***
 ###### 2022-05-26-14-00
 #### [ОСБ ЭО-04](https://www.youtube.com/watch?v=0GkVB-wwIP0)
 
