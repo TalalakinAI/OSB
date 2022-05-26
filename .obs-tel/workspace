@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
+            "file": "stg_calligraph.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "stg_calligraph.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "stg_calligraph.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "stg_calligraph.md"
           }
         }
       },
@@ -130,15 +130,15 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "stg_calligraph.md",
+    "Library.md",
+    "stg_pod-potrebnost.md",
     "News.md",
     "Mtb_B.md",
     "glos.md",
     "stg_perekosy_vsd.md",
-    "Library.md",
     "stg_zaderjki-dihaniya.md",
     "stg_put.md",
-    "test.md",
-    "stg_tyr_k_per.md",
-    "stg_pod-potrebnost.md"
+    "test.md"
   ]
 }
