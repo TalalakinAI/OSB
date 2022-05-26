@@ -47,11 +47,6 @@
       "icon": "quote-glyph"
     },
     {
-      "id": "control-characters:toggle",
-      "name": "Control Characters: Show/hide control characters",
-      "icon": "any-key"
-    },
-    {
       "id": "editor:insert-link",
       "name": "Вставить ссылку",
       "icon": "link-glyph",
@@ -63,6 +58,31 @@
           "key": "K"
         }
       ]
+    },
+    {
+      "id": "obsidian-languagetool-plugin:ltcheck-text",
+      "name": "LanguageTool Integration: Check Text",
+      "icon": "lines-of-text"
+    },
+    {
+      "id": "editor:toggle-bullet-list",
+      "name": "Список",
+      "icon": "bullet-list-glyph"
+    },
+    {
+      "id": "editor:toggle-numbered-list",
+      "name": "Нумерованый список",
+      "icon": "number-list-glyph"
+    },
+    {
+      "id": "control-characters:toggle",
+      "name": "Control Characters: Show/hide control characters",
+      "icon": "any-key"
+    },
+    {
+      "id": "cm-show-whitespace-obsidian:toggle-show-whitespace",
+      "name": "Show Whitespace: Toggle On/Off",
+      "icon": "any-key"
     },
     {
       "id": "theme:use-light",
