@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "otziv.md",
+            "file": "News.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "otziv.md",
+                "file": "News.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "otziv.md",
+                "file": "News.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "otziv.md"
+                "file": "News.md"
               }
             }
           },
@@ -138,10 +138,10 @@
   },
   "active": "959601d523ad5ba3",
   "lastOpenFiles": [
+    "News.md",
     "otziv.md",
     "d2022-03-06.md",
     "d2022-01-05.md",
-    "News.md",
     "onair.md",
     "!0SB.md",
     "baza.md",
