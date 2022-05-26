@@ -11,5 +11,15 @@
   "dataview",
   "table-editor-obsidian",
   "cm-editor-syntax-highlight-obsidian",
-  "obsidian-markdown-formatting-assistant-plugin"
+  "obsidian-markdown-formatting-assistant-plugin",
+  "control-characters",
+  "obsidian-languagetool-plugin",
+  "markdown-table-editor",
+  "obsidian-metatable",
+  "quickadd",
+  "obsidian-read-it-later",
+  "cm-show-whitespace-obsidian",
+  "table-extended",
+  "obsidian-text-format",
+  "cmenu-plugin"
 ]
