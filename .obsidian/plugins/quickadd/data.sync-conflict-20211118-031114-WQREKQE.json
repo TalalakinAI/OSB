@@ -1,0 +1,148 @@
+{
+  "choices": [
+    {
+      "id": "96b7f4f9-eff0-4963-a28c-4fd86d119418",
+      "name": "ФИО",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "!Эфиры/{{NAME}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "Templates/ФИО.md"
+      },
+      "format": {
+        "enabled": false,
+        "format": "---\ncreated: '<%+ tp.file.creation_date(\"YYYY-MM-DD HH:mm\") %>'\nupdated: '<%+ tp.file.last_modified_date(\"YYYY-MM-DD HH:mm\") %>' \n---  \n###### [Эфиры](../!Эфиры/Эфиры.md)\n\n### {{NAME}}\n\n###### e-mail: \n\n***\n- [ ]  ПО- ДО-\n\n***\n#### Резервирование времени:\n\n***\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "###### [Эфиры](../!Эфиры/Эфиры.md)",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "4eb05852-1c9b-4666-91f7-eddc8781a2ae",
+      "name": "e20211231",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "!Эфиры/e{{DATE:YYYYMMDD}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\ncreated: '<%+ tp.file.creation_date(\"YYYY-MM-DD HH:mm\") %>'  \nupdated: '<%+ tp.file.last_modified_date(\"YYYY-MM-DD HH:mm\") %>'   \n---\n**Backlinks (dataview)**:\n```dataview\nlist\nwhere contains(file.outlinks, this.file.link) AND file.name != this.file.name\nsort file.ctime desc\n```\n---\n###### e{{DATE:yyyyMMDD}}   \n###### [Эфиры](../!Эфиры/Эфиры.md)\n\n#### ФИО:\n\n***\n![Промеры]()  \n![Моча]()  \n[Аудио]()  \n###### отчет:\n\n***\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "dc597ef2-167d-43fb-9893-a8bd723c5c96",
+      "name": "NEWS",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "_Inbox/News.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": "Templates/000-news.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### ОСБ / \n#### [ОСБ / ]()\n![]()\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "### ОСБ. НОВОСТИ.  ",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "2ffac690-f245-4b6d-8722-c4667262af68",
+      "name": "Переписка",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### <%+ tp.file.title %>:\n>\n\n#### А. И. Талалакин:\n>\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Recipe",
+      "id": "bdf7871d-5caf-4b79-8f57-963ca23d1590",
+      "commands": [],
+      "runOnStartup": false
+    }
+  ]
+}
