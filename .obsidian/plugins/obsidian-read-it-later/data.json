@@ -1,0 +1,16 @@
+{
+  "inboxDir": "/_ReadItLater_Inbox",
+  "assetsDir": "/_ReadItLater_Inbox/assets",
+  "openNewNote": true,
+  "youtubeNoteTitle": "%title%",
+  "youtubeNote": "# [%videoTitle%](%videoURL%)\n\n%videoPlayer%\n\n%videoId%",
+  "twitterNoteTitle": "Tweet from %tweetAuthorName% (%date%)",
+  "twitterNote": "# [%tweetAuthorName%](%tweetURL%)\n\n%tweetContent%",
+  "parseableArticleNoteTitle": "%title%",
+  "parsableArticleNote": "# [%articleTitle%](%articleURL%)\n\n%articleContent%",
+  "notParseableArticleNoteTitle": "Article %date%",
+  "notParsableArticleNote": "[%articleURL%](%articleURL%)",
+  "textSnippetNoteTitle": "Notice %date%",
+  "textSnippetNote": "%content%",
+  "downloadImages": false
+}

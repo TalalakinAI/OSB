@@ -2,9 +2,10 @@
   "triggerChar": "\\",
   "sidePaneSideLeft": false,
   "savedColors": [
-    "#ff0000",
+    "#2e2e2e",
     "#0000ff",
-    "#2e2e2e"
+    "#00ff00",
+    "#ff0000"
   ],
   "aviabileRegions": [
     "textEdit",
@@ -33,7 +34,7 @@
     {
       "name": "latex",
       "active": true,
-      "visible": false
+      "visible": true
     },
     {
       "name": "greekLetters",
