@@ -63,6 +63,16 @@
           "key": "K"
         }
       ]
+    },
+    {
+      "id": "theme:use-light",
+      "name": "Использовать светлую тему",
+      "icon": "crossed-star"
+    },
+    {
+      "id": "obsidian-minimal-settings:toggle-minimal-dark-cycle",
+      "name": "Minimal Theme Settings: Cycle between dark mode styles",
+      "icon": "crossed-star"
     }
   ],
   "appendMethod": "workspace",
