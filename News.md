@@ -5,6 +5,18 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-05-26-14-00
+#### [ОСБ ЭО-04](https://www.youtube.com/watch?v=0GkVB-wwIP0)
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/0GkVB-wwIP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> ![]()
+> </details>  
+
+***
 ###### 2022-05-25-16-32  
 #### [ОСБ ЭО-03](https://www.youtube.com/watch?v=iWIe8CNmMdQ)  
 
