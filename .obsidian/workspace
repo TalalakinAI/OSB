@@ -13,7 +13,21 @@
             "mode": "source",
             "source": true
           }
-        }
+        },
+        "group": "6d1d7316fd270fca"
+      },
+      {
+        "id": "d263f463b28a7251",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "News.md",
+            "mode": "preview",
+            "source": true
+          }
+        },
+        "group": "6d1d7316fd270fca"
       }
     ],
     "direction": "vertical"
@@ -136,9 +150,10 @@
     "direction": "horizontal",
     "width": 298.5
   },
-  "active": "959601d523ad5ba3",
+  "active": "d263f463b28a7251",
   "lastOpenFiles": [
     "News.md",
+    "Mtb_B.md",
     "otziv.md",
     "d2022-03-06.md",
     "d2022-01-05.md",
@@ -146,7 +161,6 @@
     "!0SB.md",
     "baza.md",
     "e2021-12-13.md",
-    "Herbanastoy.md",
-    "Lectio.md"
+    "Herbanastoy.md"
   ]
 }
