@@ -51,7 +51,8 @@
     "editor:open-search-replace",
     "editor:toggle-source",
     "obsidian-languagetool-plugin:ltcheck-text",
-    "editor:toggle-keyboard"
+    "editor:toggle-keyboard",
+    "obsidian-regex-replace:obsidian-regex-replace"
   ],
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
@@ -138,5 +139,6 @@
     "кортизоловая",
     "кортизоловый",
     "хр"
-  ]
+  ],
+  "lineWrap": true
 }

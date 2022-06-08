@@ -14,9 +14,10 @@
   "quickadd",
   "obsidian-contextual-typography",
   "media-extended",
-  "notion-like-tables",
   "cm-show-whitespace-obsidian",
   "obsidian-text-format",
   "advanced-toolbar",
-  "obsidian-languagetool-plugin"
+  "obsidian-languagetool-plugin",
+  "dataview",
+  "obsidian-regex-replace"
 ]
