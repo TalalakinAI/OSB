@@ -5,6 +5,30 @@
 ### ОСБ. НОВОСТИ.  
 
 ***
+###### 2022-06-14-15-48
+#### [ОСБ ЭО-06](https://www.youtube.com/watch?v=gt6J_FlLm94)
+
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/gt6J_FlLm94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> <details markdown='1'>
+> <summary>Подробнее ↓↑</summary>  
+> 
+> [ОСБ / ЭНЕРГООБМЕН - 6/15](https://t.me/osbkart/44)  
+> А. И. Талалакин  
+> 
+> 00:00 Дирижер обмена в-в  
+> 00:48 Функции щитовидной ж-зы  
+> 02:04 Главный окислитель  
+> 05:02 Конвейер выбивания бабок  
+> 05:08 "Ромашка"  
+> 05:40 Крена щитовидки  
+> 06:10 Умники-кретины  
+> 06:20 Щитовидка у детей  
+> 07:26 Щитовидка у взрослых  
+> 08:46 Как лечить и как лечат?  
+> </details>  
+
+***
 ###### 2022-05-26-16-59  
 #### [ОСБ ЭО-05](https://www.youtube.com/watch?v=QhZTzaNTUhE)
 
