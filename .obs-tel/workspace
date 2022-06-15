@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
+            "file": "otziv.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "otziv.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "otziv.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "otziv.md"
           }
         }
       },
@@ -130,6 +130,8 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "otziv.md",
+    "d2022-06-14.md",
     "News.md",
     "!0SB.md",
     "stg_promerу.md",
@@ -137,8 +139,6 @@
     "stg_d-vasya.md",
     "!0SB_Instructio.md",
     "Library.md",
-    "stg_bol-nagruzka.md",
-    "stg_perekosy_vsd.md",
-    "Herbanastoy.md"
+    "stg_bol-nagruzka.md"
   ]
 }
