@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "otziv.md",
+            "file": "d2022-06-14.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "otziv.md",
+            "file": "d2022-06-14.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "otziv.md",
+            "file": "d2022-06-14.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "otziv.md"
+            "file": "d2022-06-14.md"
           }
         }
       },
@@ -130,8 +130,8 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
-    "otziv.md",
     "d2022-06-14.md",
+    "otziv.md",
     "News.md",
     "!0SB.md",
     "stg_promerу.md",
