@@ -1,4 +1,5 @@
-# [Синдром Гийена-Барре](https://www.who.int/ru/news-room/fact-sheets/detail/guillain-barr%C3%A9-syndrome)
+###### sndr_guillain-barr
+### [Синдром Гийена-Барре](https://www.who.int/ru/news-room/fact-sheets/detail/guillain-barr%C3%A9-syndrome)
 
 
 ## Основные факты
