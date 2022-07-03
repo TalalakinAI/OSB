@@ -31,6 +31,7 @@
 ***  
 - [AK](AK.md#AK)
 - [Метаболизм и гниение белков](Mtb_B.md#mtb_b)  
+- [Крахмалистые и некрахмалистые овощи](vegetables.md#vegetables)
 - [Влияние холода на организм](lib-zolotarev-holod.md#lib-zolotarev-holod)  
 
 ***
