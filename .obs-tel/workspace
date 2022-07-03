@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "vegetables.md",
-            "mode": "source",
+            "mode": "preview",
             "source": true
           }
         }
@@ -132,13 +132,13 @@
   "lastOpenFiles": [
     "vegetables.md",
     "Library.md",
+    "!0SB.md",
+    "!0SB_Instructio.md",
     "DMSO_NANO.md",
     "a2022-04-03.md",
     "sndr_guillain-barr.md",
     "otziv.md",
     "d2022-06-14.md",
-    "News.md",
-    "!0SB.md",
-    "stg_promerу.md"
+    "News.md"
   ]
 }
