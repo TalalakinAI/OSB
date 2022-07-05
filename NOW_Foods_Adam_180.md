@@ -1,6 +1,6 @@
 ###### NOW_Foods_Adam_180
 
-## Мужские витамины NOW ADAM Softgels Superior Men's Multi (180 caps.)
+## NOW ADAM Softgels Superior Men's Multi (180 caps.)
 
 ![](https://telegra.ph/file/a0eb5e116b20c084861de.jpg)
 

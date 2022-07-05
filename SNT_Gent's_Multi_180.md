@@ -1,6 +1,6 @@
 ###### SNT_Gent's_Multi_180
 
-## Мужские витамины SNT Gent's Multi 180 softgels
+## SNT Gent's Multi 180 softgels
 ![](https://telegra.ph/file/d151f6ee53d65abc807f5.jpg)
 
 | Количество порций | 90 |
