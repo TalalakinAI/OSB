@@ -73,9 +73,9 @@
     <input type="hidden" name="_next" value="/thanks.html" />
     <input type="hidden" name="_subject" value="ОСБ / Запрос" />
     <input type="text" name="_gotcha" style="display:none" />        
-    <p><input type="text" name="ФИО" required placeholder="ФИО" /></p>
+    <p><input type="text" name="ФИО" required placeholder="ФИО (полностью)" /></p>
     <p><input type="email" name="email" required placeholder="Email" /></p>
-    <p><textarea name="1) Суть запроса?  2) Кто направил?" required placeholder="1) Суть запроса? 2) Кто направил?" rows="16"></textarea></p>
+    <p><textarea name="1) Суть запроса?  2) Кто направил?" required placeholder="1) Кто направил? 2) Суть Запроса?" rows="16"></textarea></p>
     <input type="submit" value="Отправить" />
 </form>
 
