@@ -75,7 +75,7 @@
     <input type="text" name="_gotcha" style="display:none" />        
     <p><input type="text" name="ФИО" required placeholder="ФИО" /></p>
     <p><input type="email" name="email" required placeholder="Email" /></p>
-    <p><textarea name="Суть запроса? Кто направил?" required placeholder="Суть запроса? Кто направил?" rows="16"></textarea></p>
+    <p><textarea name="1) Суть запроса?  2) Кто направил?" required placeholder="1) Суть запроса? 2) Кто направил?" rows="16"></textarea></p>
     <input type="submit" value="Отправить" />
 </form>
 

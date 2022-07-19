@@ -19,5 +19,6 @@
   "obsidian-languagetool-plugin",
   "dataview",
   "obsidian-regex-replace",
-  "obsidian-plugin-toc"
+  "obsidian-plugin-toc",
+  "control-characters"
 ]
