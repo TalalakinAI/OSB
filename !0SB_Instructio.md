@@ -87,13 +87,14 @@ dd - день заполнения
 
 ***
 #### Для работы с (.md) используйте:  
-Программу **[Obsidian](https://obsidian.md/download)**  
-тему оформления Minimal,  
+Программу **[Obsidian](https://obsidian.md/download)**  для ПК  
+и [мобильных устройств.](https://obsidian.md/mobile)  
+тему оформления [Minimal](https://t.me/osbmd/5173),  
 плагин [Dataview](https://t.me/osbmd/5198).
 
 ***
 #### Ссылка на скачивание архива файлов:
-- **[OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)**  - обновление от 12.07.2022 г. 
+- [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  - обновление от 12.07.2022 г. 
 
 #### Вся переписка и согласование дат производится посредством электронной почты. Соцсети для этого не используются!!!  
 
