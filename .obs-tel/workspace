@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "form.md",
-            "mode": "source",
+            "file": "!0SB_Instructio.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "form.md",
+            "file": "!0SB_Instructio.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "form.md",
+            "file": "!0SB_Instructio.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "form.md"
+            "file": "!0SB_Instructio.md"
           }
         }
       },
@@ -123,15 +123,15 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
-    "CO2.md",
-    "form.md",
+    "promery-instr.md",
     "!0SB_Instructio.md",
+    "form.md",
+    "CO2.md",
     "Library.md",
     "000/000-news.md",
     "000/000-png.md",
     "000/000-title.md",
     "yyyy-mm-dd-analis-problemy.md",
-    "yyyy-mm-dd-dinamika.md",
-    "vegetables.md"
+    "yyyy-mm-dd-dinamika.md"
   ]
 }

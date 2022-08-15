@@ -8,15 +8,16 @@
 ![Arbalet](ArbaletEP.jpg)  
 
 ***
-_[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 12.07.2022 → [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  
+_[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 12.07.2022 г.  
+Пакет файлов в zip-архиве [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  
 Старые формы больше не принимаются!_  
 
 ***  
 ### ПЕРВИЧНОЕ ОБРАЩЕНИЕ:  
 - **Анализ проблемы** - заполнить и прислать:  
-[yyyy-mm-dd-analis-problemy.md](yyyy-mm-dd-analis-problemy.md)   
+*yyyy-mm-dd-analis-problemy.md*
 - **Промеры** - сделать и прислать:   
-[yyyy-mm-dd-promery.xlsx](https://github.com/TalalakinAI/OSB/raw/master/yyyy-mm-dd-promery.xlsx)  
+*yyyy-mm-dd-promery.xlsx*
 - **Мочу** собрать:  
 — Утром (сразу после пробуждения)  
 — Днем   
@@ -47,9 +48,9 @@ _[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 12.07.2022 → [OSB
 (раз в месяц для штатной коррекции)  
 
 - **Динамика состояния** - заполнить и прислать:   
-[yyyy-mm-dd-dinamika.md](yyyy-mm-dd-dinamika.md) +  
+*yyyy-mm-dd-dinamika.md*  
 - **Текущие промеры**:  
-[yyyy-mm-dd-promery.xlsx](https://github.com/TalalakinAI/OSB/raw/master/yyyy-mm-dd-promery.xlsx)
+*yyyy-mm-dd-promery.xlsx*
 - **Мочу** собрать:  
 — Утром (сразу после пробуждения)  
 — Днем  
@@ -85,11 +86,10 @@ mm - месяц
 dd - день заполнения   
 
 ***
-#### Для работы с (.md) используйте:     
-- Андроид → **Obsidian**, (Markor, Notepad++)   
-- Windows → **Obsidian**, (QuickEdit)  
-- Или др. редакторы [формата Markdown](https://t.me/osbmd/4126) (.md), например, VSC (Visual Studio Code).  
-- Сохранять с кодировкой UTF-8  
+#### Для работы с (.md) используйте:  
+Программу **[Obsidian](https://obsidian.md/download)**  
+тему оформления Minimal,  
+плагин [Dataview](https://t.me/osbmd/5198).
 
 ***
 #### Ссылка на скачивание архива файлов:
