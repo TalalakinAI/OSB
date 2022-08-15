@@ -9,7 +9,7 @@
 
 ***
 _[ОСБ](!0SB.md#osb). ВНИМАНИЕ! Обновлено 12.07.2022 г.  
-Пакет файлов в zip-архиве [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  
+Пакет файлов в zip-архиве **[OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)**  
 Старые формы больше не принимаются!_  
 
 ***  
@@ -93,7 +93,7 @@ dd - день заполнения
 
 ***
 #### Ссылка на скачивание архива файлов:
-- [OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)  - обновление от 12.07.2022 г. 
+- **[OSB.zip](https://github.com/TalalakinAI/OSB/raw/master/OSB.zip)**  - обновление от 12.07.2022 г. 
 
 #### Вся переписка и согласование дат производится посредством электронной почты. Соцсети для этого не используются!!!  
 
