@@ -26,6 +26,7 @@
 17. [CO2](CO2.md#CO2)
 18. [СУТЬ ПОДХОДА ОСБ](SutyOSB.md#SutyOSB)
 19. [ДЛЯ ЧЕГО НУЖНЫ ПРОМЕРЫ?](Promery.md#promery)
+20. [ВНУТРЕННЯЯ АЛХИМИЯ ТЕЛА](Alchemytela.md#Alchemytela)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)

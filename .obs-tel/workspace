@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News.md",
+            "file": "Alchemytela.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "News.md",
+            "file": "Alchemytela.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "News.md",
+            "file": "Alchemytela.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "News.md"
+            "file": "Alchemytela.md"
           }
         }
       },
@@ -123,15 +123,15 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
-    "SutyOSB.md",
     "Library.md",
+    "Alchemytela.md",
+    "SutyOSB.md",
+    "!0SB.md",
+    "News.md",
     "Promery.md",
     "!0SB_Instructio.md",
-    "!0SB.md",
     "promery-instr.md",
     "CO2.md",
-    "form.md",
-    "000/000-news.md",
-    "000/000-png.md"
+    "form.md"
   ]
 }
