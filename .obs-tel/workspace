@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MonoAK.md",
+            "file": "ProteinAK.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "MonoAK.md",
+            "file": "ProteinAK.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "MonoAK.md",
+            "file": "ProteinAK.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "MonoAK.md"
+            "file": "ProteinAK.md"
           }
         }
       },
@@ -124,6 +124,7 @@
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
     "Library.md",
+    "ProteinAK.md",
     "MonoAK.md",
     "Alchemytela.md",
     "SutyOSB.md",
@@ -131,7 +132,6 @@
     "News.md",
     "Promery.md",
     "!0SB_Instructio.md",
-    "promery-instr.md",
-    "CO2.md"
+    "promery-instr.md"
   ]
 }
