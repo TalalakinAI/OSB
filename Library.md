@@ -27,6 +27,7 @@
 18. [СУТЬ ПОДХОДА ОСБ](SutyOSB.md#SutyOSB)
 19. [ДЛЯ ЧЕГО НУЖНЫ ПРОМЕРЫ?](Promery.md#promery)
 20. [ВНУТРЕННЯЯ АЛХИМИЯ ТЕЛА](Alchemytela.md#Alchemytela)
+21. [AK-БАЗА И МОНО-АК](MonoAK.md#MonoAK)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
