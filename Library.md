@@ -24,7 +24,8 @@
 15. [ОВП-pH](stg_redox-ph.md#stg_redox-ph)  
 16. [ПЕРЕКОСЫ. ВСД.](stg_perekosy_vsd.md#stg_perekosy_vsd)
 17. [CO2](CO2.md#CO2)
-18. [ДЛЯ ЧЕГО НУЖНЫ ПРОМЕРЫ?](Promery.md#promery)
+18. [СУТЬ ПОДХОДА ОСБ](SutyOSB.md#SutyOSB)
+19. [ДЛЯ ЧЕГО НУЖНЫ ПРОМЕРЫ?](Promery.md#promery)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)

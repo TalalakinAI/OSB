@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Promery.md",
-            "mode": "source",
+            "file": "News.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Promery.md",
+            "file": "News.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Promery.md",
+            "file": "News.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Promery.md"
+            "file": "News.md"
           }
         }
       },
@@ -123,15 +123,15 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
-    "!0SB_Instructio.md",
-    "!0SB.md",
+    "SutyOSB.md",
     "Library.md",
     "Promery.md",
+    "!0SB_Instructio.md",
+    "!0SB.md",
     "promery-instr.md",
     "CO2.md",
     "form.md",
     "000/000-news.md",
-    "000/000-png.md",
-    "000/000-title.md"
+    "000/000-png.md"
   ]
 }
