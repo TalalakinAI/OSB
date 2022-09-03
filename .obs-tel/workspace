@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "Promery.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "Promery.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "!0SB_Instructio.md",
+            "file": "Promery.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "!0SB_Instructio.md"
+            "file": "Promery.md"
           }
         }
       },
@@ -123,12 +123,12 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "!0SB_Instructio.md",
     "!0SB.md",
     "Library.md",
     "Promery.md",
     "promery-instr.md",
     "CO2.md",
-    "!0SB_Instructio.md",
     "form.md",
     "000/000-news.md",
     "000/000-png.md",
