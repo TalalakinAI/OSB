@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "stg_H20.md",
-            "mode": "preview",
+            "mode": "source",
             "source": true
           }
         }
@@ -121,7 +121,7 @@
     ],
     "currentTab": 2
   },
-  "active": "b50850977394a19a",
+  "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
     "Library.md",
     "stg_H20.md",
