@@ -140,5 +140,6 @@
     "кортизоловый",
     "хр"
   ],
-  "lineWrap": true
+  "lineWrap": true,
+  "showInlineTitle": false
 }

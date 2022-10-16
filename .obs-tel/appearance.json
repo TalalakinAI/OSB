@@ -1,10 +1,11 @@
 {
-  "baseFontSize": 15,
+  "baseFontSize": 16,
   "cssTheme": "Minimal",
   "theme": "moonstone",
   "translucency": false,
   "enabledCssSnippets": [
     "Iterative Rainbow Folder Backgrounds"
   ],
-  "textFontFamily": "Arial"
+  "textFontFamily": "Arial",
+  "accentColor": "#3674ad"
 }

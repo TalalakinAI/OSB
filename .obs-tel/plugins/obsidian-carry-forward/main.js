@@ -81,9 +81,9 @@ var Mode;
   Mode2[Mode2["LinkTextFromSelection"] = 1] = "LinkTextFromSelection";
   Mode2[Mode2["LinkTextFromClipboard"] = 2] = "LinkTextFromClipboard";
 })(Mode || (Mode = {}));
-var blockIDRegex = /(?<=[\s^])\^[a-zA-Z0-9-]+$/u;
+var blockIDRegex = /(?:^| +)(?<blockID>\^[a-zA-Z0-9-]+)$/u;
 var copyForwardLines = (editor, view, settings, copy = 0, mode = 0) => __async(void 0, null, function* () {
-  var _a, _b;
+  var _a, _b, _c, _d;
   const regexValidation = validateRegex(settings.lineFormatFrom);
   if (regexValidation.valid !== true) {
     new import_obsidian.Notice(`Error: 'From' setting is invalid:
@@ -129,13 +129,13 @@ Please update the Carry-Forward settings and try again.`, 1e3 * 30);
         linkText = yield navigator.clipboard.readText();
       }
       if (copy === 0 || lineNumber === minLine) {
-        const blockIDMatch = line.match(blockIDRegex);
-        let blockID = blockIDMatch === null ? blockIDMatch : String(blockIDMatch);
+        const blockIDMatch = (_a = line.match(blockIDRegex)) == null ? void 0 : _a.groups.blockID;
+        let blockID = blockIDMatch === void 0 ? null : String(blockIDMatch);
         let link = "";
-        const newChangeBlockIDs = (_a = transaction.changes) == null ? void 0 : _a.filter((change) => change.from.line === minLine && change.from.ch === 0 && change.to.line === maxLine && change.to.ch === maxLineLength);
+        const newChangeBlockIDs = (_b = transaction.changes) == null ? void 0 : _b.filter((change) => change.from.line === minLine && change.from.ch === 0 && change.to.line === maxLine && change.to.ch === maxLineLength);
         let newChangeBlockID = null;
         if (newChangeBlockIDs.length > 0) {
-          newChangeBlockID = String(newChangeBlockIDs[0].text.match(blockIDRegex));
+          newChangeBlockID = String((_c = newChangeBlockIDs[0].text.match(blockIDRegex)) == null ? void 0 : _c.groups.blockID);
         }
         if (blockID === null && newChangeBlockID === null) {
           newID = `^${genID()}`;
@@ -166,7 +166,7 @@ Please update the Carry-Forward settings and try again.`, 1e3 * 30);
       updatedLines.push(line);
     }
     if (transaction.changes.filter((change) => change.from.line === minLine && change.from.ch === 0 && change.to.line === maxLine && change.to.ch === maxLineLength).length === 0) {
-      (_b = transaction.changes) == null ? void 0 : _b.push({
+      (_d = transaction.changes) == null ? void 0 : _d.push({
         from: { line: minLine, ch: 0 },
         to: { line: maxLine, ch: maxLineLength },
         text: updatedLines.join("\n")
@@ -189,6 +189,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       yield this.loadSettings();
       this.addCommand({
         id: "carry-line-forward-separate-lines",
+        icon: "pin",
         name: "Copy selection with each line linked to its copied source (default link text)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 0);
@@ -196,6 +197,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-combined-lines",
+        icon: "pin",
         name: "Copy selection with first line linked to its copied source (default link text)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 1);
@@ -203,6 +205,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-link-only",
+        icon: "pin",
         name: "Copy link to line (default link text)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 2);
@@ -210,6 +213,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-embed-link-only",
+        icon: "pin",
         name: "Copy embed link to line (default link text)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 3);
@@ -217,6 +221,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-separate-lines-selection",
+        icon: "pin",
         name: "Copy selection with each line linked to its copied source (link text from selection)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 0, 1);
@@ -224,6 +229,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-combined-lines-selection",
+        icon: "pin",
         name: "Copy selection with first line linked to its copied source (link text from selection)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 1, 1);
@@ -231,6 +237,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-link-only-selection",
+        icon: "pin",
         name: "Copy link to line (link text from selection)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 2, 1);
@@ -238,6 +245,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-embed-link-only-selection",
+        icon: "pin",
         name: "Copy embed link to line (link text from selection)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 3, 1);
@@ -245,6 +253,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-separate-lines-clipboard",
+        icon: "pin",
         name: "Copy selection with each line linked to its copied source (link text from clipboard)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 0, 2);
@@ -252,6 +261,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-combined-lines-clipboard",
+        icon: "pin",
         name: "Copy selection with first line linked to its copied source (link text from clipboard)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 1, 2);
@@ -259,6 +269,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-link-only-clipboard",
+        icon: "pin",
         name: "Copy link to line (link text from clipboard)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 2, 2);
@@ -266,6 +277,7 @@ var CarryForwardPlugin = class extends import_obsidian.Plugin {
       });
       this.addCommand({
         id: "carry-line-forward-embed-link-only-clipboard",
+        icon: "pin",
         name: "Copy embed link to line (link text from clipboard)",
         editorCallback: (editor, view) => __async(this, null, function* () {
           return yield copyForwardLines(editor, view, this.settings, 3, 2);
