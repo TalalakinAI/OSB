@@ -52,7 +52,8 @@
     "editor:toggle-source",
     "obsidian-languagetool-plugin:ltcheck-text",
     "editor:toggle-keyboard",
-    "obsidian-regex-replace:obsidian-regex-replace"
+    "obsidian-regex-replace:obsidian-regex-replace",
+    "editor:insert-callout"
   ],
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",

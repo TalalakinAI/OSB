@@ -20,5 +20,6 @@
   "dataview",
   "obsidian-regex-replace",
   "obsidian-plugin-toc",
-  "control-characters"
+  "control-characters",
+  "obsidian-style-settings"
 ]
