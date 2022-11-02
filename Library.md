@@ -31,6 +31,7 @@
 22. [БЕЛОК, ПРОТЕИНЫ, ПЕПТИДЫ, АК.](ProteinAK.md#ProteinAK)
 23. [УДИВИТЕЛЬНЫЙ ВОПРОС](stg_H20.md#stg_H20)
 24. [ОТЧЕТЫ](stg_otchety.md#stg_otchety)
+25. [АРБАЛЕТИКА ЭНЕРГОПОТЕРЬ](stg_arbaletyka-E-poter.md#stg_arbaletyka-E-poter)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
