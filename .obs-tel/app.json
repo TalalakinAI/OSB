@@ -142,5 +142,7 @@
     "хр"
   ],
   "lineWrap": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "autoPairBrackets": false,
+  "autoPairMarkdown": false
 }
