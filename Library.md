@@ -36,7 +36,8 @@
 27. [МНЕ СНОВА ПЛОХО, ПОЛЕЧИТЕ.](stg_pole4ite.md#stg_pole4ite)
 28. [UIR, ФИЗИКА ОСБ](stg_physica-osb.md#stg_physica-osb)
 29. [ГЛИКЕМИЯ И КРЕТИНИЗАЦИЯ](stg_kretynizatio.md#stg_kretynizatio)
-30. [OSB_book](OSB_book.md#OSB_book)
+30. [ГЛЮКО/КЕТО. ПОНЯТИЯ.](stg_gluco-keto-ponyatiya.md#stg_gluco-keto-ponyatiya)
+31. [OSB_book](OSB_book.md#OSB_book)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
