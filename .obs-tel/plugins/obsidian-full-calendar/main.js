@@ -27595,7 +27595,7 @@ var require_luxon = __commonJS({
     function mapMonths(f3) {
       var ms = [];
       for (var i3 = 1; i3 <= 12; i3++) {
-        var dt = DateTime3.utc(2016, i3, 1);
+        var dt = DateTime4.utc(2016, i3, 1);
         ms.push(f3(dt));
       }
       return ms;
@@ -27603,7 +27603,7 @@ var require_luxon = __commonJS({
     function mapWeekdays(f3) {
       var ms = [];
       for (var i3 = 1; i3 <= 7; i3++) {
-        var dt = DateTime3.utc(2016, 11, 13 + i3);
+        var dt = DateTime4.utc(2016, 11, 13 + i3);
         ms.push(f3(dt));
       }
       return ms;
@@ -27668,7 +27668,7 @@ var require_luxon = __commonJS({
             if (opts.timeZoneName) {
               this.dt = dt;
             } else {
-              this.dt = dt.offset === 0 ? dt : DateTime3.fromMillis(dt.ts + dt.offset * 60 * 1e3);
+              this.dt = dt.offset === 0 ? dt : DateTime4.fromMillis(dt.ts + dt.offset * 60 * 1e3);
             }
           }
         } else if (dt.zone.type === "system") {
@@ -27854,7 +27854,7 @@ var require_luxon = __commonJS({
               hour: "numeric",
               hourCycle: "h12"
             };
-            _this3.meridiemCache = [DateTime3.utc(2016, 11, 13, 9), DateTime3.utc(2016, 11, 13, 19)].map(function(dt) {
+            _this3.meridiemCache = [DateTime4.utc(2016, 11, 13, 9), DateTime4.utc(2016, 11, 13, 19)].map(function(dt) {
               return _this3.extract(dt, intl, "dayperiod");
             });
           }
@@ -27871,7 +27871,7 @@ var require_luxon = __commonJS({
             era: length
           };
           if (!_this4.eraCache[length]) {
-            _this4.eraCache[length] = [DateTime3.utc(-40, 1, 1), DateTime3.utc(2017, 1, 1)].map(function(dt) {
+            _this4.eraCache[length] = [DateTime4.utc(-40, 1, 1), DateTime4.utc(2017, 1, 1)].map(function(dt) {
               return _this4.extract(dt, intl, "era");
             });
           }
@@ -28222,7 +28222,7 @@ var require_luxon = __commonJS({
         loc: dur.loc.clone(alts.loc),
         conversionAccuracy: alts.conversionAccuracy || dur.conversionAccuracy
       };
-      return new Duration3(conf);
+      return new Duration2(conf);
     }
     function antiTrunc(n3) {
       return n3 < 0 ? Math.floor(n3) : Math.ceil(n3);
@@ -28244,8 +28244,8 @@ var require_luxon = __commonJS({
         }
       }, null);
     }
-    var Duration3 = /* @__PURE__ */ function() {
-      function Duration4(config2) {
+    var Duration2 = /* @__PURE__ */ function() {
+      function Duration3(config2) {
         var accurate = config2.conversionAccuracy === "longterm" || false;
         this.values = config2.values;
         this.loc = config2.loc || Locale.create();
@@ -28254,52 +28254,52 @@ var require_luxon = __commonJS({
         this.matrix = accurate ? accurateMatrix : casualMatrix;
         this.isLuxonDuration = true;
       }
-      Duration4.fromMillis = function fromMillis(count, opts) {
-        return Duration4.fromObject({
+      Duration3.fromMillis = function fromMillis(count, opts) {
+        return Duration3.fromObject({
           milliseconds: count
         }, opts);
       };
-      Duration4.fromObject = function fromObject(obj, opts) {
+      Duration3.fromObject = function fromObject(obj, opts) {
         if (opts === void 0) {
           opts = {};
         }
         if (obj == null || typeof obj !== "object") {
           throw new InvalidArgumentError("Duration.fromObject: argument expected to be an object, got " + (obj === null ? "null" : typeof obj));
         }
-        return new Duration4({
-          values: normalizeObject(obj, Duration4.normalizeUnit),
+        return new Duration3({
+          values: normalizeObject(obj, Duration3.normalizeUnit),
           loc: Locale.fromObject(opts),
           conversionAccuracy: opts.conversionAccuracy
         });
       };
-      Duration4.fromDurationLike = function fromDurationLike(durationLike) {
+      Duration3.fromDurationLike = function fromDurationLike(durationLike) {
         if (isNumber(durationLike)) {
-          return Duration4.fromMillis(durationLike);
-        } else if (Duration4.isDuration(durationLike)) {
+          return Duration3.fromMillis(durationLike);
+        } else if (Duration3.isDuration(durationLike)) {
           return durationLike;
         } else if (typeof durationLike === "object") {
-          return Duration4.fromObject(durationLike);
+          return Duration3.fromObject(durationLike);
         } else {
           throw new InvalidArgumentError("Unknown duration argument " + durationLike + " of type " + typeof durationLike);
         }
       };
-      Duration4.fromISO = function fromISO(text, opts) {
+      Duration3.fromISO = function fromISO(text, opts) {
         var _parseISODuration = parseISODuration(text), parsed = _parseISODuration[0];
         if (parsed) {
-          return Duration4.fromObject(parsed, opts);
+          return Duration3.fromObject(parsed, opts);
         } else {
-          return Duration4.invalid("unparsable", 'the input "' + text + `" can't be parsed as ISO 8601`);
+          return Duration3.invalid("unparsable", 'the input "' + text + `" can't be parsed as ISO 8601`);
         }
       };
-      Duration4.fromISOTime = function fromISOTime(text, opts) {
+      Duration3.fromISOTime = function fromISOTime(text, opts) {
         var _parseISOTimeOnly = parseISOTimeOnly(text), parsed = _parseISOTimeOnly[0];
         if (parsed) {
-          return Duration4.fromObject(parsed, opts);
+          return Duration3.fromObject(parsed, opts);
         } else {
-          return Duration4.invalid("unparsable", 'the input "' + text + `" can't be parsed as ISO 8601`);
+          return Duration3.invalid("unparsable", 'the input "' + text + `" can't be parsed as ISO 8601`);
         }
       };
-      Duration4.invalid = function invalid(reason, explanation) {
+      Duration3.invalid = function invalid(reason, explanation) {
         if (explanation === void 0) {
           explanation = null;
         }
@@ -28310,12 +28310,12 @@ var require_luxon = __commonJS({
         if (Settings.throwOnInvalid) {
           throw new InvalidDurationError(invalid2);
         } else {
-          return new Duration4({
+          return new Duration3({
             invalid: invalid2
           });
         }
       };
-      Duration4.normalizeUnit = function normalizeUnit2(unit) {
+      Duration3.normalizeUnit = function normalizeUnit2(unit) {
         var normalized = {
           year: "years",
           years: "years",
@@ -28340,10 +28340,10 @@ var require_luxon = __commonJS({
           throw new InvalidUnitError(unit);
         return normalized;
       };
-      Duration4.isDuration = function isDuration(o2) {
+      Duration3.isDuration = function isDuration(o2) {
         return o2 && o2.isLuxonDuration || false;
       };
-      var _proto = Duration4.prototype;
+      var _proto = Duration3.prototype;
       _proto.toFormat = function toFormat(fmt, opts) {
         if (opts === void 0) {
           opts = {};
@@ -28450,7 +28450,7 @@ var require_luxon = __commonJS({
       _proto.plus = function plus(duration) {
         if (!this.isValid)
           return this;
-        var dur = Duration4.fromDurationLike(duration), result = {};
+        var dur = Duration3.fromDurationLike(duration), result = {};
         for (var _iterator = _createForOfIteratorHelperLoose(orderedUnits$1), _step; !(_step = _iterator()).done; ) {
           var k2 = _step.value;
           if (hasOwnProperty2(dur.values, k2) || hasOwnProperty2(this.values, k2)) {
@@ -28464,7 +28464,7 @@ var require_luxon = __commonJS({
       _proto.minus = function minus(duration) {
         if (!this.isValid)
           return this;
-        var dur = Duration4.fromDurationLike(duration);
+        var dur = Duration3.fromDurationLike(duration);
         return this.plus(dur.negate());
       };
       _proto.mapUnits = function mapUnits(fn) {
@@ -28480,12 +28480,12 @@ var require_luxon = __commonJS({
         }, true);
       };
       _proto.get = function get(unit) {
-        return this[Duration4.normalizeUnit(unit)];
+        return this[Duration3.normalizeUnit(unit)];
       };
       _proto.set = function set(values) {
         if (!this.isValid)
           return this;
-        var mixed = _extends({}, this.values, normalizeObject(values, Duration4.normalizeUnit));
+        var mixed = _extends({}, this.values, normalizeObject(values, Duration3.normalizeUnit));
         return clone$1(this, {
           values: mixed
         });
@@ -28525,7 +28525,7 @@ var require_luxon = __commonJS({
           return this;
         }
         units = units.map(function(u3) {
-          return Duration4.normalizeUnit(u3);
+          return Duration3.normalizeUnit(u3);
         });
         var built = {}, accumulated = {}, vals = this.toObject();
         var lastUnit;
@@ -28594,7 +28594,7 @@ var require_luxon = __commonJS({
         }
         return true;
       };
-      _createClass(Duration4, [{
+      _createClass(Duration3, [{
         key: "locale",
         get: function get() {
           return this.isValid ? this.loc.locale : null;
@@ -28665,7 +28665,7 @@ var require_luxon = __commonJS({
           return this.invalid ? this.invalid.explanation : null;
         }
       }]);
-      return Duration4;
+      return Duration3;
     }();
     var INVALID$1 = "Invalid Interval";
     function validateStartEnd(start, end) {
@@ -28715,11 +28715,11 @@ var require_luxon = __commonJS({
         }
       };
       Interval2.after = function after(start, duration) {
-        var dur = Duration3.fromDurationLike(duration), dt = friendlyDateTime(start);
+        var dur = Duration2.fromDurationLike(duration), dt = friendlyDateTime(start);
         return Interval2.fromDateTimes(dt, dt.plus(dur));
       };
       Interval2.before = function before(end, duration) {
-        var dur = Duration3.fromDurationLike(duration), dt = friendlyDateTime(end);
+        var dur = Duration2.fromDurationLike(duration), dt = friendlyDateTime(end);
         return Interval2.fromDateTimes(dt.minus(dur), dt);
       };
       Interval2.fromISO = function fromISO(text, opts) {
@@ -28727,14 +28727,14 @@ var require_luxon = __commonJS({
         if (s4 && e3) {
           var start, startIsValid;
           try {
-            start = DateTime3.fromISO(s4, opts);
+            start = DateTime4.fromISO(s4, opts);
             startIsValid = start.isValid;
           } catch (e4) {
             startIsValid = false;
           }
           var end, endIsValid;
           try {
-            end = DateTime3.fromISO(e3, opts);
+            end = DateTime4.fromISO(e3, opts);
             endIsValid = end.isValid;
           } catch (e4) {
             endIsValid = false;
@@ -28743,12 +28743,12 @@ var require_luxon = __commonJS({
             return Interval2.fromDateTimes(start, end);
           }
           if (startIsValid) {
-            var dur = Duration3.fromISO(e3, opts);
+            var dur = Duration2.fromISO(e3, opts);
             if (dur.isValid) {
               return Interval2.after(start, dur);
             }
           } else if (endIsValid) {
-            var _dur = Duration3.fromISO(s4, opts);
+            var _dur = Duration2.fromISO(s4, opts);
             if (_dur.isValid) {
               return Interval2.before(end, _dur);
             }
@@ -28822,7 +28822,7 @@ var require_luxon = __commonJS({
         return results;
       };
       _proto.splitBy = function splitBy(duration) {
-        var dur = Duration3.fromDurationLike(duration);
+        var dur = Duration2.fromDurationLike(duration);
         if (!this.isValid || !dur.isValid || dur.as("milliseconds") === 0) {
           return [];
         }
@@ -28969,7 +28969,7 @@ var require_luxon = __commonJS({
       };
       _proto.toDuration = function toDuration(unit, opts) {
         if (!this.isValid) {
-          return Duration3.invalid(this.invalidReason);
+          return Duration2.invalid(this.invalidReason);
         }
         return this.e.diff(this.s, unit, opts);
       };
@@ -29011,7 +29011,7 @@ var require_luxon = __commonJS({
         if (zone === void 0) {
           zone = Settings.defaultZone;
         }
-        var proto = DateTime3.now().setZone(zone).set({
+        var proto = DateTime4.now().setZone(zone).set({
           month: 12
         });
         return !zone.isUniversal && proto.offset !== proto.set({
@@ -29076,7 +29076,7 @@ var require_luxon = __commonJS({
           keepLocalTime: true
         }).startOf("day").valueOf();
       }, ms = utcDayStart(later) - utcDayStart(earlier);
-      return Math.floor(Duration3.fromMillis(ms).as("days"));
+      return Math.floor(Duration2.fromMillis(ms).as("days"));
     }
     function highOrderDiffs(cursor, later, units) {
       var differs = [["years", function(a3, b3) {
@@ -29125,10 +29125,10 @@ var require_luxon = __commonJS({
           results[lowestOrder] = (results[lowestOrder] || 0) + remainingMillis / (highWater - cursor);
         }
       }
-      var duration = Duration3.fromObject(results, opts);
+      var duration = Duration2.fromObject(results, opts);
       if (lowerOrderUnits.length > 0) {
         var _Duration$fromMillis;
-        return (_Duration$fromMillis = Duration3.fromMillis(remainingMillis, opts)).shiftTo.apply(_Duration$fromMillis, lowerOrderUnits).plus(duration);
+        return (_Duration$fromMillis = Duration2.fromMillis(remainingMillis, opts)).shiftTo.apply(_Duration$fromMillis, lowerOrderUnits).plus(duration);
       } else {
         return duration;
       }
@@ -29544,7 +29544,7 @@ var require_luxon = __commonJS({
     var dummyDateTimeCache = null;
     function getDummyDateTime() {
       if (!dummyDateTimeCache) {
-        dummyDateTimeCache = DateTime3.fromMillis(1555555555555);
+        dummyDateTimeCache = DateTime4.fromMillis(1555555555555);
       }
       return dummyDateTimeCache;
     }
@@ -29745,7 +29745,7 @@ var require_luxon = __commonJS({
         loc: inst.loc,
         invalid: inst.invalid
       };
-      return new DateTime3(_extends({}, current, alts, {
+      return new DateTime4(_extends({}, current, alts, {
         old: current
       }));
     }
@@ -29783,7 +29783,7 @@ var require_luxon = __commonJS({
         year,
         month,
         day: Math.min(inst.c.day, daysInMonth(year, month)) + Math.trunc(dur.days) + Math.trunc(dur.weeks) * 7
-      }), millisToAdd = Duration3.fromObject({
+      }), millisToAdd = Duration2.fromObject({
         years: dur.years - Math.trunc(dur.years),
         quarters: dur.quarters - Math.trunc(dur.quarters),
         months: dur.months - Math.trunc(dur.months),
@@ -29807,13 +29807,13 @@ var require_luxon = __commonJS({
     function parseDataToDateTime(parsed, parsedZone, opts, format, text, specificOffset) {
       var setZone = opts.setZone, zone = opts.zone;
       if (parsed && Object.keys(parsed).length !== 0) {
-        var interpretationZone = parsedZone || zone, inst = DateTime3.fromObject(parsed, _extends({}, opts, {
+        var interpretationZone = parsedZone || zone, inst = DateTime4.fromObject(parsed, _extends({}, opts, {
           zone: interpretationZone,
           specificOffset
         }));
         return setZone ? inst : inst.setZone(zone);
       } else {
-        return DateTime3.invalid(new Invalid("unparsable", 'the input "' + text + `" can't be parsed as ` + format));
+        return DateTime4.invalid(new Invalid("unparsable", 'the input "' + text + `" can't be parsed as ` + format));
       }
     }
     function toTechFormat(dt, format, allowZ) {
@@ -29946,7 +29946,7 @@ var require_luxon = __commonJS({
         }
         var invalid = hasInvalidGregorianData(obj) || hasInvalidTimeData(obj);
         if (invalid) {
-          return DateTime3.invalid(invalid);
+          return DateTime4.invalid(invalid);
         }
         var offsetProvis = zone.offset(tsNow);
         var _objToTS = objToTS(obj, offsetProvis, zone);
@@ -29955,7 +29955,7 @@ var require_luxon = __commonJS({
       } else {
         ts = tsNow;
       }
-      return new DateTime3({
+      return new DateTime4({
         ts,
         zone,
         loc,
@@ -29999,8 +29999,8 @@ var require_luxon = __commonJS({
       }
       return [opts, args];
     }
-    var DateTime3 = /* @__PURE__ */ function() {
-      function DateTime4(config2) {
+    var DateTime4 = /* @__PURE__ */ function() {
+      function DateTime5(config2) {
         var zone = config2.zone || Settings.defaultZone;
         var invalid = config2.invalid || (Number.isNaN(config2.ts) ? new Invalid("invalid input") : null) || (!zone.isValid ? unsupportedZone(zone) : null);
         this.ts = isUndefined(config2.ts) ? Settings.now() : config2.ts;
@@ -30027,10 +30027,10 @@ var require_luxon = __commonJS({
         this.o = o2;
         this.isLuxonDateTime = true;
       }
-      DateTime4.now = function now2() {
-        return new DateTime4({});
+      DateTime5.now = function now2() {
+        return new DateTime5({});
       };
-      DateTime4.local = function local() {
+      DateTime5.local = function local() {
         var _lastOpts = lastOpts(arguments), opts = _lastOpts[0], args = _lastOpts[1], year = args[0], month = args[1], day = args[2], hour = args[3], minute = args[4], second = args[5], millisecond = args[6];
         return quickDT({
           year,
@@ -30042,7 +30042,7 @@ var require_luxon = __commonJS({
           millisecond
         }, opts);
       };
-      DateTime4.utc = function utc() {
+      DateTime5.utc = function utc() {
         var _lastOpts2 = lastOpts(arguments), opts = _lastOpts2[0], args = _lastOpts2[1], year = args[0], month = args[1], day = args[2], hour = args[3], minute = args[4], second = args[5], millisecond = args[6];
         opts.zone = FixedOffsetZone.utcInstance;
         return quickDT({
@@ -30055,62 +30055,62 @@ var require_luxon = __commonJS({
           millisecond
         }, opts);
       };
-      DateTime4.fromJSDate = function fromJSDate(date, options) {
+      DateTime5.fromJSDate = function fromJSDate(date, options) {
         if (options === void 0) {
           options = {};
         }
         var ts = isDate(date) ? date.valueOf() : NaN;
         if (Number.isNaN(ts)) {
-          return DateTime4.invalid("invalid input");
+          return DateTime5.invalid("invalid input");
         }
         var zoneToUse = normalizeZone(options.zone, Settings.defaultZone);
         if (!zoneToUse.isValid) {
-          return DateTime4.invalid(unsupportedZone(zoneToUse));
+          return DateTime5.invalid(unsupportedZone(zoneToUse));
         }
-        return new DateTime4({
+        return new DateTime5({
           ts,
           zone: zoneToUse,
           loc: Locale.fromObject(options)
         });
       };
-      DateTime4.fromMillis = function fromMillis(milliseconds, options) {
+      DateTime5.fromMillis = function fromMillis(milliseconds, options) {
         if (options === void 0) {
           options = {};
         }
         if (!isNumber(milliseconds)) {
           throw new InvalidArgumentError("fromMillis requires a numerical input, but received a " + typeof milliseconds + " with value " + milliseconds);
         } else if (milliseconds < -MAX_DATE || milliseconds > MAX_DATE) {
-          return DateTime4.invalid("Timestamp out of range");
+          return DateTime5.invalid("Timestamp out of range");
         } else {
-          return new DateTime4({
+          return new DateTime5({
             ts: milliseconds,
             zone: normalizeZone(options.zone, Settings.defaultZone),
             loc: Locale.fromObject(options)
           });
         }
       };
-      DateTime4.fromSeconds = function fromSeconds(seconds, options) {
+      DateTime5.fromSeconds = function fromSeconds(seconds, options) {
         if (options === void 0) {
           options = {};
         }
         if (!isNumber(seconds)) {
           throw new InvalidArgumentError("fromSeconds requires a numerical input");
         } else {
-          return new DateTime4({
+          return new DateTime5({
             ts: seconds * 1e3,
             zone: normalizeZone(options.zone, Settings.defaultZone),
             loc: Locale.fromObject(options)
           });
         }
       };
-      DateTime4.fromObject = function fromObject(obj, opts) {
+      DateTime5.fromObject = function fromObject(obj, opts) {
         if (opts === void 0) {
           opts = {};
         }
         obj = obj || {};
         var zoneToUse = normalizeZone(opts.zone, Settings.defaultZone);
         if (!zoneToUse.isValid) {
-          return DateTime4.invalid(unsupportedZone(zoneToUse));
+          return DateTime5.invalid(unsupportedZone(zoneToUse));
         }
         var tsNow = Settings.now(), offsetProvis = !isUndefined(opts.specificOffset) ? opts.specificOffset : zoneToUse.offset(tsNow), normalized = normalizeObject(obj, normalizeUnit), containsOrdinal = !isUndefined(normalized.ordinal), containsGregorYear = !isUndefined(normalized.year), containsGregorMD = !isUndefined(normalized.month) || !isUndefined(normalized.day), containsGregor = containsGregorYear || containsGregorMD, definiteWeekDef = normalized.weekYear || normalized.weekNumber, loc = Locale.fromObject(opts);
         if ((containsGregor || containsOrdinal) && definiteWeekDef) {
@@ -30147,41 +30147,41 @@ var require_luxon = __commonJS({
         }
         var higherOrderInvalid = useWeekData ? hasInvalidWeekData(normalized) : containsOrdinal ? hasInvalidOrdinalData(normalized) : hasInvalidGregorianData(normalized), invalid = higherOrderInvalid || hasInvalidTimeData(normalized);
         if (invalid) {
-          return DateTime4.invalid(invalid);
+          return DateTime5.invalid(invalid);
         }
-        var gregorian = useWeekData ? weekToGregorian(normalized) : containsOrdinal ? ordinalToGregorian(normalized) : normalized, _objToTS2 = objToTS(gregorian, offsetProvis, zoneToUse), tsFinal = _objToTS2[0], offsetFinal = _objToTS2[1], inst = new DateTime4({
+        var gregorian = useWeekData ? weekToGregorian(normalized) : containsOrdinal ? ordinalToGregorian(normalized) : normalized, _objToTS2 = objToTS(gregorian, offsetProvis, zoneToUse), tsFinal = _objToTS2[0], offsetFinal = _objToTS2[1], inst = new DateTime5({
           ts: tsFinal,
           zone: zoneToUse,
           o: offsetFinal,
           loc
         });
         if (normalized.weekday && containsGregor && obj.weekday !== inst.weekday) {
-          return DateTime4.invalid("mismatched weekday", "you can't specify both a weekday of " + normalized.weekday + " and a date of " + inst.toISO());
+          return DateTime5.invalid("mismatched weekday", "you can't specify both a weekday of " + normalized.weekday + " and a date of " + inst.toISO());
         }
         return inst;
       };
-      DateTime4.fromISO = function fromISO(text, opts) {
+      DateTime5.fromISO = function fromISO(text, opts) {
         if (opts === void 0) {
           opts = {};
         }
         var _parseISODate = parseISODate(text), vals = _parseISODate[0], parsedZone = _parseISODate[1];
         return parseDataToDateTime(vals, parsedZone, opts, "ISO 8601", text);
       };
-      DateTime4.fromRFC2822 = function fromRFC2822(text, opts) {
+      DateTime5.fromRFC2822 = function fromRFC2822(text, opts) {
         if (opts === void 0) {
           opts = {};
         }
         var _parseRFC2822Date = parseRFC2822Date(text), vals = _parseRFC2822Date[0], parsedZone = _parseRFC2822Date[1];
         return parseDataToDateTime(vals, parsedZone, opts, "RFC 2822", text);
       };
-      DateTime4.fromHTTP = function fromHTTP(text, opts) {
+      DateTime5.fromHTTP = function fromHTTP(text, opts) {
         if (opts === void 0) {
           opts = {};
         }
         var _parseHTTPDate = parseHTTPDate(text), vals = _parseHTTPDate[0], parsedZone = _parseHTTPDate[1];
         return parseDataToDateTime(vals, parsedZone, opts, "HTTP", opts);
       };
-      DateTime4.fromFormat = function fromFormat(text, fmt, opts) {
+      DateTime5.fromFormat = function fromFormat(text, fmt, opts) {
         if (opts === void 0) {
           opts = {};
         }
@@ -30194,25 +30194,25 @@ var require_luxon = __commonJS({
           defaultToEN: true
         }), _parseFromTokens = parseFromTokens(localeToUse, text, fmt), vals = _parseFromTokens[0], parsedZone = _parseFromTokens[1], specificOffset = _parseFromTokens[2], invalid = _parseFromTokens[3];
         if (invalid) {
-          return DateTime4.invalid(invalid);
+          return DateTime5.invalid(invalid);
         } else {
           return parseDataToDateTime(vals, parsedZone, opts, "format " + fmt, text, specificOffset);
         }
       };
-      DateTime4.fromString = function fromString(text, fmt, opts) {
+      DateTime5.fromString = function fromString(text, fmt, opts) {
         if (opts === void 0) {
           opts = {};
         }
-        return DateTime4.fromFormat(text, fmt, opts);
+        return DateTime5.fromFormat(text, fmt, opts);
       };
-      DateTime4.fromSQL = function fromSQL(text, opts) {
+      DateTime5.fromSQL = function fromSQL(text, opts) {
         if (opts === void 0) {
           opts = {};
         }
         var _parseSQL = parseSQL(text), vals = _parseSQL[0], parsedZone = _parseSQL[1];
         return parseDataToDateTime(vals, parsedZone, opts, "SQL", text);
       };
-      DateTime4.invalid = function invalid(reason, explanation) {
+      DateTime5.invalid = function invalid(reason, explanation) {
         if (explanation === void 0) {
           explanation = null;
         }
@@ -30223,15 +30223,15 @@ var require_luxon = __commonJS({
         if (Settings.throwOnInvalid) {
           throw new InvalidDateTimeError(invalid2);
         } else {
-          return new DateTime4({
+          return new DateTime5({
             invalid: invalid2
           });
         }
       };
-      DateTime4.isDateTime = function isDateTime(o2) {
+      DateTime5.isDateTime = function isDateTime(o2) {
         return o2 && o2.isLuxonDateTime || false;
       };
-      var _proto = DateTime4.prototype;
+      var _proto = DateTime5.prototype;
       _proto.get = function get(unit) {
         return this[unit];
       };
@@ -30264,7 +30264,7 @@ var require_luxon = __commonJS({
         if (zone.equals(this.zone)) {
           return this;
         } else if (!zone.isValid) {
-          return DateTime4.invalid(unsupportedZone(zone));
+          return DateTime5.invalid(unsupportedZone(zone));
         } else {
           var newTS = this.ts;
           if (keepLocalTime || keepCalendarTime) {
@@ -30325,19 +30325,19 @@ var require_luxon = __commonJS({
       _proto.plus = function plus(duration) {
         if (!this.isValid)
           return this;
-        var dur = Duration3.fromDurationLike(duration);
+        var dur = Duration2.fromDurationLike(duration);
         return clone(this, adjustTime(this, dur));
       };
       _proto.minus = function minus(duration) {
         if (!this.isValid)
           return this;
-        var dur = Duration3.fromDurationLike(duration).negate();
+        var dur = Duration2.fromDurationLike(duration).negate();
         return clone(this, adjustTime(this, dur));
       };
       _proto.startOf = function startOf(unit) {
         if (!this.isValid)
           return this;
-        var o2 = {}, normalizedUnit = Duration3.normalizeUnit(unit);
+        var o2 = {}, normalizedUnit = Duration2.normalizeUnit(unit);
         switch (normalizedUnit) {
           case "years":
             o2.month = 1;
@@ -30500,13 +30500,13 @@ var require_luxon = __commonJS({
           opts = {};
         }
         if (!this.isValid || !otherDateTime.isValid) {
-          return Duration3.invalid("created by diffing an invalid DateTime");
+          return Duration2.invalid("created by diffing an invalid DateTime");
         }
         var durOpts = _extends({
           locale: this.locale,
           numberingSystem: this.numberingSystem
         }, opts);
-        var units = maybeArray(unit).map(Duration3.normalizeUnit), otherIsLater = otherDateTime.valueOf() > this.valueOf(), earlier = otherIsLater ? this : otherDateTime, later = otherIsLater ? otherDateTime : this, diffed = _diff(earlier, later, units, durOpts);
+        var units = maybeArray(unit).map(Duration2.normalizeUnit), otherIsLater = otherDateTime.valueOf() > this.valueOf(), earlier = otherIsLater ? this : otherDateTime, later = otherIsLater ? otherDateTime : this, diffed = _diff(earlier, later, units, durOpts);
         return otherIsLater ? diffed.negate() : diffed;
       };
       _proto.diffNow = function diffNow(unit, opts) {
@@ -30516,7 +30516,7 @@ var require_luxon = __commonJS({
         if (opts === void 0) {
           opts = {};
         }
-        return this.diff(DateTime4.now(), unit, opts);
+        return this.diff(DateTime5.now(), unit, opts);
       };
       _proto.until = function until(otherDateTime) {
         return this.isValid ? Interval.fromDateTimes(this, otherDateTime) : this;
@@ -30539,7 +30539,7 @@ var require_luxon = __commonJS({
         }
         if (!this.isValid)
           return null;
-        var base = options.base || DateTime4.fromObject({}, {
+        var base = options.base || DateTime5.fromObject({}, {
           zone: this.zone
         }), padding = options.padding ? this < base ? -options.padding : options.padding : 0;
         var units = ["years", "months", "days", "hours", "minutes", "seconds"];
@@ -30560,7 +30560,7 @@ var require_luxon = __commonJS({
         }
         if (!this.isValid)
           return null;
-        return diffRelative(options.base || DateTime4.fromObject({}, {
+        return diffRelative(options.base || DateTime5.fromObject({}, {
           zone: this.zone
         }), this, _extends({}, options, {
           numeric: "auto",
@@ -30568,29 +30568,29 @@ var require_luxon = __commonJS({
           calendary: true
         }));
       };
-      DateTime4.min = function min() {
+      DateTime5.min = function min() {
         for (var _len = arguments.length, dateTimes = new Array(_len), _key = 0; _key < _len; _key++) {
           dateTimes[_key] = arguments[_key];
         }
-        if (!dateTimes.every(DateTime4.isDateTime)) {
+        if (!dateTimes.every(DateTime5.isDateTime)) {
           throw new InvalidArgumentError("min requires all arguments be DateTimes");
         }
         return bestBy(dateTimes, function(i3) {
           return i3.valueOf();
         }, Math.min);
       };
-      DateTime4.max = function max() {
+      DateTime5.max = function max() {
         for (var _len2 = arguments.length, dateTimes = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
           dateTimes[_key2] = arguments[_key2];
         }
-        if (!dateTimes.every(DateTime4.isDateTime)) {
+        if (!dateTimes.every(DateTime5.isDateTime)) {
           throw new InvalidArgumentError("max requires all arguments be DateTimes");
         }
         return bestBy(dateTimes, function(i3) {
           return i3.valueOf();
         }, Math.max);
       };
-      DateTime4.fromFormatExplain = function fromFormatExplain(text, fmt, options) {
+      DateTime5.fromFormatExplain = function fromFormatExplain(text, fmt, options) {
         if (options === void 0) {
           options = {};
         }
@@ -30601,13 +30601,13 @@ var require_luxon = __commonJS({
         });
         return explainFromTokens(localeToUse, text, fmt);
       };
-      DateTime4.fromStringExplain = function fromStringExplain(text, fmt, options) {
+      DateTime5.fromStringExplain = function fromStringExplain(text, fmt, options) {
         if (options === void 0) {
           options = {};
         }
-        return DateTime4.fromFormatExplain(text, fmt, options);
+        return DateTime5.fromFormatExplain(text, fmt, options);
       };
-      _createClass(DateTime4, [{
+      _createClass(DateTime5, [{
         key: "isValid",
         get: function get() {
           return this.invalid === null;
@@ -30913,22 +30913,22 @@ var require_luxon = __commonJS({
           return DATETIME_HUGE_WITH_SECONDS;
         }
       }]);
-      return DateTime4;
+      return DateTime5;
     }();
     function friendlyDateTime(dateTimeish) {
-      if (DateTime3.isDateTime(dateTimeish)) {
+      if (DateTime4.isDateTime(dateTimeish)) {
         return dateTimeish;
       } else if (dateTimeish && dateTimeish.valueOf && isNumber(dateTimeish.valueOf())) {
-        return DateTime3.fromJSDate(dateTimeish);
+        return DateTime4.fromJSDate(dateTimeish);
       } else if (dateTimeish && typeof dateTimeish === "object") {
-        return DateTime3.fromObject(dateTimeish);
+        return DateTime4.fromObject(dateTimeish);
       } else {
         throw new InvalidArgumentError("Unknown datetime argument: " + dateTimeish + ", of type " + typeof dateTimeish);
       }
     }
     var VERSION = "2.3.1";
-    exports.DateTime = DateTime3;
-    exports.Duration = Duration3;
+    exports.DateTime = DateTime4;
+    exports.Duration = Duration2;
     exports.FixedOffsetZone = FixedOffsetZone;
     exports.IANAZone = IANAZone;
     exports.Info = Info;
@@ -34562,7 +34562,7 @@ var require_dav = __commonJS({
           }
           _createClass(Sandbox2, [{
             key: "add",
-            value: function add2(request3) {
+            value: function add3(request3) {
               debug("Adding request to sandbox.");
               this.requestList.push(request3);
             }
@@ -38140,10 +38140,10 @@ var require_co = __commonJS({
 __export(exports, {
   default: () => FullCalendarPlugin
 });
-var import_obsidian8 = __toModule(require("obsidian"));
+var import_obsidian9 = __toModule(require("obsidian"));
 
 // src/view.ts
-var import_obsidian7 = __toModule(require("obsidian"));
+var import_obsidian8 = __toModule(require("obsidian"));
 
 // node_modules/tslib/modules/index.js
 var import_tslib = __toModule(require_tslib());
@@ -52068,8 +52068,16 @@ var main_default6 = main6;
 
 // src/calendar.ts
 function renderCalendar(containerEl, eventSources, settings) {
+  var _a;
   const isMobile = window.innerWidth < 500;
-  const { eventClick, select, modifyEvent, eventMouseEnter } = settings || {};
+  const {
+    eventClick,
+    select,
+    modifyEvent,
+    eventMouseEnter,
+    openContextMenuForEvent,
+    toggleTask
+  } = settings || {};
   const modifyEventCallback = modifyEvent && ((_0) => __async(this, [_0], function* ({
     event,
     oldEvent,
@@ -52080,7 +52088,7 @@ function renderCalendar(containerEl, eventSources, settings) {
       revert();
     }
   }));
-  const cal = new Calendar(containerEl, {
+  const cal = new Calendar(containerEl, __spreadProps(__spreadValues({
     plugins: [
       main_default,
       main_default2,
@@ -52090,17 +52098,18 @@ function renderCalendar(containerEl, eventSources, settings) {
       main_default6
     ],
     googleCalendarApiKey: "AIzaSyDIiklFwJXaLWuT_4y6I9ZRVVsPuf4xGrk",
-    initialView: isMobile ? "timeGrid3Days" : "timeGridWeek",
+    initialView: ((_a = settings == null ? void 0 : settings.initialView) == null ? void 0 : _a[isMobile ? "mobile" : "desktop"]) || (isMobile ? "timeGrid3Days" : "timeGridWeek"),
     nowIndicator: true,
     scrollTimeReset: false,
-    headerToolbar: isMobile ? {
-      right: "today,prev,next",
-      left: "timeGrid3Days,timeGridDay,listWeek"
-    } : {
+    headerToolbar: !isMobile ? {
       left: "prev,next today",
       center: "title",
       right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek"
-    },
+    } : false,
+    footerToolbar: isMobile ? {
+      right: "today,prev,next",
+      left: "timeGrid3Days,timeGridDay,listWeek"
+    } : false,
     views: {
       timeGridDay: {
         type: "timeGrid",
@@ -52113,20 +52122,63 @@ function renderCalendar(containerEl, eventSources, settings) {
         buttonText: "3"
       }
     },
-    firstDay: settings == null ? void 0 : settings.firstDay,
+    firstDay: settings == null ? void 0 : settings.firstDay
+  }, (settings == null ? void 0 : settings.timeFormat24h) && {
+    eventTimeFormat: {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: false
+    },
+    slotLabelFormat: {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: false
+    }
+  }), {
     eventSources,
     eventClick,
     selectable: select && true,
     selectMirror: select && true,
     select: select && ((info) => __async(this, null, function* () {
-      yield select(info.start, info.end, info.allDay);
+      yield select(info.start, info.end, info.allDay, info.view.type);
       info.view.calendar.unselect();
     })),
     editable: modifyEvent && true,
     eventDrop: modifyEventCallback,
     eventResize: modifyEventCallback,
-    eventMouseEnter
-  });
+    eventMouseEnter,
+    eventDidMount: ({ event, el, textColor }) => {
+      el.addEventListener("contextmenu", (e3) => {
+        e3.preventDefault();
+        openContextMenuForEvent && openContextMenuForEvent(event, e3);
+      });
+      if (toggleTask) {
+        if (event.extendedProps.isTask) {
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.checked = event.extendedProps.taskCompleted !== false;
+          checkbox.onclick = (e3) => {
+            e3.stopPropagation();
+            if (e3.target) {
+              toggleTask(event, e3.target.checked);
+            }
+          };
+          if (textColor == "black") {
+            checkbox.addClass("ofc-checkbox-black");
+          } else {
+            checkbox.addClass("ofc-checkbox-white");
+          }
+          if (checkbox.checked) {
+            el.addClass("ofc-task-completed");
+          }
+          const container = el.querySelector(".fc-event-time") || el.querySelector(".fc-event-title") || el.querySelector(".fc-list-event-title");
+          container == null ? void 0 : container.addClass("ofc-has-checkbox");
+          container == null ? void 0 : container.prepend(checkbox);
+        }
+      }
+    },
+    longPressDelay: 250
+  }));
   cal.render();
   return cal;
 }
@@ -52137,6 +52189,7 @@ var React2 = __toModule(require_react());
 var ReactDOM = __toModule(require_react_dom());
 
 // src/components/EditEvent.tsx
+var import_luxon = __toModule(require_luxon());
 var React = __toModule(require_react());
 var import_react = __toModule(require_react());
 function makeChangeListener(setState, fromString) {
@@ -52203,6 +52256,8 @@ var EditEvent = ({
   const [daysOfWeek, setDaysOfWeek] = (0, import_react.useState)(((initialEvent == null ? void 0 : initialEvent.type) === "recurring" ? initialEvent.daysOfWeek : []) || []);
   const [allDay, setAllDay] = (0, import_react.useState)((initialEvent == null ? void 0 : initialEvent.allDay) || false);
   const [calendarIndex, setCalendarIndex] = (0, import_react.useState)(defaultCalendarIndex);
+  const [complete, setComplete] = (0, import_react.useState)((initialEvent == null ? void 0 : initialEvent.type) === "single" && initialEvent.completed !== null && initialEvent.completed !== void 0 ? initialEvent.completed : false);
+  const [isTask, setIsTask] = (0, import_react.useState)((initialEvent == null ? void 0 : initialEvent.type) === "single" && initialEvent.completed !== void 0 && initialEvent.completed !== null);
   const titleRef = (0, import_react.useRef)(null);
   (0, import_react.useEffect)(() => {
     if (titleRef.current) {
@@ -52218,7 +52273,8 @@ var EditEvent = ({
       endRecur: endRecur || void 0
     } : {
       date,
-      endDate
+      endDate,
+      completed: isTask ? complete : null
     }), calendarIndex);
   });
   return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", {
@@ -52287,7 +52343,23 @@ var EditEvent = ({
     id: "endDate",
     value: endRecur,
     onChange: makeChangeListener(setEndRecur, (x3) => x3)
-  }))), /* @__PURE__ */ React.createElement("p", {
+  }))), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("label", {
+    htmlFor: "task"
+  }, "Task Event "), /* @__PURE__ */ React.createElement("input", {
+    id: "task",
+    checked: isTask,
+    onChange: (e3) => {
+      setIsTask(e3.target.checked);
+    },
+    type: "checkbox"
+  })), isTask && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("label", {
+    htmlFor: "taskStatus"
+  }, "Complete? "), /* @__PURE__ */ React.createElement("input", {
+    id: "taskStatus",
+    checked: !(complete === false || complete === void 0),
+    onChange: (e3) => setComplete(e3.target.checked ? import_luxon.DateTime.now().toISO() : false),
+    type: "checkbox"
+  })), /* @__PURE__ */ React.createElement("p", {
     style: {
       display: "flex",
       justifyContent: "space-between",
@@ -52309,25 +52381,30 @@ var EditEvent = ({
 };
 
 // src/frontmatter.ts
-var import_luxon2 = __toModule(require_luxon());
 var import_obsidian = __toModule(require("obsidian"));
 
 // src/dateUtil.ts
-var import_luxon = __toModule(require_luxon());
+var import_luxon2 = __toModule(require_luxon());
 var parseTime = (time) => {
-  let parsed = import_luxon.DateTime.fromFormat(time, "h:mm a");
+  let parsed = import_luxon2.DateTime.fromFormat(time, "h:mm a");
   if (parsed.invalidReason) {
-    parsed = import_luxon.DateTime.fromFormat(time, "HH:mm");
+    parsed = import_luxon2.DateTime.fromFormat(time, "HH:mm");
   }
-  return import_luxon.Duration.fromISOTime(parsed.toISOTime({
+  if (parsed.invalidReason) {
+    console.error(`FC: Error parsing time string '${time}': ${parsed.invalidReason}'`);
+    return null;
+  }
+  return import_luxon2.Duration.fromISOTime(parsed.toISOTime({
     includeOffset: false,
     includePrefix: false
   }));
 };
 var normalizeTimeString = (time) => {
-  if (!time)
-    time = "";
-  return parseTime(time).toISOTime({
+  const parsed = parseTime(time);
+  if (!parsed) {
+    return null;
+  }
+  return parsed.toISOTime({
     suppressMilliseconds: true,
     includePrefix: false,
     suppressSeconds: true
@@ -52338,12 +52415,24 @@ var add = (date, time) => {
   let minutes = time.minutes;
   return date.set({ hour: hours, minute: minutes });
 };
-var getTime2 = (date) => import_luxon.DateTime.fromJSDate(date).toISOTime({
+var getTime2 = (date) => import_luxon2.DateTime.fromJSDate(date).toISOTime({
   suppressMilliseconds: true,
   includeOffset: false,
   suppressSeconds: true
 });
-var getDate = (date) => import_luxon.DateTime.fromJSDate(date).toISODate();
+var getDate = (date) => import_luxon2.DateTime.fromJSDate(date).toISODate();
+var combineDateTimeStrings = (date, time) => {
+  const parsedDate = import_luxon2.DateTime.fromISO(date);
+  if (parsedDate.invalidReason) {
+    console.error(`FC: Error parsing time string '${date}': ${parsedDate.invalidReason}`);
+    return null;
+  }
+  const parsedTime = parseTime(time);
+  if (!parsedTime) {
+    return null;
+  }
+  return add(parsedDate, parsedTime).toISO();
+};
 
 // src/frontmatter.ts
 var DAYS = "UMTWRFS";
@@ -52370,7 +52459,8 @@ function parseFrontmatter(id, frontmatter) {
     event = __spreadProps(__spreadValues({}, event), {
       daysOfWeek: frontmatter.daysOfWeek.map((c3) => DAYS.indexOf(c3)),
       startRecur: frontmatter.startRecur,
-      endRecur: frontmatter.endRecur
+      endRecur: frontmatter.endRecur,
+      extendedProps: { isTask: false }
     });
     if (!frontmatter.allDay) {
       event = __spreadProps(__spreadValues({}, event), {
@@ -52380,14 +52470,33 @@ function parseFrontmatter(id, frontmatter) {
     }
   } else {
     if (!frontmatter.allDay) {
+      const start = combineDateTimeStrings(frontmatter.date, frontmatter.startTime);
+      if (!start) {
+        return null;
+      }
+      let end = void 0;
+      if (frontmatter.endTime) {
+        end = combineDateTimeStrings(frontmatter.endDate || frontmatter.date, frontmatter.endTime);
+        if (!end) {
+          return null;
+        }
+      }
       event = __spreadProps(__spreadValues({}, event), {
-        start: add(import_luxon2.DateTime.fromISO(frontmatter.date), parseTime(frontmatter.startTime || "")).toISO(),
-        end: frontmatter.endTime ? add(import_luxon2.DateTime.fromISO(frontmatter.endDate || frontmatter.date), parseTime(frontmatter.endTime)).toISO() : void 0
+        start,
+        end,
+        extendedProps: {
+          isTask: frontmatter.completed !== void 0 && frontmatter.completed !== null,
+          taskCompleted: frontmatter.completed
+        }
       });
     } else {
       event = __spreadProps(__spreadValues({}, event), {
         start: frontmatter.date,
-        end: frontmatter.endDate || void 0
+        end: frontmatter.endDate || void 0,
+        extendedProps: {
+          isTask: frontmatter.completed !== void 0 && frontmatter.completed !== null,
+          taskCompleted: frontmatter.completed
+        }
       });
     }
   }
@@ -52408,10 +52517,12 @@ function eventApiToFrontmatter(event) {
     daysOfWeek: event.extendedProps.daysOfWeek.map((i3) => DAYS[i3]),
     startRecur: event.extendedProps.startRecur && getDate(event.extendedProps.startRecur),
     endRecur: event.extendedProps.endRecur && getDate(event.extendedProps.endRecur)
-  } : __spreadValues({
+  } : __spreadProps(__spreadValues({
     type: "single",
     date: startDate
-  }, startDate !== endDate ? { endDate } : {}));
+  }, startDate !== endDate ? { endDate } : {}), {
+    completed: event.extendedProps.taskCompleted
+  }));
 }
 var FRONTMATTER_SEPARATOR = "---";
 function hasFrontmatter(page) {
@@ -52485,6 +52596,25 @@ function modifyFrontmatter(vault, file, modifications) {
   });
 }
 
+// src/models/util.ts
+function getColors(color) {
+  let textVar = getComputedStyle(document.body).getPropertyValue("--text-on-accent");
+  if (color) {
+    const m2 = color.slice(1).match(color.length == 7 ? /(\S{2})/g : /(\S{1})/g);
+    if (m2) {
+      const r3 = parseInt(m2[0], 16), g3 = parseInt(m2[1], 16), b3 = parseInt(m2[2], 16);
+      const brightness = (r3 * 299 + g3 * 587 + b3 * 114) / 1e3;
+      if (brightness > 150) {
+        textVar = "black";
+      }
+    }
+  }
+  return {
+    color: color || getComputedStyle(document.body).getPropertyValue("--interactive-accent"),
+    textColor: textVar
+  };
+}
+
 // src/models/Event.ts
 function basenameFromEvent(event) {
   switch (event.type) {
@@ -52501,6 +52631,9 @@ var _CalendarEvent = class {
     this.vault = vault;
     this._data = data;
   }
+  get isTask() {
+    return this._data.type === "single" && this._data.completed !== void 0 && this._data.completed !== null;
+  }
   get idForCalendar() {
     return this.PREFIX + _CalendarEvent.ID_SEPARATOR + this.identifier;
   }
@@ -52511,10 +52644,12 @@ var _CalendarEvent = class {
     return __spreadValues({}, this._data);
   }
   addTo(calendar, source) {
-    calendar.addEvent(__spreadValues({
-      color: source.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent"),
-      textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent")
-    }, this.toCalendarEvent()));
+    let event = this.toCalendarEvent();
+    if (!event) {
+      console.error("Malformed event, will not add to calendar.", this);
+      return;
+    }
+    calendar.addEvent(__spreadValues(__spreadValues({}, event), getColors(source.color)));
   }
 };
 var CalendarEvent = _CalendarEvent;
@@ -52525,6 +52660,18 @@ var EditableEvent = class extends CalendarEvent {
   }
   get editable() {
     return true;
+  }
+  setIsTask(isTask) {
+    return __async(this, null, function* () {
+      if (this._data.type !== "single") {
+        return;
+      }
+      if (isTask && (this._data.completed === void 0 || this._data.completed === null)) {
+        yield this.setData(__spreadProps(__spreadValues({}, this._data), { completed: false }));
+      } else if (!isTask) {
+        yield this.setData(__spreadProps(__spreadValues({}, this._data), { completed: null }));
+      }
+    });
   }
 };
 var LocalEvent = class extends EditableEvent {
@@ -52558,7 +52705,8 @@ function validateFrontmatter(obj) {
       title: obj.title,
       type: "single",
       date: obj.date,
-      endDate: obj.endDate
+      endDate: obj.endDate,
+      completed: obj.completed
     }, timeInfo);
   } else if (obj.type === "recurring") {
     if (obj.daysOfWeek === void 0) {
@@ -52776,7 +52924,7 @@ var EventModal = class extends import_obsidian3.Modal {
           this.open();
         } else {
           new import_obsidian3.Notice("Full Calendar: No frontmatter to edit for selected event.");
-          console.warn("Full Calendar: No frontmatter to edit for selected event.");
+          console.warn("Full Calendar: No frontmatter to edit for selected event.", input);
         }
       } else if (input instanceof import_obsidian3.TFile) {
         const e3 = NoteEvent.fromFile(this.app.metadataCache, this.app.vault, input);
@@ -52792,6 +52940,16 @@ var EventModal = class extends import_obsidian3.Modal {
     return __async(this, null, function* () {
       const { contentEl } = this;
       yield this.plugin.loadSettings();
+      const calIdx = (() => {
+        const event = this.event;
+        if (!event) {
+          return null;
+        }
+        if (!(event instanceof NoteEvent)) {
+          return null;
+        }
+        return this.plugin.settings.calendarSources.flatMap((c3) => c3.type == "local" ? [c3] : []).findIndex((c3) => event.directory.startsWith(c3.directory));
+      })();
       ReactDOM.render(React2.createElement(EditEvent, {
         initialEvent: this.data,
         submit: (data, calendarIndex) => __async(this, null, function* () {
@@ -52821,7 +52979,7 @@ var EventModal = class extends import_obsidian3.Modal {
             this.close();
           }
         }),
-        defaultCalendarIndex: this.plugin.settings.defaultCalendar,
+        defaultCalendarIndex: calIdx || this.plugin.settings.defaultCalendar,
         calendars: this.plugin.settings.calendarSources,
         open: this.event instanceof LocalEvent ? () => __async(this, null, function* () {
           if (this.event instanceof LocalEvent) {
@@ -52861,8 +53019,8 @@ var ReactModal = class extends import_obsidian3.Modal {
   }
 };
 
-// src/models/EventSource.ts
-var import_obsidian5 = __toModule(require("obsidian"));
+// src/models/IcsSource.ts
+var import_obsidian4 = __toModule(require("obsidian"));
 
 // vendor/fullcalendar-ical/ical-expander/IcalExpander.js
 var ICAL2 = __toModule(require_ical());
@@ -53001,13 +53159,118 @@ function specifiesEnd2(iCalEvent) {
 }
 
 // src/models/EventSource.ts
+var EventSource = class {
+};
+
+// src/models/IcsSource.ts
+var IcsSource = class extends EventSource {
+  constructor(info) {
+    super();
+    this.info = info;
+  }
+  toApi() {
+    return __async(this, null, function* () {
+      let url = this.info.url;
+      if (url.startsWith("webcal")) {
+        url = "https" + url.slice("webcal".length);
+      }
+      let expander = null;
+      const getExpander = () => __async(this, null, function* () {
+        if (expander !== null) {
+          return expander;
+        }
+        try {
+          let text = yield (0, import_obsidian4.request)({
+            url,
+            method: "GET"
+          });
+          expander = makeICalExpander(text);
+          return expander;
+        } catch (e3) {
+          console.error(`Error loading calendar from ${url}`);
+          console.error(e3);
+          return new FCError(`There was an error loading a calendar. Check the console for full details.`);
+        }
+      });
+      return __spreadValues({
+        events: function(_0) {
+          return __async(this, arguments, function* ({ start, end }) {
+            const ical = yield getExpander();
+            if (ical instanceof FCError) {
+              throw new Error("Could not get calendar: " + ical.message);
+            }
+            const events = expandICalEvents2(ical, {
+              start,
+              end
+            });
+            return events;
+          });
+        },
+        editable: false
+      }, getColors(this.info.color));
+    });
+  }
+};
+
+// src/models/NoteSource.ts
+var import_obsidian5 = __toModule(require("obsidian"));
+var NoteSource = class extends EventSource {
+  constructor(vault, cache, info) {
+    super();
+    this.vault = vault;
+    this.cache = cache;
+    this.info = info;
+  }
+  getEventInputsFromPath(recursive, path) {
+    return __async(this, null, function* () {
+      const eventFolder = this.vault.getAbstractFileByPath(path || this.info.directory);
+      if (!(eventFolder instanceof import_obsidian5.TFolder)) {
+        return new FCError("Directory");
+      }
+      let events = [];
+      for (let file of eventFolder.children) {
+        if (file instanceof import_obsidian5.TFile) {
+          let event = NoteEvent.fromFile(this.cache, this.vault, file);
+          if (event) {
+            let calEvent = event.toCalendarEvent();
+            if (calEvent) {
+              events.push(calEvent);
+            } else {
+              console.error("FC: Event malformed, will not add to calendar.", event);
+            }
+          }
+        } else if (recursive) {
+          const childEvents = yield this.getEventInputsFromPath(recursive, file.path);
+          if (childEvents instanceof FCError) {
+            return childEvents;
+          }
+          events.push(...childEvents);
+        }
+      }
+      return events;
+    });
+  }
+  toApi(recursive = false) {
+    return __async(this, null, function* () {
+      const events = yield this.getEventInputsFromPath(recursive);
+      if (events instanceof FCError) {
+        return events;
+      }
+      return __spreadValues({
+        events
+      }, getColors(this.info.color));
+    });
+  }
+};
+
+// src/models/RemoteSource.ts
 var import_color = __toModule(require_color());
 var dav = __toModule(require_dav());
 
 // src/transport.ts
 var import_co = __toModule(require_co());
 var import_dav = __toModule(require_dav());
-var import_obsidian4 = __toModule(require("obsidian"));
+var import_obsidian6 = __toModule(require("obsidian"));
 var RequestBridge = class {
   constructor(credentials) {
     this.headers = {};
@@ -53043,7 +53306,7 @@ var Basic = class extends import_dav.transport.Transport {
         transformRequest(requestBridge);
       let result;
       try {
-        let response = (0, import_obsidian4.request)({
+        let response = (0, import_obsidian6.request)({
           url,
           method: request3.method,
           contentType: requestBridge.contentType,
@@ -53062,104 +53325,7 @@ var Basic = class extends import_dav.transport.Transport {
   }
 };
 
-// src/models/EventSource.ts
-var EventSource = class {
-};
-var NoteSource = class extends EventSource {
-  constructor(vault, cache, info) {
-    super();
-    this.vault = vault;
-    this.cache = cache;
-    this.info = info;
-  }
-  getEventInputsFromPath(recursive, path) {
-    return __async(this, null, function* () {
-      const eventFolder = this.vault.getAbstractFileByPath(path || this.info.directory);
-      if (!(eventFolder instanceof import_obsidian5.TFolder)) {
-        return new FCError("Directory");
-      }
-      let events = [];
-      for (let file of eventFolder.children) {
-        if (file instanceof import_obsidian5.TFile) {
-          let event = NoteEvent.fromFile(this.cache, this.vault, file);
-          if (event) {
-            events.push(event.toCalendarEvent());
-          }
-        } else if (recursive) {
-          const childEvents = yield this.getEventInputsFromPath(recursive, file.path);
-          if (childEvents instanceof FCError) {
-            return childEvents;
-          }
-          events.push(...childEvents);
-        }
-      }
-      return events;
-    });
-  }
-  toApi(recursive = false) {
-    return __async(this, null, function* () {
-      const events = yield this.getEventInputsFromPath(recursive);
-      if (events instanceof FCError) {
-        return events;
-      }
-      return {
-        events,
-        textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent"),
-        color: this.info.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent")
-      };
-    });
-  }
-};
-var IcsSource = class extends EventSource {
-  constructor(info) {
-    super();
-    this.info = info;
-  }
-  toApi() {
-    return __async(this, null, function* () {
-      let url = this.info.url;
-      if (url.startsWith("webcal")) {
-        url = "https" + url.slice("webcal".length);
-      }
-      let expander = null;
-      const getExpander = () => __async(this, null, function* () {
-        if (expander !== null) {
-          return expander;
-        }
-        try {
-          let text = yield (0, import_obsidian5.request)({
-            url,
-            method: "GET"
-          });
-          expander = makeICalExpander(text);
-          return expander;
-        } catch (e3) {
-          console.error(`Error loading calendar from ${url}`);
-          console.error(e3);
-          return new FCError(`There was an error loading a calendar. Check the console for full details.`);
-        }
-      });
-      return {
-        events: function(_0) {
-          return __async(this, arguments, function* ({ start, end }) {
-            const ical = yield getExpander();
-            if (ical instanceof FCError) {
-              throw new Error("Could not get calendar: " + ical.message);
-            }
-            const events = expandICalEvents2(ical, {
-              start,
-              end
-            });
-            return events;
-          });
-        },
-        editable: false,
-        textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent"),
-        color: this.info.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent")
-      };
-    });
-  }
-};
+// src/models/RemoteSource.ts
 var RemoteSource = class extends EventSource {
   constructor(info) {
     super();
@@ -53248,7 +53414,7 @@ var RemoteSource = class extends EventSource {
           ];
         }
       });
-      return {
+      return __spreadValues({
         events: function(_0) {
           return __async(this, arguments, function* ({ start, end }) {
             const icals = yield getExpanders();
@@ -53267,16 +53433,14 @@ var RemoteSource = class extends EventSource {
             return events;
           });
         },
-        editable: false,
-        textColor: getComputedStyle(document.body).getPropertyValue("--text-on-accent"),
-        color: this.info.color || getComputedStyle(document.body).getPropertyValue("--interactive-accent")
-      };
+        editable: false
+      }, getColors(this.info.color));
     });
   }
 };
 
 // src/settings.ts
-var import_obsidian6 = __toModule(require("obsidian"));
+var import_obsidian7 = __toModule(require("obsidian"));
 
 // src/components/CalendarSetting.tsx
 var React3 = __toModule(require_react());
@@ -53612,7 +53776,12 @@ var DEFAULT_SETTINGS = {
   calendarSources: [],
   defaultCalendar: 0,
   recursiveLocal: false,
-  firstDay: 0
+  firstDay: 0,
+  initialView: {
+    desktop: "timeGridWeek",
+    mobile: "timeGrid3Days"
+  },
+  timeFormat24h: false
 };
 var WEEKDAYS = [
   "Sunday",
@@ -53623,10 +53792,23 @@ var WEEKDAYS = [
   "Friday",
   "Saturday"
 ];
+var INITIAL_VIEW_OPTIONS = {
+  DESKTOP: {
+    timeGridDay: "Day",
+    timeGridWeek: "Week",
+    dayGridMonth: "Month",
+    listWeek: "List"
+  },
+  MOBILE: {
+    timeGrid3Days: "3 Days",
+    timeGridDay: "Day",
+    listWeek: "List"
+  }
+};
 function addCalendarButton(app, plugin, containerEl, submitCallback, listUsedDirectories) {
   let dropdown;
-  const directories = app.vault.getAllLoadedFiles().filter((f3) => f3 instanceof import_obsidian6.TFolder).map((f3) => f3.path);
-  return new import_obsidian6.Setting(containerEl).setName("Calendars").setDesc("Add calendar").addDropdown((d3) => dropdown = d3.addOptions({
+  const directories = app.vault.getAllLoadedFiles().filter((f3) => f3 instanceof import_obsidian7.TFolder).map((f3) => f3.path);
+  return new import_obsidian7.Setting(containerEl).setName("Calendars").setDesc("Add calendar").addDropdown((d3) => dropdown = d3.addOptions({
     local: "Local",
     icloud: "iCloud",
     caldav: "CalDAV",
@@ -53645,7 +53827,7 @@ function addCalendarButton(app, plugin, containerEl, submitCallback, listUsedDir
             if (source.type === "caldav" || source.type === "icloud") {
               let sources = yield new RemoteSource(source).importCalendars();
               if (sources instanceof FCError) {
-                new import_obsidian6.Notice(sources.message);
+                new import_obsidian7.Notice(sources.message);
               } else {
                 sources.forEach((source2) => submitCallback(source2));
               }
@@ -53660,7 +53842,7 @@ function addCalendarButton(app, plugin, containerEl, submitCallback, listUsedDir
     });
   });
 }
-var FullCalendarSettingTab = class extends import_obsidian6.PluginSettingTab {
+var FullCalendarSettingTab = class extends import_obsidian7.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -53669,15 +53851,27 @@ var FullCalendarSettingTab = class extends import_obsidian6.PluginSettingTab {
     return __async(this, null, function* () {
       const { containerEl } = this;
       containerEl.empty();
-      containerEl.createEl("h2", { text: "Events settings" });
-      new import_obsidian6.Setting(containerEl).setName("Recursive event folders").setDesc("Search through sub-folders for events").addToggle((toggle) => {
-        toggle.setValue(this.plugin.settings.recursiveLocal);
-        toggle.onChange((val) => __async(this, null, function* () {
-          this.plugin.settings.recursiveLocal = val;
+      containerEl.createEl("h2", { text: "Calendar Preferences" });
+      new import_obsidian7.Setting(containerEl).setName("Desktop Initial View").setDesc("Choose the initial view range on desktop devices.").addDropdown((dropdown) => {
+        Object.entries(INITIAL_VIEW_OPTIONS.DESKTOP).forEach(([value, display]) => {
+          dropdown.addOption(value, display);
+        });
+        dropdown.setValue(this.plugin.settings.initialView.desktop);
+        dropdown.onChange((initialView) => __async(this, null, function* () {
+          this.plugin.settings.initialView.desktop = initialView;
           yield this.plugin.saveSettings();
         }));
       });
-      new import_obsidian6.Setting(containerEl).setName("Starting Day of the Week").setDesc("Choose what day of the week to start.").addDropdown((dropdown) => {
+      new import_obsidian7.Setting(containerEl).setName("Mobile Initial View").setDesc("Choose the initial view range on mobile devices.").addDropdown((dropdown) => {
+        Object.entries(INITIAL_VIEW_OPTIONS.MOBILE).forEach(([value, display]) => {
+          dropdown.addOption(value, display);
+        });
+        dropdown.setValue(this.plugin.settings.initialView.mobile);
+        dropdown.onChange((initialView) => __async(this, null, function* () {
+          this.plugin.settings.initialView.mobile = initialView;
+        }));
+      });
+      new import_obsidian7.Setting(containerEl).setName("Starting Day of the Week").setDesc("Choose what day of the week to start.").addDropdown((dropdown) => {
         WEEKDAYS.forEach((day, code) => {
           dropdown.addOption(code.toString(), day);
         });
@@ -53687,6 +53881,22 @@ var FullCalendarSettingTab = class extends import_obsidian6.PluginSettingTab {
           yield this.plugin.saveSettings();
         }));
       });
+      new import_obsidian7.Setting(containerEl).setName("24-hour format").setDesc("Display the time in a 24-hour format.").addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.timeFormat24h);
+        toggle.onChange((val) => __async(this, null, function* () {
+          this.plugin.settings.timeFormat24h = val;
+          yield this.plugin.saveSettings();
+        }));
+      });
+      containerEl.createEl("h2", { text: "Events settings" });
+      new import_obsidian7.Setting(containerEl).setName("Recursive event folders").setDesc("Search through sub-folders for events").addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.recursiveLocal);
+        toggle.onChange((val) => __async(this, null, function* () {
+          this.plugin.settings.recursiveLocal = val;
+          yield this.plugin.saveSettings();
+        }));
+      });
+      containerEl.createEl("h2", { text: "Manage Calendars" });
       addCalendarButton(this.app, this.plugin, containerEl, (source) => __async(this, null, function* () {
         sourceList.addSource(source);
       }), () => sourceList.state.sources.map((s3) => s3.type === "local" && s3.directory).filter((s3) => !!s3));
@@ -53725,8 +53935,9 @@ function renderOnboarding(app, plugin, el) {
 }
 
 // src/view.ts
+var import_luxon3 = __toModule(require_luxon());
 var FULL_CALENDAR_VIEW_TYPE = "full-calendar-view";
-var CalendarView = class extends import_obsidian7.ItemView {
+var CalendarView = class extends import_obsidian8.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
@@ -53769,13 +53980,13 @@ var CalendarView = class extends import_obsidian7.ItemView {
       }
       let errs = noteSourceResults.flatMap((s3) => s3 instanceof FCError ? [s3] : []);
       for (const err of errs) {
-        new import_obsidian7.Notice(err.message);
+        new import_obsidian8.Notice(err.message);
       }
       this.calendar = renderCalendar(calendarEl, sources, {
         eventClick: (info) => __async(this, null, function* () {
           if (info.jsEvent.getModifierState("Control") || info.jsEvent.getModifierState("Meta")) {
             let file = this.app.vault.getAbstractFileByPath(info.event.id);
-            if (file instanceof import_obsidian7.TFile) {
+            if (file instanceof import_obsidian8.TFile) {
               let leaf = this.app.workspace.getMostRecentLeaf();
               yield leaf.openFile(file);
             }
@@ -53783,7 +53994,10 @@ var CalendarView = class extends import_obsidian7.ItemView {
             new EventModal(this.app, this.plugin, this.calendar).editInModal(info.event);
           }
         }),
-        select: (start, end, allDay) => __async(this, null, function* () {
+        select: (start, end, allDay, viewType) => __async(this, null, function* () {
+          if (viewType === "dayGridMonth") {
+            end.setDate(end.getDate() - 1);
+          }
           const partialEvent = dateEndpointsToFrontmatter(start, end, allDay);
           let modal = new EventModal(this.app, this.plugin, this.calendar, partialEvent);
           modal.open();
@@ -53797,7 +54011,7 @@ var CalendarView = class extends import_obsidian7.ItemView {
             const frontmatter = eventApiToFrontmatter(newEvent);
             yield existingEvent.setData(frontmatter);
           } catch (e3) {
-            new import_obsidian7.Notice(e3.message);
+            new import_obsidian8.Notice(e3.message);
             return false;
           }
           return true;
@@ -53815,12 +54029,63 @@ var CalendarView = class extends import_obsidian7.ItemView {
             });
           }
         }),
-        firstDay: this.plugin.settings.firstDay
+        firstDay: this.plugin.settings.firstDay,
+        initialView: this.plugin.settings.initialView,
+        timeFormat24h: this.plugin.settings.timeFormat24h,
+        openContextMenuForEvent: (e3, mouseEvent) => __async(this, null, function* () {
+          const menu = new import_obsidian8.Menu(this.app);
+          const event = yield eventFromCalendarId(this.app.metadataCache, this.app.vault, e3.id);
+          if (event instanceof EditableEvent) {
+            if (!event.isTask) {
+              menu.addItem((item) => item.setTitle("Turn into task").onClick(() => __async(this, null, function* () {
+                yield event.setIsTask(true);
+              })));
+            } else {
+              menu.addItem((item) => item.setTitle("Remove checkbox").onClick(() => __async(this, null, function* () {
+                yield event.setIsTask(false);
+              })));
+            }
+          }
+          if (event instanceof LocalEvent) {
+            menu.addSeparator();
+            menu.addItem((item) => item.setTitle("Go to note").onClick(() => {
+              let leaf = this.app.workspace.getMostRecentLeaf();
+              event.openIn(leaf);
+              new import_obsidian8.Notice(`Opening "${e3.title}"`);
+            }));
+            menu.addItem((item) => item.setTitle("Delete").onClick(() => __async(this, null, function* () {
+              yield event.delete();
+              new import_obsidian8.Notice(`Deleted event "${e3.title}".`);
+            })));
+          } else {
+            menu.addItem((item) => {
+              item.setTitle("No actions available on remote events").setDisabled(true);
+            });
+          }
+          menu.showAtMouseEvent(mouseEvent);
+        }),
+        toggleTask: (e3, isDone) => __async(this, null, function* () {
+          const event = yield eventFromCalendarId(this.app.metadataCache, this.app.vault, e3.id);
+          if (!event) {
+            return;
+          }
+          const newData = event.data;
+          if (newData.type !== "single") {
+            return;
+          }
+          if (isDone) {
+            const completionDate = import_luxon3.DateTime.now().toISO();
+            newData.completed = completionDate;
+          } else {
+            newData.completed = false;
+          }
+          event.setData(newData);
+        })
       });
       this.plugin.settings.calendarSources.flatMap((s3) => s3.type === "ical" ? [s3] : []).map((s3) => new IcsSource(s3)).map((s3) => s3.toApi()).forEach((resultPromise) => resultPromise.then((result) => {
         var _a;
         if (result instanceof FCError) {
-          new import_obsidian7.Notice(result.message);
+          new import_obsidian8.Notice(result.message);
         } else {
           (_a = this.calendar) == null ? void 0 : _a.addEventSource(result);
         }
@@ -53828,7 +54093,7 @@ var CalendarView = class extends import_obsidian7.ItemView {
       this.plugin.settings.calendarSources.flatMap((s3) => s3.type === "caldav" || s3.type === "icloud" ? [s3] : []).map((s3) => new RemoteSource(s3)).map((s3) => s3.toApi()).forEach((resultPromise) => resultPromise.then((result) => {
         var _a;
         if (result instanceof FCError) {
-          new import_obsidian7.Notice(result.message);
+          new import_obsidian8.Notice(result.message);
         } else {
           (_a = this.calendar) == null ? void 0 : _a.addEventSource(result);
         }
@@ -53836,7 +54101,7 @@ var CalendarView = class extends import_obsidian7.ItemView {
       this.registerEvent(this.app.metadataCache.on("changed", this.cacheCallback));
       this.registerEvent(this.app.vault.on("delete", (file) => {
         var _a;
-        if (file instanceof import_obsidian7.TFile) {
+        if (file instanceof import_obsidian8.TFile) {
           let id = NoteEvent.ID_PREFIX + CalendarEvent.ID_SEPARATOR + file.path;
           const event = (_a = this.calendar) == null ? void 0 : _a.getEventById(id);
           if (event) {
@@ -53850,7 +54115,7 @@ var CalendarView = class extends import_obsidian7.ItemView {
         if (oldEvent) {
           oldEvent.remove();
         }
-        if (file instanceof import_obsidian7.TFile) {
+        if (file instanceof import_obsidian8.TFile) {
           this.onCacheUpdate(file);
         }
       }));
@@ -53872,7 +54137,7 @@ var CalendarView = class extends import_obsidian7.ItemView {
 };
 
 // src/main.ts
-var FullCalendarPlugin = class extends import_obsidian8.Plugin {
+var FullCalendarPlugin = class extends import_obsidian9.Plugin {
   constructor() {
     super(...arguments);
     this.settings = DEFAULT_SETTINGS;
@@ -53915,7 +54180,7 @@ var FullCalendarPlugin = class extends import_obsidian8.Plugin {
         id: "full-calendar-upgrade-note",
         name: "Upgrade note to event",
         callback: () => {
-          const view = this.app.workspace.getActiveViewOfType(import_obsidian8.MarkdownView);
+          const view = this.app.workspace.getActiveViewOfType(import_obsidian9.MarkdownView);
           if (view) {
             const file = view.file;
             new EventModal(this.app, this, null).editInModal(file);
