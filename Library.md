@@ -34,7 +34,8 @@
 25. [АРБАЛЕТИКА ЭНЕРГОПОТЕРЬ](stg_arbaletyka-E-poter.md#stg_arbaletyka-E-poter)
 26. [НЕ ОТДАВАЙТЕ СИЛУ В ХРЕНЬ](stg_ne_otdavayte_silu.md#stg_ne_otdavayte_silu)
 27. [МНЕ СНОВА ПЛОХО, ПОЛЕЧИТЕ.](stg_pole4ite.md#stg_pole4ite)
-28. [OSB_book](OSB_book.md#OSB_book)
+28. [UIR](stg_physica-osb.md#stg_physica-osb)
+29. [OSB_book](OSB_book.md#OSB_book)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
