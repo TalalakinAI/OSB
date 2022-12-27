@@ -38,7 +38,8 @@
 29. [ГЛИКЕМИЯ И КРЕТИНИЗАЦИЯ](stg_kretynizatio.md#stg_kretynizatio)
 30. [ГЛЮКО/КЕТО. ПОНЯТИЯ.](stg_gluco-keto-ponyatiya.md#stg_gluco-keto-ponyatiya)
 31. [ГЛЮКО ИЛИ КЕТО?](stg_glucoketo_ili.md#stg_glucoketo_ili)
-32. [OSB_book](OSB_book.md#OSB_book)
+32. [OSB_book](OSB_book.md#OSB_book) 
+33. [0stg_anemia-princessy](0stg_anemia-princessy.md#0stg_anemia-princessy)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
