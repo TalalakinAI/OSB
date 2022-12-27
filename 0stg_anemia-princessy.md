@@ -1,10 +1,3 @@
----
-Title: '<%+ tp.file.title %>'
-STG: МатвеенкоМарияЛеонидовна
-created: '<%+ tp.file.creation_date("YYYY-MM-DD HH:mm") %>'  
-updated: '<%+ tp.file.last_modified_date("YYYY-MM-DD HH:mm") %>' 
-tags: stg_0
----
 ###### 0stg_anemia-princessy
 **АНЕМИЯ ВЫТЕКШЕЙ ПРИНЦЕССЫ.**  
 А. И. Талалакин  
