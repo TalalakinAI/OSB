@@ -7,6 +7,7 @@
 
 ***
 #### Стенограммы [stg_000](stg_000.md#stg_000)
+
 1. [БОЛЬ ПОСЛЕ НАГРУЗКИ: PH, ПРОТОНЫ, МОЛОЧКА, ОРТОФОСФОРКА, НАДРЫВЫ, КАЛИЙ?](stg_bol-nagruzka.md#stg_bol-nagruzka)
 2. [ЗАДЕРЖКИ ДЫХАНИЯ](stg_zaderjki-dihaniya.md#stg_zaderjki-dihaniya)
 3. [ДЫХАТЕЛЬНАЯ ТАНАТОТЕРАПИЯ](stg_dh-tnt-trp.md#stg_dh-tnt-trp)  
@@ -31,14 +32,14 @@
 22. [БЕЛОК, ПРОТЕИНЫ, ПЕПТИДЫ, АК.](ProteinAK.md#ProteinAK)
 23. [УДИВИТЕЛЬНЫЙ ВОПРОС](stg_H20.md#stg_H20)
 24. [ОТЧЕТЫ](stg_otchety.md#stg_otchety)
-25.ТДАВАЙТЕ СИЛУ В ХРЕНЬ](stg_ne_otdavayte_silu.md#stg_ne_otdavayte_silu)
-27. [МНЕ СНОВА ПЛОХО, ПОЛЕЧИТЕ.](stg_pole4ite.md#stg_pole4ite)
-28. [UIR, ФИЗИКА ОСБ](stg_physica-osb.md#stg_physica-osb)
-29. [ГЛИКЕМИЯ И КРЕТИНИЗАЦИЯ](stg_kretynizatio.md#stg_kretynizatio)
-30. [ГЛЮКО/КЕТО. ПОНЯТИЯ.](stg_gluco-keto-ponyatiya.md#stg_gluco-keto-ponyatiya)
-31. [ГЛЮКО ИЛИ КЕТО?](stg_glucoketo_ili.md#stg_glucoketo_ili)
-32. [OSB_book](OSB_book.md#OSB_book) 
-33. [0stg_anemia-princessy](0stg_anemia-princessy.md#0stg_anemia-princessy)
+25. [НЕ ОТДАВАЙТЕ СИЛУ В ХРЕНЬ](stg_ne_otdavayte_silu.md#stg_ne_otdavayte_silu)
+26. [МНЕ СНОВА ПЛОХО, ПОЛЕЧИТЕ.](stg_pole4ite.md#stg_pole4ite)
+27. [UIR, ФИЗИКА ОСБ](stg_physica-osb.md#stg_physica-osb)
+28. [ГЛИКЕМИЯ И КРЕТИНИЗАЦИЯ](stg_kretynizatio.md#stg_kretynizatio)
+29. [ГЛЮКО/КЕТО. ПОНЯТИЯ.](stg_gluco-keto-ponyatiya.md#stg_gluco-keto-ponyatiya)
+30. [ГЛЮКО ИЛИ КЕТО?](stg_glucoketo_ili.md#stg_glucoketo_ili)
+31. [OSB_book](OSB_book.md#OSB_book) 
+32. [0stg_anemia-princessy](0stg_anemia-princessy.md#0stg_anemia-princessy)
 
 ***
 - [Revici E. Защита](revici-zashita.md#revici-zashita)
