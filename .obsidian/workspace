@@ -33,124 +33,101 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a0b7a85dadf567e7",
-    "type": "split",
+    "id": "ab5a9e4d8ef0265c",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "7eee5e4c359b12aa",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1ee71838283732eb",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "a98eeae152251382",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "9b6b0a92c2f814ae",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
+        "id": "168f1c285881024f",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "e9d98f412454df18",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
+      },
+      {
+        "id": "35ba2044dc0b6205",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "d29ad74cc3ef5e85",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 222
+    "currentTab": 0
   },
   "right": {
-    "id": "73cb70abd271a42b",
-    "type": "split",
+    "id": "7a4fa3fcae23251f",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "393f53f718a64eee",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c986eff244a565d6",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "News.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "e5da12b40603440c",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "News.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "15f8c3a884353c84",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "486ae5bba059db4a",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "News.md"
-              }
-            }
-          },
-          {
-            "id": "81dd85c6e0a9cdcf",
-            "type": "leaf",
-            "state": {
-              "type": "side-panel-control-view",
-              "state": {}
-            }
+        "id": "d1fd3273eb5176f4",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "News.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ],
-        "currentTab": 4
+        }
+      },
+      {
+        "id": "9ac68b43d45fb849",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "News.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "b32e91e06804673a",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "News.md"
+          }
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 298.5
+    "currentTab": 0
   },
-  "active": "959601d523ad5ba3",
+  "active": "168f1c285881024f",
   "lastOpenFiles": [
     "News.md",
     "Mtb_B.md",
