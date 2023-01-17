@@ -76,7 +76,7 @@
 #### Немедицина:  
 - [Стихи](poet.md#poet)
 - [ON AIR](onair.md#onair)
-- [OGL](OGL-2023-01-16.md#ogl)  
+- [OGL](OGL-2023.md#ogl)  
 
 [Test](test.md)  
 

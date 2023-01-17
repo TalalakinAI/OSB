@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OGL-2023-01-16.md",
+            "file": "Library.md",
             "mode": "preview",
             "source": true
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "OGL-2023-01-16.md",
+            "file": "Library.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "OGL-2023-01-16.md",
+            "file": "Library.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "OGL-2023-01-16.md"
+            "file": "Library.md"
           }
         }
       },
@@ -123,8 +123,8 @@
   },
   "active": "b6b4a0b2892003c2",
   "lastOpenFiles": [
+    "OGL-2023.md",
     "Library.md",
-    "OGL-2023-01-16.md",
     "Arbalet.md",
     "Lectio.md",
     "!0SB.md",
