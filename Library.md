@@ -74,11 +74,11 @@
 
 ***  
 #### Немедицина:  
-- [Стихи](poet.md#poet)
-- [ON AIR](onair.md#onair)
+- [Стихи](poet.md#poet) 
+- [ON AIR](onair.md#onair) 
 - [OGL](OGL-2023.md#ogl)  
 
 [Test](test.md)  
 
-***
-[Форма для связи](form.md) 
+*** 
+[Форма для связи](form.md)  
