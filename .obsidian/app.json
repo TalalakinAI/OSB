@@ -69,5 +69,6 @@
   "showUnsupportedFiles": true,
   "legacyEditor": false,
   "livePreview": true,
-  "vimMode": false
+  "vimMode": false,
+  "showInlineTitle": false
 }

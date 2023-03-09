@@ -2,5 +2,6 @@
   "baseFontSize": 16,
   "cssTheme": "Minimal",
   "theme": "moonstone",
-  "translucency": false
+  "translucency": false,
+  "showViewHeader": true
 }
