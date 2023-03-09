@@ -7,5 +7,6 @@
     "Iterative Rainbow Folder Backgrounds"
   ],
   "textFontFamily": "Arial",
-  "accentColor": "#3674ad"
+  "accentColor": "#3674ad",
+  "showViewHeader": true
 }

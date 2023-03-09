@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "7d6e1b70e6751dcc",
+    "type": "split",
+    "children": [
+      {
+        "id": "151143864013cf2a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6b4a0b2892003c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OGL-2023.md",
+                "mode": "source",
+                "source": true
+              }
+            },
+            "group": "cb446f4388042df6"
+          }
+        ]
+      },
+      {
+        "id": "8523c99dce755721",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "716620fe592cf728",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OGL-2023.md",
+                "mode": "preview",
+                "source": true
+              }
+            },
+            "group": "cb446f4388042df6"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "684bfdbe5a5fde92",
+    "type": "split",
+    "children": [
+      {
+        "id": "71bd2cf094c22436",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f025390601810936",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          },
+          {
+            "id": "55256f6036edc97f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "14b582c6c7558e36",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e52f26f945de4220",
+    "type": "split",
+    "children": [
+      {
+        "id": "6711ac51d63b6799",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "49b6981687ded2d4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "OGL-2023.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "36a81396881e9a08",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "OGL-2023.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c3d19ca5524c855e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "75df3c35d79b58b7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "OGL-2023.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "f025390601810936",
+  "lastOpenFiles": [
+    "Library.md",
+    "OGL-2023.md",
+    "vegetables.md",
+    "Herba.md",
+    "Herbanastoy.md",
+    "stg_dost_zel.md",
+    "stg_H20.md",
+    "stg_dh_kntr.md",
+    "stg_zaderjki-dihaniya.md",
+    "U__Krylia_Angela.md"
+  ]
+}
