@@ -1,20 +1,20 @@
 {
   "mobileToolbarCommands": [
     "editor:toggle-checklist-status",
-    "editor:toggle-bullet-list",
     "editor:delete-paragraph",
     "editor:swap-line-up",
     "editor:swap-line-down",
     "editor:insert-wikilink",
+    "editor:attach-file",
     "editor:undo",
     "editor:redo",
-    "editor:attach-file",
     "media-extended:get-timestamp",
     "editor:unindent-list",
     "obsidian-sort-and-permute-lines:sort-alphabetically",
     "obsidian-sort-and-permute-lines:permute-reverse",
     "editor:insert-embed",
     "editor:insert-tag",
+    "editor:toggle-bullet-list",
     "editor:toggle-numbered-list",
     "editor:set-heading",
     "insert-current-date",
@@ -58,17 +58,28 @@
   "foldIndent": true,
   "trashOption": "local",
   "communityPluginSortOrder": "download",
-  "fileSortOrder": "alphabetical",
+  "fileSortOrder": "byModifiedTime",
   "useMarkdownLinks": true,
-  "mobilePullAction": "obsidian-minimal-settings:toggle-minimal-switch",
+  "mobilePullAction": "consistent-attachments-and-links:check-consistent",
   "showFrontmatter": true,
   "strictLineBreaks": true,
-  "tabSize": 6,
+  "tabSize": 5,
   "useTab": false,
   "newLinkFormat": "relative",
   "showUnsupportedFiles": true,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
   "legacyEditor": false,
-  "livePreview": true,
-  "vimMode": false,
-  "showInlineTitle": false
+  "livePreview": false,
+  "showInlineTitle": false,
+  "spellcheckDictionary": [
+    "Рэндла",
+    "пируватдегидрогеназный ",
+    "ируватдегидрогеназный "
+  ]
 }

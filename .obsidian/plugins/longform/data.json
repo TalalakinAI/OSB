@@ -1,12 +1,203 @@
 {
-  "version": 1,
+  "version": 3,
   "projects": {
     "Longform": {
       "path": "Longform",
       "indexFile": "Index",
-      "draftsPath": "Drafts/"
+      "draftsPath": ""
     }
   },
-  "selectedProject": "Longform",
-  "selectedDraft": null
+  "selectedDraftVaultPath": null,
+  "userScriptFolder": null,
+  "sessionStorage": "data",
+  "sessions": [
+    {
+      "start": "2023-02-23T16:34:22.372Z",
+      "total": 0,
+      "drafts": {
+        "Longform/Стихи новые/Стихи новые.md": {
+          "total": 0,
+          "scenes": {
+            "Доброе утро": 0
+          }
+        },
+        "Longform/Стихи/Стихи.md": {
+          "total": 0,
+          "scenes": {
+            "Я открываю": 0,
+            "Тиха и стих": 0,
+            "Странник": 0,
+            "Стало ясно": 0,
+            "Нервный срыв": 0,
+            "Не может алчный добрым быть": 0,
+            "Наивно...": 0,
+            "Мысль о себе": 0,
+            "Мы каждый день": 0,
+            "Мешочек с Рунами": 0,
+            "Люблю и любим": 0,
+            "Когда ты захочешь открыться": 0,
+            "Капелька": 0,
+            "Еще она ему сказала": 0,
+            "Готовность принимать": 0,
+            "Голубая Звезда": 0,
+            "Герда": 0,
+            "Вступление": 0,
+            "В потоке": 0
+          }
+        },
+        "Longform/Лекции/Лекции.md": {
+          "total": 0,
+          "scenes": {
+            "ОСБ. Система Квадрантов.": 0,
+            "ОСБ. Квадры.": 0,
+            "ОСБ. Бледная немочь.": 0,
+            "Лекция 1": 0
+          }
+        },
+        "Longform/Stg.md": {
+          "total": 0,
+          "scenes": {}
+        }
+      }
+    },
+    {
+      "start": "2023-02-04T07:57:38.708Z",
+      "total": 0,
+      "drafts": {
+        "Longform/Стихи новые/Стихи новые.md": {
+          "total": 0,
+          "scenes": {
+            "Доброе утро": 0
+          }
+        },
+        "Longform/Стихи/Стихи.md": {
+          "total": 0,
+          "scenes": {
+            "Я открываю": 0,
+            "Тиха и стих": 0,
+            "Странник": 0,
+            "Стало ясно": 0,
+            "Нервный срыв": 0,
+            "Не может алчный добрым быть": 0,
+            "Наивно...": 0,
+            "Мысль о себе": 0,
+            "Мы каждый день": 0,
+            "Мешочек с Рунами": 0,
+            "Люблю и любим": 0,
+            "Когда ты захочешь открыться": 0,
+            "Капелька": 0,
+            "Еще она ему сказала": 0,
+            "Готовность принимать": 0,
+            "Голубая Звезда": 0,
+            "Герда": 0,
+            "Вступление": 0,
+            "В потоке": 0
+          }
+        },
+        "Longform/Лекции/Лекции.md": {
+          "total": 0,
+          "scenes": {
+            "ОСБ. Система Квадрантов.": 0,
+            "ОСБ. Квадры.": 0,
+            "ОСБ. Бледная немочь.": 0,
+            "Лекция 1": 0
+          }
+        },
+        "Longform/Stg.md": {
+          "total": 0,
+          "scenes": {}
+        }
+      }
+    },
+    {
+      "start": "2023-01-29T21:14:30.217Z",
+      "total": 0,
+      "drafts": {
+        "Longform/Стихи новые/Стихи новые.md": {
+          "total": 0,
+          "scenes": {
+            "Доброе утро": 0
+          }
+        },
+        "Longform/Стихи/Стихи.md": {
+          "total": 0,
+          "scenes": {
+            "Я открываю": 0,
+            "Тиха и стих": 0,
+            "Странник": 0,
+            "Стало ясно": 0,
+            "Нервный срыв": 0,
+            "Не может алчный добрым быть": 0,
+            "Наивно...": 0,
+            "Мысль о себе": 0,
+            "Мы каждый день": 0,
+            "Мешочек с Рунами": 0,
+            "Люблю и любим": 0,
+            "Когда ты захочешь открыться": 0,
+            "Капелька": 0,
+            "Еще она ему сказала": 0,
+            "Готовность принимать": 0,
+            "Голубая Звезда": 0,
+            "Герда": 0,
+            "Вступление": 0,
+            "В потоке": 0
+          }
+        },
+        "Longform/Лекции/Лекции.md": {
+          "total": 0,
+          "scenes": {
+            "ОСБ. Система Квадрантов.": 0,
+            "ОСБ. Квадры.": 0,
+            "ОСБ. Бледная немочь.": 0,
+            "Лекция 1": 0
+          }
+        },
+        "Longform/Stg.md": {
+          "total": 0,
+          "scenes": {}
+        }
+      }
+    }
+  ],
+  "showWordCountInStatusBar": true,
+  "startNewSessionEachDay": true,
+  "sessionGoal": 500,
+  "applyGoalTo": "all",
+  "notifyOnGoal": true,
+  "countDeletionsForGoal": false,
+  "keepSessionCount": 30,
+  "sessionFile": "longform-sessions.json",
+  "numberScenes": false,
+  "workflows": {
+    "Default Workflow": {
+      "name": "Default Workflow",
+      "description": "A starter workflow. Feel free to edit, rename, or delete it and create your own.",
+      "steps": [
+        {
+          "id": "strip-frontmatter",
+          "optionValues": {}
+        },
+        {
+          "id": "prepend-title",
+          "optionValues": {
+            "format": "## $2",
+            "separator": "\n\n"
+          }
+        },
+        {
+          "id": "concatenate-text",
+          "optionValues": {
+            "separator": "\\n\\n---\\n\\n"
+          }
+        },
+        {
+          "id": "write-to-note",
+          "optionValues": {
+            "target": "manuscript.md",
+            "open-after": true
+          }
+        }
+      ]
+    }
+  }
 }

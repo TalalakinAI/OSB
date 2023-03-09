@@ -1,0 +1,103 @@
+{
+  "aestheticStyle": "default",
+  "menuCommands": [
+    {
+      "id": "cmenu-plugin:editor:toggle-bold",
+      "name": "cMenu: Toggle bold",
+      "icon": "bold-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-italics",
+      "name": "cMenu: Toggle italics",
+      "icon": "italic-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-strikethrough",
+      "name": "cMenu: Toggle strikethrough",
+      "icon": "strikethrough-glyph"
+    },
+    {
+      "id": "cmenu-plugin:underline",
+      "name": "cMenu: Toggle underline",
+      "icon": "underline-glyph"
+    },
+    {
+      "id": "cmenu-plugin:superscript",
+      "name": "cMenu: Toggle superscript",
+      "icon": "superscript-glyph"
+    },
+    {
+      "id": "cmenu-plugin:subscript",
+      "name": "cMenu: Toggle subscript",
+      "icon": "subscript-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-code",
+      "name": "cMenu: Toggle code",
+      "icon": "code-glyph"
+    },
+    {
+      "id": "cmenu-plugin:codeblock",
+      "name": "cMenu: Toggle codeblock",
+      "icon": "codeblock-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-blockquote",
+      "name": "cMenu: Toggle blockquote",
+      "icon": "quote-glyph"
+    },
+    {
+      "id": "editor:insert-link",
+      "name": "Вставить ссылку",
+      "icon": "link-glyph",
+      "hotkeys": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "K"
+        }
+      ]
+    },
+    {
+      "id": "obsidian-languagetool-plugin:ltcheck-text",
+      "name": "LanguageTool Integration: Check Text",
+      "icon": "lines-of-text"
+    },
+    {
+      "id": "editor:toggle-bullet-list",
+      "name": "Список",
+      "icon": "bullet-list-glyph"
+    },
+    {
+      "id": "editor:toggle-numbered-list",
+      "name": "Нумерованый список",
+      "icon": "number-list-glyph"
+    },
+    {
+      "id": "control-characters:toggle",
+      "name": "Control Characters: Show/hide control characters",
+      "icon": "any-key"
+    },
+    {
+      "id": "cm-show-whitespace-obsidian:toggle-show-whitespace",
+      "name": "Show Whitespace: Toggle On/Off",
+      "icon": "any-key"
+    },
+    {
+      "id": "theme:use-light",
+      "name": "Использовать светлую тему",
+      "icon": "crossed-star"
+    },
+    {
+      "id": "obsidian-minimal-settings:toggle-minimal-dark-cycle",
+      "name": "Minimal Theme Settings: Cycle between dark mode styles",
+      "icon": "crossed-star"
+    }
+  ],
+  "appendMethod": "workspace",
+  "shouldShowMenuOnSelect": false,
+  "cMenuVisibility": true,
+  "cMenuBottomValue": 4.25,
+  "cMenuNumRows": 11
+}

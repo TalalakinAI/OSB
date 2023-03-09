@@ -1,0 +1,140 @@
+{
+  "workspace-win": {
+    "main": {
+      "id": "194a5269745e7ba0",
+      "type": "split",
+      "children": [
+        {
+          "id": "c61ead3d0a7ebd3d",
+          "type": "leaf",
+          "state": {
+            "type": "markdown",
+            "state": {
+              "file": "Dayli/2021-09-09.md",
+              "mode": "source"
+            }
+          }
+        }
+      ],
+      "direction": "vertical"
+    },
+    "left": {
+      "id": "ba5311d088a30e3a",
+      "type": "split",
+      "children": [
+        {
+          "id": "6f164de8e8303592",
+          "type": "tabs",
+          "children": [
+            {
+              "id": "1f280f9942adc44a",
+              "type": "leaf",
+              "state": {
+                "type": "file-explorer",
+                "state": {}
+              }
+            },
+            {
+              "id": "0bf17a9672e21ffd",
+              "type": "leaf",
+              "state": {
+                "type": "search",
+                "state": {
+                  "query": "",
+                  "matchingCase": false,
+                  "explainSearch": false,
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical"
+                }
+              }
+            },
+            {
+              "id": "d46185346d52e8b6",
+              "type": "leaf",
+              "state": {
+                "type": "starred",
+                "state": {}
+              }
+            }
+          ]
+        }
+      ],
+      "direction": "horizontal",
+      "width": 300
+    },
+    "right": {
+      "id": "3a3ea7f4cbeacb36",
+      "type": "split",
+      "children": [
+        {
+          "id": "f818dc85105b1c00",
+          "type": "tabs",
+          "children": [
+            {
+              "id": "45971e7c45302f86",
+              "type": "leaf",
+              "state": {
+                "type": "calendar",
+                "state": {}
+              }
+            },
+            {
+              "id": "848ca6f475b57cff",
+              "type": "leaf",
+              "state": {
+                "type": "backlink",
+                "state": {
+                  "file": "Dayli/2021-09-09.md",
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              }
+            },
+            {
+              "id": "8e2d4f78f9bc5fd1",
+              "type": "leaf",
+              "state": {
+                "type": "outgoing-link",
+                "state": {
+                  "file": "Dayli/2021-09-09.md",
+                  "linksCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              }
+            },
+            {
+              "id": "29bafb4235338027",
+              "type": "leaf",
+              "state": {
+                "type": "tag",
+                "state": {
+                  "sortOrder": "frequency",
+                  "useHierarchy": true
+                }
+              }
+            },
+            {
+              "id": "d71391168dfc17b9",
+              "type": "leaf",
+              "state": {
+                "type": "outline",
+                "state": {
+                  "file": "Dayli/2021-09-09.md"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "direction": "horizontal",
+      "width": 300
+    },
+    "active": "c61ead3d0a7ebd3d"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "main": {
+    "id": "194a5269745e7ba0",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c556e4c78b3ec51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62af033bda91e012",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_ReadItLater_Inbox/stg_arbalet.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a2821b3f84e2ffee",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "b0a0c039d745b7de",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "byModifiedTime"
+          }
+        }
+      },
+      {
+        "id": "1fe94f77c4c30bfe",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "ca722760c8e015b8",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "74ca729ce3b56ca0",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      },
+      {
+        "id": "c8be2689d684e375",
+        "type": "leaf",
+        "state": {
+          "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "e83a7f798de4a5e3",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "18647c6c12ff6b4b",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "_ReadItLater_Inbox/stg_arbalet.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "5e52835bd7f9dfda",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "_ReadItLater_Inbox/stg_arbalet.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "501b16cebb758341",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "_ReadItLater_Inbox/stg_arbalet.md"
+          }
+        }
+      },
+      {
+        "id": "749e12ff34b156be",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "62af033bda91e012",
+  "lastOpenFiles": [
+    "_ReadItLater_Inbox/Статья 71. Клятва врача.md",
+    "_ReadItLater_Inbox/stg_arbalet.md",
+    "_ReadItLater_Inbox/whisper2022-10-06.md",
+    "_ReadItLater_Inbox/stg_Veny.md",
+    "_ReadItLater_Inbox/Болезнь или дезадаптация.md",
+    "_ReadItLater_Inbox/Арбалет_01.md",
+    "_ReadItLater_Inbox/ЧУЖАЯ ИГРА.md",
+    "_ReadItLater_Inbox/Костное ремоделирование.md",
+    "_ReadItLater_Inbox/stg_H20.md",
+    "_ReadItLater_Inbox/golodbezgoloda.md"
+  ]
+}
