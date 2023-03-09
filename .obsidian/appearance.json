@@ -1,7 +1,14 @@
 {
-  "baseFontSize": 16,
+  "baseFontSize": 19,
   "cssTheme": "Minimal",
   "theme": "moonstone",
   "translucency": false,
-  "showViewHeader": true
+  "enabledCssSnippets": [
+    "Iterative Rainbow Folder Backgrounds"
+  ],
+  "textFontFamily": "Courier,B52,18thCentury,Courier New,Times New Roman,Arial,Bookman Old Style",
+  "interfaceFontFamily": "Courier New,Courier",
+  "accentColor": "#1c8dca",
+  "showViewHeader": true,
+  "nativeMenus": false
 }

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "projects": {
+    "Longform": {
+      "path": "Longform",
+      "indexFile": "Index",
+      "draftsPath": "Drafts/"
+    }
+  },
+  "selectedProject": "Longform",
+  "selectedDraft": "Stg",
+  "userScriptFolder": null,
+  "workflows": {
+    "000": {
+      "name": "000",
+      "description": "",
+      "steps": [
+        {
+          "id": "strip-frontmatter",
+          "optionValues": {}
+        },
+        {
+          "id": "prepend-title",
+          "optionValues": {
+            "format": "$2",
+            "separator": "\n\n"
+          }
+        },
+        {
+          "id": "concatenate-text",
+          "optionValues": {
+            "separator": "\n\n"
+          }
+        },
+        {
+          "id": "write-to-note",
+          "optionValues": {
+            "target": "manuscript.md",
+            "open-after": true
+          }
+        }
+      ]
+    }
+  }
+}

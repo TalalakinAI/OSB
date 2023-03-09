@@ -4,40 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "90434a2405bcdbdc",
+        "id": "e4ef8c1391fa1af6",
         "type": "tabs",
         "children": [
           {
-            "id": "959601d523ad5ba3",
+            "id": "d51a7b065186f189",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OGL-2023.md",
+                "file": "tg-2023-03-09.md",
                 "mode": "source",
                 "source": true
               }
-            },
-            "group": "38778d485e659c91"
-          }
-        ]
-      },
-      {
-        "id": "1511238dae623ff5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0013afb7cd575a0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OGL-2023.md",
-                "mode": "preview",
-                "source": true
-              }
-            },
-            "group": "38778d485e659c91"
+            }
           }
         ]
       }
@@ -45,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a0b7a85dadf567e7",
+    "id": "ca5a8674f312d219",
     "type": "split",
     "children": [
       {
-        "id": "7eee5e4c359b12aa",
+        "id": "bb102c3a6e349e3d",
         "type": "tabs",
         "children": [
           {
-            "id": "1ee71838283732eb",
+            "id": "3e1f61658c07e330",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -63,7 +43,7 @@
             }
           },
           {
-            "id": "a98eeae152251382",
+            "id": "50ed4ff43d924683",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -78,10 +58,18 @@
             }
           },
           {
-            "id": "9b6b0a92c2f814ae",
+            "id": "e30297c72595216d",
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "06bbaf70722e6da0",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
               "state": {}
             }
           }
@@ -89,23 +77,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 222
+    "width": 273.5
   },
   "right": {
-    "id": "73cb70abd271a42b",
+    "id": "73248a02f5648924",
     "type": "split",
     "children": [
       {
-        "id": "393f53f718a64eee",
+        "id": "5bb93f67c59ba590",
         "type": "tabs",
         "children": [
           {
-            "id": "c986eff244a565d6",
+            "id": "652bd97577d9194f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OGL-2023.md",
+                "file": "tg-2023-03-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,19 +105,19 @@
             }
           },
           {
-            "id": "e5da12b40603440c",
+            "id": "89eafdc275f02250",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OGL-2023.md",
+                "file": "tg-2023-03-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "15f8c3a884353c84",
+            "id": "b41760c72632510a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -140,17 +128,33 @@
             }
           },
           {
-            "id": "486ae5bba059db4a",
+            "id": "be0c520e56beefc9",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "OGL-2023.md"
+                "file": "tg-2023-03-09.md"
               }
             }
           },
           {
-            "id": "81dd85c6e0a9cdcf",
+            "id": "2975d0f1cf014039",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9a898ed63daf814c",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "d50ff50c38d9bf80",
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
@@ -158,53 +162,68 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:Создать новый холст": false,
       "templater-obsidian:Templater": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
-      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
       "switcher:Меню быстрого перехода": false,
       "graph:Граф": false,
-      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
       "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false
+      "command-palette:Открыть палитру команд": false,
+      "markdown-importer:Импорт Markdown-файлов": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "obsidian-metatable:Metatable": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian-regex-pipeline:Regex Rulesets": false
     }
   },
-  "active": "1ee71838283732eb",
+  "active": "d51a7b065186f189",
   "lastOpenFiles": [
-    "Library.md",
-    "OGL-2023.md",
-    "!0SB.md",
-    "News.md",
-    "vegetables.md",
-    "stg_pole4ite.md",
-    "stg_physica-osb.md",
-    "stg_otchety.md",
-    "stg_ne_otdavayte_silu.md",
-    "stg_kretynizatio.md",
-    "stg_glucoketo_ili.md",
-    "stg_gluco-keto-ponyatiya.md",
-    "stg_arbaletyka-E-poter.md",
-    "stg_H20.md",
-    "sndr_guillain-barr.md",
-    "d2022-06-14.md",
-    "a2022-04-03.md",
-    "SutyOSB.md",
-    "SNT_Gent's_Multi_180.md",
-    "ProteinAK.md",
-    "Promery.md",
-    "OSB_book.md",
-    "NOW_Foods_Adam_180.md",
-    "Mtb_B.md",
-    "otziv.md",
-    "d2022-03-06.md"
+    "ОСБ-ПРАКТИКИ.canvas",
+    "tg-2023-03-09.md",
+    "! STG/canvas/000.canvas",
+    "ОСБ-группа-ORG/СПИСОК ЗАЯВОК ЯНВАРЬ-23.md",
+    "ОСБ-группа-ORG/2023-01-01_ОПЛАТА ДОСТУПА.md",
+    "ОСБ-группа-ORG/ОБСУЖДЕНИЕ_2023-01-10.md",
+    "ОСБ-группа-ORG/2023_РЕГИСТРАЦИЯ.md",
+    "_ReadItLater_Inbox/Февраль 23 года.md",
+    "Event-patients/2023-02-27 ЛаптеваОльгаСергеевна.md",
+    "! STG/2stg_ЗДОРОВЬЕ СБК-15.md",
+    "! STG/canvas/Схема_9_Контринсулярное_действие_кортизола.canvas",
+    "! STG/canvas/Схема_8_Повышение_давления_у_Тормозов.canvas",
+    "! STG/canvas/Схема_7_Проницаемость_мембран_Шустриков.canvas",
+    "! STG/canvas/Схема_5_Почему_гипертоники_часто_писают.canvas",
+    "! STG/canvas/Схема_4_Почему_люди_писают_под_себя.canvas",
+    "! STG/canvas/Схема_2_Активация_верт_пути_на_быстрых_углеводах.canvas",
+    "! STG/canvas/Схема 3. Вода в клетке.canvas",
+    "! STG/canvas/Схема 6. Моча-вода.canvas",
+    "! STG/canvas/Схема 1. Накопление ацидоза.canvas",
+    "! STG/0stg_ВЕРШКИ-КОРЕШКИ.md",
+    "!Эфиры/a2023-02-06.md",
+    "!Эфиры/a2023-02-05.md",
+    "Dayli/2023-02-22.md",
+    "_Rp-all/2023-02-22 14-59-50.md",
+    "tg-2023-02-05.md",
+    "tg-2023-01-24.md",
+    "tg-2023-02-04.md",
+    "tg-2023-02-04 (conflict 2023-02-04-22-08-48).md",
+    "tg-2023-02-04 (conflict 2023-02-04-21-01-46).md",
+    "_ReadItLater_Inbox/whisper2022-10-06.md",
+    "tg-2023-01-23.md",
+    "tg-2023-01-25.md",
+    "tg-2023-01-27.md",
+    "tg-2023-01-30.md",
+    "! STG/2stg_ТЕРАПИЯ-ЭНЕРГЕТИКА.md"
   ]
 }

@@ -1,0 +1,143 @@
+{
+  "main": {
+    "id": "194a5269745e7ba0",
+    "type": "split",
+    "children": [
+      {
+        "id": "959601d523ad5ba3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "News.md",
+            "mode": "source",
+            "source": true
+          }
+        },
+        "group": "38778d485e659c91"
+      },
+      {
+        "id": "0013afb7cd575a0c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "News.md",
+            "mode": "preview",
+            "source": true
+          }
+        },
+        "group": "38778d485e659c91"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ab5a9e4d8ef0265c",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "168f1c285881024f",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "e9d98f412454df18",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "35ba2044dc0b6205",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "d29ad74cc3ef5e85",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "7a4fa3fcae23251f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "d1fd3273eb5176f4",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "News.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "9ac68b43d45fb849",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "News.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "b32e91e06804673a",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "News.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "168f1c285881024f",
+  "lastOpenFiles": [
+    "News.md",
+    "Mtb_B.md",
+    "otziv.md",
+    "d2022-03-06.md",
+    "d2022-01-05.md",
+    "onair.md",
+    "!0SB.md",
+    "baza.md",
+    "e2021-12-13.md",
+    "Herbanastoy.md"
+  ]
+}

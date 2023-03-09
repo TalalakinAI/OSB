@@ -52,7 +52,7 @@ var __async = (__this, __arguments, generator) => {
 __export(exports, {
   default: () => ControlCharacterPlugin
 });
-var import_obsidian3 = __toModule(require("obsidian"));
+var import_obsidian4 = __toModule(require("obsidian"));
 var import_state2 = __toModule(require("@codemirror/state"));
 
 // src/SettingsTab.ts
@@ -66,6 +66,13 @@ var ControlCharactersSettingsTab = class extends import_obsidian.PluginSettingTa
     const { containerEl } = this;
     containerEl.empty();
     containerEl.createEl("h2", { text: "Control Characters" });
+    new import_obsidian.Setting(containerEl).setName("Only show control characters in selection").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.selection).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.selection = value;
+        yield this.plugin.saveSettings();
+      }));
+    });
+    containerEl.createEl("h3", { text: "Show" });
     new import_obsidian.Setting(containerEl).setName("Space").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.space).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.space = value;
@@ -87,9 +94,8 @@ var ControlCharactersSettingsTab = class extends import_obsidian.PluginSettingTa
   }
 };
 
-// src/Decoration.ts
-var import_obsidian2 = __toModule(require("obsidian"));
-var import_view2 = __toModule(require("@codemirror/view"));
+// src/NormalDecoration.ts
+var import_view3 = __toModule(require("@codemirror/view"));
 
 // src/StatefulDecoration.ts
 var import_state = __toModule(require("@codemirror/state"));
@@ -109,13 +115,9 @@ function defineStatefulDecoration() {
   return { update, field };
 }
 
-// src/Decoration.ts
-var ControlCharacter;
-(function(ControlCharacter2) {
-  ControlCharacter2["NEWLINE"] = "newline";
-  ControlCharacter2["SPACE"] = "space";
-  ControlCharacter2["TAB"] = "tab";
-})(ControlCharacter || (ControlCharacter = {}));
+// src/StatefulDecorationSet.ts
+var import_view2 = __toModule(require("@codemirror/view"));
+var import_obsidian2 = __toModule(require("obsidian"));
 var StatefulDecorationSet = class {
   constructor(editor) {
     this.decoCache = Object.create(null);
@@ -128,7 +130,10 @@ var StatefulDecorationSet = class {
       for (const token of tokens) {
         let deco = this.decoCache[token.value];
         if (!deco) {
-          deco = this.decoCache[token.value] = import_view2.Decoration.mark({ class: "control-character", attributes: { type: token.value } });
+          deco = this.decoCache[token.value] = import_view2.Decoration.mark({
+            class: "control-character",
+            attributes: { type: token.value }
+          });
         }
         decorations.push(deco.range(token.from, token.to));
       }
@@ -144,90 +149,149 @@ var StatefulDecorationSet = class {
     });
   }
 };
+
+// src/FrontmatterParser.ts
+var import_obsidian3 = __toModule(require("obsidian"));
+function parseFrontmatter(view, settings) {
+  const result = {
+    enabled: settings.enabled,
+    newLine: settings.newLine,
+    selection: settings.selection,
+    space: settings.space,
+    tab: settings.tab
+  };
+  const matches = view.state.sliceDoc().match(/---([\s\S]*?)---/);
+  if (matches && matches.length !== 0) {
+    for (const match of matches) {
+      const replaced = match.replace(/---/g, "");
+      try {
+        const frontmatter = (0, import_obsidian3.parseYaml)(replaced);
+        if (frontmatter.hasOwnProperty("cc")) {
+          result.enabled = frontmatter.cc;
+        }
+        if (frontmatter.hasOwnProperty("cc-tab")) {
+          result.tab = frontmatter["cc-tab"];
+        }
+        if (frontmatter.hasOwnProperty("cc-newline")) {
+          result.newLine = frontmatter["cc-newline"];
+        }
+        if (frontmatter.hasOwnProperty("cc-space")) {
+          result.space = frontmatter["cc-space"];
+        }
+        if (frontmatter.hasOwnProperty("cc-selection")) {
+          result.selection = frontmatter["cc-selection"];
+        }
+      } catch (e) {
+      }
+    }
+  }
+  return result;
+}
+
+// src/NormalDecoration.ts
 function buildViewPlugin(plugin) {
-  return import_view2.ViewPlugin.fromClass(class {
+  return import_view3.ViewPlugin.fromClass(class {
     constructor(view) {
       this.decoManager = new StatefulDecorationSet(view);
-      this.buildAsyncDecorations(view);
+      this.buildAsyncDecorations(view, plugin.settings);
     }
     update(update) {
       if (update.docChanged || update.viewportChanged) {
-        this.buildAsyncDecorations(update.view);
+        const frontmatter = parseFrontmatter(update.view, plugin.settings);
+        if (!frontmatter.enabled || frontmatter.selection) {
+          this.decoManager.debouncedUpdate([]);
+          return;
+        }
+        this.buildAsyncDecorations(update.view, frontmatter);
       }
     }
-    buildAsyncDecorations(view) {
-      if (!plugin.settings.enabled || !plugin.settings.newLine) {
-        this.decoManager.debouncedUpdate([]);
-        return;
-      }
+    buildAsyncDecorations(view, settings) {
       const targetElements = [];
       for (const { from, to } of view.visibleRanges) {
-        const text = view.state.sliceDoc(from, to);
-        for (const match of text.matchAll(/\s/g)) {
-          const index = from + match.index;
-          if (match.toString() === "\n") {
-            targetElements.push({ from: index - 1, to: index, value: ControlCharacter.NEWLINE });
-            continue;
-          }
-          let value;
-          if (match.toString() === "	" && plugin.settings.tab) {
-            value = ControlCharacter.TAB;
-          } else if (plugin.settings.space) {
-            value = ControlCharacter.SPACE;
-          }
-          targetElements.push({ from: index, to: index + 1, value });
-        }
+        targetElements.push(...plugin.getTokens(view, from, to, settings));
       }
       this.decoManager.debouncedUpdate(targetElements);
     }
   });
 }
-function decoration(plugin) {
+function normalDecoration(plugin) {
   return [statefulDecorations.field, buildViewPlugin(plugin)];
 }
 
-// src/main.ts
+// src/settings.ts
 var DEFAULT_SETTINGS = {
   newLine: true,
   tab: true,
   space: true,
-  enabled: true
+  enabled: true,
+  selection: false
 };
-var ControlCharacterPlugin = class extends import_obsidian3.Plugin {
-  constructor() {
-    super(...arguments);
-    this.enabledExtensions = [];
-    this.newLineExtension = import_state2.Prec.lowest(decoration(this));
-  }
+
+// src/SelectionHighlight.ts
+var import_view4 = __toModule(require("@codemirror/view"));
+function buildViewPlugin2(plugin) {
+  return import_view4.ViewPlugin.fromClass(class {
+    constructor(view) {
+      this.decoManager = new StatefulDecorationSet(view);
+      const frontmatter = parseFrontmatter(view, plugin.settings);
+      if (!frontmatter.selection) {
+        return;
+      }
+      this.buildAsyncDecorations(view, parseFrontmatter(view, plugin.settings));
+    }
+    update(update) {
+      const frontmatter = parseFrontmatter(update.view, plugin.settings);
+      if (!frontmatter.selection) {
+        return;
+      }
+      if (update.selectionSet || update.docChanged || update.viewportChanged) {
+        this.buildAsyncDecorations(update.view, frontmatter);
+      }
+    }
+    buildAsyncDecorations(view, settings) {
+      const targetElements = [];
+      for (const range of view.state.selection.ranges) {
+        targetElements.push(...plugin.getTokens(view, range.from, range.to, settings));
+      }
+      this.decoManager.debouncedUpdate(targetElements);
+    }
+  });
+}
+function selectionDecorations(plugin) {
+  return [statefulDecorations.field, buildViewPlugin2(plugin)];
+}
+
+// src/types.ts
+var ControlCharacter;
+(function(ControlCharacter2) {
+  ControlCharacter2["NEWLINE"] = "newline";
+  ControlCharacter2["SPACE"] = "space";
+  ControlCharacter2["TAB"] = "tab";
+  ControlCharacter2["OTHER"] = "other";
+})(ControlCharacter || (ControlCharacter = {}));
+
+// src/main.ts
+var ControlCharacterPlugin = class extends import_obsidian4.Plugin {
   onload() {
     return __async(this, null, function* () {
       if (!this.app.vault.getConfig("legacyEditor")) {
         yield this.loadSettings();
-        if (this.settings.enabled) {
-          this.enabledExtensions.push(this.newLineExtension);
-        }
-        this.registerEditorExtension(this.enabledExtensions);
+        this.registerEditorExtension(import_state2.Prec.lowest(normalDecoration(this)));
+        this.registerEditorExtension(import_state2.Prec.lowest(selectionDecorations(this)));
         this.addSettingTab(new ControlCharactersSettingsTab(this));
         this.addCommand({
           id: "toggle",
           name: "Show/hide control characters",
           callback: () => __async(this, null, function* () {
             this.settings.enabled = !this.settings.enabled;
-            yield this.saveSettings();
             console.log(this.settings.enabled);
-            if (!this.settings.enabled) {
-              while (this.enabledExtensions.length > 0) {
-                this.enabledExtensions.pop();
-              }
-            } else {
-              this.enabledExtensions.push(this.newLineExtension);
-            }
+            yield this.saveSettings();
             this.app.workspace.updateOptions();
           })
         });
         this.app.workspace.trigger("parse-style-settings");
       } else {
-        new import_obsidian3.Notice("Control Characters: You are using the legacy editor, this plugin is not supported there");
+        new import_obsidian4.Notice("Control Characters: You are using the legacy editor, this plugin is not supported there");
       }
     });
   }
@@ -242,5 +306,26 @@ var ControlCharacterPlugin = class extends import_obsidian3.Plugin {
     return __async(this, null, function* () {
       yield this.saveData(this.settings);
     });
+  }
+  getTokens(view, from, to, settings) {
+    const targetElements = [];
+    const text = view.state.sliceDoc(from, to);
+    for (const match of text.matchAll(/[\u00A0\u202F\u2007\u2060\s]/gu)) {
+      const index = from + match.index;
+      if (match.toString() === "\n" && settings.newLine) {
+        targetElements.push({ from: index - 1, to: index, value: ControlCharacter.NEWLINE });
+        continue;
+      }
+      let value;
+      if (match.toString() === "	" && settings.tab) {
+        value = ControlCharacter.TAB;
+      } else if (match.toString() === " " && settings.space) {
+        value = ControlCharacter.SPACE;
+      } else {
+        value = ControlCharacter.OTHER;
+      }
+      targetElements.push({ from: index, to: index + 1, value });
+    }
+    return targetElements;
   }
 };

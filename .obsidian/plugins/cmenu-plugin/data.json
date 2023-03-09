@@ -87,17 +87,35 @@
     {
       "id": "theme:use-light",
       "name": "Использовать светлую тему",
-      "icon": "crossed-star"
+      "icon": "paper-plane-glyph"
     },
     {
       "id": "obsidian-minimal-settings:toggle-minimal-dark-cycle",
       "name": "Minimal Theme Settings: Cycle between dark mode styles",
       "icon": "crossed-star"
+    },
+    {
+      "id": "editor:open-search",
+      "name": "Поиск в текущем файле",
+      "icon": "search-glyph",
+      "hotkeys": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "F"
+        }
+      ]
+    },
+    {
+      "id": "obsidian-regex-pipeline:apply-ruleset",
+      "name": "Regex Pipeline: Apply Ruleset",
+      "icon": "dice"
     }
   ],
   "appendMethod": "workspace",
   "shouldShowMenuOnSelect": false,
-  "cMenuVisibility": true,
+  "cMenuVisibility": false,
   "cMenuBottomValue": 4.25,
   "cMenuNumRows": 11
 }
