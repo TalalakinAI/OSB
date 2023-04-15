@@ -103,9 +103,9 @@ dd - день заполнения
 [![](https://i.ytimg.com/vi_webp/WGZL00VWwgg/maxresdefault.webp)](https://youtu.be/WGZL00VWwgg)   
 
 [ДЛЯ ЧЕГО НУЖНЫ ПРОМЕРЫ?](Promery.md#promery)  
-[Как заполнить таблицу промеров?](https://t.me/osbmd/298)  
+[Как заполнить таблицу промеров?](https://t.me/osbmd/424)  
 [стенограмма](stg_promerу.md#stg_promerу)  
-[О промерах.](https://t.me/osbmd/1334)  
+[О промерах.](https://t.me/osbmd/422)  
 
 ***
 [**Пошаговая инструкция к промерам**](promery-instr.md#promery-instr)
@@ -114,4 +114,4 @@ dd - день заполнения
 С уважением,   
 А. И. Талалакин   
 
-***
+
