@@ -1,0 +1,14 @@
+{
+  "baseFontSize": 14,
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "Iterative Rainbow Folder Backgrounds",
+    "Iterative Rainbow Folder Icons",
+    "Iterative Rainbow Folder Titles"
+  ],
+  "textFontFamily": "Arial,Georgia,Monaco",
+  "interfaceFontFamily": "Arial",
+  "monospaceFontFamily": "Monaco"
+}

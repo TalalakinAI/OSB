@@ -1,0 +1,26 @@
+.nav-file-title-content,
+.nav-folder-title-content {
+    white-space: break-spaces;
+}
+
+.view-header {
+  align-items: start;
+}
+
+.view-header-title-container {
+  display: block;
+  white-space: normal;
+}
+
+.view-header-title-parent {
+  display: contents;
+}
+
+.view-header-title {
+  display: inline;
+  white-space: normal;
+}
+
+.view-header-title::after {
+  content: none;
+}

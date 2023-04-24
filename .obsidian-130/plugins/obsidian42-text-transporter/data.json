@@ -1,0 +1,12 @@
+{
+  "enableRibbon": true,
+  "enableDebugMode": false,
+  "blockRefAliasIndicator": "*",
+  "bookmarks": "",
+  "cMenuEnabled-QC": true,
+  "cMenuEnabled-SB": true,
+  "cMenuEnabled-BP": true,
+  "cMenuEnabled-BN": true,
+  "cMenuEnabled-SP": true,
+  "cMenuEnabled-SN": true
+}

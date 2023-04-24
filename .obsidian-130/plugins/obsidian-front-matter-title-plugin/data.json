@@ -1,0 +1,25 @@
+{
+  "templates": [
+    "Title"
+  ],
+  "managers": {
+    "explorer": false,
+    "graph": false,
+    "header": false,
+    "quick_switcher": false
+  },
+  "rules": {
+    "paths": {
+      "mode": "black",
+      "values": []
+    },
+    "delimiter": {
+      "enabled": false,
+      "value": ""
+    }
+  },
+  "debug": false,
+  "boot": {
+    "delay": 0
+  }
+}

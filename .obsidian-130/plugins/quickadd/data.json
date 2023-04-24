@@ -1,0 +1,1223 @@
+{
+  "choices": [
+    {
+      "id": "21c7cc71-8eba-4385-8f5b-b903035b2eb4",
+      "name": "Дата-Время",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{DATE:YYYY-MM-DD HH:mm}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "5f95359b-01ab-433d-8e62-6d05d8a05722",
+      "name": "YUTUBE",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "<iframe width=\"100%\" height=\"240\" src=\"https://www.youtube.com/embed/XXXXX\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>  "
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "df44157e-f111-40bb-b12a-8bd580c89610",
+      "name": "МАСТЕРСКАЯ-ОСБ (ФИО)",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "ОСБ-группа/{{VALUE:ФИО}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\ntitle: {{VALUE:ФИО}}\ndate: {{DATE:YYYY-MM-DD}}\nstop: \nД22_12: \nД23_01: \nД23_02: \nД23_03: \nД23_04: \nД23_05: \nД23_06: \nД23_07: \nД23_08: \nД23_09: \nД23_10: \nД23_11: \nД23_12: \n---\n***\n[ОСБ-ГРУППА](!ОСБ_Группа_2022-12-07.md)\n***\nРАБОТЫ УЧАСТНИКА:\n```dataview\nlist from #_{{VALUE:ФИО}} \nSORT file.name ASCENDING\n```\n\n***\n<%* tR += tp.file.creation_date() %>   \n\nID_ТГ::  \n\nЗапрос_ссылка::  \n\nТекст_запроса::  \n\n***\n###### Заявка:  \n\n\n\n###### Регистрация:  \n\n\n***  \n###### log:\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": true,
+        "direction": "horizontal",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "source"
+    },
+    {
+      "id": "884c90a2-1a16-4439-98f0-125ca47061dd",
+      "name": "!ЗАЯВКА УЧАСТНИКА",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "![{{VALUE:ФИО}}](../ОСБ-группа/{{VALUE:ФИО}}.md#Заявка)  "
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "1ddf33fd-3ca2-4d9c-99b6-685fbf668c84",
+      "name": "ДОСТУП БЕЗ ОПЛАТЫ",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "\n***\n```\n#org  \n**{{VALUE:ФИО}}**\n\nДля Вас продлен доступ в  \n**МАСТЕРСКУЮ ОСБ**:\n\n**Период:** АПРЕЛЬ 2023 г.  \n\n**Условия:** БЕЗ ОПЛАТЫ.  \n\n<%* tR += tp.file.last_modified_date() %>  \n\nС уважением и благодарностью!  \n#ТалалакинАнатолийИгоревич  \n```\n***\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "940a8d77-5937-41e0-a9ce-3172cdb6e371",
+      "name": "ДОСТУП ОБЩИЙ",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "```\n#org  \n**МАСТЕРСКАЯ ОСБ-2023:**  \n\n**{{VALUE:ФИО}}**  \nДля Вас доступ к материалам   \nможет быть пролонгирован:  \n\n**Период:** АПРЕЛЬ 2023 г.  \n\n**Условия:** Календарный месяц.  \nДля проживающих в РФ: 10 т.р. \nв странах бывшего СССР: 10 т.р.   \nв прочих странах: 20 т.р.  \n\nСБЕР  4276 4000 1396 8624  \n\nПодтвердить свое участие Вы можете,   \nприслав скрин чека об оплате доступа.  \n\n<%* tR += tp.file.last_modified_date() %>  \n\nС уважением и благодарностью!  \n#ТалалакинАнатолийИгоревич  \n```"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "3cc1f06a-aca1-4852-a3c0-ef5c93f1c815",
+      "name": "ДОСТУП ПРОЛОНГИРОВАН. ЧЕК",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "\n***\n```\n#org  \n**{{VALUE:ФИО}}**  \n\n**ДОСТУП ПРОЛОНГИРОВАН**.  \n\n**Период:** АПРЕЛЬ 2023 г.  \n\n**ЧЕК:** ![<%* tR += tp.file.last_modified_date() %>]({{VALUE:URL Налог:}})  \n\nС уважением и благодарностью!  \n#ТалалакинАнатолийИгоревич   \n```\n***"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "7962b0b8-6c89-4ecf-8a6c-bbbcc9353421",
+      "name": "ОСБ-RI",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{TEMPLATE:Templates-0SB/ОСБ-RI.md}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "5a6ad2e1-01f2-4460-8813-f76a843afa31",
+      "name": "ОСБ-RII",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{TEMPLATE:Templates-0SB/ОСБ-RII.md}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "2ecc2bef-c6f0-43ec-a356-825918650103",
+      "name": "К ЭФИРУ 2023",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{TEMPLATE:Templates-0SB/К ЭФИРУ 2023.md}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "a48ce2d0-aba7-4c19-9c5d-0af8ec01a0f0",
+      "name": "RI-II: ДАТА ПОДТВЕРЖДЕНА. ЧЕК",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "***\n```\n#org  \n**ДАТА И ВРЕМЯ ЗАКРЕПЛЕНЫ ЗА ВАМИ**.  \n\n**ЧЕК:** ![<%* tR += tp.file.last_modified_date() %>]({{VALUE:URL Налог:}})  \n\nС уважением и благодарностью!  \n#ТалалакинАнатолийИгоревич   \n```\n***"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "e204b1ab-20d5-441e-ab4a-49db20d8ced1",
+      "name": "ПИРОЖКИ",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "! STG/{{VALUE:STG_? уровень готовности}}stg_{{VALUE:Название эпизода-01}}.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\nLEC: {{VALUE:Название эпизода-01}}\nTitle: {{VALUE:Название эпизода-01}}\nSTG: {{VALUE:ФИО Исполнителя}}\ncreated : <%* tR += tp.file.creation_date() %>\nupdated: <%* tR += tp.file.last_modified_date() %>\ntags: stg_{{VALUE:STG_? уровень готовности}}, tm_0, mp3, efr, vce, mp4, yutb\nURL: {{VALUE:URL эпизода}}\nOGL: {{VALUE:URL ОГЛАВЛЕНИЯ}}\n---\n***\n## {{VALUE:Название эпизода-01}}   \n[А. И. Талалакин](!STG_2022-12.md)  \n![logo | 50](https://telegra.ph/file/f28a6896605d4ede84334.jpg)   \n[ОГЛАВЛЕНИЕ]({{VALUE:URL ОГЛАВЛЕНИЯ}})  \n{{VALUE:URL эпизода}} \n#tm_0  \n\n%%\n<iframe width=\"100%\" height=\"240\" src=\"https://www.youtube.com/embed/XXXXXXX\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>  \n%%\n\n***\n\nТекст\n\n***  \n> **Подготовка:** #_{{VALUE:ФИО Исполнителя}}  \n> **Итоговая правка**:  #ТалалакинАнатолийИгоревич   "
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "source"
+    },
+    {
+      "id": "b240cc47-5d80-4cb9-9ae4-65bf140d0d50",
+      "name": "Доступ прекращен!",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "***\n```\n#org  \nРегистрация завершена.  \n\n**ДОСТУП ПРЕКРАЩЕН!**\n\n<%* tR += tp.file.creation_date() %>\n```\n***"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "d28357aa-4801-40e0-ab93-36d1fd50b087",
+      "name": "КарточкаФИО_ссылки",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "\n***\nЗапрос_ссылка:: \n\nID_ТГ:: \n\nТекст_запроса::  \n\n***\n```\n**ОСБ. Доступ к материалам (1 мес)**.\nПредновогодний льготный тариф:  \nРоссия – 1000 р/мес  \nДругие страны – 2000 р/мес  \n(с указанием страны в сообщении) \n\nСБЕР  4276 4000 1396 8624  \nАнатолий Игоревич Талалакин  \n\nПожалуйста пришлите скрин чека, чтобы я знал от кого пришел перевод.  \n\nБлагодарю Вас.  \n```\n\n```\n**Вы зарегистрированы.**\nБлагодарю Вас!\n\nЧек: ![2022.12]()\n\nС уважением,\nА. И. Талалакин\n```\n***\n![2022.12]()"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "2b7e055b-03fc-41dc-82d0-426212bcacb3",
+      "name": "ЧекиМойНалог",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "***\n![2022.12]()  "
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "5a8c0c76-76dd-49e6-8e44-910678806eab",
+      "name": "!Эфир",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "Event-patients/{{DATE:YYYY-MM-DD}} {{VALUE:ФИО}}.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": "Templates/!Эфир.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\ntitle: {{VALUE:ФИО}}\nallDay: true\nstartTime: 19:00\nendTime: 20:00\ndate: {{DATE:YYYY-MM-DD}}\nОтчёт: \ncover: \nurina: \nПО: \nДО: \n\n---\n\n***\n[!Dataview-Efiry](../!Эфиры/!Dataview-Efiry.md)\n***\n\n#### ФИО: [{{VALUE:ФИО}}]({{VALUE:ФИО}}.md)\n\n#### Отчёт от: \n\n#### Резервирование времени:"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "source"
+    },
+    {
+      "id": "96b7f4f9-eff0-4963-a28c-4fd86d119418",
+      "name": "ФИО",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "!Эфиры/{{VALUE:ФИО}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": "Templates/ФИО.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\nTitle: {{VALUE:ФИО}}\nDescription: \ntags: Ш-тип, ВСД-тип, Т-тип \ncreated: <%* tR += tp.file.creation_date() %>\nmodified: <%* tR += tp.file.last_modified_date() %>\nE-mail: {{VALUE:E-mail:}}\nNB: {{VALUE:От кого?}}\nStop: \n---\n**Backlinks (dataview)**:\n```dataview\nlist\nwhere contains(file.outlinks, this.file.link) AND file.name != this.file.name\nsort file.ctime asc\n```\n***\n[!Dataview-Efiry](../!Эфиры/!Dataview-Efiry.md)\n\n[!Dataview-patients](../!Эфиры/!Dataview-patients.md)  \n\n***\n##### Отчёты и эфиры:\n- [ ]  ПО- ДО-\n\n***\n\n```dataview\nTABLE WITHOUT ID\n\n(\"![cover|1280](\" + cover + \")\") as ПРОМЕРЫ, \n(\"![urina|600](\" + urina + \")\") as МОЧА,\n(\"[\" + Отчёт + \"](\" + Отчёт +\")\") AS ОТЧЁТ,\n(\"[\" + \"e\" + date + \"](\" + date + \"%20\" + title + \")\")  AS ЭФИР,\n(\"[\" + title + \"](\" + title + \")\") AS ФИО,\nПО AS ПО,\nДО AS ДО\n       \nFROM \"Event-patients\"\nWHERE file.name !=\"ФИО\"\nWHERE file.name !=\"Dataview-patients\"\nWHERE file.name !=\"!!!Эфир_датавью\"\nWHERE title =\"{{VALUE:ФИО}}\"\n\nSORT date DESC\n```\n\n```dataview\nTABLE WITHOUT ID\n\n(\"[[\" + file.name + \"#\" + \"Тема:: \" + Тема +\"]]\") AS ПЕРЕПИСКА\n\nFROM  #{{VALUE:ФИО}}\nWHERE file.name !=\"{{VALUE:ФИО}}\"\nSORT file.name DESC\n```"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "horizontal",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "4eb05852-1c9b-4666-91f7-eddc8781a2ae",
+      "name": "a2021-12-31",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "!Эфиры/a{{DATE:YYYY-MM-DD}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\nTitle: a{{DATE:YYYY-MM-DD}}\nФИО: {{VALUE:ФИО}}\nDescription:\ncreated: <%* tR += tp.file.creation_date() %>\nmodified: <%* tR += tp.file.last_modified_date() %>\n---\n**Backlinks (dataview)**:\n```dataview\nlist\nwhere contains(file.outlinks, this.file.link) AND file.name != this.file.name\nsort file.ctime desc\n```\n***\n#### ФИО: [{{VALUE:ФИО}}]({{VALUE:ФИО}}.md)\n\n\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "source"
+    },
+    {
+      "id": "c6e7a562-971b-45cd-9e8d-0282ba62f5df",
+      "name": "d2022-02-02",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "!Эфиры/d{{DATE:YYYY-MM-DD_HH-mm}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\nTitle: <% tp.file.title %>\nDescription:\ncreated: <%* tR += tp.file.creation_date() %>\nmodified: <%* tR += tp.file.last_modified_date() %>\n---\n**Backlinks (dataview)**:\n```dataview\nlist\nwhere contains(file.outlinks, this.file.link) AND file.name != this.file.name\nsort file.ctime desc\n```\n***\n#### ФИО: [{{VALUE:ФИО}}]({{VALUE:ФИО}}.md)\n\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": false
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "a35734b3-809d-4245-b592-bb86ce3df8d2",
+      "name": "Переписка бланк",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "Переписка/{{DATE:YYYY-MM-DD HH-mm}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": "Templates/!Переписка.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "#### [Переписка](Переписка.md)\n\n***\n#### ФИО:: [{{VALUE:ФИО}}](../!Эфиры/{{VALUE:ФИО}}.md)\n##### tags:: #{{VALUE:ФИО}}\n\n##### От:: \n##### Date:: <%* tR += tp.file.creation_date() %>\n\n***\n###### {{DATE:YYYY-MM-DD HH-mm}}\n#### Тема:: \n```\n\n```\n\n\n#### А. И. Талалакин:\n```\n\n```\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "2ffac690-f245-4b6d-8722-c4667262af68",
+      "name": "Переписка допис",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "\n***\n###### {{DATE:YYYY-MM-DD HH-mm}}\n#### Входящее сообщение: \n```\n\n```\n\n\n#### А. И. Талалакин:\n```\n\n```\n\n\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "47f695da-aafd-447e-89be-3b3e704b3977",
+      "name": "Terminator",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "***\n## РАБОЧАЯ ПРОПИСЬ ОТ:\n!\n\n\n***\n## В ПРОРАБОТКУ К СЛЕДУЮЩЕМУ ОТЧЁТУ:   \nКД=  \n\n```dataviewjs\n   dv.header(1, 'ИСПРАВИТЬ!');\n   dv.taskList(dv.current().file.tasks\n    .where(t => !t.completed)); \n```\n\n*** \n\n```dataviewjs\n   dv.header(1, 'ИСПРАВЛЕНО, УЛУЧШЕНО:');\n   dv.taskList(dv.current().file.tasks\n    .where(t => t.completed));\n```"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "dc597ef2-167d-43fb-9893-a8bd723c5c96",
+      "name": "NEWS",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "_Inbox/News.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": "Templates/000-news.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "\n***\n###### {{DATE:YYYY-MM-DD-HH-mm}}\n#### ОСБ / \n#### [ОСБ / ]()\n![]()\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "### ОСБ. НОВОСТИ.  ",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "3669b313-ea42-4644-af67-fe9bdd75ec7d",
+      "name": "turbohobbit",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "| {{DATE:YYYY-MM-DD}} | {{DATE:HH:mm}} | {{VALUE: Вес}} | {{VALUE: Описание}} |"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "b4318175-8766-4399-83ac-aeab9928ac7a",
+      "name": "Подпись ТГ",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "@osbminimum  \n@osbkart  \n@osbstg  \n@osbmd  "
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "8f9bbcdb-1b8d-4623-a773-d9e940bd6e02",
+      "name": "ДОСТУП ЛЬГОТНЫЙ",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "***\n```\n#org  \n**МАСТЕРСКАЯ ОСБ-2023**  \n\n**{{VALUE:ФИО}}**  \nДля Вас доступ к материалам   \nможет быть пролонгирован  \nна льготных условиях:  \n\n**Период:** ЯНВАРЬ 2023 г.  \n\n**Условия:** ОГРАНИЧЕННЫЙ ТАРИФ.  \nРоссийская Федерация: 1т.р/мес.  \nДругие страны: 2т.р/мес.  \n\nСБЕР  4276 4000 1396 8624  \n\nПодтвердить свое участие Вы можете,   \nприслав скрин чека об оплате доступа.  \n\n<%* tR += tp.file.last_modified_date() %>  \n\nС уважением и благодарностью!  \n#ТалалакинАнатолийИгоревич  \n```\n***"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "138cf438-20f5-4a59-b2dc-bb9b76ad7da8",
+      "name": "Эфир",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "Отчёт: \ncover: \nurina: \nПО: \nДО: \n\n---\n\n***\n[!Dataview-Efiry](../!Эфиры/!Dataview-Efiry.md)\n***\n\n#### ФИО: \n\n#### Отчёт от:\n\n#### Резервирование времени:\n\n{{DATE: dd, DD MMMM yyyy г.}}\n{{DATE: yyyy-MM-DD, dd}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "19ec9c89-4ea3-46b3-8167-e0f24566f689",
+      "name": "РАБОТЫ УЧАСТНИКА",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "***\nРАБОТЫ УЧАСТНИКА:\n```dataview\nlist from #_{{VALUE:ФИО}} \nSORT file.name ASCENDING\n```\n***"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "6a1396f4-ec10-44e5-82f9-e5bd1be7a4b0",
+      "name": "Стрелочки →",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "<% tp.file.selection() %>→↑↓←"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "50d8f629-2697-4f58-b607-e6b793a57bad",
+      "name": "Inlinks-outlinks",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "% %\n***\n→**Inlinks (dataview)**:\n```dataview\nlist\nwhere contains(file.outlinks, this.file.link) \nAND length(file.outlinks) \nAND file.name != this.file.name \nsort file.name asc\n```\n\n←**Outlinks (dataview)**:\n```dataview\nlist\nwhere contains(file.inlinks, this.file.link) \nAND length(file.inlinks) \nAND file.name != this.file.name\nsort file.name asc\n```\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "674397c8-5447-4ca2-ac4e-ca403fd85aeb",
+      "name": "LINK⇆",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "***\nLINK⇆\n> [! ]- LINK ← back\n> \n> ```dataview\n> TABLE file.inlinks AS Backlinks\n> WHERE contains(file.folder, this.file.folder) \n> AND length(file.inlinks)\n> AND file.name != this.file.name\n> SORT file.name asc\n> ```\n\n> [!NOTE]- LINK → out\n> \n> ```dataview\n> TABLE file.outlinks AS OutLinks\n> WHERE contains(file.folder, this.file.folder) \n> AND length(file.inlinks)\n> AND file.name != this.file.name\n> SORT file.name asc\n> ```\n\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "552612d8-078a-42f9-9f91-39abdc0f2430",
+      "name": "Tp.file",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "<% tp.file.include(\"[[{{VALUE:file.name}}]]\") %>"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "017642b7-b7d1-4b3c-aa3b-63eac0b4c24d",
+      "name": "Сделать-Сделано",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{TEMPLATE:Templates/СДЕЛАТЬ→СДЕЛАНО.md}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "192a9bd5-cb46-403c-847c-efd12bac3241",
+      "name": "Rp",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "_Rp/{{DATE:YYYY-MM-DD HH-mm-ss}}_Rp",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "Templates-0SB/Rp.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "## РАБОЧАЯ ПРОПИСЬ:"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Recipe",
+      "id": "bdf7871d-5caf-4b79-8f57-963ca23d1590",
+      "commands": [
+        {
+          "name": "ФИО",
+          "type": "NestedChoice",
+          "id": "db663ea4-12f4-46e5-a6c9-d548f2484f6b",
+          "choice": {
+            "id": "25957ae6-f751-435b-a7ba-4f6f01a2d513",
+            "name": "ФИО",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": false,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": false,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "000",
+      "id": "6baab3c6-2d80-4be4-93b0-8cf583542146",
+      "commands": [],
+      "runOnStartup": true
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "",
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true
+  }
+}

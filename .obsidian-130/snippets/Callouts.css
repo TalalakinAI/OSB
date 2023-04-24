@@ -1,0 +1,64 @@
+.callout[data-callout="note"] {
+    --callout-color: 73, 149, 255;
+    --callout-icon: lucide-pencil;
+    
+}
+.callout[data-callout="info"] {
+    --callout-color: 0, 206, 235;
+    --callout-icon: lucide-alert-circle;
+    
+}
+.callout[data-callout="abstract"] {
+    --callout-color: 0, 193, 255;
+    --callout-icon: lucide-clipboard-list;
+    
+}
+.callout[data-callout="todo"] {
+    --callout-color: 0, 186, 213;
+    --callout-icon: lucide-check-circle-2;
+    
+}
+.callout[data-callout="tip"] {
+    --callout-color: 0, 210, 181;
+    --callout-icon: lucide-flame;
+    
+}
+.callout[data-callout="success"] {
+    --callout-color: 10, 221, 88;
+    --callout-icon: lucide-check;
+    
+}
+.callout[data-callout="question"] {
+    --callout-color: 110, 246, 21;
+    --callout-icon: lucide-help-circle;
+    
+}
+.callout[data-callout="warning"] {
+    --callout-color: 255, 149, 0;
+    --callout-icon: lucide-alert-triangle;
+    
+}
+.callout[data-callout="failure"] {
+    --callout-color: 255, 90, 87;
+    --callout-icon: lucide-x;
+    
+}
+.callout[data-callout="danger"] {
+    --callout-color: 255, 20, 71;
+    --callout-icon: lucide-zap;
+    
+}
+.callout[data-callout="bug"] {
+    --callout-color: 255, 0, 93;
+    --callout-icon: lucide-bug;
+    
+}
+.callout[data-callout="example"] {
+    --callout-color: 135, 82, 255;
+    --callout-icon: lucide-list;
+    
+}
+.callout[data-callout="quote"] {
+    --callout-color: 177, 177, 177;
+    --callout-icon: lucide-quote;
+    

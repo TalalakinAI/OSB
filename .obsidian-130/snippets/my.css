@@ -1,0 +1,692 @@
+/*
+--text-highlight-bg: rgba(255, 255, 0, 0.4);
+Цвет желтой бесячей штуки. Заменить ее на*/
+
+.theme-dark {
+    --background-primary: #20242b;
+    --background-primary-alt: #20242b;
+    --background-secondary: #20242b;
+    --background-secondary-alt: #1a1e24;
+    --background-accent: #000;
+    --background-modifier-border: #2b303c;
+	--background-modifier-border-outline: #333;
+    --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #539126;
+    --background-modifier-error: #3d0000;
+    --background-modifier-error-rgb: 61, 0, 0;
+    --background-modifier-error-hover: #470000;
+    --background-modifier-cover: rgba(0, 0, 0, 0.6);
+    --text-accent: #61afef;
+    --text-accent-hover: #69bafd;
+    --text-normal: #dcddde;
+    --text-muted: #888;
+    --text-faint: rgb(81, 86, 99);
+    --text-error: #e16d76;
+    --text-error-hover: #c9626a;
+    --text-highlight-bg: rgba(255, 255, 0, 0.4);
+    --text-selection: rgba(0, 122, 255, 0.2);
+    --text-on-accent: #dcddde;
+    --interactive-normal: #20242b;
+    --interactive-hover: #353b47;
+    --interactive-accent: #4c78cc;
+    --interactive-accent-rgb: 76, 120, 204;
+    --interactive-accent-hover: #5082df;
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --panel-border-color: #18191e;
+    --gray-1: #333333;
+    --gray-2: #abb2bf;
+    --red: #e06c75;
+    --orange: #d19a66;
+    --green: #98c379;
+    --aqua: #56b6c2;
+    --purple: #c678dd;
+    --blue: #61afef;
+    --yellow: #e5c07b;
+	--line-number: #262b33;
+	--header-size:20px;
+
+	--header-weight:900;
+	--header1-weight:400;
+	--header2-weight:600;
+	--header3-weight:500;
+	--header4-weight:500;
+	--header5-weight:500;	
+	--header3:#d19a66;
+	
+	--title-bar-nav:#5F5F5F;
+	
+	--header-font:iA Writer Mono S;	
+	
+	--cursor-po: pointer;
+}
+
+.theme-light {
+  --background-primary: #fafafa;
+  --background-primary-alt: #eaeaeb;
+  --background-secondary: #eaeaeb;
+  --background-secondary-alt: #dbdbdc;
+  --background-accent: #fff;
+  --background-modifier-border: #dbdbdc;
+	--background-modifier-border-outline: #dbdbdc;
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #A4E7C3;
+  --background-modifier-error: #e68787;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #FF9494;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: #1592ff;
+  --text-accent-hover: #2d9dff;
+  --text-normal: #383a42;
+  --text-muted: #8e8e90;
+  --text-faint: #999999;
+  --text-error: #e75545;
+  --text-error-hover: #f86959;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-selection: rgba(0, 122, 255, 0.15);
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #eaeaeb;
+  --interactive-hover: #dbdbdc;
+  --interactive-accent-rgb: 21, 146, 255;
+  --interactive-accent: #5871ef;
+  --interactive-accent-hover: #445bd1;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --panel-border-color: #dbdbdc;
+  --gray-1: #eee;
+  --gray-2: #383a42;
+  --red: #e75545;
+  --green: #4ea24c;
+  --blue: #3d74f6;
+  --purple: #a625a4;
+  --aqua: #0084bc;
+  --yellow: #e35649;
+  --orange: #986800;
+  --line-number: #dbdbdc;
+	
+	--header-size:20px;
+
+	--header-weight:900;
+	--header1-weight:900;
+	--header2-weight:600;
+	--header3-weight:500;
+	--header4-weight:500;
+	--header5-weight:500;
+	
+	--header-font:iA Writer Mono S;	
+
+	--header3:#d19a66;
+	--cursor-po: pointer;
+	
+	--title-bar-nav:#282A37;
+}
+
+.markdown-preview-view {
+	font-size:85%;
+	height:200!important;
+}
+
+.workspace-tabs, .workspace-leaf, .workspace-leaf-resize-handle, .workspace-leaf-content {
+	background-color:var(--interactive-normal);	
+}
+.workspace-split:not(.mod-right-split) .workspace-tabs {
+		background-color:var(--interactive-normal);	
+}
+
+.workspace-ribbon {
+	background-color:var(--interactive-normal);
+}
+
+.workspace-tab-header-container {
+	background-color:var(--interactive-normal);
+}
+
+.workspace-tab-header-inner {
+	background-color:var(--interactive-normal)!important;
+}
+
+.titlebar-text {
+	background-color:var(--interactive-normal);
+	border-bottom: 1px solid var(--interactive-normal)!important;
+}
+
+.workspace-tabs {
+	background-color:var(--interactive-normal);
+}
+
+.workspace-ribbon.mod-left.is-collapsed {
+	border-right-color:var(--interactive-normal);
+}
+
+.view-header {
+	border-bottom:1px solid var(--interactive-normal)!important;
+}
+.status-bar {
+		background-color:var(--interactive-normal);
+		border-color:var(--interactive-normal);
+}
+
+.workspace-ribbon.mod-right.is-collapsed {
+		border-left-color:var(--interactive-normal);
+}
+
+.line-numbers-rows>span:before {
+  content: counter(linenumber) !important;
+  color: var(--syntax-gray-1) !important;
+  display: block !important;
+  padding-right: 0.8em !important;
+  text-align: right !important;
+}
+
+
+.cm-s-obsidian .HyperMD-header, .cm-s-obsidian .HyperMD-footnote, .cm-s-obsidian .HyperMD-codeblock, .cm-s-obsidian .HyperMD-hr {
+	border:none!important;
+}
+
+.cm-s-obsidian span.cm-hashtag {
+	text-decoration: none;
+}
+
+/*Теги*/
+span.cm-hashtag.cm-hashtag-begin {
+	border-top-left-radius:5px !important;
+	border-bottom-left-radius:5px !important;
+	background-color:var(--background-secondary-alt);
+}
+span.cm-hashtag.cm-hashtag-end {
+	border-top-right-radius:5px !important;
+	border-bottom-right-radius:5px !important;
+	background-color:var(--background-secondary-alt);
+}
+
+  
+
+/*.HyperMD-header {
+	font-family: "iA Writer Duo S"!important;
+}
+
+.CodeMirror-line {
+	font-family: "iA Writer Duo S"!important;
+}*/
+
+/*Предпросмотр*/
+/*.markdown-preview-sizer, .markdown-preview-section {
+	font-family:"Anonymous Pro"!important;
+}*/
+
+
+/*Dark line number*/
+.cm-s-obsidian .CodeMirror-linenumber {
+	color: var(--line-number);
+}
+
+.workspace-tab-header-container {
+	border-bottom: var(--border-width) solid var(--background-modifier-border);
+}
+
+/*Цитаты*/
+.cm-formatting-quote, .cm-formatting-quote-1, .cm-quote, .cm-quote-1 {
+    color: #ff5722!important;	
+}
+
+/*Комментарий*/
+.cm-s-obsidian span.cm-quote {
+    color: #ff5722;
+	margin-left:10px;
+	font-style:italic;
+}
+
+
+.cm-formatting-strong  {
+	color:#555!important;
+/*	margin-right:5px;
+	margin-left:5px;*/
+}
+
+.cm-formatting-em {
+	color:#555!important;
+/*	margin-right:5px;
+	margin-left:5px;*/
+}
+
+	
+.cm-header{
+	color:#d19a66;
+	font-weight:var(--header-weight)!important;
+	font-family:var(--header-font)!important;
+}
+
+/*Название файла*/
+.view-header-title {
+	font-family:var(--header-font)!important;
+	font-size:var(--header-size)!important;
+/*	text-align:center;*/
+}
+
+.cm-formatting-header {
+	font-size:17px!important;
+}
+
+
+.cm-formatting-header-1, .cm-header-1 {
+	color:#61afef!important;
+	border-bottom:5px solid #61afef;
+	line-height:1.6!important;
+	font-size:24px!important;
+	font-family:var(--header-font)!important;
+}
+
+.cm-formatting-header-2, .cm-header-2 {
+/*	color:#98c379!important;*/
+	color:var(--aqua)!important;
+	font-weight:var(--header2-weight)!important;
+	font-size:var(--header-size);
+	font-family:var(--header-font)!important;
+}	
+
+.cm-formatting-header-3, .cm-header-3 {
+/*	color:var(--text-error-hover)!important;*/
+	color:var(--header3)!important;
+	font-weight:var(--header3-weight)!important;
+	font-size:var(--header-size);
+	font-family:var(--header-font)!important;
+}
+
+.cm-formatting-header-4, .cm-header-4 {
+/*	color:#c678dd!important;*/
+	color:var(--text-normal)!important;
+	font-weight:var(--header4-weight)!important;
+	font-variant: inherit!important;
+	font-size:var(--header-size);
+	font-family:var(--header-font)!important;
+}
+
+
+.cm-formatting-header-5, .cm-header-5 {
+/*	color:#c678dd!important;*/
+	color:var(--text-normal)!important;
+	font-weight:var(--header5-weight)!important;
+	font-variant: inherit!important;
+	font-size:var(--header-size);
+	font-family:var(--header-font)!important;
+}
+
+.markdown-preview-view h3 {
+	font-weight:var(--header3-weight)!important;
+}
+.markdown-preview-view h2 {
+	font-weight:var(--header2-weight)!important;
+	color:var(--aqua)!important;
+}
+.markdown-preview-view h4 {
+	font-weight:var(--header4-weight)!important;
+}
+.markdown-preview-view h5 {
+	font-weight:var(--header5-weight)!important;
+}
+
+
+.markdown-preview-view h4,
+.HyperMD-header-4,
+.cm-s-obsidian .cm-header-4 {
+  font-variant:inherit;
+	font-size:var(--header-size);
+  color:var(--interactive-accent-hover)!important;
+}
+.markdown-preview-view h5,
+.HyperMD-header-5,
+.cm-s-obsidian .cm-header-5 {
+  font-variant:inherit;
+	font-size:var(--header-size);
+  color:var(--interactive-accent-hover)!important;
+}
+.markdown-preview-view h6,
+.HyperMD-header-6,
+.cm-s-obsidian .cm-header-6 {
+  font-variant:inherit;
+	font-size:var(--header-size);
+  color:var(--interactive-accent-hover)!important;
+}
+
+
+.workspace-leaf.mod-active .view-header-title {
+	color:#5C6370;
+}
+
+.workspace-tab-container-inner, .nav-buttons-container {
+
+}
+
+/*Переключение между файлами*/
+.is-flashing {
+	border-radius:2px;
+	box-shadow:none!important;
+	transition:all 0s ease-in-out;
+	background-color:var(--text-selection);
+	cursor: var(--cursor-po); 
+}
+
+.nav-file-title-content {
+	cursor: var(--cursor-po); 
+}
+
+.nav-file-title {
+	cursor: var(--cursor-po); 
+}
+
+.is-flashing .tag {
+  border-color:var(--text-selection);
+}
+/*Переключение между файлами*/
+
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+	background-color: #FF9800!important;
+	color:#000;
+}
+
+
+
+/* Ширина Fancy cursor */
+.fancy-cursor .CodeMirror-cursor {
+  border-right:3px solid var(--text-accent)!important;
+}
+
+/*Цвет иконок папок*/
+.obsidian-icon-folder-icon {
+	color:var(--text-accent)!important;
+}
+
+/*Цвет жирного*/
+.cm-formatting-strong, .cm-strong {
+	/*color:var(--text-faint)!important;*/
+}
+
+/*Цвет курсива*/
+.cm-formatting-em, .cm-em {
+	/*color:var(--text-faint)!important;*/
+}
+
+
+/* Разметка списков, сродни аутлайну */
+/*.cm-formatting-task::before {
+    content: '';
+    border-left: 1px solid var(--background-modifier-border);
+    position: absolute;
+    top: calc(var(--font-normal) + 8px);
+    bottom: 6px;
+	left:37px;
+}*/
+
+
+
+/*.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1::before {
+    content: '';
+    border-left: 1px solid var(--background-modifier-border-outline);
+    position: absolute;
+    top: calc(var(--font-normal) + 8px);
+    bottom: 6px;
+	left:19px;
+}
+
+.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1::before {
+    content: '';
+    border-left: 1px solid var(--background-modifier-border-outline);
+    position: absolute;
+    top: calc(var(--font-normal) + 8px);
+    bottom: 6px;
+	left:9px;
+}*/
+/* Разметка списков, сродни аутлайну */
+
+
+
+/* Цвет блока кода */
+.cm-formatting-code-block, .cm-hmd-codeblock {
+	color:var(--orange);
+}
+
+.HyperMD-codeblock-bg {
+	background-color:var(--background-primary)!important;	
+}
+
+
+/* Number panes in their headers */
+.workspace-split.mod-root .workspace-leaf .view-header-icon::before {
+    content: "";
+    display: inline-flex;
+    position: relative;
+    bottom: 3px;
+    min-inline-size: 1em;
+}
+
+.workspace-split.mod-root .workspace-leaf.has-pane-relief-label .view-header-icon::before {
+    counter-reset: pane-number var(--pane-relief-label);
+    content: counter(pane-number);
+}
+
+body span[title="Unfold line"]:after, body .CodeMirror-foldgutter-folded:after {
+    height: 18px;
+    width: 15px;
+	cursor: var(--cursor-po); 
+}
+.CodeMirror-foldgutter-open, .CodeMirror-guttermarker-subtle {
+	cursor: var(--cursor-po); 
+}
+
+.cm-formatting-task {
+	cursor: var(--cursor-po); 
+}
+
+.task-list-item-checkbox {
+	cursor: var(--cursor-po); 
+}
+
+.nav-file-title, .tree-item-self, .nav-folder-title, .is-collapsed .search-result-file-title, .tag-pane-tag {
+	cursor: var(--cursor-po); 
+}
+
+.graph-controls-button, .view-action, .view-header-icon, .nav-action-button, .workspace-tab-header, .side-dock-ribbon-tab, .side-dock-ribbon-action, .workspace-tab-header {
+	cursor: var(--cursor-po); 
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link {
+	cursor: var(--cursor-po); 
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+	margin-left: 0;
+}
+
+/*Цитаты*/
+/*.HyperMD-quote, .HyperMD-quote-1 {
+	background-color:#eee!important;
+	padding-left:30px!important;
+	padding-right:30px!important;
+	padding-top:10px!important;
+	padding-bottom:10px!important;
+	border-radius:10px!important;
+	margin-top:5px!important;
+	margin-bottom:5px!important;
+}
+
+*/
+
+
+/* --------------- */
+/* Scroll bars */
+
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color:transparent;
+}
+::-webkit-scrollbar-track {
+  background-color:transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border:3px solid transparent;
+  background-color:var(--background-modifier-border);
+  border-width:3px 4px 3px 3px;
+  min-height:45px;
+}
+
+.modal .vertical-tab-header::-webkit-scrollbar-thumb:hover,
+.mod-left-split .workspace-tabs ::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:hover {
+  background-color:var(--background-modifier-border-hover);
+}
+.modal .vertical-tab-header::-webkit-scrollbar-thumb:active,
+.mod-left-split .workspace-tabs ::-webkit-scrollbar-thumb:active,
+::-webkit-scrollbar-thumb:active {
+  background-color:var(--background-modifier-border-focus);
+}
+
+.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
+	display:block;
+	color: var(--text-muted)!important;
+}
+.nav-folder-title[data-count]::after {
+	color: var(--text-muted)!important;	
+}
+
+/*Исходящие ссылки, упоминания без ссылки*/
+.outgoing-link-pane {
+	background-color:var(--interactive-normal)!important;
+}
+.search-result-file-matches {
+	background-color:var(--interactive-normal)!important;
+	border-color:var(--interactive-normal)!important;
+}
+
+.view-header-title::before {
+	background:none!important;
+}
+
+.view-header {
+	border-bottom:none!important;
+}
+
+.workspace-tab-header-container {
+	border-bottom:none!important;	
+}
+
+.has-pane-relief-label {
+	margin:0 auto;
+}
+
+.plugin-tabs .mod-root.workspace-split.mod-vertical .workspace-split.mod-vertical > div.workspace-leaf, .plugin-tabs .mod-root.workspace-split.mod-vertical > div.workspace-leaf {
+/*	border:1px solid var(--background-modifier-border);*/
+	border:0!important;
+}
+
+
+.HyperMD-list-line > span:first-child {
+	color:var(--text-normal);
+}
+
+
+/* Number panes in their headers */
+.workspace-split.mod-root .workspace-leaf .view-header-icon::before {
+    content: "";
+    display: inline-flex;
+    position: relative;
+    bottom: 3px;
+    min-inline-size: 1em;
+}
+
+.workspace-split.mod-root .workspace-leaf.has-pane-relief-label .view-header-icon::before {
+    counter-reset: pane-number var(--pane-relief-label);
+    content: counter(pane-number);
+}
+
+/*Всплывающее окно*/
+.popover {
+	max-height:200px!important;
+	max-weight:500px!important;
+}
+
+/*Комментарии*/
+.cm-s-obsidian span.cm-comment {
+	font-style:italic;
+}
+
+body:not(.is-mobile) span[title="Fold line"]:after, body:not(.is-mobile) span[title="Unfold line"]:after, body:not(.is-mobile) .CodeMirror-foldgutter-open:after, body:not(.is-mobile) .CodeMirror-foldgutter-folded:after {
+	    margin-top: 0.20rem;
+}
+
+.workspace-ribbon.mod-left.is-collapsed {
+	border-right-color:transparent!important;
+}
+
+body:not(.hider-frameless):not(.is-fullscreen):not(.is-mobile) .titlebar {
+	background: none;
+	border-bottom: none;
+}
+
+.workspace-tab-header-container {
+	background: none;
+}
+
+.workspace-tabs, .workspace-leaf, .workspace-leaf-resize-handle, .workspace-leaf-content {
+	background: none!important;
+}
+
+.workspace-tab-header-inner {
+	background: none!important;
+}
+
+/* НАВИГАЦИОННЫЕ КНОПКИ */
+
+/*Активная навигационная кнопка*/
+.titlebar-button.mod-back.mod-active:not(:hover), .titlebar-button.mod-forward.mod-active:not(:hover) {
+	background: var(--title-bar-nav)!important;
+	color:#fff!important;
+	padding: 0px 10px!important;
+	cursor:var(--cursor-po)!important;
+}
+
+.titlebar-button.mod-back.mod-active:not(:active), .titlebar-button.mod-forward.mod-active:not(:active) { 
+	display:block!important;
+	padding: 0px 10px!important;
+	color:#fff!important;
+	cursor:var(--cursor-po)!important;
+}
+
+/*НЕ Активная навигационная кнопка*/
+.titlebar-button-container.mod-left, .titlebar-button {
+
+}
+
+.titlebar.history-counter {
+	padding-top: 2px!important;
+}
+
+.titlebar-button {
+	cursor:var(--cursor-po)!important;
+	border-radius: 7px!important;
+	padding: 0px 10px!important;
+	height:20px!important;
+	opacity: 0.4!important;
+	padding-top: 2px!important;
+}
+
+
+.titlebar-button-container.mod-left {
+	left:92%!important;
+}
+/* НАВИГАЦИОННЫЕ КНОПКИ */
+
+.cm-formatting-list {
+	color:var(--text-muted)!important;
+}
+
+body.minimal-rel-edit .cm-hmd-list-indent > .cm-tab:after {
+	border-right:none!important;
+}

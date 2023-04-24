@@ -1,0 +1,13 @@
+{
+  "pinned": [
+    "quickadd:runQuickAdd",
+    "quickadd:choice:dc597ef2-167d-43fb-9893-a8bd723c5c96",
+    "quickadd:choice:96b7f4f9-eff0-4963-a28c-4fd86d119418",
+    "quickadd:choice:4eb05852-1c9b-4666-91f7-eddc8781a2ae",
+    "quickadd:choice:c6e7a562-971b-45cd-9e8d-0282ba62f5df",
+    "quickadd:choice:a35734b3-809d-4245-b592-bb86ce3df8d2",
+    "quickadd:choice:2ffac690-f245-4b6d-8722-c4667262af68",
+    "obsidian-minimal-settings:toggle-minimal-dark-tonal",
+    "obsidian-minimal-settings:toggle-minimal-light-default"
+  ]
+}

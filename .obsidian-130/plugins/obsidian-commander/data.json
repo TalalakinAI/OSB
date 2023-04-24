@@ -1,0 +1,167 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [
+    {
+      "id": "cmdr:open-commander-settings",
+      "icon": "activity",
+      "name": "Commander: Open Commander Settings",
+      "mode": "any"
+    }
+  ],
+  "fileMenu": [
+    {
+      "id": "quickadd:runQuickAdd",
+      "icon": "sheets-in-box",
+      "name": "QuickAdd: Run QuickAdd",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-table-generator:create-table-genertator",
+      "icon": "table",
+      "name": "Table Generator: createTableGenerator",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:e204b1ab-20d5-441e-ab4a-49db20d8ced1",
+      "icon": "anchor",
+      "name": "QuickAdd: ПИРОЖКИ",
+      "mode": "any"
+    }
+  ],
+  "leftRibbon": [
+    {
+      "id": "quickadd:choice:e204b1ab-20d5-441e-ab4a-49db20d8ced1",
+      "icon": "anchor",
+      "name": "QuickAdd: ПИРОЖКИ",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [
+    {
+      "id": "cmdr:open-commander-settings",
+      "icon": "activity",
+      "name": "Commander: Open Commander Settings",
+      "mode": "any"
+    }
+  ],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "quickadd:choice:e204b1ab-20d5-441e-ab4a-49db20d8ced1",
+      "icon": "anchor",
+      "name": "QuickAdd: ПИРОЖКИ",
+      "mode": "any"
+    }
+  ],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": [
+      "Open Viewer",
+      "Regex Rulesets",
+      "Clear Unused Images",
+      "Вставить шаблон",
+      "Сегодняшняя заметка"
+    ]
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 24,
+    "rowCount": 3,
+    "spacing": 34,
+    "buttonWidth": 24,
+    "columnLayout": false,
+    "mappedIcons": [
+      {
+        "commandID": "media-extended:get-timestamp",
+        "iconID": "mic"
+      },
+      {
+        "commandID": "obsidian-regex-replace:obsidian-regex-replace",
+        "iconID": "asterisk"
+      },
+      {
+        "commandID": "obsidian-plugin-toc:create-toc",
+        "iconID": "list-ordered"
+      },
+      {
+        "commandID": "obsidian-text-format:text-format-merge-line",
+        "iconID": "git-merge"
+      },
+      {
+        "commandID": "templater-obsidian:insert-templater",
+        "iconID": "layout-template"
+      },
+      {
+        "commandID": "quickadd:runQuickAdd",
+        "iconID": "upload-cloud"
+      },
+      {
+        "commandID": "obsidian-regex-pipeline:apply-ruleset",
+        "iconID": "regex"
+      },
+      {
+        "commandID": "obsidian-languagetool-plugin:ltcheck-text",
+        "iconID": "file-check"
+      },
+      {
+        "commandID": "obsidian-text-format:text-format-remove-spaces",
+        "iconID": "align-horizontal-space-between"
+      },
+      {
+        "commandID": "obsidian-text-format:text-format-upper",
+        "iconID": "arrow-up"
+      },
+      {
+        "commandID": "obsidian-text-format:text-format-lower",
+        "iconID": "arrow-down"
+      },
+      {
+        "commandID": "obsidian-text-format:text-format-capitalize-word",
+        "iconID": "arrow-big-up"
+      },
+      {
+        "commandID": "obsidian-text-format:text-format-capitalize-sentence",
+        "iconID": "chevron-first"
+      },
+      {
+        "commandID": "obsidian-markdown-formatting-assistant-plugin:open-callouts-selector",
+        "iconID": "columns"
+      },
+      {
+        "commandID": "obsidian-markdown-formatting-assistant-plugin:open-command-selector",
+        "iconID": "text-cursor-input"
+      },
+      {
+        "commandID": "quickadd:choice:1ddf33fd-3ca2-4d9c-99b6-685fbf668c84",
+        "iconID": "user-minus"
+      },
+      {
+        "commandID": "quickadd:choice:8f9bbcdb-1b8d-4623-a773-d9e940bd6e02",
+        "iconID": "user-plus"
+      },
+      {
+        "commandID": "quickadd:choice:3cc1f06a-aca1-4852-a3c0-ef5c93f1c815",
+        "iconID": "alarm-plus"
+      },
+      {
+        "commandID": "quickadd:choice:940a8d77-5937-41e0-a9ce-3172cdb6e371",
+        "iconID": "dollar-sign"
+      },
+      {
+        "commandID": "quickadd:choice:21c7cc71-8eba-4385-8f5b-b903035b2eb4",
+        "iconID": "timer-reset"
+      },
+      {
+        "commandID": "quickadd:choice:5f95359b-01ab-433d-8e62-6d05d8a05722",
+        "iconID": "youtube"
+      }
+    ],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}
